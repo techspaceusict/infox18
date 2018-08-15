@@ -34,6 +34,18 @@ git commit -a -m "My fixes"
 6. Open a Pull Request on GitHub.
 8. The pull request is merged or closed after approval.
 
+### Starting the project
+1. Make sure node and npm is installed on your pc.
+2. Open the project folder in terminal and run command:
+```
+npm install --save
+```
+3. In the same folder run following command to start to start the project:
+```
+node app.js
+```
+4. Navigate to localhost:8080 in any web browser.
+
 Take a look at : 
 * https://guides.github.com/introduction/flow/
 * https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
