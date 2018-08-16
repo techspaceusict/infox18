@@ -1,0 +1,108 @@
+<% include ../partials/header-links2 %> <!--Contains all header meta tags and links-->
+
+<body>
+
+    <% include ../partials/svg-and-style %>
+
+<header class="is-large">
+    <% include ../partials/navbar %>
+</header>
+
+
+<div class="background Libp2p-background"></div>
+<div class="background ipld-background"></div>
+<div class="background ipfs-background"></div>
+<div class="background filecoin-background"></div>
+<div class="background multiformats-background"></div>
+
+<div class="lists-hidden">
+<section class="projects-list">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="items">
+            <a href="#Filecoin" onclick="scrollToElement(this.hash, 1200);trackClick('Projects_Filecoin');"><img alt src="../img/projects/logo_filecoin.svg"></a>
+            <a href="#IPFS" onclick="scrollToElement(this.hash, 1200);trackClick('Projects_IPFS');"><img alt src="../img/projects/logo_IPFS.svg"></a>
+            <a href="#Libp2p" onclick="scrollToElement(this.hash, 1200);trackClick('Projects_libp2p');"><img alt src="../img/projects/logo_libp2p.svg"></a>
+            <a href="#IPLD" onclick="scrollToElement(this.hash, 1200);trackClick('Projects_IPLD');"><img alt src="../img/projects/logo_IPLD.svg"></a>
+            <a href="#Multiformats" onclick="scrollToElement(this.hash, 1200);trackClick('Projects_Multiformats');"><img alt src="../img/projects/logo_multi.svg"></a>
+        </div>
+    </div>
+</section>
+</div>
+
+<section class="projects-section" id="IPFS" data-bg-selector=".ipfs-background">
+    <figure class="container">
+        <img alt class="fragment" src="../img/projects/logotype_IPFS.svg">
+        <figcaption class="fragment">
+            <p>IPFS is a new protocol to decentralize the web. IPFS enables the creation of completely decentralized and distributed applications, using content addressing and digital signatures.</br></br>IPFS makes the web faster, safer, and more open.</p>
+            <a class="btn" href="https://ipfs.io/" target="_blank">View website</a><a class="btn github_btn" href="https://github.com/ipfs" target="_blank"></a>
+        </figcaption>
+    </figure>
+</section>
+<section class="projects-section" id="Filecoin" data-bg-selector=".filecoin-background">
+    <figure class="container">
+        <img alt class="fragment" src="../img/projects/logotype_filecoin.svg">
+        <figcaption class="fragment">
+            <p>Filecoin is a cryptocurrency powered storage network. Miners earn Filecoin by providing open hard-drive space to the network, while users spend Filecoin to store their files encrypted in the decentralized network.</p>
+            <a class="btn" href="http://filecoin.io/" target="_blank">View website</a>
+        </figcaption>
+    </figure>
+</section>
+<section class="projects-section" id="Libp2p" data-bg-selector=".Libp2p-background">
+    <figure class="container">
+        <img alt class="fragment" src="../img/projects/logotype_libp2p.svg">
+        <figcaption class="fragment">
+            <p>libp2p is a modular networking stack. libp2p brings together a variety of transports and peer-to-peer protocols, making it easy for developers to build large, robust p2p networks.</p>
+            <a class="btn" href="http://libp2p.io/" target="_blank">View website</a><a class="btn github_btn" href="https://github.com/libp2p" target="_blank"></a>
+        </figcaption>
+    </figure>
+</section>
+<section class="projects-section" id="IPLD" data-bg-selector=".ipld-background">
+    <figure class="container">
+        <img alt class="fragment" src="../img/projects/logotype_IPLD.svg">
+        <figcaption class="fragment">
+            <p>IPLD is the data model for the Decentralized Web. It connects all data through cryptographic hashes, and makes it easy to traverse and link to.</p>
+            <a class="btn" href="http://ipld.io/" target="_blank">View website</a><a class="btn github_btn" href="https://github.com/ipld" target="_blank"></a>
+        </figcaption>
+    </figure>
+</section>
+<section class="projects-section" id="Multiformats" data-bg-selector=".multiformats-background">
+    <figure class="container">
+        <img alt class="fragment" src="../img/projects/logotype_multi.svg">
+        <figcaption class="fragment">
+            <p>The Multiformats Project is a collection of protocols to future-proof systems, today. Self-describing formats make your systems interoperable and upgradable.</p>
+            <a class="btn" href="http://multiformats.io/" target="_blank">View website</a><a class="btn github_btn" href="https://github.com/multiformats" target="_blank"></a>
+        </figcaption>
+    </figure>
+</section>
+
+<footer>
+  <div class="container">
+    <nav>
+      <a href="../index.html">About</a>
+      <a>Projects</a>
+      <a href="../team/index.html">Team</a>
+       <a href="../join/index.html">Join</a> 
+       <a href="../blog/index.html">Blog</a> 
+      <a href="../media/index.html">Media</a>
+    </nav>
+    <ul>
+      <li><a class="ico-social ico-twitter" href="https://twitter.com/protocollabs" target="_blank"></a>
+      <li><a class="ico-social ico-linked_in" href="https://www.linkedin.com/company-beta/16181958" target="_blank"></a>
+    </ul>
+    <p>© Protocol Labs, Inc. | Except as <a href="../legal/index.html">noted</a>, content licensed <a class="legal-go" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY 3.0</a>. | <a class="legal-go" href="../legal/index.html#terms_of_service">Terms of service</a> | <a class="legal-go" href="../legal/index.html#privacy_policy">Privacy policy</a></p>
+  </div>
+</footer>
+
+
+<!-- Nav below is for hamburger -->
+
+<% include ../partials/hamburger %>
+
+
+<script src="../js/common.js"></script>
+<script src="../js/projects.js"></script>
+
+</body>
+
+</html>
