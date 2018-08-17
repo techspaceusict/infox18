@@ -4,9 +4,11 @@
 
     <% include ../partials/svg-and-style %>
 
+<div id="test"> <!--class="nav-wrapper"-->
 <header class="is-large">
-    <% include ../partials/navbar %>
+    <% include ../partials/navbar %> <!-- Common navbar he ismein -->
 </header>
+</div>
 
 
 <div class="background legal-background">
@@ -79,21 +81,7 @@
 </section>
 
 <footer>
-  <div class="container">
-    <nav>
-      <a href="../index.html">About</a>
-      <a href="../projects/index.html">Projects</a>
-      <a href="../team/index.html">Team</a>
-       <a href="../join/index.html">Join</a> 
-       <a href="../blog/index.html">Blog</a> 
-      <a href="../media/index.html">Media</a>
-    </nav>
-    <ul>
-      <li><a class="ico-social ico-twitter" href="https://twitter.com/protocollabs" target="_blank"></a>
-      <li><a class="ico-social ico-linked_in" href="https://www.linkedin.com/company-beta/16181958" target="_blank"></a>
-    </ul>
-    <p>© Protocol Labs, Inc. | Except as <a href="index.html">noted</a>, content licensed <a class="legal-go" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY 3.0</a>. | <a class="legal-go" href="index.html#terms_of_service">Terms of service</a> | <a class="legal-go" href="index.html#privacy_policy">Privacy policy</a></p>
-  </div>
+    <% include ../partials/footer %>
 </footer>
 
 

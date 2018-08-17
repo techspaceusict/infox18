@@ -13,3 +13,27 @@
     </ul> -->
     <h3 style="margin: 0 auto;">Footer</h3>
 </div>
+
+<script type="text/javascript">  
+    if($(window).width() > 767){
+        var stickyTop = $('#test').offset().top;
+        $(window).on( 'scroll', function(){
+            if ($(window).scrollTop() > stickyTop) {
+                // alert('are bhai bhai bhai')
+                $('#test').addClass("nav-wrapper");
+            } else {
+                $('#test').removeClass("nav-wrapper");
+            }
+      });
+    }
+    else{
+    //     var stickyTop2 = $('#test2').offset().top;
+    //     $(window).on( 'scroll', function(){
+    //         if ($(window).scrollTop() >= stickyTop2) {
+    //             $('#test2').addClass("nav-wrapper");
+    //         } else {
+    //             $('#test2').removeClass("nav-wrapper");
+    //         }
+    //   });
+    }
+  </script>
