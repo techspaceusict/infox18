@@ -236,6 +236,10 @@ body>svg:first-child {
     position: absolute;
     top: 0;
     width: 100%}
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
 .background {
     background-position: center;
     background-repeat: no-repeat;
