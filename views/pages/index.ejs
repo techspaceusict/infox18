@@ -4,8 +4,9 @@
 
 <% include ../partials/svg-and-style %> <!--Header Svg or inline css he ismein-->
 
+
 <div class="background header-background">
-  <div class="container">
+  <div class="container" id="particles-js">
     <img onload="this.className = 'is-loaded'" src="img/grd_main.jpg"> <!--Background yahan ayega-->
   </div>
 </div>
@@ -137,6 +138,11 @@
 <script src="js/common.js"></script>
 
 <script src="js/about.js"></script>
+<!-- particle js scripts -->
+<script src="js/particles.js"></script>
+<script type="text/javascript">
+ particlesJS("particles-js","particles.json");
+</script>
 
 </body>
 
