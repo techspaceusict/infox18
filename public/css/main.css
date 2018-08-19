@@ -2163,12 +2163,13 @@ header.is-large .mobile{
     transform: translate(-50%, -50%);
     top: 50%;
     width: 131.58%}
-@media (max-width:767px) and (orientation:landscape) {
+
+}@media (max-width:767px) and (orientation:landscape) {
     .projects-list {
     padding-top: 12%}
 }@media (max-width:767px) and (orientation:portrait) {
     .projects-list {
-    padding-top: 32%}
+    padding-top: 22%}
 }.collaborations-list {
     margin-top: 14%}
 .collaborations-list .container:before {
