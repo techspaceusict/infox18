@@ -1,0 +1,34 @@
+.event-wrapper{
+    margin:0 0 0 -33px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+    flex-wrap: wrap;
+    display:flex;
+    font-size: 48px;
+    justify-content: center;
+    width: 100%;
+}
+
+.events{
+    margin:30px;
+    align-items:center;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.events div{
+    -webkit-box-shadow:0 0 30px rgb(16, 0, 43); 
+    -moz-box-shadow:0 0 30px rgb(16, 0, 43);
+    box-shadow:0 0 30px rgb(16, 0, 43);
+    margin:7px;
+    background-color:rgb(117, 0, 226);
+    width:200px;
+    height: 300px;
+}
