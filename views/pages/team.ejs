@@ -17,17 +17,17 @@
 <section class="join-main-block">
     <div class="container">
         <img src="img/iplogo.png" alt="ipu logo" href="http://ipu.ac.in/" style="align-self: center ; height: 250px ; width: 250px;">
-        <p>InfoXpression is the annual technical fest of Guru Gobind Singh Indraprastha University organized by </p>
-        <p>University School of Information and Communication Technology. It is the biggest technical </p>
-        <p>extravaganza held at Guru Gobind Singh Indraprastha University, and involves an active participation of </p>
-        <p>students from over 250 colleges of north India. An exhilarating voyage of technical know-how, </p>
-        <p>InfoXpression focuses on the promotion of technology and innovation. It gives you a chance to stop, </p>
-        <p>culminate new ideas and showcase your technical expertise. The fest is a three day grandeur which is </p>
-        <p>result of a month long affair of prelims and stage levels. It involves a series of competitions, workshops </p>
-        <p>and guest lectures by some eminent personalities. InfoXpression is an amalgamation of creativity and </p>
-        <p>imagination. It will be a perfect blend of entertainment and technology with the aim of transformation </p>
-        <p>and empowerment of the society.</p>
-        <a class="btn" href="#team-link">See our Team</a>
+        <div style="display: flex">InfoXpression is the annual technical fest of Guru Gobind Singh Indraprastha University organized by 
+        University School of Information and Communication Technology. It is the biggest technical 
+        extravaganza held at Guru Gobind Singh Indraprastha University, and involves an active participation of 
+        students from over 250 colleges of north India. An exhilarating voyage of technical know-how, 
+        InfoXpression focuses on the promotion of technology and innovation. It gives you a chance to stop, 
+        culminate new ideas and showcase your technical expertise. The fest is a three day grandeur which is 
+        result of a month long affair of prelims and stage levels. It involves a series of competitions, workshops 
+        and guest lectures by some eminent personalities. InfoXpression is an amalgamation of creativity and 
+        imagination. It will be a perfect blend of entertainment and technology with the aim of transformation 
+        and empowerment of the society.</div>
+        <a class="btn" href="#team-link" onclick="scrollToElement(this.hash, 1400);">See our Team</a>
       </div>
 </section>
 <section class="team-main-block" id="team-link">
@@ -72,6 +72,22 @@
 
 <script src="../js/common.js"></script>
 <script src="../js/team.js"></script>
+
+<!-- <script>
+    jQuery(document).ready(function($){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 50) {
+                $('#team-link').fadeIn('slow');
+            } else {
+                $('#team-link').fadeOut('slow');
+            }
+        });
+        $('#scroll_to_top').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 800);
+            return false;
+        });
+    });
+</script> -->
 
 </body>
 
