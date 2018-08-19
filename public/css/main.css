@@ -236,6 +236,10 @@ body>svg:first-child {
     position: absolute;
     top: 0;
     width: 100%}
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
 .background {
     background-position: center;
     background-repeat: no-repeat;
@@ -1608,7 +1612,42 @@ header.is-large .mobile{
     padding: 0;
 }
 .about-work .container {
+    display:flex;
+    width: 100%;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    /* margin:none !important; */
+    /* height: 300px; */
     border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.flex-display{
+    display:flex;
+    height: 100%;
+    width:100%;
+    justify-content: center;
+}
+
+.part1{
+    /* padding:5% 0; */
+    height: 100%;
+    z-index: 6;
+    /* background-color: blue; */
+    flex: 1 1 50%;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    /* margin-right: 10px; */
+}
+
+.part2{
+    align-items: center;
+    z-index: 6;
+    /* width:100%; */
+    /* background-color: cyan; */
+    flex: 1 1 50%;
+    justify-content: center;
+    display:flex;
 }
 .about-work .composition {
     left: -7.369%;
