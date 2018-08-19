@@ -2053,6 +2053,30 @@ header.is-large .mobile{
     content: '';
     display: block;
     padding-top: 100%}
+
+.fig-text{
+    display:flex;
+    align-items: center;
+    font-size: 24px;
+    justify-content: center;
+}
+
+@media (max-width:1023px){
+    .fig-text{font-size: 18px;}
+}
+
+@media (max-width:767px){
+    .fig-text{font-size: 15px;}
+}
+
+/* @media (max-width:690px){
+    .fig-text{font-size: 12px;}
+} */
+
+@media (max-width:479px){
+    .fig-text{font-size: 10px;}
+}
+
 .collaborations-list h2, .projects-list h2 {
     left: 0;
     margin: 0;
