@@ -36,6 +36,19 @@ function getTimeRemaining(endtime) {
     updateClock();
     var timeinterval = setInterval(updateClock, 1000);
   }
-  
-  var deadline = new Date(Date.parse(new Date()) + 50 * 24 * 60 * 60 * 1000);
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
+  var days;
+  if(mm==8){
+    days=74-dd;
+  }
+  if(mm==9){
+    days=43-dd;
+  }
+  if(mm==10){
+    days=13-dd;
+  }
+  var deadline = new Date(Date.parse(new Date()) + days * 24 * 60 * 60 * 1000);
   initializeClock('clockdiv', deadline);
