@@ -1,15 +1,9 @@
 <% include ../partials/header-links1 %> <!--Contains header links for Home Page-->
 
+
 <body>
 
 <% include ../partials/svg-and-style %> <!--Header Svg or inline css he ismein-->
-
-<!-- <style>
-  #particles-js{
-    z-index: 10000;
-    position: relative;
-  }
-</style> -->
 
 <div class="background header-background" id="particles-js">
     <img onload="this.className = 'is-loaded'" src="img/grd_main.jpg"> <!--Background yahan ayega-->
@@ -87,13 +81,11 @@
       <div class="part2">
           <!-- <div class="flex-display"> -->
               <div class="text-block">
-                <h2>Competitions</h2>
-                <p>Protocol Labs is a research, development, and deployment institution for improving Internet 
-                  technology. We create software systems that tackle significant challenges. We aim to solve 
-                  them with new technology breakthroughs, great user experience design, and an open-source 
-                  approach to creation.
+                <h2>Events</h2>
+                <p>
+                  Participate in the biggest technical extravaganza held at Guru Gobind Singh Indraprastha University which involves an active participation of students from over 250 colleges of north India.
                 </p>
-                <p><a class="btn" href="/projects" target="_blank" onclick="trackClick('View Projects');">View our Contests</a></p>
+                <p><a class="btn" href="/projects" target="_blank" onclick="trackClick('View Projects');">View our Events</a></p>
               </div>
           <!-- </div> -->
           </div>
@@ -113,14 +105,34 @@
       </div>
     </div>
     <div class="hidden-box">
-      <div class="container">
+      <div class="container" >
         <div class="composition">
-          <img src="img/about/mission.png" />
+          <!-- <img src="img/about/mission.png" /> -->
+          <div id="clockdiv" class="media-changer">
+            <div>
+              <span class="days"></span>
+              <div class="smalltext">Days</div>
+            </div>
+            <div>
+              <span class="hours"></span>
+              <div class="smalltext">Hours</div>
+            </div>
+            <div>
+              <span class="minutes"></span>
+              <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+              <span class="seconds"></span>
+              <div class="smalltext">Seconds</div>
+            </div>
+          </div>
         </div>
         <div class="text-block">
-          <h2>Timer will come here</h2>
-          <p>We believe the internet has become humanity's most important technology. We build protocols, systems, and tools to improve how it works. Today, we are focused on  how we store, locate, and move information.</p>
+          <h2>Coming Soon</h2>
+          <p>We will be coming back this year very soon with same excitment and fun .</p>
         </div>
+        
+        
       </div>
     </div>
   </section>
@@ -146,7 +158,7 @@
 </footer>
 
 <script src="js/common.js"></script>
-
+<script src="js/clock.js"></script>
 <script src="js/about.js"></script>
 
 <% include ../partials/particles %>
