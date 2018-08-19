@@ -7,6 +7,7 @@
 }
 
 .heading{
+    margin:0 0 0 33px;
     flex-wrap: wrap;
     display:flex;
     font-size: 48px;
@@ -31,4 +32,21 @@
     background-color:rgb(117, 0, 226);
     width:200px;
     height: 300px;
+}
+
+@media only screen and (max-width:479px){
+    .projects-list {
+        padding: 50% 0;
+    }
+    .heading{
+        font-size: 24px !important;
+    }
+    .events div{
+        width:100px;
+        height: 150px; 
+    }
+
+    .events-category{
+        font-size: 30px;
+    }
 }
