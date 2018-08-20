@@ -42,7 +42,7 @@ function isLoggedIn(req, res, next){
 }
 
 app.get('/', function (req, res) {
-    res.render("pages/index");
+    res.render("pages/home");
 });
 
 app.get('/signIn', function (req,res) {
@@ -71,24 +71,24 @@ app.get("/logout", function (req, res) {
     res.redirect("/");
 });
 
-app.get('/projects', function (req, res) {
-    res.render("pages/projects");
+app.get('/events', function (req, res) {
+    res.render("pages/events");
 });
 
-app.get('/team', function (req, res) {
-    res.render("pages/team");
+app.get('/about', function (req, res) {
+    res.render("pages/about");
 });
 
-app.get('/join', function (req, res) {
-    res.render("pages/join");
+app.get('/contact', function (req, res) {
+    res.render("pages/contact");
 });
 
-app.get('/blog', function (req, res) {
-    res.render("pages/blog");
+app.get('/schedule', function (req, res) {
+    res.render("pages/schedule");
 });
 
-app.get('/media', function (req, res) {
-    res.render("pages/media");
+app.get('/sponsers', function (req, res) {
+    res.render("pages/sponsers");
 });
 
 app.listen(process.env.PORT || 8080, function(){
