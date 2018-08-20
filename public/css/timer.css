@@ -1,4 +1,6 @@
 #countup {
+    display: flex;
+    justify-content: space-around;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -91,4 +93,29 @@
     padding:7%;
 }
 
+@media only screen and (max-width : 767px){
+    .timer-container{
+        padding-bottom: 150px;
+    }
+    .timer-heading{
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width : 479px){
+    .timer-container{
+        margin : auto 0;
+    }
+    .timer-heading{
+        font-size: 24px;
+    }
+    #countup{
+        flex-wrap: wrap;
+    }
+    #countup .part{
+        margin:10px 0;
+        width:120px;
+        height: 120px;
+    }
+}
 
