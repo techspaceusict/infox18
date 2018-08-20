@@ -1251,6 +1251,14 @@ header .logotype svg {
 header.is-large nav {
     padding: 40px 0;
 }
+
+
+@media (max-width:1023px) {
+    header.is-large nav {
+        font-size:14px;
+    }
+}
+
 header.is-large nav:first-child {
     margin-right: 14%}
 header.is-large nav:last-child {
@@ -1274,6 +1282,8 @@ header.is-large .mobile {
     header.is-large {
     height: 110px;
 }
+
+
 
 header.is-large nav, header.is-large>.logotype {
     display: none;
@@ -1357,12 +1367,15 @@ header.is-large .mobile{
     -webkit-transform: translateY(50%);
     transform: translateY(50%);
 }
+
+
 @media (max-width:1023px) {
     .about-main .logotype {
     margin-bottom: 7%;     
     margin-top: 7%;
     font-size: 56px;
 }
+
 .about-main .logotype svg {
     margin-bottom: 42px!important;
 }

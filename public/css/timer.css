@@ -1,0 +1,94 @@
+#countup {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+    font-family: "Lato",Helvetica,Arial,sans-serif;
+}
+#countup span.number {
+	display: block;
+	padding: 0px;
+	margin: 0;
+	font-size:70px;
+	line-height: 75px;
+	text-align: center;
+}
+#countup span.label {
+	display: block;
+	font-size:25px;
+	line-height: 30px;					
+}
+
+#countup .part {
+	display: inline-block;
+	text-align: center;
+    width: 22%;
+    height: 22%;
+	padding: 1%;
+}
+
+@media only screen and (max-width: 1200px) {
+	#countup span.number {
+		font-size:60px;
+		line-height: 65px;
+		text-align: center;
+	}
+	#countup span.label {
+		display: block;
+		font-size: 20px;
+		line-height: 25px;					
+	}
+
+}
+
+@media only screen and (max-width: 820px) {
+	#countup span.number {
+		display: block;
+		padding: 0px;
+		margin: 0;
+		font-size:40px;
+		line-height: 45px;
+		text-align: center;
+	}
+	#countup span.label {
+		display: block;
+		font-size:15px;
+		line-height: 15px;					
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	#countup span.number {
+		display: block;
+		padding: 0px;
+		margin: 0;
+		font-size:30px;
+		line-height: 35px;
+		text-align: center;
+	}
+	#countup span.label {
+		display: block;
+		font-size:12px;
+		line-height: 12px;					
+	}
+}
+
+.timer-wrapper{
+    position: relative;
+    width: 100%;
+}
+
+.timer-container{
+    margin-top: -100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-heading{
+    font-size: 48px;
+    padding:7%;
+}
+
+
