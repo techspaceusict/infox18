@@ -385,6 +385,20 @@ canvas {
 .is-ready .projects-background {
     opacity: 1;
 }
+
+#scroll_to_top{
+    width:45px;
+    height: 50px;
+    -webkit-clip-path: polygon(48.78% .24%, 48.48% .39%, 1.65% 23.98%, 1.35% 24.13%, 1.05% 24.28%, .79% 24.47%, .56% 24.7%, .37% 24.95%, .21% 25.22%, .1% 25.5%, .02% 25.8%, .02% 26.1%, 0 74.01%, .04% 74.31%, .13% 74.6%, .26% 74.88%, .43% 75.14%, .64% 75.38%, .87% 75.6%, 1.15% 75.77%, 1.45% 75.92%, 48.58% 99.66%, 48.89% 99.8%, 49.21% 99.91%, 49.55% 99.97%, 49.89% 100%, 50.23% 100%, 50.57% 99.96%, 50.91% 99.89%, 51.23% 99.78%, 51.53% 99.63%, 98.35% 76.03%, 98.65% 75.88%, 98.94% 75.72%, 99.21% 75.53%, 99.43% 75.3%, 99.63% 75.05%, 99.78% 74.79%, 99.9% 74.5%, 99.98% 74.21%, 100% 73.91%, 100% 26.3%, 100% 26%, 99.96% 25.7%, 99.86% 25.41%, 99.73% 25.13%, 99.56% 24.87%, 99.36% 24.62%, 99.12% 24.41%, 98.85% 24.23%, 98.55% 24.08%, 51.43% .32%, 51.12% .18%, 50.8% .08%, 50.46% .02%, 50.12% 0, 49.77% .01%, 49.43% .05%, 49.1% .12%, 48.78% .24%);
+    clip-path: polygon(48.78% .24%, 48.48% .39%, 1.65% 23.98%, 1.35% 24.13%, 1.05% 24.28%, .79% 24.47%, .56% 24.7%, .37% 24.95%, .21% 25.22%, .1% 25.5%, .02% 25.8%, .02% 26.1%, 0 74.01%, .04% 74.31%, .13% 74.6%, .26% 74.88%, .43% 75.14%, .64% 75.38%, .87% 75.6%, 1.15% 75.77%, 1.45% 75.92%, 48.58% 99.66%, 48.89% 99.8%, 49.21% 99.91%, 49.55% 99.97%, 49.89% 100%, 50.23% 100%, 50.57% 99.96%, 50.91% 99.89%, 51.23% 99.78%, 51.53% 99.63%, 98.35% 76.03%, 98.65% 75.88%, 98.94% 75.72%, 99.21% 75.53%, 99.43% 75.3%, 99.63% 75.05%, 99.78% 74.79%, 99.9% 74.5%, 99.98% 74.21%, 100% 73.91%, 100% 26.3%, 100% 26%, 99.96% 25.7%, 99.86% 25.41%, 99.73% 25.13%, 99.56% 24.87%, 99.36% 24.62%, 99.12% 24.41%, 98.85% 24.23%, 98.55% 24.08%, 51.43% .32%, 51.12% .18%, 50.8% .08%, 50.46% .02%, 50.12% 0, 49.77% .01%, 49.43% .05%, 49.1% .12%, 48.78% .24%);
+    background-color:rgb(153, 0, 255);
+    position:fixed;
+    bottom:2%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .collaborations-background .container:before {
     background-image: url(../img/projects/Projects_bg_2.jpg);
     background-position: center;
@@ -2053,6 +2067,30 @@ header.is-large .mobile{
     content: '';
     display: block;
     padding-top: 100%}
+
+.fig-text{
+    display:flex;
+    align-items: center;
+    font-size: 24px;
+    justify-content: center;
+}
+
+@media (max-width:1023px){
+    .fig-text{font-size: 18px;}
+}
+
+@media (max-width:767px){
+    .fig-text{font-size: 15px;}
+}
+
+/* @media (max-width:690px){
+    .fig-text{font-size: 12px;}
+} */
+
+@media (max-width:479px){
+    .fig-text{font-size: 10px;}
+}
+
 .collaborations-list h2, .projects-list h2 {
     left: 0;
     margin: 0;
@@ -2125,12 +2163,13 @@ header.is-large .mobile{
     transform: translate(-50%, -50%);
     top: 50%;
     width: 131.58%}
-@media (max-width:767px) and (orientation:landscape) {
+
+}@media (max-width:767px) and (orientation:landscape) {
     .projects-list {
     padding-top: 12%}
 }@media (max-width:767px) and (orientation:portrait) {
     .projects-list {
-    padding-top: 32%}
+    padding-top: 22%}
 }.collaborations-list {
     margin-top: 14%}
 .collaborations-list .container:before {
@@ -3761,4 +3800,46 @@ to {
 .not-found-block p {
     margin-bottom: 20px!important;
 }
+}
+
+/* clock */
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #343434;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: grey;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 2000px) {
+    #clockdiv {
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #clockdiv {
+       margin-left: -5px;
+    }
 }
