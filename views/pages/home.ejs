@@ -1,6 +1,5 @@
 <% include ../partials/header-links1 %> <!--Contains header links for Home Page-->
 
-
 <body>
 
 <% include ../partials/svg-and-style %> <!--Header Svg or inline css he ismein-->
@@ -104,38 +103,20 @@
         <div class="circle"></div>
       </div>
     </div>
+    <!-- <% include ../partials/timer%> -->
     <div class="hidden-box">
       <div class="container" >
-        <div class="composition">
-          <!-- <img src="img/about/mission.png" /> -->
-          <div id="clockdiv" class="media-changer">
-            <div>
-              <span class="days"></span>
-              <div class="smalltext">Days</div>
-            </div>
-            <div>
-              <span class="hours"></span>
-              <div class="smalltext">Hours</div>
-            </div>
-            <div>
-              <span class="minutes"></span>
-              <div class="smalltext">Minutes</div>
-            </div>
-            <div>
-              <span class="seconds"></span>
-              <div class="smalltext">Seconds</div>
+          <div class="timer-container">
+            <div class="timer-heading">Fest Starts In...</div>
+            <div class="timer-wrapper">
+                <% include ../partials/timer%>
             </div>
           </div>
-        </div>
-        <div class="text-block">
-          <h2>Coming Soon</h2>
-          <p>We will be coming back this year very soon with same excitment and fun .</p>
-        </div>
-        
-        
       </div>
     </div>
   </section>
+
+
 
 <section class="about-open_source">
   <div class="container">
@@ -160,6 +141,14 @@
 <script src="js/common.js"></script>
 <script src="js/clock.js"></script>
 <script src="js/about.js"></script>
+<script src="js/timer.js"></script>
+<!-- <% include ../partials/timer%> -->
+
+<!-- These are probably out dated so you might want to use newest versions -->
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+<!-- <script src="../node_modules/progressbar.js"></script> -->
+
+<script src="js/timer.js"></script>
 
 <% include ../partials/particles %>
 
