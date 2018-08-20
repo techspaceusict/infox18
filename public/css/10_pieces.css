@@ -25,7 +25,7 @@
     height: 515px;
     background: #00ff00;
     clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
-    animation: one 20s ease-in-out 0.1s infinite;
+    animation: one 15s ease-in-out 0.1s infinite;
 }
 
   .div2 {
@@ -34,7 +34,7 @@
     height: 515px;
     background: #00ff00;
     clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
-    animation: two 20s ease-in-out 0.2s infinite;
+    animation: two 15s ease-in-out 0.2s infinite;
   }
 
   .div3 {
@@ -42,7 +42,7 @@
     height: 515px;
     background: #1A1A1A;
     clip-path: polygon(77% 16%, 50% 0, 23% 16%);
-    animation: three 20s ease-in-out 0.3s infinite;
+    animation: three 15s ease-in-out 0.3s infinite;
   }
 
   .div4 {
@@ -50,7 +50,7 @@
     height: 515px;
     background: #666666;
     clip-path: polygon(77% 16%, 51% 32%, 23% 16%);  
-    animation: four 20s ease-in-out 0.4s infinite;
+    animation: four 15s ease-in-out 0.4s infinite;
 }
 
   .div5 {
@@ -58,7 +58,7 @@
     height: 515px;
     background: #b3b3b3;
     clip-path: polygon(18% 43%, 3% 84%, 0 52%);
-    animation: five 20s ease-in-out 0.5s infinite;  
+    animation: five 15s ease-in-out 0.5s infinite;  
 }
 
   .div6 {
@@ -66,7 +66,7 @@
     height: 515px;
     background: #ba0000;
     clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
-    animation: six 20s ease-in-out 0.6s infinite;  
+    animation: six 15s ease-in-out 0.6s infinite;  
 }
 
   .div7 {
@@ -74,7 +74,7 @@
     height: 515px;
     background: #990000;
     clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
-    animation:  seven 20s ease-in-out 0.7s infinite;  
+    animation:  seven 15s ease-in-out 0.7s infinite;  
 }
 
   .div8 {
@@ -82,7 +82,7 @@
     height: 515px;
     background: red;
     clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
-    animation: eight 20s ease-in-out 0.8s infinite;
+    animation: eight 15s ease-in-out 0.8s infinite;
 }
 
   .div9 {
@@ -90,7 +90,7 @@
     height: 515px;
     background: orange;
     clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
-    animation: nine 20s ease-in-out 0.9s infinite;  
+    animation: nine 15s ease-in-out 0.9s infinite;  
 }
 
 .div10{
@@ -98,7 +98,7 @@
     height: 515px;
     background-color:#e6e6e6;
     clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
-    animation: ten 20s ease-in-out 1s infinite;
+    animation: ten 15s ease-in-out 1s infinite;
 }
   
   @keyframes one {
