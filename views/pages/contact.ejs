@@ -7,6 +7,7 @@
 <div id="test"> <!--class="nav-wrapper"-->
   <header class="is-large">
       <% include ../partials/navbar %> <!-- Common navbar he ismein -->
+      
   </header>
 </div>
 
@@ -45,24 +46,47 @@
 </div>
 
 <section class="join-main-block">
-  <div class="container">
-    <h1>Work with Protocol Labs</h1>
-    <p>We make protocols, systems, and tools that anybody can use.</p>
-    <p>Our work is Open Source and our community is inclusive.</p>
-    <p>You -- and everyone -- are invited to contribute!</p>
-    <a class="btn" href="https://jobs.lever.co/protocol">View current openings</a>
-  </div>
+
+  <div class="shade" style="padding-top: 100px;">
+    <div class="blackboard">
+        <div class="form">
+            <p>
+                <label>Name: </label>
+                <input type="text" />
+            </p>
+            <p>
+                <label>Email: </label>
+                <input type="text" />
+            </p>
+            <p>
+                <label>Phone: </label>
+                <input type="tel" />
+            </p>
+            <p>
+                <label>Subject: </label>
+                <input type="text" />
+            </p>
+            <p>
+                <label>Message: </label>
+                <textarea></textarea>
+            </p>
+            <p class="wipeout">
+                <input type="submit" value="Send" />
+            </p>
+        </div>
+    </div>
+</div>
+
 </section>
-<section class="join-blue-block join-left-text-block">
-  <div class="container">
-    <h2>Where We’re Headed</h2>
-    <p>We believe the internet is our most important technology. How it functions or fails can have drastic impact on people's lives and their capabilities.</p>
-    <p>We are passionately focused on creating the world's foremost <b>research, development, and deployment institution for network protocols</b> so that we can upgrade the internet.</p>
-    <p>Our first endeavor is to drastically improve the architecture of the internet by changing how people store, address, and transmit data. It's one of many protocols we will develop in order to fundamentally improve computing for humanity.</p>
-    <p>To learn more about our vision for the company, read Juan Benet's blog post <a href="../blog/protocol-labs-creating-new-networks/index.html">PROTOCOL LABS: CREATING NEW NETWORKS</a>.</p>
+
+<!-- <section class="join-blue-block join-left-text-block">
+  
+  <div>
+    
   </div>
-</section>
-<section class="join-pink-block join-left-text-block">
+
+</section> -->
+<!-- <section class="join-pink-block join-left-text-block">
   <div class="container">
     <h2>People and Locations</h2>
     <p>Just like the internet itself, we are a fully distributed team spread across the globe. We don’t let geography or borders define us -- <i>we want to work with talented and intellectually curious people of diverse backgrounds and different perspectives.</i> If you align passionately with our mission, we want to talk to you, no matter whether you're in Tokyo or Timbuktu.</p>
@@ -161,7 +185,7 @@
     <p>Help us build and secure tomorrow's network protocols.</p>
     <a class="btn" href="https://jobs.lever.co/protocol">View current openings</a>
   </div>
-</section>
+</section> -->
 
 <footer>
   <% include ../partials/footer %>
