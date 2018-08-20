@@ -362,3 +362,8 @@
 	}
   }
   
+@media only screen and (max-width:479px){
+	.envelope{
+		transform:scale(0.5);
+	}
+}
