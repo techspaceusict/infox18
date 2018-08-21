@@ -38,7 +38,7 @@
   }
 
   .envelope {
-	transform: scale(0.8);
+	transform: scale(0.9);
 	z-index: 10;
 	position: relative;
 	display: block;
@@ -364,6 +364,6 @@
   
 @media only screen and (max-width:479px){
 	.envelope{
-		transform:scale(0.5);
+		transform:scale(0.6;
 	}
 }
