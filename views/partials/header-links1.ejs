@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="css/mobile-menu.css" type="text/css">
 <link href="css/timer.css" rel="stylesheet">
 <link href="css/scrollbar.css" rel="stylesheet">
+<link rel="stylesheet" href="css/preloader.css">
 
 <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
 <script type="text/javascript" src="js/mobile-menu.js"></script>
@@ -45,6 +46,21 @@ ga('send', 'pageview');
 
 <script type="text/javascript" src="http://www.thepetedesign.com/demos/tiltedpage_scroll/jquery.tiltedpage-scroll.js"></script>
 <link href='http://www.thepetedesign.com/demos/tiltedpage_scroll/tiltedpage-scroll.css' rel='stylesheet' type='text/css'>
+
+<script>
+  $(document).ready(function() {
+  //Preloader
+  $(window).on("load", function() {
+  preloaderFadeOutTime = 500;
+  function hidePreloader() {
+  var preloader = $('.spinner-wrapper');
+  preloader.fadeOut(preloaderFadeOutTime);
+  }
+  hidePreloader();
+  });
+  });
+  </script>
+
 
   <title>Infox</title>
 </head>
