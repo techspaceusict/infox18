@@ -22,7 +22,6 @@
     "override": "0.0.1",
     "particles.js": "^2.0.0",
     "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
-    "progressbar.js": "^1.0.1"
+    "passport-local": "^1.0.0"
   }
 }
