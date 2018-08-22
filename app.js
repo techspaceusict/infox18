@@ -9,8 +9,9 @@ const express = require("express"),
     session = require('express-session'),
     configDB = require('./config/db'),
     Users = require('./models/user');
+require('dotenv').load();
 
-mongoose.connect(configDB.url, {useNewUrlParser: true})
+mongoose.connect(configDB.url || process.env.url, {useNewUrlParser: true})
     .then(function () {
         console.log("mongo connected!");
     })
@@ -22,7 +23,7 @@ require('./config/passport')(passport);
 app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(session({
-    secret: process.env.SESSION_SECRET || 'infox123',
+    secret: process.env.SESSION_SECRET,
     saveUninitialized: true,
     resave: true
 }));
@@ -60,6 +61,22 @@ app.post('/signIn', passport.authenticate('local-signIn', {
     failureRedirect: '/signIn',
     failureFlash: true
 }));
+
+app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email'] }));
+
+// Facebook will redirect the user to this URL after approval.  Finish the
+// authentication process by attempting to obtain an access token.  If
+// access was granted, the user will be logged in.  Otherwise,
+// authentication has failed.
+app.get('/auth/facebook/callback',
+    passport.authenticate('facebook', { successRedirect: '/profile',
+        failureRedirect: '/signIn' }));
+
+app.get('/auth/google', passport.authenticate('google', { scope: ['email'] }));
+
+app.get('/auth/google/callback',
+    passport.authenticate('google', { successRedirect: '/profile',
+        failureRedirect: '/signIn' }));
 
 app.get('/profile', isLoggedIn, function (req, res) {
     console.log(req.user);
