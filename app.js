@@ -23,7 +23,7 @@ require('./config/passport')(passport);
 app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: process.env.SESSION_SECRET || 'infox123',
     saveUninitialized: true,
     resave: true
 }));
