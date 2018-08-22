@@ -16,11 +16,11 @@ For beginners:
 2. Fork the project to your account.
 3. Clone your project fork to your computer.
 ```
-git clone git@github.com:yourgithubuser/infox17.git
+git clone git@github.com:yourgithubuser/infox18.git
 ```
 4. Add the original project repo as upstream repository in your forked project.
 ```
-git remote add upstream git@github.com:entity/infox17.git
+git remote add upstream git@github.com:entity/infox18.git
 ```
 5. Create a new branch from master.
 ```
