@@ -1,5 +1,7 @@
-  .wrapper_container div {
-    transform:scale(0.6);
+.wrapper_container div {
+    -webkit-transform:scale(0.6);
+        -ms-transform:scale(0.6);
+            transform:scale(0.6);
     cursor: pointer;
     position: absolute;
   }
@@ -13,9 +15,15 @@
     /*top:-150px; */
       height: 450px;
       width: 400px;
+      display:-webkit-box;
+      display:-ms-flexbox;
       display:flex;
-      align-items: center;
-      justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       /* flex-wrap:wrap; */
   }
 
@@ -24,8 +32,10 @@
     width: 322px;
     height: 515px;
     background: #00ff00;
-    clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
-    animation: one 15s ease-in-out 0.1s infinite;
+    -webkit-clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+            clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+    -webkit-animation: one 15s ease-in-out 0.1s infinite;
+            animation: one 15s ease-in-out 0.1s infinite;
 }
 
   .div2 {
@@ -33,137 +43,314 @@
     width: 322px;
     height: 515px;
     background: #00ff00;
-    clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
-    animation: two 15s ease-in-out 0.2s infinite;
+    -webkit-clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+            clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+    -webkit-animation: two 15s ease-in-out 0.2s infinite;
+            animation: two 15s ease-in-out 0.2s infinite;
   }
 
   .div3 {
     width: 322px;
     height: 515px;
     background: #1A1A1A;
-    clip-path: polygon(77% 16%, 50% 0, 23% 16%);
-    animation: three 15s ease-in-out 0.3s infinite;
+    -webkit-clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+            clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+    -webkit-animation: three 15s ease-in-out 0.3s infinite;
+            animation: three 15s ease-in-out 0.3s infinite;
   }
 
   .div4 {
     width: 322px;
     height: 515px;
     background: #666666;
-    clip-path: polygon(77% 16%, 51% 32%, 23% 16%);  
-    animation: four 15s ease-in-out 0.4s infinite;
+    -webkit-clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
+            clip-path: polygon(77% 16%, 51% 32%, 23% 16%);  
+    -webkit-animation: four 15s ease-in-out 0.4s infinite;  
+            animation: four 15s ease-in-out 0.4s infinite;
 }
 
   .div5 {
     width: 322px;
     height: 515px;
     background: #b3b3b3;
-    clip-path: polygon(18% 43%, 3% 84%, 0 52%);
-    animation: five 15s ease-in-out 0.5s infinite;  
+    -webkit-clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+            clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+    -webkit-animation: five 15s ease-in-out 0.5s infinite;
+            animation: five 15s ease-in-out 0.5s infinite;  
 }
 
   .div6 {
     width: 322px;
     height: 515px;
     background: #ba0000;
-    clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
-    animation: six 15s ease-in-out 0.6s infinite;  
+    -webkit-clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+            clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+    -webkit-animation: six 15s ease-in-out 0.6s infinite;
+            animation: six 15s ease-in-out 0.6s infinite;  
 }
 
   .div7 {
     width: 322px;
     height: 515px;
     background: #990000;
-    clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
-    animation:  seven 15s ease-in-out 0.7s infinite;  
+    -webkit-clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+            clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+    -webkit-animation:  seven 15s ease-in-out 0.7s infinite;
+            animation:  seven 15s ease-in-out 0.7s infinite;  
 }
 
   .div8 {
     width: 322px;
     height: 515px;
     background: red;
-    clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
-    animation: eight 15s ease-in-out 0.8s infinite;
+    -webkit-clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+            clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+    -webkit-animation: eight 15s ease-in-out 0.8s infinite;
+            animation: eight 15s ease-in-out 0.8s infinite;
 }
 
   .div9 {
     width: 322px;
     height: 515px;
     background: orange;
-    clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
-    animation: nine 15s ease-in-out 0.9s infinite;  
+    -webkit-clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+            clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+    -webkit-animation: nine 15s ease-in-out 0.9s infinite;
+            animation: nine 15s ease-in-out 0.9s infinite;  
 }
 
 .div10{
     width:322px;
     height: 515px;
     background-color:#e6e6e6;
-    clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
-    animation: ten 15s ease-in-out 1s infinite;
+    -webkit-clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
+            clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
+    -webkit-animation: ten 15s ease-in-out 1s infinite;
+            animation: ten 15s ease-in-out 1s infinite;
 }
   
-  @keyframes one {
+  @-webkit-keyframes one {
     13% {
         width: 493px;
         height: 346px;
         background: black;
-        clip-path: polygon(74% 0, 74% 66%, 42% 32%);
+        -webkit-clip-path: polygon(74% 0, 74% 66%, 42% 32%);
+                clip-path: polygon(74% 0, 74% 66%, 42% 32%);
     }
     30%{
         width: 493px;
         height: 346px;
         background: black;
-        clip-path: polygon(74% 0, 74% 66%, 42% 32%);
+        -webkit-clip-path: polygon(74% 0, 74% 66%, 42% 32%);
+                clip-path: polygon(74% 0, 74% 66%, 42% 32%);
     }
     33%{
         width: 466px;
         height: 397px;
         background: black;
-        clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
+        -webkit-clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
+                clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
     }
     50%{
         width: 466px;
         height: 397px;
         background: black;
-        clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
+        -webkit-clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
+                clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
     }
     53%{
         width: 643px;
         height: 302px;
         background: #1a1a1a;
-        clip-path: polygon(77% 0, 0 0, 0 98%);
+        -webkit-clip-path: polygon(77% 0, 0 0, 0 98%);
+                clip-path: polygon(77% 0, 0 0, 0 98%);
 
     }
     70%{
         width: 643px;
         height: 302px;
         background: #1a1a1a;
-        clip-path: polygon(77% 0, 0 0, 0 98%);
+        -webkit-clip-path: polygon(77% 0, 0 0, 0 98%);
+                clip-path: polygon(77% 0, 0 0, 0 98%);
     }
     73%{
         width: 376px;
         height: 365px;
         background: rgb(255, 255, 0);
-        clip-path: polygon(58% 38%, 62% 0, 75% 25%);
+        -webkit-clip-path: polygon(58% 38%, 62% 0, 75% 25%);
+                clip-path: polygon(58% 38%, 62% 0, 75% 25%);
 
     }
     90%{
         width: 376px;
         height: 365px;
         background: rgb(255, 255, 0);
-        clip-path: polygon(58% 38%, 62% 0, 75% 25%);
+        -webkit-clip-path: polygon(58% 38%, 62% 0, 75% 25%);
+                clip-path: polygon(58% 38%, 62% 0, 75% 25%);
 
     }
     93%{
         width: 322px;
         height: 515px;
         background: #00ff00;
-        clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+        -webkit-clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+                clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
     }
     10%{
         width: 322px;
         height: 515px;
         background: #00ff00;
-        clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+        -webkit-clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+                clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+    }
+  }
+  
+  @keyframes one {
+    13% {
+        width: 493px;
+        height: 346px;
+        background: black;
+        -webkit-clip-path: polygon(74% 0, 74% 66%, 42% 32%);
+                clip-path: polygon(74% 0, 74% 66%, 42% 32%);
+    }
+    30%{
+        width: 493px;
+        height: 346px;
+        background: black;
+        -webkit-clip-path: polygon(74% 0, 74% 66%, 42% 32%);
+                clip-path: polygon(74% 0, 74% 66%, 42% 32%);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: black;
+        -webkit-clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
+                clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: black;
+        -webkit-clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
+                clip-path: polygon(79% 45%, 79% 38%, 76% 39%);
+    }
+    53%{
+        width: 643px;
+        height: 302px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(77% 0, 0 0, 0 98%);
+                clip-path: polygon(77% 0, 0 0, 0 98%);
+
+    }
+    70%{
+        width: 643px;
+        height: 302px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(77% 0, 0 0, 0 98%);
+                clip-path: polygon(77% 0, 0 0, 0 98%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background: rgb(255, 255, 0);
+        -webkit-clip-path: polygon(58% 38%, 62% 0, 75% 25%);
+                clip-path: polygon(58% 38%, 62% 0, 75% 25%);
+
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background: rgb(255, 255, 0);
+        -webkit-clip-path: polygon(58% 38%, 62% 0, 75% 25%);
+                clip-path: polygon(58% 38%, 62% 0, 75% 25%);
+
+    }
+    93%{
+        width: 322px;
+        height: 515px;
+        background: #00ff00;
+        -webkit-clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+                clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+    }
+    10%{
+        width: 322px;
+        height: 515px;
+        background: #00ff00;
+        -webkit-clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+                clip-path: polygon(65% 14%, 59% 10%, 52% 14%);
+    }
+  }
+
+  @-webkit-keyframes two {
+    13% {
+        width: 493px;
+        height: 346px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
+                clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
+    }
+    30%{
+        width: 493px;
+        height: 346px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
+                clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: #7a3d00;
+        -webkit-clip-path: polygon(100% 21%, 78% 0, 45% 54%);
+                clip-path: polygon(100% 21%, 78% 0, 45% 54%);
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: #7a3d00;
+        -webkit-clip-path: polygon(100% 21%, 78% 0, 45% 54%);
+                clip-path: polygon(100% 21%, 78% 0, 45% 54%);
+    }
+    53%{
+        width: 643px;
+        height: 302px;  
+        background: #333333;
+        -webkit-clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
+                clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
+    }
+    70%{
+        width: 643px;
+        height: 302px;  
+        background: #333333;
+        -webkit-clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
+                clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background: rgb(255, 255, 132);
+        -webkit-clip-path: polygon(57% 51%, 62% 0, 40% 0);
+                clip-path: polygon(57% 51%, 62% 0, 40% 0);
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background: rgb(255, 255, 132);
+        -webkit-clip-path: polygon(57% 51%, 62% 0, 40% 0);
+                clip-path: polygon(57% 51%, 62% 0, 40% 0);
+    }
+    93%{
+        width: 322px;
+        height: 515px;
+        background: #00ff00;
+        -webkit-clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+                clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+    }
+    10%{
+        width: 322px;
+        height: 515px;
+        background: #00ff00;
+        -webkit-clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+                clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
     }
   }
 
@@ -172,61 +359,144 @@
         width: 493px;
         height: 346px;
         background: #1a1a1a;
-        clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
+        -webkit-clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
+                clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
     }
     30%{
         width: 493px;
         height: 346px;
         background: #1a1a1a;
-        clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
+        -webkit-clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
+                clip-path: polygon(8% 67%, 74% 66%, 42% 32%);
     }
     33%{
         width: 466px;
         height: 397px;
         background: #7a3d00;
-        clip-path: polygon(100% 21%, 78% 0, 45% 54%);
+        -webkit-clip-path: polygon(100% 21%, 78% 0, 45% 54%);
+                clip-path: polygon(100% 21%, 78% 0, 45% 54%);
     }
     50%{
         width: 466px;
         height: 397px;
         background: #7a3d00;
-        clip-path: polygon(100% 21%, 78% 0, 45% 54%);
+        -webkit-clip-path: polygon(100% 21%, 78% 0, 45% 54%);
+                clip-path: polygon(100% 21%, 78% 0, 45% 54%);
     }
     53%{
         width: 643px;
         height: 302px;  
         background: #333333;
-        clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
+        -webkit-clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
+                clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
     }
     70%{
         width: 643px;
         height: 302px;  
         background: #333333;
-        clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
+        -webkit-clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
+                clip-path: polygon(77% -0.1%, 78% 97%, -0.1% 98%);
     }
     73%{
         width: 376px;
         height: 365px;
         background: rgb(255, 255, 132);
-        clip-path: polygon(57% 51%, 62% 0, 40% 0);
+        -webkit-clip-path: polygon(57% 51%, 62% 0, 40% 0);
+                clip-path: polygon(57% 51%, 62% 0, 40% 0);
     }
     90%{
         width: 376px;
         height: 365px;
         background: rgb(255, 255, 132);
-        clip-path: polygon(57% 51%, 62% 0, 40% 0);
+        -webkit-clip-path: polygon(57% 51%, 62% 0, 40% 0);
+                clip-path: polygon(57% 51%, 62% 0, 40% 0);
     }
     93%{
         width: 322px;
         height: 515px;
         background: #00ff00;
-        clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+        -webkit-clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+                clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
     }
     10%{
         width: 322px;
         height: 515px;
         background: #00ff00;
-        clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+        -webkit-clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+                clip-path: polygon(48% 14%, 42% 10%, 36% 14%);
+    }
+  }
+
+  @-webkit-keyframes three {
+    13% {
+        width: 493px;
+        height: 346px;
+        background: #333333;
+        -webkit-clip-path: polygon(8% 67%, 9% 0, 74% 0);
+                clip-path: polygon(8% 67%, 9% 0, 74% 0);
+    }
+    30%{
+        width: 493px;
+        height: 346px;
+        background: #333333;
+        -webkit-clip-path: polygon(8% 67%, 9% 0, 74% 0);
+                clip-path: polygon(8% 67%, 9% 0, 74% 0);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: #663300;
+        -webkit-clip-path: polygon(22% 8%, 78% 0, 46% 55%);
+                clip-path: polygon(22% 8%, 78% 0, 46% 55%);
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: #663300;
+        -webkit-clip-path: polygon(22% 8%, 78% 0, 46% 55%);
+                clip-path: polygon(22% 8%, 78% 0, 46% 55%);
+    }
+    53%{
+        width: 643px;
+        height: 302px;
+        background:rgb(0, 187, 0); 
+        -webkit-clip-path: polygon(95% 80%, 92% 100%, 92% 84%); 
+                clip-path: polygon(95% 80%, 92% 100%, 92% 84%);
+    }
+    70%{
+        width: 643px;
+        height: 302px;
+        background:rgb(0, 187, 0); 
+        -webkit-clip-path: polygon(95% 80%, 92% 100%, 92% 84%); 
+                clip-path: polygon(95% 80%, 92% 100%, 92% 84%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background:darkred; 
+        -webkit-clip-path: polygon(55% 53%, 43% 56%, 44% 53%); 
+                clip-path: polygon(55% 53%, 43% 56%, 44% 53%);
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background:darkred; 
+        -webkit-clip-path: polygon(55% 53%, 43% 56%, 44% 53%); 
+                clip-path: polygon(55% 53%, 43% 56%, 44% 53%);
+    }
+    93%{
+        width: 322px;
+        height: 515px;
+        background: #1A1A1A;
+        -webkit-clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+                clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+    }
+    10%{
+        width: 322px;
+        height: 515px;
+        background: #1A1A1A;
+        -webkit-clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+                clip-path: polygon(77% 16%, 50% 0, 23% 16%);
     }
   }
 
@@ -235,61 +505,144 @@
         width: 493px;
         height: 346px;
         background: #333333;
-        clip-path: polygon(8% 67%, 9% 0, 74% 0);
+        -webkit-clip-path: polygon(8% 67%, 9% 0, 74% 0);
+                clip-path: polygon(8% 67%, 9% 0, 74% 0);
     }
     30%{
         width: 493px;
         height: 346px;
         background: #333333;
-        clip-path: polygon(8% 67%, 9% 0, 74% 0);
+        -webkit-clip-path: polygon(8% 67%, 9% 0, 74% 0);
+                clip-path: polygon(8% 67%, 9% 0, 74% 0);
     }
     33%{
         width: 466px;
         height: 397px;
         background: #663300;
-        clip-path: polygon(22% 8%, 78% 0, 46% 55%);
+        -webkit-clip-path: polygon(22% 8%, 78% 0, 46% 55%);
+                clip-path: polygon(22% 8%, 78% 0, 46% 55%);
     }
     50%{
         width: 466px;
         height: 397px;
         background: #663300;
-        clip-path: polygon(22% 8%, 78% 0, 46% 55%);
+        -webkit-clip-path: polygon(22% 8%, 78% 0, 46% 55%);
+                clip-path: polygon(22% 8%, 78% 0, 46% 55%);
     }
     53%{
         width: 643px;
         height: 302px;
         background:rgb(0, 187, 0); 
-        clip-path: polygon(95% 80%, 92% 100%, 92% 84%);
+        -webkit-clip-path: polygon(95% 80%, 92% 100%, 92% 84%); 
+                clip-path: polygon(95% 80%, 92% 100%, 92% 84%);
     }
     70%{
         width: 643px;
         height: 302px;
         background:rgb(0, 187, 0); 
-        clip-path: polygon(95% 80%, 92% 100%, 92% 84%);
+        -webkit-clip-path: polygon(95% 80%, 92% 100%, 92% 84%); 
+                clip-path: polygon(95% 80%, 92% 100%, 92% 84%);
     }
     73%{
         width: 376px;
         height: 365px;
         background:darkred; 
-        clip-path: polygon(55% 53%, 43% 56%, 44% 53%);
+        -webkit-clip-path: polygon(55% 53%, 43% 56%, 44% 53%); 
+                clip-path: polygon(55% 53%, 43% 56%, 44% 53%);
     }
     90%{
         width: 376px;
         height: 365px;
         background:darkred; 
-        clip-path: polygon(55% 53%, 43% 56%, 44% 53%);
+        -webkit-clip-path: polygon(55% 53%, 43% 56%, 44% 53%); 
+                clip-path: polygon(55% 53%, 43% 56%, 44% 53%);
     }
     93%{
         width: 322px;
         height: 515px;
         background: #1A1A1A;
-        clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+        -webkit-clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+                clip-path: polygon(77% 16%, 50% 0, 23% 16%);
     }
     10%{
         width: 322px;
         height: 515px;
         background: #1A1A1A;
-        clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+        -webkit-clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+                clip-path: polygon(77% 16%, 50% 0, 23% 16%);
+    }
+  }
+
+  @-webkit-keyframes four {
+    13% {
+        width: 493px;
+        height: 346px;
+        background: red;
+        -webkit-clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
+                clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
+    }
+    30%{
+        width: 493px;
+        height: 346px;
+        background: red;
+        -webkit-clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
+                clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: rgb(255, 123, 34);
+        -webkit-clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
+                clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: rgb(255, 123, 34);
+        -webkit-clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
+                clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
+    }
+    53%{
+        width: 643px;
+        height: 302px;
+        background: lawngreen;
+        -webkit-clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
+                clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
+    }
+    70%{
+        width: 643px;
+        height: 302px;
+        background: lawngreen;
+        -webkit-clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
+                clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background: brown;
+        -webkit-clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
+                clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background: brown;
+        -webkit-clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
+                clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
+    }
+    93%{
+        width: 322px;
+        height: 515px;
+        background: #666666;
+        -webkit-clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
+                clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
+    }
+    10%{
+        width: 322px;
+        height: 515px;
+        background: #666666;
+        -webkit-clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
+                clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
     }
   }
 
@@ -298,61 +651,144 @@
         width: 493px;
         height: 346px;
         background: red;
-        clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
+        -webkit-clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
+                clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
     }
     30%{
         width: 493px;
         height: 346px;
         background: red;
-        clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
+        -webkit-clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
+                clip-path: polygon(41% 72%, 35% 66%, 47% 66%);
     }
     33%{
         width: 466px;
         height: 397px;
         background: rgb(255, 123, 34);
-        clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
+        -webkit-clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
+                clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
     }
     50%{
         width: 466px;
         height: 397px;
         background: rgb(255, 123, 34);
-        clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
+        -webkit-clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
+                clip-path: polygon(45% 54%, 100% 47%, 100% 21%);
     }
     53%{
         width: 643px;
         height: 302px;
         background: lawngreen;
-        clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
+        -webkit-clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
+                clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
     }
     70%{
         width: 643px;
         height: 302px;
         background: lawngreen;
-        clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
+        -webkit-clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
+                clip-path: polygon(90% 84%, 90% 100%, 87% 80%);
     }
     73%{
         width: 376px;
         height: 365px;
         background: brown;
-        clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
+        -webkit-clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
+                clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
     }
     90%{
         width: 376px;
         height: 365px;
         background: brown;
-        clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
+        -webkit-clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
+                clip-path: polygon(58% 53%, 46% 56%, 56% 56%);
     }
     93%{
         width: 322px;
         height: 515px;
         background: #666666;
-        clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
+        -webkit-clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
+                clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
     }
     10%{
         width: 322px;
         height: 515px;
         background: #666666;
-        clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
+        -webkit-clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
+                clip-path: polygon(77% 16%, 51% 32%, 23% 16%);
+    }
+  }
+
+  @-webkit-keyframes five {
+    13% {
+        width: 493px;
+        height: 346px;
+        background: #4d4d4d;
+        -webkit-clip-path: polygon(10% 82%, 0 100%, 73% 83%);
+                clip-path: polygon(10% 82%, 0 100%, 73% 83%);
+    }
+    30%{
+        width: 493px;
+        height: 346px;
+        background: #4d4d4d;
+        -webkit-clip-path: polygon(10% 82%, 0 100%, 73% 83%);
+                clip-path: polygon(10% 82%, 0 100%, 73% 83%);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: #3c1e00;;
+        -webkit-clip-path: polygon(22% 8%, -1% 34%, 46% 55%);;
+                clip-path: polygon(22% 8%, -1% 34%, 46% 55%); 
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: #3c1e00;;
+        -webkit-clip-path: polygon(22% 8%, -1% 34%, 46% 55%);;
+                clip-path: polygon(22% 8%, -1% 34%, 46% 55%); 
+    }
+    53%{
+        width: 643px;
+        height: 302px;
+        background:rgb(0, 187, 0);
+        -webkit-clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
+                clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
+    }
+    70%{
+        width: 643px;
+        height: 302px;
+        background:rgb(0, 187, 0);
+        -webkit-clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
+                clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background:yellow;
+        -webkit-clip-path: polygon(57% 51%, 26% 22%, 40% 0);
+                clip-path: polygon(57% 51%, 26% 22%, 40% 0);
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background:yellow;
+        -webkit-clip-path: polygon(57% 51%, 26% 22%, 40% 0);
+                clip-path: polygon(57% 51%, 26% 22%, 40% 0);
+    }
+    93%{
+        width: 322px;
+        height: 515px;
+        background: #b3b3b3;
+        -webkit-clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+                clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+    }
+    10%{
+        width: 322px;
+        height: 515px;
+        background: #b3b3b3;
+        -webkit-clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+                clip-path: polygon(18% 43%, 3% 84%, 0 52%);
     }
   }
 
@@ -361,61 +797,144 @@
         width: 493px;
         height: 346px;
         background: #4d4d4d;
-        clip-path: polygon(10% 82%, 0 100%, 73% 83%);
+        -webkit-clip-path: polygon(10% 82%, 0 100%, 73% 83%);
+                clip-path: polygon(10% 82%, 0 100%, 73% 83%);
     }
     30%{
         width: 493px;
         height: 346px;
         background: #4d4d4d;
-        clip-path: polygon(10% 82%, 0 100%, 73% 83%);
+        -webkit-clip-path: polygon(10% 82%, 0 100%, 73% 83%);
+                clip-path: polygon(10% 82%, 0 100%, 73% 83%);
     }
     33%{
         width: 466px;
         height: 397px;
         background: #3c1e00;;
-        clip-path: polygon(22% 8%, -1% 34%, 46% 55%); 
+        -webkit-clip-path: polygon(22% 8%, -1% 34%, 46% 55%);;
+                clip-path: polygon(22% 8%, -1% 34%, 46% 55%); 
     }
     50%{
         width: 466px;
         height: 397px;
         background: #3c1e00;;
-        clip-path: polygon(22% 8%, -1% 34%, 46% 55%); 
+        -webkit-clip-path: polygon(22% 8%, -1% 34%, 46% 55%);;
+                clip-path: polygon(22% 8%, -1% 34%, 46% 55%); 
     }
     53%{
         width: 643px;
         height: 302px;
         background:rgb(0, 187, 0);
-        clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
+        -webkit-clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
+                clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
     }
     70%{
         width: 643px;
         height: 302px;
         background:rgb(0, 187, 0);
-        clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
+        -webkit-clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
+                clip-path: polygon(91% 42%, 95% 50%, 91% 56%);
     }
     73%{
         width: 376px;
         height: 365px;
         background:yellow;
-        clip-path: polygon(57% 51%, 26% 22%, 40% 0);
+        -webkit-clip-path: polygon(57% 51%, 26% 22%, 40% 0);
+                clip-path: polygon(57% 51%, 26% 22%, 40% 0);
     }
     90%{
         width: 376px;
         height: 365px;
         background:yellow;
-        clip-path: polygon(57% 51%, 26% 22%, 40% 0);
+        -webkit-clip-path: polygon(57% 51%, 26% 22%, 40% 0);
+                clip-path: polygon(57% 51%, 26% 22%, 40% 0);
     }
     93%{
         width: 322px;
         height: 515px;
         background: #b3b3b3;
-        clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+        -webkit-clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+                clip-path: polygon(18% 43%, 3% 84%, 0 52%);
     }
     10%{
         width: 322px;
         height: 515px;
         background: #b3b3b3;
-        clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+        -webkit-clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+                clip-path: polygon(18% 43%, 3% 84%, 0 52%);
+    }
+  }
+
+  @-webkit-keyframes six {
+    13% {
+        width: 493px;
+        height: 346px;
+        background: #333;
+        -webkit-clip-path: polygon(40% 100%, 0 100%, 73% 83%);
+                clip-path: polygon(40% 100%, 0 100%, 73% 83%);
+    }
+    30%{
+        width: 493px;
+        height: 346px;
+        background: #333;
+        -webkit-clip-path: polygon(40% 100%, 0 100%, 73% 83%);
+                clip-path: polygon(40% 100%, 0 100%, 73% 83%);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: #9e2800;
+        -webkit-clip-path: polygon(0 33%, 0 60%, 45% 100%);
+                clip-path: polygon(0 33%, 0 60%, 45% 100%);
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: #9e2800;
+        -webkit-clip-path: polygon(0 33%, 0 60%, 45% 100%);
+                clip-path: polygon(0 33%, 0 60%, 45% 100%);
+    }
+    53%{
+        width: 643px;
+        height: 302px;
+        background: lawngreen;
+        -webkit-clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
+                clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
+    }
+    70%{
+        width: 643px;
+        height: 302px;
+        background: lawngreen;
+        -webkit-clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
+                clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background: rgb(255, 208, 0);
+        -webkit-clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
+                clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background: rgb(255, 208, 0);
+        -webkit-clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
+                clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
+    }
+    93%{
+        width: 322px;
+        height: 515px;
+        background: #ba0000;
+        -webkit-clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+                clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+    }
+    10%{
+        width: 322px;
+        height: 515px;
+        background: #ba0000;
+        -webkit-clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+                clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
     }
   }
 
@@ -424,61 +943,144 @@
         width: 493px;
         height: 346px;
         background: #333;
-        clip-path: polygon(40% 100%, 0 100%, 73% 83%);
+        -webkit-clip-path: polygon(40% 100%, 0 100%, 73% 83%);
+                clip-path: polygon(40% 100%, 0 100%, 73% 83%);
     }
     30%{
         width: 493px;
         height: 346px;
         background: #333;
-        clip-path: polygon(40% 100%, 0 100%, 73% 83%);
+        -webkit-clip-path: polygon(40% 100%, 0 100%, 73% 83%);
+                clip-path: polygon(40% 100%, 0 100%, 73% 83%);
     }
     33%{
         width: 466px;
         height: 397px;
         background: #9e2800;
-        clip-path: polygon(0 33%, 0 60%, 45% 100%);
+        -webkit-clip-path: polygon(0 33%, 0 60%, 45% 100%);
+                clip-path: polygon(0 33%, 0 60%, 45% 100%);
     }
     50%{
         width: 466px;
         height: 397px;
         background: #9e2800;
-        clip-path: polygon(0 33%, 0 60%, 45% 100%);
+        -webkit-clip-path: polygon(0 33%, 0 60%, 45% 100%);
+                clip-path: polygon(0 33%, 0 60%, 45% 100%);
     }
     53%{
         width: 643px;
         height: 302px;
         background: lawngreen;
-        clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
+        -webkit-clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
+                clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
     }
     70%{
         width: 643px;
         height: 302px;
         background: lawngreen;
-        clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
+        -webkit-clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
+                clip-path: polygon(91% 42%, 87% 50%, 91% 56%);
     }
     73%{
         width: 376px;
         height: 365px;
         background: rgb(255, 208, 0);
-        clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
+        -webkit-clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
+                clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
     }
     90%{
         width: 376px;
         height: 365px;
         background: rgb(255, 208, 0);
-        clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
+        -webkit-clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
+                clip-path: polygon(57% 51%, 41% 36%, 42% 50%);
     }
     93%{
         width: 322px;
         height: 515px;
         background: #ba0000;
-        clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+        -webkit-clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+                clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
     }
     10%{
         width: 322px;
         height: 515px;
         background: #ba0000;
-        clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+        -webkit-clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+                clip-path: polygon(13% 62%, 50% 100%, 19% 43%);
+    }
+  }
+
+  @-webkit-keyframes seven {
+    13% {
+        width: 493px;        
+        height: 346px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
+                clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
+    }
+    30%{
+        width: 493px;        
+        height: 346px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
+                clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: #cc3300;
+        -webkit-clip-path: polygon(0 33%, 45% 54%, 45% 100%);
+                clip-path: polygon(0 33%, 45% 54%, 45% 100%);
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: #cc3300;
+        -webkit-clip-path: polygon(0 33%, 45% 54%, 45% 100%);
+                clip-path: polygon(0 33%, 45% 54%, 45% 100%);
+    }
+    53%{
+        width: 643px;
+        height: 302px;
+        background: lawngreen;
+        -webkit-clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
+                clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
+    }
+    70%{
+        width: 643px;
+        height: 302px;
+        background: lawngreen;
+        -webkit-clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
+                clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background: black;
+        -webkit-clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
+                clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background: black;
+        -webkit-clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
+                clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
+    }
+    93%{
+        width: 322px;
+        height: 515px;
+        background: #990000;
+        -webkit-clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+                clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+    }
+    10%{
+        width: 322px;
+        height: 515px;
+        background: #990000;
+        -webkit-clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+                clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
     }
   }
 
@@ -487,61 +1089,144 @@
         width: 493px;        
         height: 346px;
         background: #1a1a1a;
-        clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
+        -webkit-clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
+                clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
     }
     30%{
         width: 493px;        
         height: 346px;
         background: #1a1a1a;
-        clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
+        -webkit-clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
+                clip-path: polygon(40% 100%, 81% 100%, 73% 83%);
     }
     33%{
         width: 466px;
         height: 397px;
         background: #cc3300;
-        clip-path: polygon(0 33%, 45% 54%, 45% 100%);
+        -webkit-clip-path: polygon(0 33%, 45% 54%, 45% 100%);
+                clip-path: polygon(0 33%, 45% 54%, 45% 100%);
     }
     50%{
         width: 466px;
         height: 397px;
         background: #cc3300;
-        clip-path: polygon(0 33%, 45% 54%, 45% 100%);
+        -webkit-clip-path: polygon(0 33%, 45% 54%, 45% 100%);
+                clip-path: polygon(0 33%, 45% 54%, 45% 100%);
     }
     53%{
         width: 643px;
         height: 302px;
         background: lawngreen;
-        clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
+        -webkit-clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
+                clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
     }
     70%{
         width: 643px;
         height: 302px;
         background: lawngreen;
-        clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
+        -webkit-clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
+                clip-path: polygon(85% 52%, 79% 53%, 91% 56%);
     }
     73%{
         width: 376px;
         height: 365px;
         background: black;
-        clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
+        -webkit-clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
+                clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
     }
     90%{
         width: 376px;
         height: 365px;
         background: black;
-        clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
+        -webkit-clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
+                clip-path: polygon(50.5% 100%, 0 77%, 24% 54%);
     }
     93%{
         width: 322px;
         height: 515px;
         background: #990000;
-        clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+        -webkit-clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+                clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
     }
     10%{
         width: 322px;
         height: 515px;
         background: #990000;
-        clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+        -webkit-clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+                clip-path: polygon(50% 34%, 81% 43%, 19% 43%);
+    }
+  }
+
+  @-webkit-keyframes eight {
+    13% {
+        width: 493px;
+        height: 346px;
+        background: #1A1A1A;
+        -webkit-clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
+                clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
+    }
+    30%{
+        width: 493px;
+        height: 346px;
+        background: #1A1A1A;
+        -webkit-clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
+                clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: rgb(245, 65, 0);
+        -webkit-clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
+                clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: rgb(245, 65, 0);
+        -webkit-clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
+                clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
+    }
+    53%{
+        width: 643px;
+        height: 302px;
+        background: rgb(255, 111, 59);
+        -webkit-clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
+                clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
+    }
+    70%{
+        width: 643px;
+        height: 302px;
+        background: rgb(255, 111, 59);
+        -webkit-clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
+                clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
+                clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
+                clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
+    }
+    93%{
+        width: 322px;
+        height: 515px;
+        background: red;
+        -webkit-clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+                clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+    }
+    10%{
+        width: 322px;
+        height: 515px;
+        background: red;
+        -webkit-clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+                clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
     }
   }
 
@@ -550,61 +1235,144 @@
         width: 493px;
         height: 346px;
         background: #1A1A1A;
-        clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
+        -webkit-clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
+                clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
     }
     30%{
         width: 493px;
         height: 346px;
         background: #1A1A1A;
-        clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
+        -webkit-clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
+                clip-path: polygon(84% 88%, 80% 93%, 90% 87%);
     }
     33%{
         width: 466px;
         height: 397px;
         background: rgb(245, 65, 0);
-        clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
+        -webkit-clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
+                clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
     }
     50%{
         width: 466px;
         height: 397px;
         background: rgb(245, 65, 0);
-        clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
+        -webkit-clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
+                clip-path: polygon(74% 50%, 45% 54%, 45% 100%);
     }
     53%{
         width: 643px;
         height: 302px;
         background: rgb(255, 111, 59);
-        clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
+        -webkit-clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
+                clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
     }
     70%{
         width: 643px;
         height: 302px;
         background: rgb(255, 111, 59);
-        clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
+        -webkit-clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
+                clip-path: polygon(85% 77%, 91% 84%, 91% 55%);
     }
     73%{
         width: 376px;
         height: 365px;
         background: #1a1a1a;
-        clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
+        -webkit-clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
+                clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
     }
     90%{
         width: 376px;
         height: 365px;
         background: #1a1a1a;
-        clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
+        -webkit-clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
+                clip-path: polygon(45% 91%, 50% 59%, 24% 54%);
     }
     93%{
         width: 322px;
         height: 515px;
         background: red;
-        clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+        -webkit-clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+                clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
     }
     10%{
         width: 322px;
         height: 515px;
         background: red;
-        clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+        -webkit-clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+                clip-path: polygon(50% 100%, 81% 43%, 19% 43%);
+    }
+  }
+
+  @-webkit-keyframes nine {
+    13% {
+        width: 493px;    
+        height: 346px;
+        background: red;
+        -webkit-clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
+                clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
+    }
+    30%{
+        width: 493px;    
+        height: 346px;
+        background: red;
+        -webkit-clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
+                clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: rgb(255, 77, 13);
+        -webkit-clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
+                clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: rgb(255, 77, 13);
+        -webkit-clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
+                clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
+    }
+    53%{
+        width: 643px;
+        height: 302px;
+        background: rgb(255, 68, 0);
+        -webkit-clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
+                clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
+    }
+    70%{
+        width: 643px;
+        height: 302px;
+        background: rgb(255, 68, 0);
+        -webkit-clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
+                clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
+                clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background: #1a1a1a;
+        -webkit-clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
+                clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
+    }
+    93%{
+        width: 322px;
+        height: 515px;
+        background: orange;
+        -webkit-clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+                clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+    }
+    10%{
+        width: 322px;
+        height: 515px;
+        background: orange;
+        -webkit-clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+                clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
     }
   }
 
@@ -613,61 +1381,144 @@
         width: 493px;    
         height: 346px;
         background: red;
-        clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
+        -webkit-clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
+                clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
     }
     30%{
         width: 493px;    
         height: 346px;
         background: red;
-        clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
+        -webkit-clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
+                clip-path: polygon(96% 100%, 80% 93%, 90% 87%);
     }
     33%{
         width: 466px;
         height: 397px;
         background: rgb(255, 77, 13);
-        clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
+        -webkit-clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
+                clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
     }
     50%{
         width: 466px;
         height: 397px;
         background: rgb(255, 77, 13);
-        clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
+        -webkit-clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
+                clip-path: polygon(100% 47%, 73% 50%, 45% 100%);
     }
     53%{
         width: 643px;
         height: 302px;
         background: rgb(255, 68, 0);
-        clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
+        -webkit-clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
+                clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
     }
     70%{
         width: 643px;
         height: 302px;
         background: rgb(255, 68, 0);
-        clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
+        -webkit-clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
+                clip-path: polygon(97% 77%, 91% 84%, 91% 55%);
     }
     73%{
         width: 376px;
         height: 365px;
         background: #1a1a1a;
-        clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
+        -webkit-clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
+                clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
     }
     90%{
         width: 376px;
         height: 365px;
         background: #1a1a1a;
-        clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
+        -webkit-clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
+                clip-path: polygon(55% 92%, 50% 59%, 76% 54%);
     }
     93%{
         width: 322px;
         height: 515px;
         background: orange;
-        clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+        -webkit-clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+                clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
     }
     10%{
         width: 322px;
         height: 515px;
         background: orange;
-        clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+        -webkit-clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+                clip-path: polygon(50% 100%, 87% 60%, 81% 43%);
+    }
+  }
+
+  @-webkit-keyframes ten {
+    13% {
+        width: 493px;
+        height: 346px;
+        background: #4d4d4d;
+        -webkit-clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
+                clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
+    }
+    30%{
+        width: 493px;
+        height: 346px;
+        background: #4d4d4d;
+        -webkit-clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
+                clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
+    }
+    33%{
+        width: 466px;
+        height: 397px;
+        background: yellow;
+        -webkit-clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
+                clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
+    }
+    50%{
+        width: 466px;
+        height: 397px;
+        background: yellow;
+        -webkit-clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
+                clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
+    }
+    53%{
+        width: 643px;
+        height: 302px;
+        background: green;
+        -webkit-clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
+                clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
+    }
+    70%{
+        width: 643px;
+        height: 302px;
+        background: green;
+        -webkit-clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
+                clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
+    }
+    73%{
+        width: 376px;
+        height: 365px;
+        background: black;
+        -webkit-clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
+                clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
+    }
+    90%{
+        width: 376px;
+        height: 365px;
+        background: black;
+        -webkit-clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
+                clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
+    }
+    93%{
+        width:322px;
+        height: 515px;
+        background-color:#e6e6e6;
+        -webkit-clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
+                clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
+    }
+    10%{
+        width:322px;
+        height: 515px;
+        background-color:#e6e6e6;
+        -webkit-clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
+                clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
     }
   }
 
@@ -676,61 +1527,71 @@
         width: 493px;
         height: 346px;
         background: #4d4d4d;
-        clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
+        -webkit-clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
+                clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
     }
     30%{
         width: 493px;
         height: 346px;
         background: #4d4d4d;
-        clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
+        -webkit-clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
+                clip-path: polygon(96% 100%, 100% 95%, 90% 87%);
     }
     33%{
         width: 466px;
         height: 397px;
         background: yellow;
-        clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
+        -webkit-clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
+                clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
     }
     50%{
         width: 466px;
         height: 397px;
         background: yellow;
-        clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
+        -webkit-clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
+                clip-path: polygon(69% 42%, 83% 33%, 80% 47%);
     }
     53%{
         width: 643px;
         height: 302px;
         background: green;
-        clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
+        -webkit-clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
+                clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
     }
     70%{
         width: 643px;
         height: 302px;
         background: green;
-        clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
+        -webkit-clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
+                clip-path: polygon(97% 64%, 100% 74%, 91.5% 56%);
     }
     73%{
         width: 376px;
         height: 365px;
         background: black;
-        clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
+        -webkit-clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
+                clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
     }
     90%{
         width: 376px;
         height: 365px;
         background: black;
-        clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
+        -webkit-clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
+                clip-path: polygon(50% 100%, 100% 77%, 75.7% 54%);
     }
     93%{
         width:322px;
         height: 515px;
         background-color:#e6e6e6;
-        clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
+        -webkit-clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
+                clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
     }
     10%{
         width:322px;
         height: 515px;
         background-color:#e6e6e6;
-        clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
+        -webkit-clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
+                clip-path: polygon(97% 82%, 82% 43%, 100% 53%);
     }
   }
 
@@ -778,7 +1639,9 @@
     }
 
     .wrapper_container div{
-        transform:scale(0.4);
+        -webkit-transform:scale(0.4);
+            -ms-transform:scale(0.4);
+                transform:scale(0.4);
     }
 }
 
@@ -801,7 +1664,9 @@
 
     .wrapper_container div{
         /* flex-direction: column; */
-        transform:scale(0.5);
+        -webkit-transform:scale(0.5);
+            -ms-transform:scale(0.5);
+                transform:scale(0.5);
     }
 }
 
@@ -813,7 +1678,8 @@
 
     .wrapper_container div{
         /* flex-direction: column; */
-        transform:scale(0.3);
+        -webkit-transform:scale(0.3);
+            -ms-transform:scale(0.3);
+                transform:scale(0.3);
     }
 }
-
