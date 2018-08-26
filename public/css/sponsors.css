@@ -1,32 +1,4 @@
-@media only screen and (max-width: 479px){
-  .our-sponsers{
-    font-size: 20px !important;
-    width:200px !important;
-    padding:5px !important;
-    top:-100px;
-  }
 
-  .sponser-heading{
-    padding:3px 9px !important;
-    top:-80px !important;
-    margin: 25px auto !important;
-    font-size:16px;
-    border : 2px solid rgb(0, 81, 255);
-  }
-
-  .sponser-container{
-    top:-80px;
-    margin-bottom: 50px !important;
-    justify-content: center !important;
-  }
-
-  .sponser-container div{
-    width:120px !important;
-    height: 120px !important;
-    margin:15px !important;
-    border:4px solid rgb(0, 81, 255) !important;
-  }
-}
 
 .our-sponsers{
   position: relative;
