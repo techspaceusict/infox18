@@ -5,16 +5,28 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
+<<<<<<< HEAD
     background-color:transparent; 
+=======
+    background:transparent; 
+>>>>>>> upstream/master
 }
     
 /* Handle */
 ::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
     background-color:rgb(118, 39, 255);
+=======
+    background:rgb(118, 39, 255);
+>>>>>>> upstream/master
     border-radius: 10px; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
+<<<<<<< HEAD
     background-color: rgb(0, 0, 255); 
+=======
+    background: rgb(146, 84, 255); 
+>>>>>>> upstream/master
 }
