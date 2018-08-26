@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from protocol.ai/blog/ann-research-rfp/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Aug 2018 19:12:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+
+<link rel="apple-touch-icon" sizes="57x57" href="../../apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../../apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../../apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../../apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../../apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../../apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../../apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../../apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="../../favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="../../favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="../../android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="../../favicon-16x16.png" sizes="16x16">
+<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#1863dc">
+<meta name="apple-mobile-web-app-title" content="Protocol Labs">
+<meta name="application-name" content="Protocol Labs">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="../../mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@protocollabs" />
+<meta name="twitter:creator" content="@protocollabs" />
+<meta name="twitter:image" content="../../img/logo.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Protocol Labs" />
+<meta property="og:url" content="protocol.ai/blog/ann-research-rfp/" />
+<meta property="og:title" content="Introducing Protocol Labs Research and Grant Program" />
+<meta property="og:description" content="Protocol Labs is a research, development, and deployment institution for improving Internet technology." />
+<meta property="og:locale" content="en_US">
+<meta property="og:image:url" content="../../img/logo.png" />
+<meta property="og:image:secure_url" content="../../img/logo.png" />
+<meta property="og:image:width" content="228" />
+<meta property="og:image:height" content="226" />
+
+<link rel="manifest" href="../../manifest.json">
+
+<link href="../../css/main.css" rel="stylesheet">
+
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-96910779-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='../../../www.google-analytics.com/analytics.js'></script>
+
+
+  <title>Introducing Protocol Labs Research and Grant Program - Protocol Labs</title>
+</head>
+<body id="invert-view">
+
+<svg>
+    <defs>
+        <path d="M92.2,0.6c1.3-0.7,3.4-0.7,4.7,0l89.8,51.7c1.3,0.7,2.3,2.6,2.3,4v103.4c0,1.5-1,3.3-2.3,4l-89.8,51.7c-1.3,0.7-3.4,0.7-4.7,0L2.3,163.7C1,163,0,161.2,0,159.7V56.3c0-1.5,1-3.3,2.3-4L92.2,0.6z" fill="currentColor" id="hexagon"/>
+        <clipPath id="hexagon-clip">
+            <use xlink:href="#hexagon"/>
+        </clipPath>
+        <clipPath id="hexagon-clip-polygon" clipPathUnits="objectBoundingBox">
+            <polygon points=".5 0, 1 .25, 1 .75, .5 1, 0 0.75, 0 .25" />
+        </clipPath>
+        <path id="logotype" d="M30,47c0.6,0.4,1.1,1.2,1.1,2v13.8c0,0.7-0.5,1-1.1,0.7l-12-6.9c-0.6-0.4-1.1-1.2-1.1-2V40.7c0-0.7,0.5-1,1.1-0.7L30,47L30,47z M48,35c0,0.7-0.5,1.6-1.1,2l-12,6.9c-0.6,0.4-1.1,0.1-1.1-0.7V29.4c0-0.7,0.5-1.6,1.1-2l12-6.9c0.6-0.4,1.1-0.1,1.1,0.7L48,35L48,35z M45.6,16.9c0.6,0.4,0.6,1,0,1.3l-12,6.9c-0.6,0.4-1.7,0.4-2.3,0L2.5,8.5c-0.6-0.4-0.6-1,0-1.3l12-6.9c0.6-0.4,1.7-0.4,2.3,0L45.6,16.9L45.6,16.9z M14.2,53c0,0.7-0.5,1-1.1,0.7l-12-6.9c-0.6-0.4-1.1-1.3-1.1-2V11.5c0-0.7,0.5-1,1.1-0.7L30,27.4c0.6,0.4,1.1,1.2,1.1,2v13.8c0,0.7-0.5,1-1.1,0.7l-14.6-8.4c-0.6-0.4-1.1-0.1-1.1,0.7V53L14.2,53z M50.7,19.7c0-0.7,0.5-1.6,1.1-2l12-6.9c0.6-0.4,1.1-0.1,1.1,0.7v33.3c0,0.7-0.5,1.6-1.1,2L34.9,63.4c-0.6,0.4-1.1,0.1-1.1-0.7V48.9c0-0.7,0.5-1.6,1.1-2l14.6-8.4c0.6-0.4,1.1-1.2,1.1-2L50.7,19.7L50.7,19.7z M36.2,8.5c-0.6-0.4-0.6-1,0-1.3l12-6.9c0.6-0.4,1.6-0.4,2.3,0l12,6.9c0.6,0.4,0.6,1,0,1.3l-12,6.9c-0.6,0.4-1.6,0.4-2.3,0L36.2,8.5L36.2,8.5z" fill="currentColor"/>
+
+        <clipPath id="hexagon-form" clipPathUnits="objectBoundingBox">
+            <polygon points=".4878,.0024 .4848,.0039 .0165,.2398 .0135,.2413 .0105,.2428 .0079,.2447 .0056,.247 .0037,.2495 .0021,.2522 .001,.255 .0002,.258 .0002,.261 0,.7401 .0004,.7431 .0013,.746 .0026,.7488 .0043,.7514 .0064,.7538 .0087,.756 .0115,.7577 .0145,.7592 .4858,.9966 .4889,.998 .4921,.9991 .4955,.9997 .4989,1 .5023,1 .5057,.9996 .5091,.9989 .5123,.9978 .5153,.9963 .9835,.7603 .9865,.7588 .9894,.7572 .9921,.7553 .9943,.753 .9963,.7505 .9978,.7479 .999,.745 .9998,.7421 1,.7391 1,.263 1,.26 .9996,.257 .9986,.2541 .9973,.2513 .9956,.2487 .9936,.2462 .9912,.2441 .9885,.2423 .9855,.2408 .5143,.0032 .5112,.0018 .508,.0008 .5046,.0002 .5012,0 .4977,.0001 .4943,.0005 .491,.0012 .4878,.0024"/>
+        </clipPath>
+        <clipPath id="hexagon-border-form" clipPathUnits="objectBoundingBox">
+            <polygon points=".5,0 .4961,.0002 .4923,.0007 .4885,.0017 .4846,.0032 .0162,.2397 .0119,.2424 .0081,.2457 .0053,.2491 .0031,.2525 .0016,.2559 .0005,.2593 0,.2626 0,.7362 .0007,.7416 .0018,.745 .0035,.7484 .0057,.7517 .0088,.7551 .0128,.7585 .0162,.7605 .4838,.9966 .4885,.9983 .4923,.9992 .4962,.9998 .5,1 .5038,.9998 .5077,.9992 .5115,.9983 .5162,.9966 .9838,.7605 .9872,.7585 .9912,.7551 .9942,.7517 .9965,.7483 .9982,.745 .9993,.7416 1,.7362 1,.2626 .9994,.2592 .9984,.2559 .9969,.2525 .9947,.2491 .9919,.2457 .9882,.2424 .9838,.2397 .5154,.0032 .5116,.0017 .5077,.0007 .5038,.0002 .5,0 .5,.0133 .5038,.0136 .5085,.0148 .9762,.251 .9789,.253 .9818,.2564 .9836,.2597 .9846,.2638 .9846,.736 .9837,.7404 .9819,.7438 .9788,.7472 .9762,.7489 .5085,.985 .5039,.9862 .5,.9865 .4961,.9862 .4915,.985 .0215,.7472 .0185,.7438 .0165,.7404 .0154,.736 .0154,.2638 .0163,.2598 .0182,.2564 .0211,.253 .0238,.251 .4915,.0148 .4961,.0136 .5,.0133"/>
+        </clipPath>
+        <clipPath id="contributor-border" clipPathUnits="objectBoundingBox">
+            <polygon points=".5,.0358 .0417,.2685 .0417,.7296 .5,.9622 .5,1 .4895,.999 .4792,.9956 .0229,.7637 .0105,.7556 .0066,.7508 .0019,.7418 .0001,.7327 0,.2692 .0002,.2656 .0026,.2564 .0053,.2512 .0123,.2427 .0229,.2363 .4792,.0043 .4896,.0009 .5,0 .5104,.0014 .5208,.0055 .9771,.2363 .9801,.2381 .9895,.2462 .9947,.2529 .9967,.2564 .9997,.2656 1,.2692 1,.7308 .9981,.7418 .9933,.751 .9842,.7601 .9792,.7628 .5209,.9956 .5105,.999 .5,1 .5,.9622 .9583,.7314 .9583,.2703"/>
+        </clipPath>
+        <clipPath id="map-hex" clipPathUnits="objectBoundingBox">
+            <polygon points=".5,0 1,.25 1,.75 .5,1 0,.75 0,.25"/>
+        </clipPath>
+        <clipPath id="join-slider-block-tabs-pin-hex" clipPathUnits="objectBoundingBox">
+            <polygon points=".5,1 .522,.9971 .5415,.9924 .9563,.7827 .9721,.7706 .9857,.7559 .9959,.7379 1,.7159 1,.2869 .9966,.2661 .9879,.2478 .9756,.233 .9563,.22 .5437,.0083 .5219,.0016 .5,0 .5,.1142 .875,.3036 .875,.6936 .5,.8886 .125,.6936 .125,.3036 .5,.1142 .5,0 .4778,.003 .4625,.0083 .0437,.22 .0235,.2339 .0106,.2502 .0029,.2676 0,.2869 0,.7103 .0034,.7311 .0118,.7489 .0247,.7644 .0437,.7772 .4563,.9889 .4779,.9965"/>
+        </clipPath>
+
+        <mask id="radialMask" maskContentUnits="objectBoundingBox">
+            <radialGradient id="radialGradient" cx=".5" cy=".5" r=".5">
+                <stop stop-color="white" stop-opacity="1"/>
+                <stop offset="1" stop-color="white" stop-opacity="0"/>
+            </radialGradient>
+            <rect width="1" height="1" fill="url(#radialGradient)"/>
+        </mask>
+    </defs>
+</svg>
+<style>
+.hexagon-form {
+    -webkit-clip-path: polygon(48.78% .24%, 48.48% .39%, 1.65% 23.98%, 1.35% 24.13%, 1.05% 24.28%, .79% 24.47%, .56% 24.7%, .37% 24.95%, .21% 25.22%, .1% 25.5%, .02% 25.8%, .02% 26.1%, 0 74.01%, .04% 74.31%, .13% 74.6%, .26% 74.88%, .43% 75.14%, .64% 75.38%, .87% 75.6%, 1.15% 75.77%, 1.45% 75.92%, 48.58% 99.66%, 48.89% 99.8%, 49.21% 99.91%, 49.55% 99.97%, 49.89% 100%, 50.23% 100%, 50.57% 99.96%, 50.91% 99.89%, 51.23% 99.78%, 51.53% 99.63%, 98.35% 76.03%, 98.65% 75.88%, 98.94% 75.72%, 99.21% 75.53%, 99.43% 75.3%, 99.63% 75.05%, 99.78% 74.79%, 99.9% 74.5%, 99.98% 74.21%, 100% 73.91%, 100% 26.3%, 100% 26%, 99.96% 25.7%, 99.86% 25.41%, 99.73% 25.13%, 99.56% 24.87%, 99.36% 24.62%, 99.12% 24.41%, 98.85% 24.23%, 98.55% 24.08%, 51.43% .32%, 51.12% .18%, 50.8% .08%, 50.46% .02%, 50.12% 0, 49.77% .01%, 49.43% .05%, 49.1% .12%, 48.78% .24%);
+    clip-path: polygon(48.78% .24%, 48.48% .39%, 1.65% 23.98%, 1.35% 24.13%, 1.05% 24.28%, .79% 24.47%, .56% 24.7%, .37% 24.95%, .21% 25.22%, .1% 25.5%, .02% 25.8%, .02% 26.1%, 0 74.01%, .04% 74.31%, .13% 74.6%, .26% 74.88%, .43% 75.14%, .64% 75.38%, .87% 75.6%, 1.15% 75.77%, 1.45% 75.92%, 48.58% 99.66%, 48.89% 99.8%, 49.21% 99.91%, 49.55% 99.97%, 49.89% 100%, 50.23% 100%, 50.57% 99.96%, 50.91% 99.89%, 51.23% 99.78%, 51.53% 99.63%, 98.35% 76.03%, 98.65% 75.88%, 98.94% 75.72%, 99.21% 75.53%, 99.43% 75.3%, 99.63% 75.05%, 99.78% 74.79%, 99.9% 74.5%, 99.98% 74.21%, 100% 73.91%, 100% 26.3%, 100% 26%, 99.96% 25.7%, 99.86% 25.41%, 99.73% 25.13%, 99.56% 24.87%, 99.36% 24.62%, 99.12% 24.41%, 98.85% 24.23%, 98.55% 24.08%, 51.43% .32%, 51.12% .18%, 50.8% .08%, 50.46% .02%, 50.12% 0, 49.77% .01%, 49.43% .05%, 49.1% .12%, 48.78% .24%);
+    clip-path: url(#hexagon-form);
+}
+.hexagon-border-form {
+    -webkit-clip-path: polygon(50% 0, 49.61% .02%, 49.23% .07%, 48.85% .17%, 48.46% .32%, 1.62% 23.97%, 1.19% 24.24%, .81% 24.57%, .53% 24.91%, .31% 25.25%, .16% 25.59%, .05% 25.93%, 0 26.26%, 0 73.62%, .07% 74.16%, .18% 74.5%, .35% 74.84%, .57% 75.17%, .88% 75.51%, 1.28% 75.85%, 1.62% 76.05%, 48.38% 99.66%, 48.85% 99.83%, 49.23% 99.92%, 49.62% 99.98%, 50% 100%, 50.38% 99.98%, 50.77% 99.92%, 51.15% 99.83%, 51.62% 99.66%, 98.38% 76.05%, 98.72% 75.85%, 99.12% 75.51%, 99.42% 75.17%, 99.65% 74.83%, 99.82% 74.5%, 99.93% 74.16%, 100% 73.62%, 100% 26.26%, 99.94% 25.92%, 99.84% 25.59%, 99.69% 25.25%, 99.47% 24.91%, 99.19% 24.57%, 98.82% 24.24%, 98.38% 23.97%, 51.54% .32%, 51.16% .17%, 50.77% .07%, 50.38% .02%, 50% 0, 50% 1.33%, 50.38% 1.36%, 50.85% 1.48%, 97.62% 25.1%, 97.89% 25.3%, 98.18% 25.64%, 98.36% 25.97%, 98.46% 26.38%, 98.46% 73.6%, 98.37% 74.04%, 98.19% 74.38%, 97.88% 74.72%, 97.62% 74.89%, 50.85% 98.5%, 50.39% 98.62%, 50% 98.65%, 49.61% 98.62%, 49.15% 98.5%, 2.15% 74.72%, 1.85% 74.38%, 1.65% 74.04%, 1.54% 73.6%, 1.54% 26.38%, 1.63% 25.98%, 1.82% 25.64%, 2.11% 25.3%, 2.38% 25.1%, 49.15% 1.48%, 49.61% 1.36%, 50% 1.33%);
+    clip-path: polygon(50% 0, 49.61% .02%, 49.23% .07%, 48.85% .17%, 48.46% .32%, 1.62% 23.97%, 1.19% 24.24%, .81% 24.57%, .53% 24.91%, .31% 25.25%, .16% 25.59%, .05% 25.93%, 0 26.26%, 0 73.62%, .07% 74.16%, .18% 74.5%, .35% 74.84%, .57% 75.17%, .88% 75.51%, 1.28% 75.85%, 1.62% 76.05%, 48.38% 99.66%, 48.85% 99.83%, 49.23% 99.92%, 49.62% 99.98%, 50% 100%, 50.38% 99.98%, 50.77% 99.92%, 51.15% 99.83%, 51.62% 99.66%, 98.38% 76.05%, 98.72% 75.85%, 99.12% 75.51%, 99.42% 75.17%, 99.65% 74.83%, 99.82% 74.5%, 99.93% 74.16%, 100% 73.62%, 100% 26.26%, 99.94% 25.92%, 99.84% 25.59%, 99.69% 25.25%, 99.47% 24.91%, 99.19% 24.57%, 98.82% 24.24%, 98.38% 23.97%, 51.54% .32%, 51.16% .17%, 50.77% .07%, 50.38% .02%, 50% 0, 50% 1.33%, 50.38% 1.36%, 50.85% 1.48%, 97.62% 25.1%, 97.89% 25.3%, 98.18% 25.64%, 98.36% 25.97%, 98.46% 26.38%, 98.46% 73.6%, 98.37% 74.04%, 98.19% 74.38%, 97.88% 74.72%, 97.62% 74.89%, 50.85% 98.5%, 50.39% 98.62%, 50% 98.65%, 49.61% 98.62%, 49.15% 98.5%, 2.15% 74.72%, 1.85% 74.38%, 1.65% 74.04%, 1.54% 73.6%, 1.54% 26.38%, 1.63% 25.98%, 1.82% 25.64%, 2.11% 25.3%, 2.38% 25.1%, 49.15% 1.48%, 49.61% 1.36%, 50% 1.33%);
+    clip-path: url(#hexagon-border-form);
+}
+.contributor:before {
+    -webkit-clip-path: polygon(50% 3.58%, 4.17% 26.85%, 4.17% 72.96%, 50% 96.22%, 50% 100%, 48.95% 99.90%, 47.92% 99.56%, 2.29% 76.37%, 1.05% 75.56%, .66% 75.08%, .19% 74.18%, .01% 73.27%, 0 26.92%, .02% 26.56%, .26% 25.64%, .53% 25.12%, 1.23% 24.27%, 2.29% 23.63%, 47.92% .43%, 48.96% .09%, 50% 0, 51.04% .14%, 52.08% .55%, 97.71% 23.63%, 98.01% 23.81%, 98.95% 24.62%, 99.47% 25.29%, 99.67% 25.64%, 99.97% 26.56%, 100% 26.92%, 100% 73.08%, 99.81% 74.18%, 99.33% 75.10%, 98.42% 76.01%, 97.92% 76.28%, 52.09% 99.56%, 51.05% 99.90%, 50% 100%, 50% 96.22%, 95.83% 73.14%, 95.83% 27.03%);
+    clip-path: polygon(50% 3.58%, 4.17% 26.85%, 4.17% 72.96%, 50% 96.22%, 50% 100%, 48.95% 99.90%, 47.92% 99.56%, 2.29% 76.37%, 1.05% 75.56%, .66% 75.08%, .19% 74.18%, .01% 73.27%, 0 26.92%, .02% 26.56%, .26% 25.64%, .53% 25.12%, 1.23% 24.27%, 2.29% 23.63%, 47.92% .43%, 48.96% .09%, 50% 0, 51.04% .14%, 52.08% .55%, 97.71% 23.63%, 98.01% 23.81%, 98.95% 24.62%, 99.47% 25.29%, 99.67% 25.64%, 99.97% 26.56%, 100% 26.92%, 100% 73.08%, 99.81% 74.18%, 99.33% 75.10%, 98.42% 76.01%, 97.92% 76.28%, 52.09% 99.56%, 51.05% 99.90%, 50% 100%, 50% 96.22%, 95.83% 73.14%, 95.83% 27.03%);
+    clip-path: url(#contributor-border);
+}
+.projects-list a,
+.collaborations-list a,
+.map-lines .pin,
+.join-slider-block .tabs li .pin:after {
+    -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    clip-path: url(#map-hex);
+}
+.join-slider-block .tabs li .pin:before {
+    -webkit-clip-path: polygon(50% 100%, 52.2% 99.71%, 54.15% 99.24%, 95.63% 78.27%, 97.21% 77.06%, 98.57% 75.59%, 99.59% 73.79%, 100% 71.59%, 100% 28.69%, 99.66% 26.61%, 98.79% 24.78%, 97.56% 23.3%, 95.63% 22%, 54.37% .83%, 52.19% .16%, 50% 0, 50% 11.42%, 87.50% 30.36%, 87.50% 69.36%, 50% 88.86%, 12.5% 69.36%, 12.5% 30.36%, 50% 11.42%, 50% 0, 47.78% .3%, 46.25% .83%, 4.37% 22%, 2.35% 23.39%, 1.06% 25.02%, .29% 26.76%, 0 28.69%, 0 71.03%, .34% 73.11%, 1.18% 74.89%, 2.47% 76.44%, 4.37% 77.72%, 45.63% 98.89%, 47.79% 99.65%);
+    clip-path: polygon(50% 100%, 52.2% 99.71%, 54.15% 99.24%, 95.63% 78.27%, 97.21% 77.06%, 98.57% 75.59%, 99.59% 73.79%, 100% 71.59%, 100% 28.69%, 99.66% 26.61%, 98.79% 24.78%, 97.56% 23.3%, 95.63% 22%, 54.37% .83%, 52.19% .16%, 50% 0, 50% 11.42%, 87.50% 30.36%, 87.50% 69.36%, 50% 88.86%, 12.5% 69.36%, 12.5% 30.36%, 50% 11.42%, 50% 0, 47.78% .3%, 46.25% .83%, 4.37% 22%, 2.35% 23.39%, 1.06% 25.02%, .29% 26.76%, 0 28.69%, 0 71.03%, .34% 73.11%, 1.18% 74.89%, 2.47% 76.44%, 4.37% 77.72%, 45.63% 98.89%, 47.79% 99.65%);
+    clip-path: url(#join-slider-block-tabs-pin-hex);
+}
+</style>
+
+<header class="is-large">
+  <nav>
+    <a href="../../index.html">About</a>
+    <a href="../../projects/index.html">Projects</a>
+    <a href="../../team/index.html">Team</a>
+  </nav>
+  <a class="logotype" href="../../index.html"><svg viewBox="0 0 64.9 63.6"><use xlink:href="#logotype"/></svg></a>
+  <div class="mobile">
+    <a class="logotype" href="../../index.html"><svg viewBox="0 0 64.9 63.6"><use xlink:href="#logotype"/></svg><span>Protocol Labs</span></a>
+    <a class="open-menu"><div class="hamburger"><span></span></div></a>
+  </div>
+  <nav>
+     <a href="../../join/index.html">Join</a> 
+    <a class="is-active" href="../index.html">Blog</a>
+    
+    <a href="../../media/index.html">Media</a>
+  </nav>
+</header>
+
+
+<section class="blog-block">
+  <div class="container">
+    <a href="../index.html" class="back">Back to Blog</a>
+    <h1>Blog</h1>
+
+    <div class="card" style="text-align: justify;">
+      <img alt="Introducing Protocol Labs Research and Grant Program" src="../../img/PLRgrid_blue.png">
+      <div class="card-inner">
+        <h2>Introducing Protocol Labs Research and Grant Program</h2>
+        <figure>
+          <img alt="Protocol Labs" src="../../mstile-310x310.png">
+          <figcaption><a href="#">Protocol Labs</a> on April 10, 2018</figcaption>
+        </figure>
+        
+
+<p>&ldquo;<em>We should <strong>accelerate the ideas-to-superpowers pipeline</strong>.  At the heart of computing progress lies a simple process: the research, development, and deployment cycle.  Ideas are conceived and refined, encoded into mathematical rules, programmed into software, and deployed into computers, which grants super-powers to humans world-wide.  The better and faster we are at sifting ideas through this pipeline, the better and faster our superpowers will come.</em>&ldquo;</p>
+
+<p>&ndash; From <a href="../protocol-labs-creating-new-networks/index.html">Protocol Labs: Creating New Networks</a></p>
+
+<p>Science accumulates knowledge idea by idea, across various fields and efforts.  Frequent incremental contributions build up until we break through and leap forward.  Research is where our “ideas-to-superpowers pipeline” begins.</p>
+
+<p>Today, we are thrilled to share some important updates about Research at Protocol Labs, and an exciting announcement.  This post covers the following:</p>
+
+<ul>
+<li>The Protocol Labs Research Team</li>
+<li>Sharing our work early and often</li>
+<li>Participating in the broader Research Community</li>
+<li>Ongoing Research Topics</li>
+<li>Announcing the PL Grant Program</li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="the-protocol-labs-research-team">The Protocol Labs Research Team</h2>
+
+<p>First and foremost, Protocol Labs Research is now an established team within the organization.  Our goal is to direct and support all the research efforts across our projects and communities.  We seek to ask and answer important questions, organize our work, share our contributions, provide a direct and explicit conduit for potential collaborators, and even to fund external research endeavors.</p>
+
+<p>Protocol Labs began with the IPFS community, steeped in the values of open source.  For years we have shared both research and development work to the greater commons, working openly and collaboratively and making our work as reusable as possible.</p>
+
+<p>Research at Protocol Labs is a highly collaborative endeavor.  We are pursuing several projects with colleagues at other labs and the broader open source community.  We are also building a network of scientific advisors who can assist our efforts.  These efforts are led by Research Scientists, who work with our communities to develop skills and ideas.  We plan to work on many more, so if you share our research interests <a href="https://jobs.lever.co/protocol?team=Research">please check our job listings</a>.</p>
+
+<h2 id="sharing-our-work-early-and-often">Sharing Our Work Early and Often</h2>
+
+<p>IPFS began its life through a <a href="https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf">technical paper</a>.  Beyond the codebases of its implementations, we are producing <a href="https://github.com/ipfs/notes/issues">lists of open problems</a>, <a href="https://github.com/ipfs/specs/tree/master/architecture">architecture documentation</a>, <a href="https://github.com/ipfs/specs">design docs, and specs</a>.  Both <a href="https://github.com/libp2p/specs">libp2p</a> and <a href="https://github.com/multiformats/multiformats">Multiformats</a>, as well as <a href="https://filecoin.io/filecoin-jul-2014.pdf">the first version of Filecoin</a> have also followed the same path.  We have also gathered bibliographies and thoughts on specific topics like <a href="https://github.com/ipfs/research-CRDT">CRDTs</a> and <a href="https://github.com/libp2p/research-pubsub">pubsub</a>.</p>
+
+<p>Last year, we improved our research and research-writing efforts substantially.  We produced a much improved version of the Filecoin Protocol, and wrote it up in the new <a href="https://filecoin.io/filecoin.pdf">Filecoin technical paper</a>.  We also released two related technical reports: <a href="https://filecoin.io/proof-of-replication.pdf">Proof-of-Replication</a>, and <a href="https://filecoin.io/power-fault-tolerance.pdf">Power Fault Tolerance</a>, which generalized results achieved through research on Filecoin.  Though not yet ready for academic conferences, these work-in-progress write-ups served the purpose of disseminating the ideas quickly, and inspired several <a href="https://eprint.iacr.org/2018/194.pdf">other</a> <a href="https://www.youtube.com/watch?v=8_9ONpyRZEI">works</a>.  We count this as a great success.</p>
+
+<p>We have also used video recordings of lectures and talks to share our thoughts, research directions, and results at <a href="https://www.youtube.com/watch?v=h73bd9b5pPA">various</a>
+<a href="https://www.youtube.com/watch?v=jONZtXMu03w">meetups</a>
+<a href="https://www.youtube.com/watch?v=ewpIi1y_KDc">and</a>
+<a href="https://www.youtube.com/watch?v=HxueJbeMVG4">conferences</a>
+<a href="https://www.youtube.com/watch?v=2RCwZDRwk48">for</a>
+<a href="https://www.youtube.com/watch?v=UBf0fxOBWy8">almost</a>
+<a href="https://www.youtube.com/watch?v=xRuPShYelm4&amp;feature=youtu.be&amp;t=11260">four</a>
+<a href="https://www.youtube.com/watch?v=bi-4YGZXxwA">years</a>.  We highlight <a href="https://www.youtube.com/watch?v=HUVmypx9HGI">a presentation of IPFS</a> at Stanford’s EE380, and both <a href="https://www.youtube.com/watch?v=vyRZBeMtkrA">an overview of the Filecoin protocol</a> and more information on <a href="https://www.youtube.com/watch?v=8_9ONpyRZEI">a Proof-of-Replication construction</a> from the BPASE 2018 conference.</p>
+
+<p>We will continue to improve the presentation of our work, and look forward to the next opportunities to share it with you.</p>
+
+<h2 id="participating-in-the-broader-research-community">Participating in the Broader Research Community</h2>
+
+<p>We work with <a href="https://ipfs.io/ipfs/QmVNsFGDQPa2kJHUHxQmYJddzwDZdX2twpvwFF2jaChAix/">hundreds of developers and researchers</a> across many open source projects.  We’ve always discussed interesting problems and new directions on Github, through repositories like <a href="https://github.com/ipfs/notes/issues">ipfs/notes</a>).  Recently, we’ve begun a new effort to formalize and organize open problems <a href="https://github.com/protocol/research/issues">in a new research repo</a> to serve as inspiration to other researchers, ranging from undergraduates to professors.  We intend for this repo to be a location for discussion and collaboration on these important open questions, where individuals can propose and discuss their own research problems.</p>
+
+<p>We have also started supporting research conferences, events, and student scholarships to attend them.  Our sponsorships to date include <a href="https://crypto.iacr.org/2018/">Crypto 2018</a>, <a href="https://fc18.ifca.ai/">FC ‘18</a>, <a href="https://cyber.stanford.edu/bpase18">BPASE 18</a>, <a href="http://www.cs.nott.ac.uk/~psznhn/MGS2018/">MGS 2018</a>, and the <a href="http://mitbitcoinexpo.org/">MIT Bitcoin Expo 2018</a>.  We hope to host our own conferences in the coming years.</p>
+
+<p>For the future, we are exploring fellowship and internship programs to explore new ideas and support the development of expertise at various levels in the community.</p>
+
+<h2 id="announcing-the-pl-grant-program">Announcing the PL Grant Program</h2>
+
+<p>We are thrilled to announce that, in proper <a href="http://www.columbia.edu/~rh120/ch106.x08">internet R&amp;D tradition</a>, we are launching a <strong>Request For Proposals (RFP) Program</strong> with an initial commitment of $5,000,000 to fund multiple rounds of grants.  If these are successful, we hope to grow the program even further.  The <a href="https://github.com/protocol/research-RFPs">first round of RFPs</a> and <a href="https://github.com/protocol/research-RFPs/blob/master/RFP-application-instructions.md">application instructions</a> can be found on Github.  Each RFP has an associated award ranging from $5,000 to $200,000.  Applications will be judged on quality of the proposed research direction and relevant experience of the individual or team; complete solutions are not necessary to apply.[1]  Each RFP references an Open Problem Statement in <a href="https://github.com/protocol/research/issues">our public research repo</a>.</p>
+
+<p>To inspire greater contributions to the commons, all IP generated via these grants must be open source and widely usable.  Any software produced will be available with a permissive license and should benefit numerous projects.  We&rsquo;re still working out the specifics; we&rsquo;re considering the public domain, licences like the <a href="https://www.mozilla.org/en-US/about/policy/patents/">Mozilla Open Software Patent License</a>, and other arrangements in the same spirit.</p>
+
+<p>The first RFPs solicit improvements to components used in Filecoin and a breakthrough that may dramatically simplify consensus protocol including Filecoin&rsquo;s.  Future RFPs will fund problems across our whole stack of protocols, from Multiformats to Filecoin, and we also welcome open problems and suggestions for work we may be interested in funding.</p>
+
+<p>We encourage you to explore the <a href="https://github.com/protocol/research-RFPs">current RFPs</a> and open problems, watch our research and RFP repos, and follow <a href="https://twitter.com/protocollabs">@protocollabs</a> on Twitter for updates.</p>
+
+<h3 id="contact-us">Contact Us</h3>
+
+<p>If you would like to propose a research collaboration, or have any questions or comments for the research team, please email <a href="mailto:research@protocol.ai">research@protocol.ai</a>.  If you might be excited to discover, manage, or work on open problems, we are hiring for <a href="https://jobs.lever.co/protocol?team=Research">full time positions</a>.  Questions about the RFP program and proposals should be sent to <a href="mailto:rfp@protocol.ai">rfp@protocol.ai</a>.</p>
+
+<h4 id="useful-links">Useful Links</h4>
+
+<ul>
+<li><a href="https://github.com/protocol/research/issues">Open Problem Statements</a></li>
+<li><a href="https://github.com/protocol/research-RFPs">Request for Proposals (RFPs)</a></li>
+<li><a href="https://github.com/protocol/research-RFPs/blob/master/RFP-application-instructions.md">RFP application instructions</a></li>
+</ul>
+
+<p><br /></p>
+
+<p>[1] Due to the open-ended nature of these problems, it’s worth noting that we may end up choosing more than one proposal per open problem.  In this case, we would fund multiple applicants to pursue their respective proposed solutions.  Award amounts will not be affected by the number of accepted proposals.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <nav>
+      <a href="../../index.html">About</a>
+      <a href="../../projects/index.html">Projects</a>
+      <a href="../../team/index.html">Team</a>
+       <a href="../../join/index.html">Join</a> 
+       <a class="is-active" href="../index.html">Blog</a>
+      
+      <a href="../../media/index.html">Media</a>
+    </nav>
+    <ul>
+      <li><a class="ico-social ico-twitter" href="https://twitter.com/protocollabs" target="_blank"></a>
+      <li><a class="ico-social ico-linked_in" href="https://www.linkedin.com/company-beta/16181958" target="_blank"></a>
+    </ul>
+    <p>© Protocol Labs, Inc. | Except as <a href="../../legal/index.html">noted</a>, content licensed <a class="legal-go" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC-BY 3.0</a>. | <a class="legal-go" href="../../legal/index.html#terms_of_service">Terms of service</a> | <a class="legal-go" href="../../legal/index.html#privacy_policy">Privacy policy</a></p>
+  </div>
+</footer>
+
+
+<nav>
+    <div class="scroller">
+        <div>
+            <a href="../../index.html">About</a>
+            <a href="../../projects/index.html">Projects</a>
+            <a href="../../team/index.html">Team</a>
+            <a href="../../join/index.html">Join</a>
+            <a href="../index.html">Blog</a>
+            <a href="../../media/index.html">Media</a>
+        </div>
+    </div>
+    <a class="close-menu"><div class="hamburger"><span></span></div></a>
+</nav>
+
+
+<script src="../../js/common.js"></script>
+<script src="../../js/blog.js"></script>
+
+</body>
+
+<!-- Mirrored from protocol.ai/blog/ann-research-rfp/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Aug 2018 19:12:34 GMT -->
+</html>

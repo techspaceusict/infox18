@@ -1,0 +1,200 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+.nav-bar a {
+  color: #333;
+  text-decoration: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.open {
+  position: relative;
+  top: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+  z-index:10000;
+  transition: opacity 0.2s linear;
+}
+.open:hover {
+  opacity: 0.95;
+}
+.open span {
+  display: block;
+  float: left;
+  clear: both;
+  height: 3px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.open span:nth-child(1) {
+  margin-top: 8px;
+  background-color: black;
+  z-index: 9012;
+}
+.open span:nth-child(2) {
+  margin-top: 16px;
+  background-color: black;
+}
+.open span:nth-child(3) {
+  margin-top: 24px;
+  background-color: black;
+}
+
+.sub-menu {
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  height: 0;
+  width: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  background-color: rgba(23, 0, 39, 0.9);
+  border-radius: 50%;
+  z-index: 9021;
+  overflow: hidden;
+}
+.sub-menu li {
+  display: block;
+  float: right;
+  clear: both;
+  height: auto;
+  margin-right: -160px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.sub-menu li:first-child {
+  margin-top: 190px;
+}
+.sub-menu li:nth-child(1) {
+  -webkit-transition-delay: 0.05s;
+}
+.sub-menu li:nth-child(2) {
+  -webkit-transition-delay: 0.10s;
+}
+.sub-menu li:nth-child(3) {
+  -webkit-transition-delay: 0.15s;
+}
+.sub-menu li:nth-child(4) {
+  -webkit-transition-delay: 0.20s;
+}
+.sub-menu li:nth-child(5) {
+  -webkit-transition-delay: 0.25s;
+}
+.sub-menu li:nth-child(6) {
+  -webkit-transition-delay: 0.30s;
+}
+.sub-menu li a {
+  color: #fff;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  float: left;
+  line-height: 40px;
+  transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+
+.oppenned .sub-menu {
+  opacity: 1;
+  height: 450px;
+  width: 400px;
+}
+.oppenned span:nth-child(2) {
+  overflow: visible;
+}
+.oppenned span:nth-child(1), .oppenned span:nth-child(3) {
+  z-index: 9103;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: white;
+}
+
+
+.oppenned span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(12px) translateX(12px);
+          transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.oppenned span:nth-child(2) {
+  height: 450px;
+  width: 400px;
+  right: -160px;
+  top: -160px;
+  border-radius: 50%;
+  background-color: rgba(15, 15, 15, 0.84);
+}
+.oppenned span:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-10px) translateX(10px);
+          transform: rotate(-45deg) translateY(-5px) translateX(5px);
+}
+.oppenned li {
+  margin-right: 168px;
+}
+
+.nav-bar{
+  /* position: fixed; */
+  position:fixed;
+	top: 0px;
+	right: 0%;
+	display: block;
+	cursor: pointer;
+	z-index:100000;
+	transition: opacity 0.2s linear;
+	/* background-color:rgba(0, 174, 255, 0.445); */
+	border-radius:50%;
+	width:70px;
+	height:70px;
+	z-index: 100000;
+	/* text-align: center */
+	/* transform:translate(-50%,-50%); */
+	/* overflow:hidden; */
+	/* position: sticky;
+	position: -webkit-sticky;
+	top: 0; */
+}
+
+.nav-bar-2{
+  /* position: fixed; */
+  position:relative;
+	top: 0px;
+	left: 33%;
+	display: block;
+	cursor: pointer;
+	z-index:-1;
+	transition: opacity 0.2s linear;
+	background-color:rgba(255, 255, 255, 0.9);
+  border-radius:50%; 
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+	width:40px;
+	height:40px;
+	/* text-align: center */
+	/* transform:translate(-50%,-50%); */
+	/* overflow:hidden; */
+	/* position: sticky;
+	position: -webkit-sticky;
+	top: 0; */
+}
+
+@media (min-width:767px){
+  #test2{
+    display:none;
+  }
+}
