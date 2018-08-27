@@ -12,7 +12,7 @@
 <!-- <div class="background team-pink-background">
     <div class="container"></div>
 </div> -->
-<section class="join-main-block">
+<!-- <section class="join-main-block">
     <div class="container">
         <div class="anim-circle"><div class="about-heading"></div></div>
         <div class="about-flex">
@@ -32,11 +32,11 @@
                 imagination. It will be a perfect blend of entertainment and technology with the aim of transformation 
                 and empowerment of the society.
             </div>
-            <!-- <a class="btn" href="#team-link" onclick="scrollToElement(this.hash, 800);">See our Team</a> -->
+            <a class="btn" href="#team-link" onclick="scrollToElement(this.hash, 800);">See our Team</a>
         </div>
     </div>
-</section>
-<!-- <section class="team-main-block" id="team-link">
+</section> -->
+<section class="team-main-block" id="team-link">
     <div class="container">
         <h1>Team</h1>
     </div>
@@ -48,8 +48,8 @@
         <h2 id="contributors" class="bordered-header">Contributors</h2>
     </div>
     <iframe src="https://ipfs.io/ipfs/QmWc6dvfQCrsewrAnEDo21nprTnfq8dL7YHLX36VRVAAMn/projects/protocol.ai/"></iframe>
-</section> -->
-<!-- <section class="headshots-block">
+</section> 
+ <!-- <section class="headshots-block">
     <div class="container">
         <div class="line"><span></span></div>
         <div class="line"><span></span></div>
@@ -68,47 +68,6 @@
 
 <script src="../js/common.js"></script>
 <script src="../js/team.js"></script>
-<script type="text/javascript">
-    if($(window).width() <= 479){
-        setTimeout(function(){
-            $(document).ready(function(){
-                $(".anim-circle").animate({width: "100px"},500,'easeOutExpo',function(){
-                    $(".about-heading").fadeOut(100,function(){
-                        $(this).html("ABOUT US").fadeIn(function(){
-                            // alert('hello');
-                        });
-                    });
-                });
-                $(".about-flex").animate({width: "100px"},500,'easeOutExpo',function(){
-                    $(".about-flex").animate({top:"15px"},400,'easeOutExpo',function(){
-                        $(this).animate({width:"100%"},400,'easeOutExpo',function(){
-                            $(this).animate({height:"100%"},800,'easeOutExpo');
-                        })  
-                    });
-                });
-            });
-        },1000);
-    }else{
-        setTimeout(function(){
-            $(document).ready(function(){
-                $(".anim-circle").animate({width: "200px"},500,'easeOutExpo',function(){
-                    $(".about-heading").fadeOut(100,function(){
-                        $(this).html("ABOUT US").fadeIn(function(){
-                            // alert('hello');
-                        });
-                    });
-                });
-                $(".about-flex").animate({width: "200px"},500,'easeOutExpo',function(){
-                    $(".about-flex").animate({top:"30px"},400,'easeOutExpo',function(){
-                        $(this).animate({width:"100%"},400,'easeOutExpo',function(){
-                            $(this).animate({height:"100%"},800,'easeOutExpo');
-                        })  
-                    });
-                });
-            });
-        },1000);
-        }
-</script>
 </body>
 
 </html>

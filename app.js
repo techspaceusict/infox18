@@ -108,6 +108,10 @@ app.get('/sponsers', function (req, res) {
     res.render("pages/sponsers");
 });
 
+app.get('/team', function (req, res) {
+    res.render("pages/team");
+});
+
 app.listen(process.env.PORT || 8080, function(){
     console.log("server started!");
 });
