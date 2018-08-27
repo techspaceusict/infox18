@@ -114,7 +114,7 @@ html {
 
 .oppenned .sub-menu {
   opacity: 1;
-  height: 450px;
+  height: 500px;
   width: 400px;
 }
 .oppenned span:nth-child(2) {
