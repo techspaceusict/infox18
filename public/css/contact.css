@@ -1,17 +1,58 @@
 .contact-flex{
 	display:flex;
-	width: 100%;
 	justify-content: center;
-	align-items: center;
+	align-items:flex-start;
 	height: 100vh;
+	flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 768px) {
+	/* tablets and desktop */
+	.contact-flex{
+		padding-top: 180px;
+		padding-left: 200px;	
+	}
+	.mapsize{
+		width: 600px;
+		height: 500px;
+	}
+	.footer-margin{
+		margin-top: -50px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	/* phones */
+	.footer-margin{
+		margin-top: 350px;
+	}
+	.contact-flex{
+		padding-bottom: 300px;	
+	}
+	.mapsize{
+		width: 200px;
+		height: 500px;
+	}
+	.contact-wrapper-map{
+		padding-left: 100px;
+		padding-bottom: 100px;
+		margin-top: -100px;
+	}
 }
 
 .contact-wrapper {
 	/* position: absolute; */
 	/* top: 50%; */
 	/* transform: translateY(-50%); */
-	width: 100%;
-  }
+	flex: 1;
+	order: 2;
+	}
+	.contact-wrapper-map {
+		/* position: absolute; */
+		/* top: 50%; */
+		/* transform: translateY(-50%); */
+		flex: 1;
+		order: 1 ;
+		}
   .flip-card {
 	border-radius: 0.5em;
 	position: fixed;
@@ -364,6 +405,6 @@
   
 @media only screen and (max-width:479px){
 	.envelope{
-		transform:scale(0.6;
+		transform:scale(0.6);
 	}
 }

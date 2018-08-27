@@ -2207,7 +2207,7 @@ header.is-large .mobile{
     max-width: 520px;
     position: relative;
 }
-footer {
+/* footer {
     border-top: 1px solid rgba(255, 255, 255, .15);
     font-family: Ubuntu, sans-serif;
     padding: 0 40px;
@@ -2235,7 +2235,7 @@ footer .container {
     margin: auto;
     max-width: 1140px;
     padding: 60px 0 54px;
-    position: relative;
+    position: relative; */
 }
 #invert-view {
     background-color: #F5F7F9;
@@ -2244,7 +2244,7 @@ footer .container {
 #invert-view header nav, #invert-view header nav a {
     color: inherit!important;
 }
-#invert-view footer {
+/* #invert-view footer {
     border-top: 1px solid rgba(25, 4, 43, .15);
 }
 #invert-view footer:before {
@@ -2252,7 +2252,7 @@ footer .container {
 }
 #invert-view footer~nav {
     background-color: rgba(245, 247, 249, .95);
-}
+} */
 .blog-block .container {
     display: block;
     margin: 250px auto 100px;
