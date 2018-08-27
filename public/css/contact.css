@@ -1,6 +1,5 @@
 .contact-flex{
 	display:flex;
-<<<<<<< HEAD
 	justify-content: center;
 	align-items:flex-start;
 	height: 100vh;
@@ -38,19 +37,12 @@
 		padding-bottom: 100px;
 		margin-top: -100px;
 	}
-=======
-	width: 100%;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
->>>>>>> upstream/master
 }
 
 .contact-wrapper {
 	/* position: absolute; */
 	/* top: 50%; */
 	/* transform: translateY(-50%); */
-<<<<<<< HEAD
 	flex: 1;
 	order: 2;
 	}
@@ -61,10 +53,6 @@
 		flex: 1;
 		order: 1 ;
 		}
-=======
-	width: 100%;
-  }
->>>>>>> upstream/master
   .flip-card {
 	border-radius: 0.5em;
 	position: fixed;
@@ -417,12 +405,6 @@
   
 @media only screen and (max-width:479px){
 	.envelope{
-<<<<<<< HEAD
 		transform:scale(0.6);
 	}
 }
-=======
-		transform:scale(0.6;
-	}
-}
->>>>>>> upstream/master
