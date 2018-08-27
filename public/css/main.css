@@ -2177,7 +2177,7 @@ header.is-large .mobile{
     top: 50%;
     width: 131.58%}
 
-}@media (max-width:767px) and (orientation:landscape) {
+@media (max-width:767px) and (orientation:landscape) {
     .projects-list {
     padding-top: 12%}
 }@media (max-width:767px) and (orientation:portrait) {
@@ -2235,8 +2235,8 @@ footer .container {
     margin: auto;
     max-width: 1140px;
     padding: 60px 0 54px;
-    position: relative; */
-}
+    position: relative; 
+} */
 #invert-view {
     background-color: #F5F7F9;
     color: #19042B;
