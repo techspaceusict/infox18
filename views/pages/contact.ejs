@@ -15,61 +15,65 @@
     </header>
   </div>
 <!-- <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }}</div> -->
-<div class="contact-flex">
-    <div id="container"></div>
-    
-        <div class="contact-wrapper">
-        <script id="template">
-            <div class="envelope {{ flipCard ? 'active' : '' }}">
-            <div class="response-text"></div>
-            <div class="back paper"></div>
-            <div class="content">
-                <div class="form-wrapper">
-                <form>
-                    <div class="top-wrapper">
-                    <div class="input">
-                        <label>Name</label>
-                        <input type="text" name="name"/>
-                    </div>
-                    <div class="input">
-                        <label>Phone</label>
-                        <input type="text" name="phone"/>
-                    </div>
-                    <div class="input">
-                        <label>Email</label>
-                        <input type="text" name="_replyto"/>
-                    </div>
-                    </div>
-                    <div class="bottom-wrapper">
-                    <div class="input">
-                        <label>Subject</label>
-                        <input type="text" name="_subject"/>
-                    </div>
-                    <div class="input">
-                        <label>Message</label>
-                        <textarea rows="5" name="message"></textarea>
-                    </div>
-                    <div class="submit">
-                        <div id="submit-btn" class="submit-card" on-click="toggle('flipCard')">Send Mail</div>
-                    </div>
-                    </div>
-                </form>
-                </div>
-            </div>
-            <div class="front paper"></div>
-            </div>
-        </script>
-        </div>
+<div class="contact-parent-wrapper">
+    <div class="contact-flex">
 
-<div class="contact-wrapper-map">
-    <div><iframe class="mapsize" src="https://maps.google.com/maps?q=usict&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
-</div> 
-  </div>
+            <div class="contact-wrapper">
+            <div id="container"></div>
+            <script id="template">
+                <div class="envelope {{ flipCard ? 'active' : '' }}">
+                <div class="response-text"></div>
+                <div class="back paper"></div>
+                <div class="content">
+                    <div class="form-wrapper">
+                    <form>
+                        <div class="top-wrapper">
+                        <div class="input">
+                            <label>Name</label>
+                            <input type="text" name="name"/>
+                        </div>
+                        <div class="input">
+                            <label>Phone</label>
+                            <input type="text" name="phone"/>
+                        </div>
+                        <div class="input">
+                            <label>Email</label>
+                            <input type="text" name="_replyto"/>
+                        </div>
+                        </div>
+                        <div class="bottom-wrapper">
+                        <div class="input">
+                            <label>Subject</label>
+                            <input type="text" name="_subject"/>
+                        </div>
+                        <div class="input">
+                            <label>Message</label>
+                            <textarea rows="5" name="message"></textarea>
+                        </div>
+                        <div class="submit">
+                            <div id="submit-btn" class="submit-card" on-click="toggle('flipCard')">Send Mail</div>
+                        </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+                <div class="front paper"></div>
+                </div>
+            </script>
+            </div>
+        
+            <div class="contact-wrapper-map">
+                <div style="margin: -5px 0; width: 100%;"><iframe class="mapsize" src="https://maps.google.com/maps?q=usict&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
+            </div> 
+        </div>
+        <div class="footer-hack">
+            <% include ../partials/footer %>
+        </div>
+</div>
   
   <!-- footer commneted for contact page for responsiveness of page -->
-    <footer class="footer-margin">
-    <% include ../partials/footer %>
-    </footer>
+
+    
 
     <!-- Nav below is for hamburger -->
 
