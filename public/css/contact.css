@@ -1,59 +1,105 @@
-.contact-flex{
+.contact-parent-wrapper{
 	display:flex;
-	justify-content: center;
-	align-items:flex-start;
-	height: 100vh;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 
-@media only screen and (min-width: 768px) {
-	/* tablets and desktop */
-	.contact-flex{
-		padding-top: 180px;
-		padding-left: 200px;	
-	}
-	.mapsize{
-		width: 600px;
-		height: 500px;
-	}
-	.footer-margin{
-		margin-top: -50px;
-	}
-}
-@media only screen and (max-width: 767px) {
-	/* phones */
-	.footer-margin{
-		margin-top: 350px;
-	}
-	.contact-flex{
-		padding-bottom: 300px;	
-	}
-	.mapsize{
-		width: 200px;
-		height: 500px;
-	}
-	.contact-wrapper-map{
-		padding-left: 100px;
-		padding-bottom: 100px;
-		margin-top: -100px;
-	}
+.contact-flex{
+	width:100%;
+	display:flex;
+	/* background-color: red; */
+	justify-content: space-around;
+	align-items:center;
+	height: 100vh;
+	margin:0;
+	padding: 160px 10px 10px 10px;
+	margin-bottom: 60px;
 }
 
 .contact-wrapper {
-	/* position: absolute; */
-	/* top: 50%; */
-	/* transform: translateY(-50%); */
-	flex: 1;
+	display:flex;
+	justify-content: center;
+	align-content: center;
 	order: 2;
+}
+.contact-wrapper-map {
+	overflow: hidden;
+	border: 6px solid rebeccapurple;
+	border-radius: 30px;
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	order: 1 ;
+}
+
+.mapsize{
+	width: 500px;
+	height: 500px;
+}
+
+/* tablets and desktop */
+@media only screen and (max-width: 1023px) {
+
+	.contact-flex{
+		padding: 160px 10px 10px 10px;
+		margin-bottom: 60px;
 	}
-	.contact-wrapper-map {
-		/* position: absolute; */
-		/* top: 50%; */
-		/* transform: translateY(-50%); */
-		flex: 1;
-		order: 1 ;
-		}
-  .flip-card {
+	.mapsize{
+		width: 350px;
+		height: 350px;
+	}
+	.envelope{
+		transform:scale(0.7) !important;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.contact-flex{
+		padding: 10px;
+		flex-wrap:wrap;
+		/* flex-direction: column; */
+		justify-content: space-around;
+	}
+	.mapsize{
+		width: 100%;
+		height: 350px;
+	}
+	.envelope{
+		transform:scale(0.6);
+	}
+	.contact-wrapper-map{
+		/* margin: -100px auto; */
+		/* border:none !important; */
+		width:100%;
+		order:2 !important;
+	}
+	.contact-wrapper{
+		/* padding: -100px 0; */
+		order:1 !important;
+	}
+	.footer-hack{
+		padding-top: 160px;
+	}
+	                         
+}
+
+/* phones */
+@media only screen and (max-width: 479px) {
+	.mapsize{
+		height: 200px;
+	}
+	.contact-flex{
+		position:relative !important;
+	}
+	.footer-hack{
+		position: relative !important;
+		padding-top: 160px !important;
+	}
+}
+
+/* css for envelope starts from here.... */
+
+	.flip-card {
 	border-radius: 0.5em;
 	position: fixed;
 	top: 1em;

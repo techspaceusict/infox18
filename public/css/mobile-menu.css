@@ -99,6 +99,9 @@ html {
 .sub-menu li:nth-child(6) {
   -webkit-transition-delay: 0.30s;
 }
+.sub-menu li:nth-child(7) {
+  -webkit-transition-delay: 0.35s;
+}
 .sub-menu li a {
   color: #fff;
   font-family: 'Lato', Arial, Helvetica, sans-serif;
@@ -114,7 +117,7 @@ html {
 
 .oppenned .sub-menu {
   opacity: 1;
-  height: 450px;
+  height: 500px;
   width: 400px;
 }
 .oppenned span:nth-child(2) {
@@ -133,7 +136,7 @@ html {
           transform: rotate(45deg) translateY(6px) translateX(6px);
 }
 .oppenned span:nth-child(2) {
-  height: 450px;
+  height: 500px;
   width: 400px;
   right: -160px;
   top: -160px;
@@ -151,8 +154,8 @@ html {
 .nav-bar{
   /* position: fixed; */
   position:fixed;
-	top: 0px;
-	right: 0%;
+	top: -3%;
+	right: -5%;
 	display: block;
 	cursor: pointer;
 	z-index:100000;
@@ -196,5 +199,12 @@ html {
 @media (min-width:767px){
   #test2{
     display:none;
+  }
+}
+
+@media only screen and (max-width:479px){
+  .nav-bar{
+    top: -3% !important;
+	  right: -10% !important;  
   }
 }

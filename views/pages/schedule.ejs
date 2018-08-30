@@ -27,20 +27,26 @@
     }
 
 </style>
-<section class="media-block">
-    <h1>SCHEDULE 2018</h1>
 
-        <img src="img/13oct.jpg" alt="day-1-schedule" class="img-sc">
-    
-    
-        <img src="img/14oct.jpg" alt="day-2-schedule" class="img-sc">
-      
-      
-        <img src="img/15oct.jpg" alt="day-3-schedule" class="img-sc">
-     
-</section>
+<div id="app">
+    <div @click="tune">
+        <section class="media-block simple-ripple">
+            <h1>SCHEDULE 2018</h1>
+        
+                <img src="img/13oct.jpg" alt="day-1-schedule" class="img-sc">
+            
+            
+                <img src="img/14oct.jpg" alt="day-2-schedule" class="img-sc">
+                
+                
+                <img src="img/15oct.jpg" alt="day-3-schedule" class="img-sc">
+                
+        </section>
+        <% include ../partials/footer %>
+    </div>
+</div>
 
-<% include ../partials/footer %>
+
 
 <!-- Nav below is for hamburger -->
 

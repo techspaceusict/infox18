@@ -101,78 +101,81 @@
 
 <% include ../partials/hamburger %>
 
-<section class="about-work" id="extra-margin"> 
-  <div class="container absolute-container">
-    <div class="connector">
-      <div class="circle"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="circle"></div>
-    </div>
-  </div>
-  <div class="hidden-box">
-    <div class="container">
-      <div class="part1">
-          <!-- <div class="flex-display"> -->
-              <% include ../partials/10_pieces%>
-          <!-- </div> -->
-      </div>
-      <div class="part2">
-          <!-- <div class="flex-display"> -->
-              <div class="text-block">
-                <h2>Events</h2>
-                <p>
-                  Participate in the biggest technical extravaganza held at Guru Gobind Singh Indraprastha University which involves an active participation of students from over 250 colleges of north India.
-                </p>
-                <p><a class="btn" href="/events"  onclick="trackClick('View Projects');">View our Events</a></p>
-              </div>
-          <!-- </div> -->
-          </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="about-mission">
-    <div class="container absolute-container">
-      <div class="connector">
-        <div class="circle"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="circle"></div>
-      </div>
-    </div>
-    <!-- <% include ../partials/timer%> -->
-    <div class="hidden-box">
-      <div class="container" >
-          <div class="timer-container">
-            <div class="timer-heading">Fest Starts In...</div>
-            <div class="timer-wrapper">
-                <% include ../partials/timer%>
+<div id="app">
+  <div @click="tune">
+      <section class="about-work simple-ripple" id="extra-margin"> 
+          <div class="container absolute-container">
+            <div class="connector">
+              <div class="circle"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="circle"></div>
             </div>
           </div>
-      </div>
-    </div>
-  </section>
-
-
-
-<section class="about-open_source">
-  <div class="container">
-    <div class="composition">
-      <img src="img/about/open-source.png" />
-    </div>
-    <div class="text-block">
-      <h2>3D Model of USICT</h2>
-      <p>If you are reading this, chances are you are using the fruits of open work done every decade since the 1970s. We have all benefitted enormously from Open Source. It's everywhere: from the software we use daily, our OS kernels, our network stacks, and our web browers; to open work processes like the IETF and W3C working groups; to the libraries we use and the contributions we get. The internet is what it is today thanks in great part to an Open work culture. We are the same: our code and our work is Open Source.</p>
-      <p></p>
-    </div>
+          <div class="hidden-box">
+            <div class="container">
+              <div class="part1">
+                  <!-- <div class="flex-display"> -->
+                      <% include ../partials/10_pieces%>
+                  <!-- </div> -->
+            </div>
+            <div class="part2">
+                <!-- <div class="flex-display"> -->
+                    <div class="text-block">
+                      <!-- <h2>Events</h2> -->
+                      <p style="font-size: 1.5rem">
+                        Participate in the biggest technical extravaganza held at Guru Gobind Singh Indraprastha University which involves an active participation of students from over 250 colleges of north India.
+                      </p>
+                      <p><a class="btn" href="/events"  onclick="trackClick('View Projects');">View our Events</a></p>                      </div>
+                <!-- </div> -->
+                </div>
+            </div>
+          </div>
+        <!-- </div> -->
+      </section>
+        
+        <section class="about-mission">
+            <!-- <div class="container absolute-container">
+              <div class="connector">
+                <div class="circle"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="circle"></div>
+              </div>
+            </div> -->
+            <!-- <% include ../partials/timer%> -->
+            <div class="hidden-box">
+              <div class="container" >
+                  <div class="timer-container">
+                    <div class="timer-heading">Fest Starts In...</div>
+                    <div class="timer-wrapper">
+                        <% include ../partials/timer%>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </section>
+        
+        
+        
+        <!-- <section class="about-open_source">
+          <div class="container">
+            <div class="composition">
+              <img src="img/about/open-source.png" />
+            </div>
+            <div class="text-block">
+              <h2>3D Model of USICT</h2>
+              <p>If you are reading this, chances are you are using the fruits of open work done every decade since the 1970s. We have all benefitted enormously from Open Source. It's everywhere: from the software we use daily, our OS kernels, our network stacks, and our web browers; to open work processes like the IETF and W3C working groups; to the libraries we use and the contributions we get. The internet is what it is today thanks in great part to an Open work culture. We are the same: our code and our work is Open Source.</p>
+              <p></p>
+            </div>
+          </div>
+        </section> -->
   </div>
-</section>
+  <% include ../partials/footer %>
+</div>
 
-<% include ../partials/footer %>
 
 <script src="js/common.js"></script>
 <script src="js/clock.js"></script>
