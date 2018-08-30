@@ -1159,7 +1159,7 @@ section p:not(:last-child) {
 
 .nav-wrapper{
     width:100%;
-    min-height: 120px;
+    min-height: 100px;
     position:fixed;
     top:0;
     background-color: rgba(19, 0, 26, 0.95);
@@ -1183,7 +1183,7 @@ header {
     right: 40px;
     z-index: 11;
 }
-header:after {
+/* header:after {
     border-bottom: 1px solid;
     bottom: 0;
     content: '';
@@ -1191,7 +1191,7 @@ header:after {
     opacity: .2;
     position: absolute;
     right: 0;
-}
+} */
 
 header nav {
     color: #fff;
