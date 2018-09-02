@@ -19,54 +19,37 @@
     <div class="contact-flex">
 
             <div class="contact-wrapper">
-            <div id="container"></div>
-            <script id="template">
-                <div class="envelope {{ flipCard ? 'active' : '' }}">
-                <div class="response-text"></div>
-                <div class="back paper"></div>
-                <div class="content">
-                    <div class="form-wrapper">
-                    <form>
-                        <div class="top-wrapper">
-                        <div class="input">
-                            <label>Name</label>
-                            <input type="text" name="name"/>
-                        </div>
-                        <div class="input">
-                            <label>Phone</label>
-                            <input type="text" name="phone"/>
-                        </div>
-                        <div class="input">
-                            <label>Email</label>
-                            <input type="text" name="_replyto"/>
-                        </div>
-                        </div>
-                        <div class="bottom-wrapper">
-                        <div class="input">
-                            <label>Subject</label>
-                            <input type="text" name="_subject"/>
-                        </div>
-                        <div class="input">
-                            <label>Message</label>
-                            <textarea rows="5" name="message"></textarea>
-                        </div>
-                        <div class="submit">
-                            <div id="submit-btn" class="submit-card" on-click="toggle('flipCard')">Send Mail</div>
-                        </div>
-                        </div>
-                    </form>
-                    </div>
-                </div>
-                <div class="front paper"></div>
-                </div>
-            </script>
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                          <option value="australia">Australia</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                        </select>
+                    
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                      </form>
             </div>
         
             <div class="contact-wrapper-map">
-                <div style="margin: -5px 0; width: 100%;"><iframe class="mapsize" src="https://maps.google.com/maps?q=usict&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
+                <div style="margin: -5px 0; width: 100%;">
+                    <iframe class="mapsize" 
+                    src="https://maps.google.com/maps?q=usict&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.pureblack.de"></a>
+                </div>
             </div> 
         </div>
-        <div class="footer-hack">
+        <div>
             <% include ../partials/footer %>
         </div>
 </div>
@@ -86,7 +69,7 @@
   data: {} });
 //# sourceURL=pen.js
 </script>
-<script>
+<!-- <script>
     $(document).ready(function(){
         $("#submit-btn").click(function(){
             $(".response-text").delay(1200).fadeOut(400,function(){
@@ -94,6 +77,6 @@
             });
         });
     });
-</script>
+</script> -->
 
 </body>
