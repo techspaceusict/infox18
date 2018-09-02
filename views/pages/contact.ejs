@@ -1,7 +1,6 @@
 
 <% include ../partials/header-links2 %> <!--Contains all header meta tags and links-->
 
-<script src='//static.codepen.io/assets/editor/live/console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js'></script><script src='//static.codepen.io/assets/editor/live/css_live_reload_init-e9c0cc5bb634d3d14b840de051920ac153d7d3d36fb050abad285779d7e5e8bd.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/felcans/pen/xOVBLY" />
 
 </head><body>
 <body>
@@ -19,25 +18,7 @@
     <div class="contact-flex">
 
             <div class="contact-wrapper">
-                    <form action="/action_page.php">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    
-                        <label for="country">Country</label>
-                        <select id="country" name="country">
-                          <option value="australia">Australia</option>
-                          <option value="canada">Canada</option>
-                          <option value="usa">USA</option>
-                        </select>
-                    
-                        <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Submit">
-                      </form>
+                <div id="stage" class="stage"></div>
             </div>
         
             <div class="contact-wrapper-map">
@@ -69,6 +50,8 @@
   data: {} });
 //# sourceURL=pen.js
 </script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js'></script>
+<script src="js/contact.js"></script>
 <!-- <script>
     $(document).ready(function(){
         $("#submit-btn").click(function(){

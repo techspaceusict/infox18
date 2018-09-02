@@ -19,7 +19,7 @@
 	overflow: hidden;
 	height: 500px;
 	width: 500px;
-	border: 6px solid rebeccapurple;
+	/* border: 6px solid rebeccapurple; */
 	border-radius: 30px;
 	display:flex;
 	justify-content: center;
@@ -89,4 +89,158 @@
 	.contact-flex{
 		position:relative !important;
 	}
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+.stage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+label, [type="text"],
+[type="email"],
+textarea, [type="submit"] {
+  border-radius: 5px;
+}
+
+form {
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #18222d, #1a2530);
+  background: linear-gradient(left, #18222d, #1a2530);
+  box-shadow: inset 3px 3px 15px -5px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  display: block;
+}
+
+[type="submit"] {
+  background: #1a2530;
+  display: inline-block;
+  padding: 0.3em 1em 0.5em;
+  cursor: pointer;
+  background: -webkit-linear-gradient(left, #18222d, #1a2530);
+  background: linear-gradient(left, #18222d, #1a2530);
+  box-shadow: inset 3px 3px 15px -5px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #27ae60;
+  border: 1px solid rgba(41, 128, 185, 0.3);
+  font-size: 90%;
+}
+[type="submit"]:focus {
+  background: #3498db;
+  color: white;
+}
+[type="submit"]:hover {
+  background: #27ae60;
+  color: white;
+}
+[type="submit"]:active {
+  background: #1a2530;
+  color: white;
+}
+
+label, input,
+textarea {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+label:hover, input:hover,
+textarea:hover {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+*,
+body {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-size: 19px;
+  line-height: 1.3em;
+}
+
+legend {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #2980b9;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-20%) translateY(50%);
+          transform: translateX(-20%) translateY(50%);
+  background: rgba(26, 37, 48, 0.5);
+  border: 1px solid rgba(41, 128, 185, 0.5);
+  padding: 0 1em 0.2em;
+  display: block;
+  cursor: pointer;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+input,
+textarea {
+  font-size: 100%;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #2980b9;
+  background: #1a2530;
+  box-shadow: inset 3px 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+input:focus + label, input.active + label,
+textarea:focus + label,
+textarea.active + label {
+  background: #2980b9;
+  -webkit-transform: translateX(-20%) translateY(-50%);
+          transform: translateX(-20%) translateY(-50%);
+}
+
+::-webkit-input-placeholder {
+  color: rgba(41, 128, 185, 0.3);
+}
+
+[type="text"],
+[type="email"],
+textarea {
+  border: none;
+  background: inherit;
+  color: #94c0dc;
+  border: 1px solid rgba(41, 128, 185, 0.3);
+  padding: 1em 0.5em 0.5em;
+  width: 100%;
+  -webkit-filter: blur(5px);
+}
+[type="text"]:focus, [type="text"].active,
+[type="email"]:focus,
+[type="email"].active,
+textarea:focus,
+textarea.active {
+  -webkit-filter: blur(0px);
+}
+
+.control {
+  margin-bottom: 1.3em;
+}
+
+.stage {
+  max-width: 500px;
+  width: 80%;
 }
