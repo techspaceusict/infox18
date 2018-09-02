@@ -303,7 +303,7 @@ body {
 }
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-3.jpg");
+  background-image: url("https://scontent.fdel1-4.fna.fbcdn.net/v/t31.0-8/14196041_1790470514529198_5711763405302580219_o.jpg?_nc_cat=0&oh=6f7d72ca9b9d0607eddd3a4af3dd1674&oe=5BF83899");
 }
 .el:nth-child(2) {
   -webkit-transform: translate3d(105.2083333333%, 0, 0);
@@ -328,7 +328,7 @@ body {
 }
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-4.jpg");
+  background-image: url("https://scontent.fdel1-4.fna.fbcdn.net/v/t31.0-8/23155042_1980634695512778_4320777825882425698_o.jpg?_nc_cat=0&oh=f966c7d0a73304fea17dd99890be8eab&oe=5BFB76E2");
 }
 .el:nth-child(3) {
   -webkit-transform: translate3d(210.4166666667%, 0, 0);
@@ -353,7 +353,7 @@ body {
 }
 .el:nth-child(3) .el__bg:before {
   transition-delay: 0.2s;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-5.jpg");
+  background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=7a351103e3&attid=0.1&permmsgid=msg-f:1610480372739513121&th=1659935dc6e09b21&view=fimg&realattid=f_jlkjkmxy0&disp=thd&attbid=ANGjdJ9O28U6AFNkNy2pPkt99LK1dTw20qRHC0LmFgJOuYR3CuXoxAQzgmRn_DiAG0Qo7kUJbmgNdy1FomnqE9exeieViCgRrk5AsUC1Pk0hk9ZJDNerTpv2EyHFvmw&ats=2524608000000&sz=w1440-h826");
 }
 .el:nth-child(4) {
   -webkit-transform: translate3d(315.625%, 0, 0);
@@ -378,7 +378,7 @@ body {
 }
 .el:nth-child(4) .el__bg:before {
   transition-delay: 0.3s;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-6.jpg");
+  background-image: url("https://mail.google.com/mail/u/0?ui=2&ik=7a351103e3&attid=0.6&permmsgid=msg-f:1610480372739513121&th=1659935dc6e09b21&view=fimg&realattid=f_jlkjkn0d5&disp=thd&attbid=ANGjdJ-ddez-y2f70dxX5gsUdkZZm-fh2on-hVlsZu-Ry4-Fc_xIOxdRheqzMUpC_1mJKMq28Hd5cR5C4nF0ghsRwQ7nUjEaW6Wn8kXH5oNQNeUil4HQwYkjWPNJxZ4&ats=2524608000000&sz=w1440-h826");
 }
 .el:nth-child(5) {
   -webkit-transform: translate3d(420.8333333333%, 0, 0);
@@ -403,7 +403,7 @@ body {
 }
 .el:nth-child(5) .el__bg:before {
   transition-delay: 0.4s;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/onepgscr-7.jpg");
+  background-image: url("https://scontent.fdel1-4.fna.fbcdn.net/v/t31.0-8/23154732_1980647988844782_3478585209799351990_o.jpg?_nc_cat=0&oh=df73e6cab560241caeee90d5e410e92f&oe=5BF7F8E9");
 }
 .el:hover .el__bg:after {
   opacity: 0;
