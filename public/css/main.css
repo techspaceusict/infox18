@@ -1159,7 +1159,7 @@ section p:not(:last-child) {
 
 .nav-wrapper{
     width:100%;
-    min-height: 100px;
+    min-height: 85px;
     position:fixed;
     top:0;
     background-color: rgba(19, 0, 26, 0.95);
