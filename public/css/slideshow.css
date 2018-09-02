@@ -444,3 +444,26 @@ body {
   left: auto;
   right: 5px;
 }
+
+
+
+/* tablets and desktop */
+@media only screen and (max-width: 1023px) {
+	.slider{
+    margin-top: -15rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider{
+    margin-top: -15rem;
+  }
+	                       
+}
+
+/* phones */
+@media only screen and (max-width: 479px) {
+	.slider{
+    margin-top: 5px;
+  }
+}
