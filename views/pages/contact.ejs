@@ -1,7 +1,6 @@
 
 <% include ../partials/header-links2 %> <!--Contains all header meta tags and links-->
 
-<script src='//static.codepen.io/assets/editor/live/console_runner-ce3034e6bde3912cc25f83cccb7caa2b0f976196f2f2d52303a462c826d54a73.js'></script><script src='//static.codepen.io/assets/editor/live/css_live_reload_init-e9c0cc5bb634d3d14b840de051920ac153d7d3d36fb050abad285779d7e5e8bd.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/felcans/pen/xOVBLY" />
 
 </head><body>
 <body>
@@ -19,54 +18,19 @@
     <div class="contact-flex">
 
             <div class="contact-wrapper">
-            <div id="container"></div>
-            <script id="template">
-                <div class="envelope {{ flipCard ? 'active' : '' }}">
-                <div class="response-text"></div>
-                <div class="back paper"></div>
-                <div class="content">
-                    <div class="form-wrapper">
-                    <form>
-                        <div class="top-wrapper">
-                        <div class="input">
-                            <label>Name</label>
-                            <input type="text" name="name"/>
-                        </div>
-                        <div class="input">
-                            <label>Phone</label>
-                            <input type="text" name="phone"/>
-                        </div>
-                        <div class="input">
-                            <label>Email</label>
-                            <input type="text" name="_replyto"/>
-                        </div>
-                        </div>
-                        <div class="bottom-wrapper">
-                        <div class="input">
-                            <label>Subject</label>
-                            <input type="text" name="_subject"/>
-                        </div>
-                        <div class="input">
-                            <label>Message</label>
-                            <textarea rows="5" name="message"></textarea>
-                        </div>
-                        <div class="submit">
-                            <div id="submit-btn" class="submit-card" on-click="toggle('flipCard')">Send Mail</div>
-                        </div>
-                        </div>
-                    </form>
-                    </div>
-                </div>
-                <div class="front paper"></div>
-                </div>
-            </script>
+                <div id="stage" class="stage"></div>
             </div>
         
             <div class="contact-wrapper-map">
-                <div style="margin: -5px 0; width: 100%;"><iframe class="mapsize" src="https://maps.google.com/maps?q=usict&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de"></a></div>
+                <div style="margin: -5px 0; width: 100%;">
+                    <iframe class="mapsize" 
+                    src="https://maps.google.com/maps?q=usict&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.pureblack.de"></a>
+                </div>
             </div> 
         </div>
-        <div class="footer-hack">
+        <div>
             <% include ../partials/footer %>
         </div>
 </div>
@@ -86,7 +50,9 @@
   data: {} });
 //# sourceURL=pen.js
 </script>
-<script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js'></script>
+<script src="js/contact.js"></script>
+<!-- <script>
     $(document).ready(function(){
         $("#submit-btn").click(function(){
             $(".response-text").delay(1200).fadeOut(400,function(){
@@ -94,6 +60,6 @@
             });
         });
     });
-</script>
+</script> -->
 
 </body>
