@@ -84,7 +84,7 @@ var ContactForm = React.createClass({displayName: "ContactForm",
          React.createElement("form", {action: "/"}, 
         
             React.createElement("fieldset", null, 
-                React.createElement("legend", null, "Contact me."), 
+                React.createElement("legend", null, "Contact Us"), 
                 
                 React.createElement(NameInput, {onUserInput: this.handleUserInput}), 
                 React.createElement(EmailInput, {onUserInput: this.handleUserInput}), 
