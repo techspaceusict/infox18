@@ -10,13 +10,13 @@
 	display: block;
 	padding: 0px;
 	margin: 0;
-	font-size:70px;
-	line-height: 75px;
+	font-size:40px;
+	line-height: 45px;
 	text-align: center;
 }
 #countup span.label {
 	display: block;
-	font-size:25px;
+	font-size:20px;
 	line-height: 30px;					
 }
 
