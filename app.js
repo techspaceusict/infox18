@@ -64,10 +64,6 @@ app.post('/signIn', passport.authenticate('local-signIn', {
 
 app.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email'] }));
 
-// Facebook will redirect the user to this URL after approval.  Finish the
-// authentication process by attempting to obtain an access token.  If
-// access was granted, the user will be logged in.  Otherwise,
-// authentication has failed.
 app.get('/auth/facebook/callback',
     passport.authenticate('facebook', { successRedirect: '/profile',
         failureRedirect: '/signIn' }));
@@ -111,6 +107,10 @@ app.get('/sponsers', function (req, res) {
 app.get('/team', function (req, res) {
     res.render("pages/team");
 });
+
+var admin = express.Router();
+require('./routes/admin')(admin, passport);
+app.use('/admin', admin);
 
 app.listen(process.env.PORT || 8080, function(){
     console.log("server started!");
