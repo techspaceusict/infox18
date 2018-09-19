@@ -1,0 +1,37 @@
+<% include adminPartials/header.ejs%>
+<div class="container">
+    <div class="row" id="events">
+        <h4>All Events</h4>
+        <% for(i=0;i<events.length;++i){ %>
+        <div class="col m4">
+            <div class="card">
+                <div class="card-image">
+                    <%console.log((events[i].image).substr(8));%>
+                    <img src="<%=events[i].image.substr(8)%>">
+                    <span class="card-title" style="background-color: rgba(0,0,0,0.5);"><%=events[i].name%></span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red" href="/admin/events/<%=events[i].id%>">
+                        <i class="material-icons">add</i>
+                    </a>
+                </div>
+                <div class="card-content">
+                    <p>Venue: <%=events[i].venue%></p>
+                    <p>Time: <%=events[i].time%></p>
+                </div>
+            </div>
+        </div>
+        <%}%>
+    </div>
+</div>
+
+<script>
+
+    // alert("hmm");
+    // $.post("/admin/fetchAllEvents", {}, function (data, status) {
+    //     console.log("DATA: " + JSON.stringify(data) + "\nStatus:" + status);
+    //     for(i=0;i<data.length;++i){
+    //
+    //     }
+    // });
+
+</script>
+<% include adminPartials/footer.ejs%>

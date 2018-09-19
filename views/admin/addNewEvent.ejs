@@ -1,19 +1,4 @@
-<html>
-<head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="/css/materialize.css"  media="screen,projection"/>
-    <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-
-<body>
-
+<% include adminPartials/header.ejs%>
 
 <div class="container text-center" style="">
     <h3>Add New Infox Event</h3>
@@ -22,7 +7,8 @@
         <div class="col m1">
         </div>
         <div class="col m10">
-            <form style="border: 2px solid grey; padding:50px;" action="/admin/events" method="POST">
+            <% if(typeof (msg) != "undefined"){ %><p class="red accent-4" style="padding: 10px; color: white; font-weight: 700;"><%=msg%></p> <%}%>
+            <form style="border: 2px solid grey; padding:50px;" action="/admin/events" method="POST" enctype="multipart/form-data">
                 <div class="input-field">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name">
@@ -58,7 +44,7 @@
                 <div class = "file-field input-field">
                     <div class = "btn">
                         <span>Browse</span>
-                        <input type = "file" />
+                        <input name="eventsImage" type = "file" />
                     </div>
 
                     <div class = "file-path-wrapper">
@@ -136,13 +122,5 @@
         </div>
     </div>
 </div>
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="/js/materialize.js"></script>
-<script>
-    $(document).ready(function(){
-        $('select').formSelect();
-    });
 
-</script>
-</body>
-</html>
+<%include adminPartials/footer.ejs%>

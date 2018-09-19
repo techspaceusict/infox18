@@ -135,6 +135,6 @@ var admin = express.Router();
 require("./routes/admin")(admin, passport);
 app.use("/admin", admin);
 
-app.listen(process.env.PORT || 8080, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("server started!");
 });

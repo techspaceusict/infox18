@@ -1,3 +1,5 @@
+config/
+
 events-icon.cdr
 
 # Created by https://www.gitignore.io/api/node,macos,linux,windows,webstorm+all
