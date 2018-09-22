@@ -14,7 +14,9 @@ const userSchema = mongoose.Schema({
         token: String,
         email: String,
         name: String
-    }
+    },
+    type: { type: Number, default: 0},
+    contact: { type: Number }
 });
 
 userSchema.methods.generateHash = function(password){

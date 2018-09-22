@@ -1,0 +1,126 @@
+<% include adminPartials/header.ejs%>
+
+<div class="container text-center" style="">
+    <h3>Add New Infox Event</h3>
+    <br><br>
+    <div class="row">
+        <div class="col m1">
+        </div>
+        <div class="col m10">
+            <% if(typeof (msg) != "undefined"){ %><p class="red accent-4" style="padding: 10px; color: white; font-weight: 700;"><%=msg%></p> <%}%>
+            <form style="border: 2px solid grey; padding:50px;" action="/admin/events" method="POST" enctype="multipart/form-data">
+                <div class="input-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="input-field">
+                    <label class="pull-left" for="description">Description(HTML code)</label>
+                    <input type="text" class="form-control" id="description" name="description">
+                </div>
+                <div class="input-field">
+                    <label class="pull-left" for="venue">Venue</label>
+                    <input type="text" class="form-control" id="venue" name="venue">
+                </div>
+                <div class="input-field">
+                    <label class="pull-left" for="time">Time Duration</label>
+                    <input type="text" class="form-control" id="time" name="time">
+                </div>
+                <div class="input-field">
+                    <label class="pull-left" for="fbUrl">Facebook URL</label>
+                    <input type="text" class="form-control" id="fbUrl" name="fbURl">
+                </div>
+                <label>Type Of Event</label>
+                <div class="input-field">
+                    <select name="type">
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Coding</option>
+                        <option value="2">Enterprenurial</option>
+                        <option value="3">Non-Tech</option>
+                        <option value="4">Electrotech</option>
+                        <option value="5">Quizes</option>
+                    </select>
+                </div>
+                <label>Image Upload</label>
+                <div class = "file-field input-field">
+                    <div class = "btn">
+                        <span>Browse</span>
+                        <input name="eventsImage" type = "file" />
+                    </div>
+
+                    <div class = "file-path-wrapper">
+                        <input class = "file-path validate" type = "text"
+                               placeholder = "Upload file" />
+                    </div>
+                </div>
+                <label for="">Organiser 1</label>
+                <div class="row">
+                    <div class="col m4">
+                        <div class="input-field">
+                            <label class="pull-left" for="name1">Name</label>
+                            <input type="text" class="form-control" id="name1" name="name1">
+                        </div>
+                    </div>
+                    <div class="col m4">
+                        <div class="input-field">
+                            <label class="pull-left" for="email1">Email</label>
+                            <input type="text" class="form-control" id="email1" name="email1">
+                        </div>
+                    </div>
+                    <div class="col m4">
+                        <div class="input-field">
+                            <label class="pull-left" for="mobile1">Mobile</label>
+                            <input type="text" class="form-control" id="mobile1" name="mobile1">
+                        </div>
+                    </div>
+                </div>
+                <label for="">Organiser 2</label>
+                <div class="row">
+                    <div class="col m4">
+                        <div class="input-field">
+                            <label class="pull-left" for="name2">Name</label>
+                            <input type="text" class="form-control" id="name2" name="name2">
+                        </div>
+                    </div>
+                    <div class="col m4">
+                        <div class="input-field">
+                            <label class="pull-left" for="email2">Email</label>
+                            <input type="text" class="form-control" id="email2" name="email2">
+                        </div>
+                    </div>
+                    <div class="col m4">
+                        <div class="input-field">
+                            <label class="pull-left" for="mobile2">Mobile</label>
+                            <input type="text" class="form-control" id="mobile2" name="mobile2">
+                        </div>
+                    </div>
+                </div>
+                <label for="">Organiser 3</label>
+                <div class="row">
+                    <div class="col m4">
+                        <div class="input-field">
+                            <label class="pull-left" for="name3">Name</label>
+                            <input type="text" class="form-control" id="name3" name="name3">
+                        </div>
+                    </div>
+                    <div class="col m4">
+                        <div class="input-field">
+                            <label class="pull-left" for="email3">Email</label>
+                            <input type="text" class="form-control" id="email3" name="email3">
+                        </div>
+                    </div>
+                    <div class="col m4">
+                        <div class="input-field">
+                            <label class="pull-left" for="mobile3">Mobile</label>
+                            <input type="text" class="form-control" id="mobile3" name="mobile3">
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+        <div class="col m1">
+        </div>
+    </div>
+</div>
+
+<%include adminPartials/footer.ejs%>
