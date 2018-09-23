@@ -29,7 +29,7 @@
 .contact-wrapper-map {
 	/* flex: 1 1 40%; */
 	overflow: hidden;
-	border: 6px solid rebeccapurple;
+	border: 6px solid #B3000C;
 	border-radius: 30px;
 	display:flex;
 	justify-content: center;
