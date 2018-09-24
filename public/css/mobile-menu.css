@@ -65,7 +65,7 @@ html {
   right: 0;
   top: 0;
   position: absolute;
-  background-color: rgba(23, 0, 39, 0.9);
+  background-color: red;
   border-radius: 50%;
   z-index: 9021;
   overflow: hidden;

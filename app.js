@@ -131,6 +131,10 @@ app.get("/team", function(req, res) {
   res.render("pages/team");
 });
 
+app.get("/comingsoon", function(req, res) {
+  res.render("pages/comingsoon");
+});
+
 var admin = express.Router();
 require("./routes/admin")(admin, passport);
 app.use("/admin", admin);
