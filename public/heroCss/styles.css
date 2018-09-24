@@ -441,10 +441,19 @@ body{
     /* flex-wrap:wrap; */
 }
 
+@media only screen and (max-height: 767px ) {
+    .hero-text{
+        top: 80%;
+    }
+    .logo-container{
+        height: 330px;
+        width: 380px;
+    }
+}
 
 .hero-text{  
     position:absolute;
-    top:53%;
+    top:60%;
     left:50%;
     transform:translate(-50%,0%);
     width:100%;
