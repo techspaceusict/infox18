@@ -1,3 +1,7 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto');
+html{
+    font-family: 'Roboto', sans-serif !important;
+} */
 @font-face {
     font-family: Ubuntu;
     font-style: normal;
@@ -1159,7 +1163,7 @@ section p:not(:last-child) {
 
 .nav-wrapper{
     width:100%;
-    min-height: 85px;
+    min-height: 75px;
     position:fixed;
     top:0;
     background-color: #000000;
