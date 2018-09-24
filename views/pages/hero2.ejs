@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Infox_hero</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Humans -->
+	<link rel="author" href="humans.txt"/>
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="heroCss/styles.css">
+	<link rel="stylesheet" href="heroCss/timer.css">
+	<link rel="stylesheet" href="heroCss/glitch-timer.css">
+	<link rel="stylesheet" href="heroCss/modal.css">
+	<link rel="stylesheet" href="heroCss/10_pieces.css">
+	<link rel="stylesheet" href="heroCss/mobile-menu.css">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Signika:300" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="assets/styles/css/hero.css"/> -->
+	<!-- <link rel="stylesheet" href="heroCss/logo.css"> -->
+
+	<!-- Scripts -->
+	<script src="heroJs/3p/3.min.js"></script>
+	<script src="heroJs/3p/three-particle-fire.js"></script>
+	<script src="heroJs/3p/particlesaga.min.js"></script>
+	<!-- <script src="heroJs/OrbitControls.js"></script>
+	<script src="heroJs/TrackballControls.js"></script> -->
+	<script src="heroJs/3p/CSS3DRenderer.js"></script>
+
+	<style>
+		/* #model4{
+			transform: rotateZ(0.5deg);
+		} */
+		#c{
+			/* display:none; */
+			visibility: hidden;
+		}
+		#saga{
+			/* opacity:0; */
+			position: absolute;
+			/* top:7%;
+			left:50%; */
+			/* transform:translate(-61%,22%); */
+			width:100%;
+			height:100%;
+			/* background: red; */
+			/* overflow: hidden; */
+			/* top: -10vh;margin: auto; */
+		}
+		.testdiv{
+			position: absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			display:inline-block;
+			background-color:red;
+		}
+	</style>
+
+</head>
+
+<body data-anm=".anm"> <!-- To add parallax.js type effect to this site use anm library-->
+
+	<!---->
+	
+
+	<!---->
+	
+	<canvas id="c"></canvas>
+	<div class="upper-half">
+		<div class="logo-container">
+			<div id="saga">
+				<ul id="multitarget-references">
+					<!-- <li id="multitarget-reference-1"></li>
+					<li id="multitarget-reference-2"></li> -->
+				</ul>
+			</div>
+		</div>
+		<!-- <div class="logo-section">
+			<img src="obj/logo1.svg" alt="" class="logo-container">	
+		</div> -->
+		<div class="hero-text">
+			<!-- <div class="testdiv">
+				jbcxkhzbcjhdbvbsb vsbl
+			</div> -->
+			<div class="date-container sub-containers">
+					<!-- <div class="slider"></div> -->
+					<div class="date">OCT 12th-14th 2018</div>
+			</div>
+			<div class="ggsipu-container sub-containers">
+					<!-- <div class="slider"></div> -->
+				<div class="ggsipu">TECHSPACE USICT | GGSIPU</div>
+			</div>
+			<div class="tagline-container sub-containers">
+					<!-- <div class="slider"></div> -->
+					<div class="tagline">Celebrating the sense of Belonging</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="sponsor-icons">
+		<div class="icons icon1"></div>
+		<div class="icons icon2"></div>
+	</div> -->
+	<div class="layer">
+		<div class="sub-layer layer1">
+				<div class="helper"><div class="comets" id="comet2"></div></div>
+				<div class="helper"><div class="comets" id="comet"></div></div>
+		</div>
+		<div class="sub-layer layer2">
+				<div class="helper"><div class="comets" id="comet4"></div></div>
+				<div class="helper"><div class="comets" id="comet3"></div></div>
+		</div>
+		<div class="sub-layer layer3">
+				<div class="helper"><div class="comets"id="comet6"></div></div>
+				<div class="helper"><div class="comets" id="comet5"></div></div>
+		</div>
+		<div class="know-more-2"></div>
+		<!-- <div class="know-more-3"></div> -->
+		<div class="know-more">
+			<div class="tail"></div>
+			<div class="arrow"></div>
+		</div>
+		<div class="sponsor-layer">
+			<a href="http://206.189.141.176:3000/">
+				<div class="pc">infoxpression 2k17</div>
+				<div class="mob"><img src="obj/infox17-logo.png" alt="" style="width: 15px;"></div>
+			</a>
+			<a href="http://fb.com/infoxpression">
+				<div class="pc">fb.com/infoxpression</div>
+				<div class="mob"><i class="fab fa-facebook-square"></i></div>
+			</a>
+			<a href="http://techspace.club/">
+				<div class="pc">TECHSPACE USICT | GGSIPU</div>
+				<div class="mob"><b>T</b></div>
+			</a>
+		</div>
+	</div>
+	
+	<div class="know-block">
+		<div class="cross">X</div>
+		<div class="know-block-inner-wrapper">
+			<div class="events-block">
+				<div class="pieces-data">
+					<div class="wrapper_container">
+							<div class="div1"></div>
+							<div class="div2"></div>
+							<div class="div3"></div>
+							<div class="div4"></div>
+							<div class="div5"></div>
+							<div class="div6"></div>
+							<div class="div7"></div>
+							<div class="div8"></div>
+							<div class="div9"></div>
+							<div class="div10"></div>
+					</div>
+				</div>
+				<div class="events-data">
+					<div class="heading-wrapper">
+						<div class="heading">
+							<div class="heading-slider"></div>
+							<div class="heading-text">
+								EVENTS
+							</div>
+						</div>
+					</div>
+					<p style="text-align: center">
+						Participate in the biggest technical extravaganza held at Guru Gobind Singh Indraprastha University which involves an active participation of students from over 250 colleges of north India.
+					</p>
+					<a href=""><div class="button"> 
+						<span><pre>>> </pre></span><div class="btn-text">View Events</div>  
+					</div></a>
+				</div>
+			</div>
+			<div class="timer-container">
+				<div class="heading-wrapper">
+					<div class="heading">
+						<div class="heading-slider"></div>
+						<div class="heading-text">
+								FEST STARTS IN
+						</div>
+					</div>
+				</div>
+				<div class="timer-wrapper">
+					<div id="countup">
+						<div class="part"><div id="d"></div></div>
+						<div class="part"><div id="h"></div></div>
+						<div class="part"><div id="m"></div></div>
+						<div class="part"><div id="s"></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- hamburger-->
+
+	<div id="test2">
+		<nav class="nav-bar">
+			<div  class="open"  id="navbar">
+				<span class="cls"></span>
+				<span>
+				<ul class="sub-menu">
+					<li>
+					<a href="/">Home</a>
+					</li>
+					<li>
+					<a href="/about">About Us</a>
+					</li>
+					<li>
+					<a href="/events">Events</a>
+					</li>
+					<li>
+					<a href="/schedule">Schedule</a>
+					</li>
+					<li>
+					<a href="/sponsers">Sponsors</a>
+					</li>
+					<li>
+					<a href="/contact">Contact Us</a>
+					</li>
+					<li>
+						<a href="/signIn">Login</a>
+					</li>
+				</ul>
+				</span>
+				<span class="cls"></span>
+				<div class="nav-bar-2"></div>
+			</div>
+		</nav>
+	</div>
+
+	<!---->
+
+
+	<!---->
+
+	<!-- Scripts -->
+
+	<!-- <script src="heroJs/custom-element-polyfill.min.js"></script> -->
+	<script src="heroJs/3p/three-gltf-loader.min.js"></script>
+	<!-- <script src="heroJs/three-obj-loader.min.js"></script> -->
+	<script src="heroJs/3p/model-element.js"></script>
+	<script src="heroJs/3p/jquery-3.3.1.min.js"></script>
+	<script src="heroJs/3p/anim.min.js"></script>
+	<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script> -->
+	<script src="heroJs/3p/jquery.easing.min.js"></script>
+	<script src="heroJs/abcd/abcd1.js"></script>
+	<!-- <script src="assets/scripts/js/libraries.min.js"></script> -->
+	<!-- <script src="deploy/jquery.parallax.js"></script> -->
+	<script src="heroJs/abcd/index.js"></script>
+	<script src="heroJs/abcd/index2.js"></script>
+	<script src="heroJs/abcd/mobile-menu.js"></script>
+
+	<!-- minified script for background -->
+
+	<script>
+		$(window).resize(function(){$("#c").width($(window).width())
+$("#c").height($(window).height())});D=document;d=D.body.style;d.margin=0;d.overflow="hidden";c=window,d=c.innerWidth,e=c.innerHeight,g=D.body.children[0],i=d/2,j=e/2;g.width=d;g.height=e;k=g.getContext("2d");k.globalAlpha=0.3;l=Math,m=l.random,n=l.sin,o=l.floor,p=10,q=[],r=0,s=0.1,V=500,W=190,Q=0.3;function E(n,f){g.addEventListener(n,f,!1)}
+E("mousemove",function(a){i=a.clientX;j=a.clientY});function t(a){var f=0;if(a.detail)f=-a.detail/3;else f=a.wheelDelta/120;if(f>0&&s<1||f<0&&s+f/25>0.1)s+=f/25}
+E("DOMMouseScroll",t);E("mousewheel",t);function u(a){a.x=(m()*d-d*0.5)*p;a.y=(m()*e-e*0.5)*p;a.a=p;a.b=0;a.c=0}
+for(var v=0,w;v<V;v++){w={};u(w);q.push(w)}
+setInterval('k.fillStyle="#000";k.fillRect(0,0,d,e);for(a=i-d/2+d/2,f=j-e/2+e/2,h=0;h<V;h++){b=q[h],x=b.x/b.a,y=b.y/b.a,z=1/b.a*5+1,A=n(Q*h+r)*64+W,B=n(Q*h+2+r)*64+W,C=n(Q*h+4+r)*64+W;if(b.b!=0){k.strokeStyle="rgb("+o(A)+","+o(B)+","+o(C)+")";k.lineWidth=z;k.beginPath();k.moveTo(x+a,y+f);k.lineTo(b.b+a,b.c+f);k.stroke()}b.b=x;b.c=y;b.a-=s;if(b.a<s||b.b>d||b.c>e)u(b)}r+=0.1;',25)
+	</script>
+	<script src="heroJs/3p/progressbar.js"></script>
+	<script src="heroJs/abcd/timer.js"></script>
+	<script src="heroJs/abcd/timer-glitch.js"></script>
+</body>
+
+</html>

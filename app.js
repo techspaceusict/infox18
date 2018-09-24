@@ -52,7 +52,7 @@ function isLoggedIn(req, res, next) {
 }
 
 app.get("/", function(req, res) {
-  res.render("pages/hero");
+  res.render("pages/hero2");
 });
 
 app.get("/signIn", function(req, res) {
