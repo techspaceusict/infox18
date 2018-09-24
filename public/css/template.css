@@ -1,0 +1,44 @@
+.overlay_title {
+  font-size: 10vw !important;
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-weight: 900 !important;
+  color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  --color-text: #fff;
+  --color-bg: #1a1a1a;
+  --color-link: #f1f1f1;
+  --color-link-hover: #f1f1f1;
+  --color-info: #272526;
+  --grid-item-bg: #eb1851;
+  --color-close: #ec1752;
+  font-family: Futura, "futura-pt", sans-serif !important;
+  min-height: 100vh;
+  color: #57585c;
+  color: var(--color-text);
+  background-color: #fff;
+  background-color: var(--color-bg);
+}
+/* html {
+  background: #191c1f !important;
+  color: #fff !important;
+} */
+
+.small_title {
+  color: #ca2052;
+  position: absolute;
+  left: 100px;
+  top: 23vh;
+  width: 100vw;
+  font-size: 1vw;
+}

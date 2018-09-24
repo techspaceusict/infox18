@@ -1,58 +1,70 @@
+<% include ../partials/header-links2 %>
+<!--Contains all header meta tags and links-->
 
-<% include ../partials/header-links2 %> <!--Contains all header meta tags and links-->
 
+</head>
 
-</head><body>
 <body>
 
-   <% include ../partials/svg-and-style %>
+    <body>
 
-   <div id="test"> <!--class="nav-wrapper"-->
-    <header class="is-large">
-        <% include ../partials/navbar %> <!-- Common navbar he ismein -->
-        
-    </header>
-  </div>
-<!-- <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }}</div> -->
-<div class="contact-parent-wrapper">
-    <div class="contact-flex">
+        <% include ../partials/svg-and-style %>
 
-            <div class="contact-wrapper">
-                <div id="stage" class="stage"></div>
+        <div id="test">
+            <!--class="nav-wrapper"-->
+            <header class="is-large">
+                <% include ../partials/navbar %>
+                <!-- Common navbar he ismein -->
+
+            </header>
+        </div>
+        <!-- <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }}</div> -->
+        <div class="title_section">
+            <h1 class="overlay_title">Contact Us</h1>
+            <div class="small_title">
+                <h1>Have any query?.</h1>
             </div>
-        
-            <div class="contact-wrapper-map">
-                <div style="margin: -5px 0; width: 100%;">
-                    <iframe class="mapsize" 
-                    src="https://maps.google.com/maps?q=usict&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    <a href="https://www.pureblack.de"></a>
+        </div>
+        <div class="contact-parent-wrapper" style="position:relative;top:10vh !important;">
+            <div class="contact-flex">
+
+                <div class="contact-wrapper">
+                    <div id="stage" class="stage"></div>
                 </div>
-            </div> 
+
+                <div class="contact-wrapper-map">
+                    <div style="margin: -5px 0; width: 100%;">
+                        <iframe class="mapsize" src="https://maps.google.com/maps?q=usict&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="https://www.pureblack.de"></a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <% include ../partials/footer %>
+            </div>
         </div>
-        <div>
-            <% include ../partials/footer %>
-        </div>
-</div>
-  
-  <!-- footer commneted for contact page for responsiveness of page -->
 
-    
+        <!-- footer commneted for contact page for responsiveness of page -->
 
-    <!-- Nav below is for hamburger -->
 
-    <% include ../partials/hamburger %>
-</body>
-<script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js'></script><script src='https://cdn.jsdelivr.net/npm/ractive@0.9'></script>
-<script >var ractive = new Ractive({
-  el: '#container',
-  template: '#template',
-  data: {} });
+
+        <!-- Nav below is for hamburger -->
+
+        <% include ../partials/hamburger %>
+    </body>
+    <script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/ractive@0.9'></script>
+    <script>var ractive = new Ractive({
+            el: '#container',
+            template: '#template',
+            data: {}
+        });
 //# sourceURL=pen.js
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js'></script>
-<script src="js/contact.js"></script>
-<!-- <script>
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js'></script>
+    <script src="js/contact.js"></script>
+    <!-- <script>
     $(document).ready(function(){
         $("#submit-btn").click(function(){
             $(".response-text").delay(1200).fadeOut(400,function(){
