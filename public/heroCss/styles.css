@@ -417,8 +417,8 @@ body{
 
 .logo-container{
     /* margin:0 auto; */
-    width:300px;
-    height: 300px;
+    width:470px;
+    height: 470px;
     /* border:2px solid red; */
     position: absolute;
     top:-17%;
@@ -444,7 +444,7 @@ body{
 
 .hero-text{  
     position:absolute;
-    top:50%;
+    top:60%;
     left:50%;
     transform:translate(-50%,0%);
     width:100%;
