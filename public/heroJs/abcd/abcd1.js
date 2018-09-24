@@ -121,32 +121,32 @@ scene1.add( box );
 var string =
             '<div class="model-wrapper">'+
             '<x-model class="models" id="model" src="obj/logo.gltf"></x-model>'+
-            '<div class="model-texts" id="model-text"></div>'+
+            '<a href="/about"><div class="model-texts" id="model-text"></div></a>'+
             '</div>'
             ;
 var string2 ='<div class="model-wrapper">'+
             '<x-model class="models" id="model2" src="obj/logo.gltf"></x-model>'+
-            '<div class="model-texts" id="model-text2"></div>'+
+            '<a href="/comingsoon"><div class="model-texts" id="model-text2"></div></a>'+
             '</div>';
 
 var string3 ='<div class="model-wrapper">'+
             '<x-model class="models" id="model3" src="obj/logo.gltf"></x-model>'+
-            '<div class="model-texts" id="model-text3"></div>'+
+            '<a href="/comingsoon"><div class="model-texts" id="model-text3"></div></a>'+
             '</div>';
 
 var string4 ='<div class="model-wrapper">'+
             '<x-model class="models" id="model4" src="obj/logo.gltf"></x-model>'+
-            '<div class="model-texts" id="model-text4"></div>'+
+            '<a href="/sponsers"><div class="model-texts" id="model-text4"></div></a>'+
             '</div>';
 
 var string5 ='<div class="model-wrapper">'+
             '<x-model class="models" id="model5" src="obj/logo.gltf"></x-model>'+
-            '<div class="model-texts" id="model-text5"></div>'+
+            '<a href="/schedule"><div class="model-texts" id="model-text5"></div></a>'+
             '</div>'; 
             
 var string6 ='<div class="model-wrapper">'+
             '<x-model class="models" id="model6" src="obj/logo.gltf"></x-model>'+
-            '<div class="model-texts" id="model-text6"></div>'+
+            '<a href="/contact"><div class="model-texts" id="model-text6"></div></a>'+
             '</div>';
 
 var scene2 = new THREE.Scene(),
