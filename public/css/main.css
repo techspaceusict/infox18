@@ -2,6 +2,9 @@
 html{
     font-family: 'Roboto', sans-serif !important;
 } */
+
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa');
+
 @font-face {
     font-family: Ubuntu;
     font-style: normal;

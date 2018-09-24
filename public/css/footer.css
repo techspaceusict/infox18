@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa');
+
+.footer{
+    /* overflow: hidden; */
+    /* font-size: 30px; */
+    padding:10px;
+    display:flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+}
+
+.sub-footer{
+    z-index:1;
+    /* background-color:grey; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+}
+
+.sub-footer div{
+    margin:2px;
+    font-family: 'Salsa', cursive !important;
+    transition:all 0.5s;
+}
+
+.sub-footer div:hover{
+    transform: scale(1.1);
+}
+
+.sub-footer:nth-child(2) div:nth-child(2){
+    color:red;
+    font-size: 24px;
+}
+
+.sub-footer:nth-child(1), .sub-footer:nth-child(3){
+    color:rgb(184, 184, 184)
+}
+
+.sub-footer:nth-child(1) div:hover, .sub-footer:nth-child(3):hover{
+    color:rgb(255, 255, 255)
+}
+
+.sub-footer:nth-child(2) div:nth-child(3), .sub-footer:nth-child(2) div:nth-child(4){
+    font-size:16px;
+    /* color:rgb(184, 184, 184) */
+}
+
+.custom-btn{
+    font-family: 'Salsa', cursive !important;
+    text-decoration: none;
+    display:inline-block;
+    padding:10px 25px;
+    margin:10px;
+    background-color: rgb(207, 0, 0);
+    transition: all 0.5s;
+}
+
+.custom-btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.m-view-footer-logo{
+    display:none;
+}
+
+.m-view-footer-bg{
+    display:none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-53%,-50%);
+    opacity: 0.05;
+    /* width:200%; */
+    height: 100vh;
+}
+
+@media only screen and (max-width:767px){
+    .sub-footer div{
+        margin:1px;
+        font-size: 13px;
+    }
+    .sub-footer:nth-child(2) div:nth-child(2){
+        font-size: 17px;
+    }
+    .sub-footer:nth-child(2) div:nth-child(3), .sub-footer:nth-child(2) div:nth-child(4){
+        font-size: 13px;
+    }
+    .custom-btn{
+        padding:5px 23px;
+        margin:5px;
+    }
+}
+
+@media only screen and (max-width:479px){
+    .sub-footer div{
+        margin:1px;
+        font-size: 13px;
+    }
+    .sub-footer:nth-child(2) div:nth-child(2){
+        font-size: 17px;
+    }
+    .sub-footer:nth-child(2) div:nth-child(3), .sub-footer:nth-child(2) div:nth-child(4){
+        font-size: 13px;
+    }
+    .custom-btn{
+        padding:5px 23px;
+        margin:5px;
+    }
+    .footer{
+        /* background-color: transparent; */
+        overflow: hidden;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .m-view-footer-logo{
+        display:inline-block;
+        width:50%;
+        margin: 0 auto;
+    }
+    .m-view-footer-bg{
+        display: block;
+    }
+}
