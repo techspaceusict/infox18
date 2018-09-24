@@ -451,6 +451,17 @@ body{
     }
 }
 
+@media only screen and (max-width: 450px ) {
+    .hero-text{
+        top: 50%;
+    }
+    .logo-container{
+        padding-top: 400px;
+        height: 330px;
+        width: 380px;
+    }
+}
+
 .hero-text{  
     position:absolute;
     top:60%;
