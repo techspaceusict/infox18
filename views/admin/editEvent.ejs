@@ -1,37 +1,42 @@
 <% include adminPartials/header.ejs%>
 
+<%
+console.log("edit page:" + JSON.stringify(event));
+%>
+
 <div class="container text-center" style="">
-    <h3>Add New Infox Event</h3>
+    <h3>Edit Event</h3>
     <br><br>
     <div class="row">
         <div class="col m1">
         </div>
         <div class="col m10">
             <% if(typeof (msg) != "undefined"){ %><p class="red accent-4" style="padding: 10px; color: white; font-weight: 700;"><%=msg%></p> <%}%>
-            <form style="border: 2px solid grey; padding:50px;" action="/admin/events" method="POST" enctype="multipart/form-data">
+            <form style="border: 2px solid grey; padding:50px;"
+                  action="/admin/events/<%=event.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
                 <div class="input-field">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" value="<%=event.name%>">
                 </div>
                 <div class="input-field">
-                    <textarea id="description" class="materialize-textarea" name="description"></textarea>
+                    <textarea id="description" class="materialize-textarea" name="description"><%=event.description%></textarea>
                     <label for="description">Description(HTML code)</label>
                 </div>
                 <div class="input-field">
                     <label class="pull-left" for="venue">Venue</label>
-                    <input type="text" class="form-control" id="venue" name="venue">
+                    <input type="text" class="form-control" id="venue" name="venue" value="<%=event.venue%>">
                 </div>
                 <div class="input-field">
                     <label class="pull-left" for="time">Time Duration</label>
-                    <input type="text" class="form-control" id="time" name="time">
+                    <input type="text" class="form-control" id="time" name="time" value="<%=event.time%>">
                 </div>
                 <div class="input-field">
                     <label class="pull-left" for="fbUrl">Facebook URL</label>
-                    <input type="text" class="form-control" id="fbUrl" name="fbURl">
+                    <input type="text" class="form-control" id="fbUrl" name="fbURl" value="<%=event.fbUrl%>">
                 </div>
                 <label>Type Of Event</label>
                 <div class="input-field">
-                    <select name="type">
+                    <select name="type"  value="<%=event.type%>">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">Coding</option>
                         <option value="2">Enterprenurial</option>
@@ -44,12 +49,12 @@
                 <div class = "file-field input-field">
                     <div class = "btn">
                         <span>Browse</span>
-                        <input name="eventsImage" type = "file" />
+                        <input name="eventsImage" type = "file"/>
                     </div>
 
                     <div class = "file-path-wrapper">
                         <input class = "file-path validate" type = "text"
-                               placeholder = "Upload file" />
+                               placeholder = "Upload file" value="<%=event.image%>"/>
                     </div>
                 </div>
                 <label for="">Organiser 1</label>
@@ -57,19 +62,19 @@
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="name1">Name</label>
-                            <input type="text" class="form-control" id="name1" name="name1">
+                            <input type="text" class="form-control" id="name1" name="name1" value="<%=event.organisersName[0]%>">
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="email1">Email</label>
-                            <input type="text" class="form-control" id="email1" name="email1">
+                            <input type="text" class="form-control" id="email1" name="email1" value="<%=event.organisersEmail[0]%>">
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="mobile1">Mobile</label>
-                            <input type="text" class="form-control" id="mobile1" name="mobile1">
+                            <input type="text" class="form-control" id="mobile1" name="mobile1" value="<%=event.organisersMobile[0]%>">
                         </div>
                     </div>
                 </div>
@@ -78,19 +83,19 @@
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="name2">Name</label>
-                            <input type="text" class="form-control" id="name2" name="name2">
+                            <input type="text" class="form-control" id="name2" name="name2" value="<%=event.organisersName[1]%>">
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="email2">Email</label>
-                            <input type="text" class="form-control" id="email2" name="email2">
+                            <input type="text" class="form-control" id="email2" name="email2" value="<%=event.organisersEmail[1]%>">
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="mobile2">Mobile</label>
-                            <input type="text" class="form-control" id="mobile2" name="mobile2">
+                            <input type="text" class="form-control" id="mobile2" name="mobile2" value="<%=event.organisersMobile[1]%>">
                         </div>
                     </div>
                 </div>
@@ -99,19 +104,19 @@
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="name3">Name</label>
-                            <input type="text" class="form-control" id="name3" name="name3">
+                            <input type="text" class="form-control" id="name3" name="name3" value="<%=event.organisersName[2]%>">
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="email3">Email</label>
-                            <input type="text" class="form-control" id="email3" name="email3">
+                            <input type="text" class="form-control" id="email3" name="email3" value="<%=event.organisersEmail[2]%>">
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="mobile3">Mobile</label>
-                            <input type="text" class="form-control" id="mobile3" name="mobile3">
+                            <input type="text" class="form-control" id="mobile3" name="mobile3" value="<%=event.organisersMobile[2]%>">
                         </div>
                     </div>
                 </div>

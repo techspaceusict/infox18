@@ -6,22 +6,22 @@ const localStrategy = require("passport-local").Strategy,
 require('dotenv').load();
 
 module.exports = function (passport) {
-
-    if(!configAuth){
-            facebookAuthClientID = process.env.facebookAuthClientID;
-            facebookAuthClientSecret = process.env.facebookAuthClientSecret;
-            facebookAuthCallBackURL = process.env.facebookAuthCallBackURL;
-            googleClientID = process.env.googleClientID;
-            googleClientSecret = process.env.googleClientSecret;
-            googleCallBackURL = process.env.googleCallBackURL;
-    }else{
-            facebookAuthClientID = configAuth.facebookAuth.clientID;
-            facebookAuthClientSecret = configAuth.facebookAuth.clientSecret;
-            facebookAuthCallBackURL = configAuth.facebookAuth.callbackURL;
-            googleClientID = configAuth.googleAuth.clientID;
-            googleClientSecret = configAuth.googleAuth.clientSecret;
-            googleCallBackURL = configAuth.googleAuth.callbackURL;
-    }
+    //
+    // if(!configAuth){
+    //         facebookAuthClientID = process.env.facebookAuthClientID;
+    //         facebookAuthClientSecret = process.env.facebookAuthClientSecret;
+    //         facebookAuthCallBackURL = process.env.facebookAuthCallBackURL;
+    //         googleClientID = process.env.googleClientID;
+    //         googleClientSecret = process.env.googleClientSecret;
+    //         googleCallBackURL = process.env.googleCallBackURL;
+    // }else{
+    facebookAuthClientID = configAuth.facebookAuth.clientID;
+    facebookAuthClientSecret = configAuth.facebookAuth.clientSecret;
+    facebookAuthCallBackURL = configAuth.facebookAuth.callbackURL;
+    googleClientID = configAuth.googleAuth.clientID;
+    googleClientSecret = configAuth.googleAuth.clientSecret;
+    googleCallBackURL = configAuth.googleAuth.callbackURL;
+    // }
 
     passport.serializeUser(function (user, done) {
         done(null, user.id);

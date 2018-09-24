@@ -123,15 +123,57 @@ module.exports = function (router, passport) {
     });
 
     router.get('/events/:id/edit', function (req, res) {
-        res.send("edit event");
+        Events.findById(req.params.id, function (err, output) {
+            if(err)
+                console.log(err);
+            else{
+                res.render("admin/editEvent", {event: output});
+            }
+        });
     });
 
     router.put('/events/:id', function (req, res) {
-
+        upload(req, res, (err) => {
+            if(err){
+                res.redirect('/admin/events/' + req.params.id + "/edit");
+            }else {
+                if (req.file == undefined) {
+                    res.redirect("/admin/events/" + req.params.id + "/edit");
+                } else {
+                    console.log(req.file);
+                    console.log(req.body);
+                    Events.findByIdAndUpdate(req.params.id,{
+                        image: req.file.destination + req.file.filename,
+                        name: req.body.name,
+                        type: req.body.type,
+                        date: req.body.date,
+                        venue: req.body.venue,
+                        time: req.body.time,
+                        fbUrl: req.body.fbUrl,
+                        description: req.body.description,
+                        organisersName: [req.body.name1, req.body.name2, req.body.name3],
+                        organisersEmail: [req.body.email1, req.body.email2, req.body.email3],
+                        organisersMobile: [req.body.mobile1, req.body.mobile2, req.body.mobile3]
+                    }, function (err, event) {
+                        if (err)
+                            console.log(err);
+                        else {
+                            console.log("event edited: ", JSON.stringify(event));
+                            res.redirect("/admin/events/" + req.params.id);
+                        }
+                    });
+                }
+            }
+        });
     });
     
-    router.delete('events/:id', function (req, res) {
-        
-    })
+    router.delete('/events/:id', function (req, res) {
+        Events.findByIdAndRemove(req.params.id, function (err) {
+            if(err)
+                console.log(err);
+            else
+                res.redirect("/admin");
+        });
+    });
 
 };
