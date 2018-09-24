@@ -1,0 +1,45 @@
+path {
+    stroke: #ffffff;
+    fill: #ffffff;
+    stroke-dasharray: 600;
+    opacity: 10;
+    animation: animate 8s ;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffset: 600;
+    }
+    10%{
+        fill: #000000;
+    }
+    20%{
+        fill: #ffffff;
+    }
+    30% {
+      opacity: 10;
+      fill: #000000;
+      /*stroke-dashoffset: 600;*/
+    }
+    50%{
+        fill: #ffffff;
+    }
+    60%{
+        fill: #000000;
+    }
+    70%{
+        fill: #ffffff;
+    }
+    90% {
+      fill: rgba(0, 0, 0, 0);
+      fill: #000000;
+    }
+    100% {
+      opacity: 10;
+      fill: #ffffff;
+      stroke-dashoffset: 0;
+    }
+  }
+  
