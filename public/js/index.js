@@ -56,7 +56,7 @@ function norm(t, a, b) {
 
 //////////////////////////////////////////
 
-var size = 1024;
+var size = 1600;
 var canvas = document.createElement("canvas");
 canvas.style.position = "absolute";
 canvas.style.top = "0";
@@ -184,7 +184,7 @@ function yolo(vertices, size, _w, _h) {
   ctx.fill();
 }
 
-update();
+// update();
 // Splitting();
 
 /**
@@ -193,20 +193,6 @@ update();
  * of the same models and images again.
  */
 var targets = [
-  // {
-  //     type: ParticleSaga.ModelTarget,
-  //     url: './models/helmet.json',
-  //     options: {
-  //         color: {
-  //             r: 0.8,
-  //             g: 1,
-  //             b: 1
-  //         },
-  //         scale: 110,
-  //         size: 3,
-  //         respondsToMouse: true
-  //     }
-  // },
   {
     type: ParticleSaga.ImageTarget,
     url: "./img/logo23.png",
@@ -215,24 +201,6 @@ var targets = [
       size: 2
     }
   },
-  //  {
-  //     type: ParticleSaga.ModelTarget,
-  //     url: './models/gryphon.json',
-  //     options: {
-  //         color: {
-  //             r: 0.8,
-  //             g: 1,
-  //             b: 0.2
-  //         },
-  //         size: 3,
-  //         scale: 120,
-  //         respondsToMouse: true,
-  //         initialMatrices: [
-  //             new THREE.Matrix4().makeTranslation(0, -2, 0),
-  //             new THREE.Matrix4().makeRotationY(Math.PI / 2)
-  //         ]
-  //     }
-  // },
 
   {
     type: ParticleSaga.ImageTarget,
@@ -242,73 +210,6 @@ var targets = [
       size: 2
     }
   }
-  // {
-  //   type: ParticleSaga.ImageTarget,
-  //   url: "./img/tsFinal.png",
-  //   options: {
-  //     respondsToMouse: true,
-  //     size: 2
-  //   }
-  // }
-  // {
-  //   type: ParticleSaga.ImageTarget,
-  //   url: "./img/ts-14.png",
-  //   options: {
-  //     respondsToMouse: true,
-  //     size: 2
-  //   }
-  // }
-  // {
-  //     type: ParticleSaga.MultiTarget,
-  //     container: document.getElementById('multitarget-references'),
-  //     options: {
-  //         size: 3,
-  //         respondsToMouse: true
-  //     },
-  //     targets: [
-  //         {
-  //             type: ParticleSaga.ModelTarget,
-  //             url: './models/helmet.json',
-  //             container: document.getElementById('multitarget-reference-1'),
-  //             options: {
-  //                 scale: 40,
-  //                 color: {
-  //                     r: 0.8,
-  //                     g: 1,
-  //                     b: 1
-  //                 },
-  //                 initialMatrices: [
-  //                     new THREE.Matrix4().makeTranslation(0.1, -0.4, 0)
-  //                 ]
-  //             }
-  //         },
-  //         {
-  //             type: ParticleSaga.ModelTarget,
-  //             url: './models/gryphon.json',
-  //             container: document.getElementById('multitarget-reference-2'),
-  //             options: {
-  //                 scale: 60,
-  //                 color: {
-  //                     r: 0.8,
-  //                     g: 1,
-  //                     b: 0.2
-  //                 },
-  //                 initialMatrices: [
-  //                     new THREE.Matrix4().makeTranslation(0, -2, 0),
-  //                     new THREE.Matrix4().makeRotationY(Math.PI / 2)
-  //                 ]
-  //             }
-  //         }, {
-  //             type: ParticleSaga.ImageTarget,
-  //             url: './images/saga.png',
-  //             container: document.getElementById('multitarget-reference-3')
-  //         }, {
-  //             type: ParticleSaga.ImageTarget,
-  //             url: './images/griffin.png',
-  //             container: document.getElementById('multitarget-reference-4')
-  //         }
-  //     ]
-  // }
 ];
 function setupDemoUI() {
   var next = document.getElementsByClassName("next")[0];
@@ -328,13 +229,3 @@ function onKeydown(e) {
   }
 }
 // The scene's context element
-var saga = document.getElementById("saga");
-var scene = new ParticleSaga.Scene(saga, targets, {
-  numParticles: 40000,
-  sort: ParticleSaga.VertexSort.leftToRight
-});
-scene.load(function() {
-  // setupDemoUI();
-  scene.setTarget(0);
-  scene.startSlideshow();
-});
