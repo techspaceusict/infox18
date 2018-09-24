@@ -1,14 +1,16 @@
 const express = require("express"),
-  app = express(),
-  bodyParser = require("body-parser"),
-  mongoose = require("mongoose"),
-  passport = require("passport"),
-  flash = require("connect-flash"),
-  morgan = require("morgan"),
-  cookieParser = require("cookie-parser"),
-  session = require("express-session"),
-  configDB = require("./config/db"),
-  Users = require("./models/user");
+    app = express(),
+    bodyParser = require("body-parser"),
+    mongoose = require("mongoose"),
+    passport = require("passport"),
+    flash = require("connect-flash"),
+    morgan = require("morgan"),
+    cookieParser = require("cookie-parser"),
+    session = require("express-session"),
+    configDB = require("./config/db"),
+    override = require("method-override"),
+    Users = require("./models/user");
+
 require("dotenv").load();
 
 mongoose
@@ -24,6 +26,7 @@ mongoose
   });
 require("./config/passport")(passport);
 
+app.use(override("_method"));
 app.use(morgan("dev"));
 app.use(cookieParser());
 app.use(
@@ -131,8 +134,8 @@ app.get("/team", function(req, res) {
   res.render("pages/team");
 });
 
-app.get("/comingsoon", function(req, res) {
-  res.render("pages/comingsoon");
+app.get("/comingsoon", function (req, res) {
+    res.render("pages/comingsoon");
 });
 
 var admin = express.Router();
@@ -140,5 +143,5 @@ require("./routes/admin")(admin, passport);
 app.use("/admin", admin);
 
 app.listen(process.env.PORT || 3000, function() {
-  console.log("server started!");
+  console.log("server started on port 3000!");
 });

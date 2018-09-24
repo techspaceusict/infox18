@@ -17,7 +17,7 @@
             <p>Date: <%=event[0].date%></p>
             <p>Venue:<%=event[0].venue%></p>
             <p>Facebook URL: <a href=""><%=event[0].fbUrl%></a></p>
-            <p>Organisers:</p>
+            <br>
             <div class="row">
                 <div class="col s4">
                     <p style="font-weight: 700;">Organiser 1</p>
@@ -42,10 +42,14 @@
         <div class="card-action">
             <div class="row">
                 <div class="col s6">
-                    <a href="#"><button class="btn #2196f3 blue">EDIT EVENT</button></a>
+                    <a href="/admin/events/<%=event[0].id%>/edit">
+                        <button class="btn #2196f3 blue">EDIT EVENT</button>
+                    </a>
                 </div>
                 <div class="col s6">
-                    <a href="#"><button class="btn red accent-4">DELETE EVENT</button></a>
+                    <form action="/admin/events/<%=event[0].id%>?_method=DELETE" method="POST">
+                        <a><button class="btn red accent-4">DELETE EVENT</button></a>
+                    </form>
                 </div>
             </div>
         </div>
