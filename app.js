@@ -44,6 +44,19 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(function (req, res, next) {
+    if(req.user) {
+        console.log("logged in!");
+        res.locals = {
+            loggedIn: req.user,
+        };
+    }else{
+        res.locals.loggedIn = "";
+        console.log("not logged in! ");
+    }
+    next();
+});
+
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated() === true) {
     return next();
