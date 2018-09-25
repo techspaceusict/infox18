@@ -10,21 +10,28 @@ $(document).ready(function () {
       $('.screen').toggleClass('glitch');
     });
   
-    shortcode_date = '2018-10-12T11:00:00';
+    var countDownDate = new Date("Oct 12, 2018 00:00:00").getTime();
     
-    var newDate = new Date();
-    newDate.setDate(newDate.getDate());
+    // var newDate = new Date();
+    // newDate.setDate(newDate.getDate());
   
     setInterval( function() {
   
-      var hours    = new Date().getHours();
-      var seconds  = new Date().getSeconds();
-      var minutes  = new Date().getMinutes();
+      var now = new Date().getTime();
+
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-      var realTime =('3'+":")+ ( hours < 10 ? '0' : '' ) + hours + ' : ' + ( minutes < 10 ? '0' : '' ) + minutes + ' : ' + ( seconds < 10 ? '0' : '' ) + seconds
+      var realTime = days + ':' + ( hours < 10 ? '0' : '' ) + hours + ' : ' + ( minutes < 10 ? '0' : '' ) + minutes + ' : ' + ( seconds < 10 ? '0' : '' ) + seconds
   
       $('.time').html(realTime);
       $('.time').attr('data-time', realTime);
+
+      // console.log(days + "d " + hours + "h "+ minutes + "m " + seconds + "s ");
   
     }, 1000);
   
