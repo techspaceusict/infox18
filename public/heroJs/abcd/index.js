@@ -52,6 +52,7 @@ $(function(){
 $(".know-more").click(function(){
     $(".cross").removeClass('rotate')
     $("#test2").css({display:'none'});
+    $(".menu, .toggle-btn").css({display:'none'});
     $('.heading-wrapper').css({display:'block'});
     // $('.tail').css({display:'inline-block'}).promise().done(function(){
     // 	$('.tail').addClass('animated-tail');
@@ -96,6 +97,7 @@ $(".know-more").click(function(){
 $(".cross").click(function(){
     $(".cross").addClass('rotate')
     setTimeout(function(){
+        $(".menu, .toggle-btn").css({display:'block'});
         $('.sub-containers, .icons').css({display:'inline-block'})
         $('.heading-wrapper').css({display:'none'});
         if($(window).width()<768){
