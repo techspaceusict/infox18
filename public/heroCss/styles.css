@@ -595,8 +595,8 @@ body{
     -webkit-transform: translate(0%,-110%) skew(-20deg,0);
         -ms-transform: translate(0%,-110%) skew(-20deg,0);
             transform: translate(0%,-110%) skew(-20deg,0);
-    -webkit-animation: moveDownText .2s ease-in-out 2s 1 forwards;
-            animation: moveDownText .2s ease-in-out 2s 1 forwards;
+    -webkit-animation: moveDownText .2s ease-in-out 1s 1 forwards;
+            animation: moveDownText .2s ease-in-out 1s 1 forwards;
 }
 
 .ggsipu-container{
@@ -610,8 +610,8 @@ body{
     -webkit-transform: translate(0%,-110%) skew(-20deg,0);
         -ms-transform: translate(0%,-110%) skew(-20deg,0);
             transform: translate(0%,-110%) skew(-20deg,0);
-    -webkit-animation: moveDownText .2s ease-in-out 2s 1 forwards;
-            animation: moveDownText .2s ease-in-out 2s 1 forwards;
+    -webkit-animation: moveDownText .2s ease-in-out 1s 1 forwards;
+            animation: moveDownText .2s ease-in-out 1s 1 forwards;
 }
 
 .tagline-container{
