@@ -463,6 +463,7 @@ body{
 }
 
 .hero-text{  
+    z-index:2;
     position:absolute;
     top:60%;
     left:50%;
@@ -472,6 +473,7 @@ body{
     display:flex;
     flex-direction:column;
     align-items: center;
+    display:none;
     /* background-color: rgba(51, 51, 51, 0.541); */
     justify-content: space-between;
 }
@@ -593,8 +595,8 @@ body{
     -webkit-transform: translate(0%,-110%) skew(-20deg,0);
         -ms-transform: translate(0%,-110%) skew(-20deg,0);
             transform: translate(0%,-110%) skew(-20deg,0);
-    -webkit-animation: moveDownText .2s ease-in-out 1s 1 forwards;
-            animation: moveDownText .2s ease-in-out 1s 1 forwards;
+    -webkit-animation: moveDownText .2s ease-in-out 2s 1 forwards;
+            animation: moveDownText .2s ease-in-out 2s 1 forwards;
 }
 
 .ggsipu-container{
@@ -608,8 +610,8 @@ body{
     -webkit-transform: translate(0%,-110%) skew(-20deg,0);
         -ms-transform: translate(0%,-110%) skew(-20deg,0);
             transform: translate(0%,-110%) skew(-20deg,0);
-    -webkit-animation: moveDownText .2s ease-in-out 1s 1 forwards;
-            animation: moveDownText .2s ease-in-out 1s 1 forwards;
+    -webkit-animation: moveDownText .2s ease-in-out 2s 1 forwards;
+            animation: moveDownText .2s ease-in-out 2s 1 forwards;
 }
 
 .tagline-container{
@@ -916,3 +918,50 @@ body{
         display:inline-block;
     }
 }
+
+
+/* Pre-loader */
+
+#gx {
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 8vh;
+    /* display: none; */
+    /* left: -2vw; */
+  }
+  
+  #gx-logo {
+    fill: #000000;
+    stroke: #666;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: bevel;
+    stroke-dasharray: 1800;
+    height: 90vh;
+    width: 90vw;
+    stroke-dashoffset: 1800;
+    animation: dash 3s ease-in forwards;
+  }
+  
+  @keyframes dash {
+    0% {
+      /* display: block; */
+      stroke-dashoffset: 1800;
+      /* display: block; */
+      opacity: 1;
+    }
+    80% {
+      /* display: block; */
+      stroke-dashoffset: 0;
+      /* display: block; */
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      /* display: none; */
+      opacity: 0;
+      /* display: none; */
+    }
+  }

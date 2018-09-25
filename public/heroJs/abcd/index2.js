@@ -184,7 +184,7 @@ var PRNG = (function(exports) {
     ctx.fill();
   }
   
-  update();
+  // update();
   // Splitting();
   
   /**
@@ -328,14 +328,16 @@ var PRNG = (function(exports) {
     }
   }
   // The scene's context element
-  var saga = document.getElementById("saga");
-  var scene = new ParticleSaga.Scene(saga, targets, {
-    numParticles: 40000,
-    sort: ParticleSaga.VertexSort.leftToRight
-  });
-  scene.load(function() {
-    // setupDemoUI();
-    scene.setTarget(0);
-    scene.startSlideshow();
-  });
-  
+  setTimeout(() => {
+    update();
+    var saga = document.getElementById("saga");
+    var scene = new ParticleSaga.Scene(saga, targets, {
+      numParticles: 40000,
+      sort: ParticleSaga.VertexSort.leftToRight
+    });
+    scene.load(function () {
+      // setupDemoUI();
+      scene.setTarget(0);
+      scene.startSlideshow();
+    });
+  }, 3500);
