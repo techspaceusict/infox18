@@ -1,6 +1,31 @@
 <% include ../partials/header2 %>
 
-      <div id="gx" class="pre-loader">
+<body>
+
+  <div class="toggle-btn">
+    <span class="one"></span>
+    <span class="two"></span>
+  </div>
+
+  <div class="menu">
+    <div class="data">
+      <ul class="u_l">
+        <li class="l_">Info<span style="color:red;">X</span><span class="res_inv">pression</span>'18</li>
+        <br><br><br>
+        <li class="l_"><a href="/comingsoon">Events</a></li>
+        <li class="l_"><a href="/sponsers">Sponsors</a></li>
+        <li class="l_"><a href="/about">About</a></li>
+        <li class="l_"><a href="/schedule">Schedule</a></li>
+        <li class="l_"><a href="/comingsoon">Log-In</a></li>
+        <li class="l_"><a href="/contact">Contact</a></li>
+      </ul>
+
+    </div>
+    <img src="./img/2.png" alt="" srcset="" style="position: absolute; right:-40vw;top:-19vh; z-index: -1; height: 64em;">
+  </div>
+
+
+  <div id="gx" class="pre-loader">
     <svg id="gx-logo" data-name="gx-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1466 900">
       <g class="svgWrapper">
         <defs>
@@ -25,7 +50,7 @@
   </div>
 
   <div style="display:block">
-    <section id="saga" style="z-index:999; position: absolute; top: -10vh;margin: auto;width:100vw;height:80vh">
+    <section id="saga" style="z-index:999; position: absolute; top: -5vh;margin: auto;width:100vw;height:80vh">
       <ul id="multitarget-references">
         <li id="multitarget-reference-1"></li>
         <li id="multitarget-reference-2"></li>
@@ -34,8 +59,9 @@
 
     <section class="main" style="margin-top:-15vh ;z-index: 9999;">
       <div>
-        <p class="fonts">OCT 13th-15th 2018</p>
-        <p class="fonts"><a href="https://techspace.club" style="text-decoration: none;color:#FD7D01;">TECHFEST USICT |
+        <p class="fonts">OCT 12th-14th 2018</p>
+        <p class="fonts"><a href="https://techspace.club" style="text-decoration: none;color:#FD7D01;">TECHSPACE USICT
+            |
             GGSIPU</a>
         </p>
         <p class="fonts">Celebrating the sense of Belonging</p>
@@ -68,8 +94,41 @@
         scene.startSlideshow();
       });
     }, 3500);
+
+
+  </script>
+  <script type="text/javascript">
+    console.log('true');
+    var t1 = new TimelineMax({ paused: true });
+    t1.to(".one", 0.03, {
+      y: 6,
+      rotation: 45,
+      ease: Expo.easeInOut
+    });
+    t1.to(".two", 0.05, {
+      y: -6,
+      rotation: -45,
+      ease: Expo.easeInOut,
+      delay: -0.3
+    });
+    t1.to(".menu", 1, {
+      top: "0%",
+      ease: Expo.easeInOut,
+      delay: -1
+    });
+    t1.staggerFrom(".menu ul li", 0.5, { x: -200, opacity: 0, ease: Expo.easeOut }, 0.03);
+    t1.reverse();
+    $(document).on("click", ".toggle-btn", function () {
+      t1.reversed(!t1.reversed());
+    });
+    $(document).on("click", "a", function () {
+      t1.reversed(!t1.reversed());
+    });
+
+
+
   </script>
 
 </body>
 
-    </html>
+</html>
