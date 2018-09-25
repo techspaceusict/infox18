@@ -415,17 +415,28 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.upper-half{
+    width:100%;
+    height: 80%;
+    margin: 0% 0;
+    /* background-color:#111; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .logo-container{
     /* margin:0 auto; */
     width:400px;
     height: 400px;
     /* border:2px solid red; */
-    position: absolute;
+    /* position: absolute;
     top:-17%;
     left:50%;
     -webkit-transform: translate(-50%,0%);
         -ms-transform: translate(-50%,0%);
-            transform: translate(-50%,0%);
+            transform: translate(-50%,0%); */
     background-color: transparent;
     opacity:0;
     /* overflow:hidden; */
@@ -441,33 +452,12 @@ body{
     /* flex-wrap:wrap; */
 }
 
-@media only screen and (max-height: 767px ) {
-    .hero-text{
-        top: 80%;
-    }
-    .logo-container{
-        height: 330px;
-        width: 380px;
-    }
-}
-
-@media only screen and (max-width: 450px ) {
-    .hero-text{
-        top: 50%;
-    }
-    .logo-container{
-        padding-top: 400px;
-        height: 330px;
-        width: 380px;
-    }
-}
-
 .hero-text{  
     z-index:2;
-    position:absolute;
+    /* position:absolute;
     top:60%;
     left:50%;
-    transform:translate(-50%,0%);
+    transform:translate(-50%,0%); */
     width:100%;
     height: 15%;
     display:flex;
@@ -849,14 +839,14 @@ body{
         display:none;
     }
     .logo-container{
-        -webkit-transform: translate(-500%,-5%);
+        /* -webkit-transform: translate(-500%,-5%);
         -ms-transform: translate(-50%,-5%);
-            transform: translate(-50%,-5%);
-        width:400px;
-        height: 400px;
+            transform: translate(-50%,-5%); */
+        width:300px;
+        height: 300px;
     }
     .hero-text{
-        top:62%;
+        /* top:62%; */
         /* transform: translate(-50%,90%); */
     }
     .date-container{
@@ -881,10 +871,12 @@ body{
 
 @media only screen and (max-width:479px){
     .logo-container{
-        
-        -webkit-transform: translate(-50%,-30%);
-        -ms-transform: translate(-50%, -30%);
-            transform: translate(-50%, -30%) scale(0.5);
+
+        /* -webkit-transform: translate(-50%,-20%) scale(0.5);
+        -ms-transform: translate(-50%, -20%) scale(0.5);
+            transform: translate(-50%, -25%) scale(0.5); */
+        width:250px;
+        height: 250px;
         /* width:400px;
         height: 400px;
         background-color: rgb(77, 8, 8); */
@@ -902,8 +894,8 @@ body{
         /* top:72.7%; */
     }
     .hero-text{
-        top:60%;
-        height: 12%;
+        /* top:60%;
+        height: 12%; */
     }
     .sponsor-icons{
         bottom:10%;
@@ -919,7 +911,6 @@ body{
         display:inline-block;
     }
 }
-
 
 /* Pre-loader */
 
