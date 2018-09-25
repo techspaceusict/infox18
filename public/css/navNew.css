@@ -20,7 +20,7 @@ body {
   width: 40px;
   height: 12px;
   right: 0;
-  top: 20px;
+  top: 0px;
   z-index: 1000001;
 }
 
@@ -69,6 +69,27 @@ li:first-child {
 li:not(:first-child) {
   color: #fff !important;
   font-size: 6vh;
+}
+
+@media only screen and (max-width: 700px) {
+  li:first-child {
+    color: #fff;
+    font-family: "Julius Sans One", sans-serif !important;
+    font-size: 5vh;
+  }
+  li:not(:first-child) {
+    color: #fff !important;
+    font-size: 4vh;
+  }
+  .menu {
+    z-index: 1000000;
+    position: absolute;
+    background: #000;
+    height: 100vh;
+    overflow: hidden;
+    width: 150%;
+    top: -100%;
+  }
 }
 
 a {
