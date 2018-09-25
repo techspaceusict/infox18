@@ -57,12 +57,12 @@ app.use(function(req, res, next) {
   next();
 });
 
-function isLoggedIn(req, res, next) {
-  if (req.isAuthenticated() === true) {
-    return next();
-  }
-  res.redirect("/signIn");
-}
+// function isLoggedIn(req, res, next) {
+//   if (req.isAuthenticated() === true) {
+//     return next();
+//   }
+//   res.redirect("/signIn");
+// }
 
 app.get("/", function(req, res) {
   res.render("pages/hero");
@@ -84,7 +84,7 @@ app.post(
 app.post(
   "/signIn",
   passport.authenticate("local-signIn", {
-    successRedirect: "/profile",
+    successRedirect: "/user/profile",
     failureRedirect: "/signIn",
     failureFlash: true
   })
@@ -98,7 +98,7 @@ app.get(
 app.get(
   "/auth/facebook/callback",
   passport.authenticate("facebook", {
-    successRedirect: "/profile",
+    successRedirect: "/user/profile",
     failureRedirect: "/signIn"
   })
 );
@@ -108,15 +108,15 @@ app.get("/auth/google", passport.authenticate("google", { scope: ["email"] }));
 app.get(
   "/auth/google/callback",
   passport.authenticate("google", {
-    successRedirect: "/profile",
+    successRedirect: "/user/profile",
     failureRedirect: "/signIn"
   })
 );
 
-app.get("/profile", isLoggedIn, function(req, res) {
-  console.log(req.user);
-  res.render("pages/profile", { user: req.user });
-});
+// app.get("/profile", isLoggedIn, function(req, res) {
+//   console.log(req.user);
+//   res.render("pages/profile", { user: req.user });
+// });
 
 app.get("/logout", function(req, res) {
   req.logout();
@@ -139,8 +139,8 @@ app.get("/schedule", function(req, res) {
   res.render("pages/schedule");
 });
 
-app.get("/sponsers", function(req, res) {
-  res.render("pages/sponsers");
+app.get("/sponsors", function(req, res) {
+  res.render("pages/sponsors");
 });
 
 app.get("/team", function(req, res) {
@@ -154,6 +154,10 @@ app.get("/comingsoon", function(req, res) {
 var admin = express.Router();
 require("./routes/admin")(admin, passport);
 app.use("/admin", admin);
+
+var user = express.Router();
+require("./routes/user")(user);
+app.use("/user", user);
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("server started on port 3000!");

@@ -3,20 +3,21 @@ const bcrypt = require('bcryptjs');
 const userSchema = mongoose.Schema({
     username: String,
     password: String,
-    facebook: {
-        id: String,
-        token: String,
-        email: String,
-        name: String
-    },
-    google: {
-        id: String,
-        token: String,
-        email: String,
-        name: String
-    },
+    name: String,
+    image: String,
+    college: String,
+    branch: String,
+    year: String,
+    degree: String,
+    phone: String,
+    email: String,
+    lid: String,
+    gender: String,
+    token: String,
     type: { type: Number, default: 0},
-    contact: { type: Number }
+    contact: { type: Number },
+    events: [{ type: String }],
+    loginType: String
 });
 
 userSchema.methods.generateHash = function(password){

@@ -1,0 +1,37 @@
+<%include ../partials/header-links2.ejs%>
+<body>
+<% include ../partials/svg-and-style %>
+
+<div id="test">
+    <!--class="nav-wrapper"-->
+    <header class="is-large">
+        <% include ../partials/navbar %>
+        <!-- Common navbar he ismein -->
+    </header>
+</div>
+
+<div id="app">
+    <div @click="tune">
+        <div class="title_section">
+            <h1 class="overlay_title">DASHBOARD</h1>
+            <div class="small_title">
+                <h1>Your Events. Your Infox</h1>
+            </div>
+        </div>
+        <section class="media-block simple-ripple" style="position:relative;top:0vh !important;">
+
+            <h1>User Dashboard</h1>
+
+            <p><%=loggedIn%></p>
+        </section>
+    </div>
+</div>
+<% include ../partials/footer %>
+
+<% include ../partials/hamburger %>
+
+<script src="../js/common.js"></script>
+<script src="../js/media.js"></script>
+
+</body>
+</html>
