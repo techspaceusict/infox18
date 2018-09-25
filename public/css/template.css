@@ -1,7 +1,7 @@
 .overlay_title {
-  font-size: 10vw !important;
+  font-size: 11vw !important;
   position: absolute;
-  top: 20vh;
+  top: 150px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -38,7 +38,23 @@ body {
   color: #ca2052;
   position: absolute;
   left: 100px;
-  top: 23vh;
+  top: 150px;
   width: 100vw;
-  font-size: 1vw;
+  font-size: 1.6vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .small_title {
+    left: 30px;
+    top: 50px;
+  }
+  .overlay_title {
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-weight: 900 !important;
+    color: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+  }
 }

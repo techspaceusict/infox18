@@ -1,15 +1,15 @@
 const express = require("express"),
-    app = express(),
-    bodyParser = require("body-parser"),
-    mongoose = require("mongoose"),
-    passport = require("passport"),
-    flash = require("connect-flash"),
-    morgan = require("morgan"),
-    cookieParser = require("cookie-parser"),
-    session = require("express-session"),
-    configDB = require("./config/db"),
-    override = require("method-override"),
-    Users = require("./models/user");
+  app = express(),
+  bodyParser = require("body-parser"),
+  mongoose = require("mongoose"),
+  passport = require("passport"),
+  flash = require("connect-flash"),
+  morgan = require("morgan"),
+  cookieParser = require("cookie-parser"),
+  session = require("express-session"),
+  configDB = require("./config/db"),
+  override = require("method-override"),
+  Users = require("./models/user");
 
 require("dotenv").load();
 
@@ -44,17 +44,17 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(function (req, res, next) {
-    if(req.user) {
-        console.log("logged in!");
-        res.locals = {
-            loggedIn: req.user,
-        };
-    }else{
-        res.locals.loggedIn = "";
-        console.log("not logged in! ");
-    }
-    next();
+app.use(function(req, res, next) {
+  if (req.user) {
+    console.log("logged in!");
+    res.locals = {
+      loggedIn: req.user
+    };
+  } else {
+    res.locals.loggedIn = "";
+    console.log("not logged in! ");
+  }
+  next();
 });
 
 // function isLoggedIn(req, res, next) {
@@ -65,7 +65,7 @@ app.use(function (req, res, next) {
 // }
 
 app.get("/", function(req, res) {
-  res.render("pages/hero2");
+  res.render("pages/hero");
 });
 
 app.get("/signIn", function(req, res) {
@@ -147,8 +147,8 @@ app.get("/team", function(req, res) {
   res.render("pages/team");
 });
 
-app.get("/comingsoon", function (req, res) {
-    res.render("pages/comingsoon");
+app.get("/comingsoon", function(req, res) {
+  res.render("pages/comingsoon");
 });
 
 var admin = express.Router();
