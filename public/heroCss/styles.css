@@ -881,6 +881,7 @@ body{
 
 @media only screen and (max-width:479px){
     .logo-container{
+        
         -webkit-transform: translate(-50%,-30%);
         -ms-transform: translate(-50%, -30%);
             transform: translate(-50%, -30%) scale(0.5);
