@@ -4,7 +4,7 @@
 // window.onload = function(){
 // 	$(".loader-section").hide(); 
 // }
-$('body').append('<div class="loader-section"><img class="loader" src="obj/plain-logo1.svg"></div>');
+// $('body').append('<div class="loader-section"><img class="loader" src="obj/plain-logo1.svg"></div>');
 $(window).on('load', function(){
     
     setTimeout(function(){
@@ -38,11 +38,12 @@ $(function(){
 
     setTimeout(function(){
         $('.logo-container').animate({opacity:1, top:'4%'});
+        $('.hero-text').css({display:'flex'});
         $('.layer').animate({
             bottom:'0px'
             // '-webkit-transform':'translate(0,-100%)'
         },1200,'easeOutQuad');
-    },1200)
+    },3000)
     // setTimeout(function(){
     //     $('.tagline').css({opacity:1});
     //     $('.date-container').css({opacity:1});
