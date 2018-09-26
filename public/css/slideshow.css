@@ -450,14 +450,14 @@ body {
 @media only screen and (min-width: 768px) {
   /* tablets and desktop */
   .cont{
-    margin-top: -130px !important; 
+    margin-top: -60px !important; 
   }
 }
 
 @media only screen and (max-width: 767px) {
   /* phones */
   .cont{
-    margin-top: -70px !important; 
+    /* margin-top: -70px !important;  */
   }
 }
 
