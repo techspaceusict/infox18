@@ -456,9 +456,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   /* phones */
-  .cont{
-    /* margin-top: -70px !important;  */
-  }
+  
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
