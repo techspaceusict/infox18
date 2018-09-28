@@ -65,7 +65,7 @@ app.use(function(req, res, next) {
 // }
 
 app.get("/", function(req, res) {
-  res.render("pages/hero2");
+  res.render("pages/hero");
 });
 
 app.get("/signIn", function(req, res) {
@@ -158,6 +158,10 @@ app.use("/admin", admin);
 var user = express.Router();
 require("./routes/user")(user);
 app.use("/user", user);
+
+app.get("*", function (req, res) {
+   res.render("pages/404");
+});
 
 app.listen(process.env.PORT || 3000, function() {
   console.log("server started on port 3000!");
