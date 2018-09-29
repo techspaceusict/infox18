@@ -1,15 +1,16 @@
 const express = require("express"),
-  app = express(),
-  bodyParser = require("body-parser"),
-  mongoose = require("mongoose"),
-  passport = require("passport"),
-  flash = require("connect-flash"),
-  morgan = require("morgan"),
-  cookieParser = require("cookie-parser"),
-  session = require("express-session"),
-  configDB = require("./config/db"),
-  override = require("method-override"),
-  Users = require("./models/user");
+    app = express(),
+    bodyParser = require("body-parser"),
+    mongoose = require("mongoose"),
+    passport = require("passport"),
+    flash = require("connect-flash"),
+    morgan = require("morgan"),
+    cookieParser = require("cookie-parser"),
+    session = require("express-session"),
+    configDB = require("./config/db"),
+    override = require("method-override"),
+    Users = require("./models/user"),
+    mail = require("./mailer/mail");
 
 require("dotenv").load();
 
@@ -56,13 +57,6 @@ app.use(function(req, res, next) {
   }
   next();
 });
-
-// function isLoggedIn(req, res, next) {
-//   if (req.isAuthenticated() === true) {
-//     return next();
-//   }
-//   res.redirect("/signIn");
-// }
 
 app.get("/", function(req, res) {
   res.render("pages/hero");
@@ -113,10 +107,6 @@ app.get(
   })
 );
 
-// app.get("/profile", isLoggedIn, function(req, res) {
-//   console.log(req.user);
-//   res.render("pages/profile", { user: req.user });
-// });
 
 app.get("/logout", function(req, res) {
   req.logout();
@@ -149,6 +139,26 @@ app.get("/team", function(req, res) {
 
 app.get("/comingsoon", function(req, res) {
   res.render("pages/comingsoon");
+});
+
+app.get("/contact/:name/:id/:msg", function (req, res) {
+   mail.sendMail({
+        from: "Infoxpression Website Enquiries <helpinfoxpression@gmail.com>",
+        to: "infox@ipu.ac.in",
+        subject: 'Enquiry Message',
+        text: "Sender's Name: " + req.params.name + "\nSenders's Email: " + req.params.id + "\n\nEnquiry/Message: " + req.params.msg
+   }, function (err, sent) {
+       if(err) {
+           console.log(err);
+           res.setHeader('Content-Type', 'application/json');
+           res.send(200, JSON.stringify({"result": false}));
+       }
+       else{
+           console.log("mail sent to infox@ipu.ac.in");
+           res.setHeader('Content-Type', 'application/json');
+           res.send(200, JSON.stringify({"result": true}));
+       }
+   });
 });
 
 var admin = express.Router();
