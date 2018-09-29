@@ -1,12 +1,12 @@
 .overlay_title {
-  font-size: 8vw !important;
+  font-size: 5em;
   position: absolute;
   top: 150px;
   left: 0;
   right: 0;
   bottom: 0;
   font-weight: 900 !important;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
 }
 *,
@@ -35,26 +35,28 @@ body {
 } */
 
 .small_title {
-  color: #eb1851;
+  color: red;
   position: absolute;
   left: 100px;
-  top: 150px;
+  top: 200px;
   width: 100vw;
-  font-size: 1.2vw;
+  font-size: 0.7em;
 }
 
 @media only screen and (max-width: 768px) {
   .small_title {
+    font-size:0.5em;
     left: 30px;
-    top: 50px;
+    top: 80px;
   }
   .overlay_title {
+    font-size:2.5em;
     top: 50px;
     left: 0;
     right: 0;
     bottom: 0;
     font-weight: 900 !important;
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
   }
 }

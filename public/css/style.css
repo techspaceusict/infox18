@@ -4,6 +4,7 @@ html {
   text-align: center;
   background: #000;
   color: #fff;
+  overflow-x: hidden;
 }
 canvas {
   width: 90vw !important;
