@@ -50,6 +50,7 @@ $(function(){
     // },2200);
 });
 $(".know-more").click(function(){
+    // $("body").css({overflow:'hidden'});
     $(".cross").removeClass('rotate')
     $("#test2").css({display:'none'});
     $(".menu, .toggle-btn").css({display:'none'});
@@ -85,6 +86,7 @@ $(".know-more").click(function(){
                 bottom:'-500px'
                 // transform:'translate(0,100%)'
             },400,'easeInQuart',function(){
+                $('.layer').css({display:'none'});
                 $('.know-block').animate({
                     top:'50%'
                 },function(){
@@ -97,6 +99,7 @@ $(".know-more").click(function(){
 $(".cross").click(function(){
     $(".cross").addClass('rotate')
     setTimeout(function(){
+        $('.layer').css({display:'block'});
         $(".menu, .toggle-btn").css({display:'block'});
         $('.sub-containers, .icons').css({display:'inline-block'})
         $('.heading-wrapper').css({display:'none'});
@@ -116,7 +119,7 @@ $(".cross").click(function(){
         },600,'easeInQuart');
 
         $('.ggsipu-container').animate({
-            // left:'50%',
+            // left:'50%';
             opacity:1
         },600,'easeInQuart');
 

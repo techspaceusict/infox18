@@ -88,7 +88,7 @@ li:not(:first-child) {
     height: 100vh;
     overflow: hidden;
     width: 150%;
-    top: -200%;
+    top: -120%;
   }
 }
 
