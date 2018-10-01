@@ -14,14 +14,20 @@ body {
 }*/
 
 .toggle-btn {
+  /* background: #f00; */
   position: absolute;
   margin: 1.4em;
-  padding: 1em;
+  padding: 1.4em;
   width: 40px;
   height: 12px;
   right: 0;
   top: 0px;
   z-index: 1000001;
+  cursor: pointer;
+}
+
+span.one, span.two{
+  transform:translate(-50%,-50%);
 }
 
 span.one {
@@ -104,7 +110,7 @@ a {
 }
 .toggle-btn {
   animation: visibleTHREE 2s ease-in forwards;
-  animation-delay: 3s;
+  animation-delay: 1s;
   opacity: 0 !important;
 }
 
