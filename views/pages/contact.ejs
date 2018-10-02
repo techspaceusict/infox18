@@ -1,77 +1,90 @@
-<% include ../partials/header-links2 %>
-<!--Contains all header meta tags and links-->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from protocol.ai/blog/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Aug 2018 19:11:37 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="icon" href="fav.png" sizes="16x16">
+
+    <link rel="manifest" href="../manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <!-- <link href="../css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../css/mobile-menu.css" type="text/css">
+    <link rel="stylesheet" href="../css/mywork.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- <link rel="stylesheet" href="../css/about.css"> -->
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/sponsors.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/simple-ripple.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="fav.png">
+    <!-- <script type="text/javascript" src="../js/simple-ripple.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script> -->
+
+    <script>
+        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+        ga('create', 'UA-96910779-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <!--Jquery ka new version he file mein-->
+    <script type="text/javascript" src="../js/mobile-menu.js"></script>
 
 
+    <script async src='../../www.google-analytics.com/analytics.js'></script>
+    <title>Infox</title>
 </head>
-
 <body>
-
-    <body>
-
-        <% include ../partials/svg-and-style %>
-
         <div id="test">
-            <!--class="nav-wrapper"-->
-            <header class="is-large">
-                <% include ../partials/navbar %>
-                <!-- Common navbar he ismein -->
-
-            </header>
-        </div>
-        <!-- <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }}</div> -->
-        <div class="title_section">
-            <h1 class="overlay_title">Contact Us</h1>
-            <div class="small_title">
-                <h1>Have any query?.</h1>
+            <div class="nav-bar-new">
+                <div class="nav-bar-item"><a class="nav-title" href="/about">About</a><div class="line2"></div></div>
+                <div class="nav-bar-item"><a class="nav-title" href="/events">Events</a><div class="line2"></div></div>
+                <div class="nav-bar-item"><a class="nav-title" href="/schedule">Schedule</a><div class="line2"></div></div>
+                <div class="nav-bar-item"><a class="nav-title" href="/"><img src="obj/logo1.svg" alt=""></a><div class="line2"></div></div>
+                <div class="nav-bar-item"><a class="nav-title" href="/contact">Contact</a><div class="line2"></div></div>
+                <div class="nav-bar-item"><a class="nav-title" href="/sponsors">Sponsors</a><div class="line2"></div></div>
+                <div class="nav-bar-item"><a class="nav-title" href="/login">LogIn</a><div class="line2"></div></div>
             </div>
         </div>
-        <br><br>
-        <div class="contact-parent-wrapper" style="position:relative;top:10vh !important;">
+        <!-- <div class="flip-card" on-click="toggle('flipCard')">{{ flipCard ? 'Reset' : 'Animate' }}</div> -->
+        <div class="contact-parent-wrapper">
+            <div class="title-section">
+                <h1 class="overlay-section">Contact Us</h1>
+                <h1 class="subtitle-section">Have any query?</h1>
+            </div>
+            <br><br>
+            <!-- <div class="contact-parent-wrapper"> -->
             <div class="contact-flex">
 
                 <div class="contact-wrapper">
-                    <div id="form-main">
-                        <div id="form-div">
-                            <form class="form" id="form1">
-
-                                <p class="name">
-                                    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
-                                </p>
-
-                                <p class="email">
-                                    <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
-                                </p>
-
-                                <p class="text">
-                                    <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
-                                </p>
-
-
-                                <div class="submit">
-                                    <input type="button" value="Submit" id="button-blue"/>
-                                    <div class="ease"></div>
-                                </div>
-
-                            </form>
-
-                            <br><br><br><br>
-                            <h4><i style="font-size:30px;" class="fas fa-phone-square"></i> 91-8607287966</h4>
-                            <br><h4><i style="font-size:30px;" class="fas fa-envelope"></i> infox@ipu.ac.in</h4>
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <div class="contact-wrapper-map">
-                    <div style="margin: -5px 0; width: 100%;">
-                        <iframe class="mapsize" src="https://maps.google.com/maps?q=usict&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                        <a href="https://www.pureblack.de"></a>
-                    </div>
+                    
                 </div>
             </div>
             <div>
                 <% include ../partials/footer %>
             </div>
+            <!-- </div> -->
         </div>
 
         <!-- footer commneted for contact page for responsiveness of page -->
@@ -81,42 +94,5 @@
         <!-- Nav below is for hamburger -->
 
         <% include ../partials/hamburger %>
-    </body>
-    <script src='//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js'></script>
-    <!--<script src='https://cdn.jsdelivr.net/npm/ractive@0.9'></script>-->
-    <!--<script>var ractive = new Ractive({-->
-            <!--el: '#container',-->
-            <!--template: '#template',-->
-            <!--data: {}-->
-        <!--});-->
-<!--//# sourceURL=pen.js-->
-    <!--</script>-->
-    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.min.js'></script>-->
-    <script src="js/contact.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#button-blue").click(function () {
-                alert("Your Message/Query has been submitted");
-                $.get(("/contact/" + $("#name").val() + "/" + $("#email").val() + "/" + $("#comment").val()), function (data, status) {
-                    if(data.result) {
-                        console.log("sent successfully!")
-                    }else{
-                        console.log("There was some error sending your request! Kindly retry");
-                    }
-                });
-                $("form")[0].reset();
-            });
-        });
-
-    </script>
-    <!-- <script>
-    $(document).ready(function(){
-        $("#submit-btn").click(function(){
-            $(".response-text").delay(1200).fadeOut(400,function(){
-                $(this).html("<p>We'll contact you very soon</p>").fadeIn();
-            });
-        });
-    });
-</script> -->
-
+        <!-- <script src="js/new-nav-bar.js"></script> -->
 </body>

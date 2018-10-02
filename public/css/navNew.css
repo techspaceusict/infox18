@@ -109,7 +109,7 @@ a {
   opacity: 0;
 }
 .toggle-btn {
-  animation: visibleTHREE 2s ease-in forwards;
+  animation: visibleTHREE 1s ease-in forwards;
   animation-delay: 1s;
   opacity: 0 !important;
 }
@@ -122,7 +122,7 @@ a {
   5% {
     display: block;
   }
-  50% {
+  30% {
     opacity: 0.5;
   }
   100% {
