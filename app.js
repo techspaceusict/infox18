@@ -59,7 +59,7 @@ app.use(function(req, res, next) {
 });
 
 app.get("/", function(req, res) {
-  res.render("pages/hero2");
+  res.render("pages/hero");
 });
 
 app.get("/signIn", function(req, res) {
