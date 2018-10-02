@@ -220,14 +220,6 @@
         -webkit-box-shadow: none;
                 box-shadow: none;
     }
-	.mapsize{
-		/* width: 100%;
-		height: 100%; */
-		/* border:none !important; */
-    }
-    .contact-parent-wrapper{
-        /* margin-top:-10% !important; */
-    }
 	.contact-wrapper-map{
         margin: 0;
         height: 30vh;
@@ -256,18 +248,12 @@
 
 /* phones */
 @media only screen and (max-width: 479px) {
-	.mapsize{
-		/* height: 200px; */
-    }
     .contact-sub-wrapper{
         font-size:10px;
         /* height: 45vh; */
     }
     textarea,input {
         font-size: 10px !important;
-    }
-    .contact-parent-wrapper{
-        /* margin-top:-10%; */
     }
 	.contact-flex{
         margin-top: -8vh ;
@@ -319,9 +305,6 @@
     top:20vh !important; */
 }
 
-.title-section h1{
-    /* position:absolute; */
-}
 
 .overlay-section{
     -webkit-animation: title-overlay 1s ease-in-out forwards;
