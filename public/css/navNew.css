@@ -14,14 +14,20 @@ body {
 }*/
 
 .toggle-btn {
+  /* background: #f00; */
   position: absolute;
   margin: 1.4em;
-  padding: 1em;
+  padding: 1.4em;
   width: 40px;
   height: 12px;
   right: 0;
   top: 0px;
   z-index: 1000001;
+  cursor: pointer;
+}
+
+span.one, span.two{
+  transform:translate(-50%,-50%);
 }
 
 span.one {
@@ -88,7 +94,7 @@ li:not(:first-child) {
     height: 100vh;
     overflow: hidden;
     width: 150%;
-    top: -200%;
+    top: -120%;
   }
 }
 
@@ -103,8 +109,8 @@ a {
   opacity: 0;
 }
 .toggle-btn {
-  animation: visibleTHREE 2s ease-in forwards;
-  animation-delay: 3s;
+  animation: visibleTHREE 1s ease-in forwards;
+  animation-delay: 1s;
   opacity: 0 !important;
 }
 
@@ -116,7 +122,7 @@ a {
   5% {
     display: block;
   }
-  50% {
+  30% {
     opacity: 0.5;
   }
   100% {
