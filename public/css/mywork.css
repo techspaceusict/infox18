@@ -24,7 +24,7 @@
     justify-content: space-around;
 }
 
-.events div{
+/* .events div{
     -webkit-box-shadow:0 0 30px rgb(16, 0, 43); 
     -moz-box-shadow:0 0 30px rgb(16, 0, 43);
     box-shadow:0 0 30px rgb(16, 0, 43);
@@ -32,7 +32,7 @@
     background-color:rgb(117, 0, 226);
     width:200px;
     height: 300px;
-}
+} */
 
 @media only screen and (max-width:479px){
     .projects-list {
@@ -42,8 +42,8 @@
         font-size: 24px !important;
     }
     .events div{
-        width:100px;
-        height: 150px; 
+        /* width:100px;
+        height: 150px;  */
     }
 
     .events-category{
