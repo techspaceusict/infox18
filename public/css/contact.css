@@ -84,12 +84,13 @@
 }
 
 .res-saved div{
-    z-index: 1;
+    /* z-index: 1; */
     box-shadow: none !important;
     /* position: absolute; */
 }
 
 .contact-sub-wrapper{
+    z-index: 2;
 
     /* display:none; */
 
@@ -225,7 +226,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     flex-direction: column;
     /* position: absolute;
     top:20vh !important; */
@@ -263,14 +264,14 @@
     color: red;
     font-size: 26px;
     opacity: 0;
-    transform:translate(50%,0);
+    transform:translate(50%,-50%);
     animation: subtitle-section 0.5s ease-in-out 1s forwards;
 }
 
 @keyframes subtitle-section{
     to{
         opacity: 1;
-        transform: translate(0,0);
+        transform: translate(0,-50%);
     }
 }
 
