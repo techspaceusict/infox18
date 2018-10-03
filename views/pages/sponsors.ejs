@@ -14,7 +14,7 @@
 
     <link rel="manifest" href="../manifest.json">
 
-    <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa" rel="stylesheet">
+    <link hrefgit "https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
     <!-- <link rel="stylesheet" href="../css/reset.css"> -->
@@ -53,135 +53,124 @@
 </head>
 <body>
 
-<% include ../partials/svg-and-style %>
+    <% include ../partials/new-nav-bar %>
 
-<div id="test">
-    <!--class="nav-wrapper"-->
-    <header class="is-large">
-        <% include ../partials/navbar %>
-        <!-- Common navbar he ismein -->
-    </header>
-</div>
-
-<div id="app">
-    <div @click="tune">
-        <!-- TITLE -->
-        <div class="title_section" style="">
-            <h1 class="overlay_title">SPONSORS</h1>
-            <div class="small_title">
-                <h1>Our partners in this journey.</h1>
-            </div>
+    
+    <div class="contact-parent-wrapper">
+    <div style="width:100%" class="title-section">
+        <h1 class="overlay-section">SPONSORS</h1>
+        <h1 class="subtitle-section">Our partners in this journey.</h1>
         </div>
-        <section class="media-block simple-ripple" style="position:relative;top:-30vh !important;">
+        <section class="media-block" style="position:relative;top:-30vh !important;">
             <h1 class="" data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out">
-                <h1>
-                    <div class="sponser-heading" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">Hackathon
-                        Partners</div>
-                    <div class="sponser-container">
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/logo.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/about.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/tech.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/ultra.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/git.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/oyo.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="https://im4.ezgif.com/tmp/ezgif-4-0f87a3bbda.png" alt="" class="img-class large">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/digitalocean.png" alt="" class="img-class">
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">CSE
-                        PARTNERS</div>
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/cn.svg" alt="" class="img-class">
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">GAMING
-                        PARTNERS</div>
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/1.jpeg" alt="" class="img-class small">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/3.jpeg" alt="" class="img-class small">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/2.jpeg" alt="" class="img-class">
-                        </div>
-                    </div>
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">ELECTRONIC
-                        PARTNERS</div>
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/aptron.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/i3.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/rcpl.png" alt="" class="img-class">
-                        </div>
-                    </div>
-
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">Media
-                        Partners</div>
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/project.jpg" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/connect.jpg" alt="" class="img-class small">
-                        </div>
-                    </div>
-
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">Startup
-                        Partners</div>
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/xampaperz.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/junk.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/agronatioon.jpeg" alt="" class="img-class">
-                        </div>
-                    </div>
-
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">Education
-                        Partners</div>
-                    <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/IMS.png" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/gate.jpg" alt="" class="img-class">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/ace.png" alt="" class="img-class small">
-                        </div>
-                        <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
-                            <img src="http://206.189.141.176:3000/images/sponsors/time.png" alt="" class="img-class">
-                        </div>
-                    </div>
-
+            <h1>
+            <div class="sponser-heading" data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">Hackathon
+                Partners</div>
+            <div class="sponser-container">
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/logo.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/about.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/tech.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/ultra.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/git.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/oyo.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="https://im4.ezgif.com/tmp/ezgif-4-0f87a3bbda.png" alt="" class="img-class large">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/digitalocean.png" alt="" class="img-class">
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">CSE
+                PARTNERS</div>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/cn.svg" alt="" class="img-class">
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">GAMING
+                PARTNERS</div>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/1.jpeg" alt="" class="img-class small">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/3.jpeg" alt="" class="img-class small">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/2.jpeg" alt="" class="img-class">
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">ELECTRONIC
+                PARTNERS</div>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/aptron.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/i3.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/rcpl.png" alt="" class="img-class">
+                </div>
+            </div>
+    
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">Media
+                Partners</div>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/project.jpg" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/connect.jpg" alt="" class="img-class small">
+                </div>
+            </div>
+    
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">Startup
+                Partners</div>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/xampaperz.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/junk.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/agronatioon.jpeg" alt="" class="img-class">
+                </div>
+            </div>
+    
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-heading">Education
+                Partners</div>
+            <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out" class="sponser-container">
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/IMS.png" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/gate.jpg" alt="" class="img-class">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/ace.png" alt="" class="img-class small">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="500" data-aos-easing="ease-in-out">
+                    <img src="http://206.189.141.176:3000/images/sponsors/time.png" alt="" class="img-class">
+                </div>
+            </div>
+    
         </section>
     </div>
-</div>
+<!-- </div> -->
 
 
 <% include ../partials/footer %>
