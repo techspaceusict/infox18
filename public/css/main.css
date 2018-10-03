@@ -313,7 +313,7 @@ canvas {
     top: 50%;
     width: 131.58%}
 .legal-background:after {
-    background-image: linear-gradient(to bottom, #5D1572, rgba(93, 21, 114, 0));
+    background-image: linear-gradient(to bottom, #1A1A1A, rgba(93, 21, 114, 0));
     top: 0;
     content: '';
     height: 410px;
@@ -366,7 +366,7 @@ canvas {
     background-image: url(../img/collaborations/background_stanford.jpg);
 }
 .projects-background:after {
-    background-image: linear-gradient(to bottom, #5D1572, rgba(93, 21, 114, 0));
+    background-image: linear-gradient(to bottom, #1A1A1A, rgba(93, 21, 114, 0));
     top: 0;
     content: '';
     height: 410px;
@@ -447,7 +447,7 @@ to {
     opacity: 1;
 }
 }.join-main-background:after {
-    background-image: linear-gradient(to bottom, #5D1572, rgba(93, 21, 114, 0));
+    background-image: linear-gradient(to bottom, #1A1A1A, rgba(93, 21, 114, 0));
     top: 0;
     content: '';
     height: 410px;
@@ -2156,7 +2156,7 @@ header.is-large .mobile{
 .collaborations-list h2, .projects-list h2 {
     top: 12%}
 }.projects-list:after {
-    background-image: linear-gradient(to bottom, #5D1572, rgba(93, 21, 114, 0));
+    background-image: linear-gradient(to bottom, #1A1A1A, rgba(93, 21, 114, 0));
     top: 0;
     content: '';
     height: 410px;
@@ -2479,7 +2479,7 @@ footer .container {
     min-height: 0;
 }
 .team-main-block:after {
-    background-image: linear-gradient(to bottom, #5D1572, rgba(93, 21, 114, 0));
+    background-image: linear-gradient(to bottom, #1A1A1A, rgba(93, 21, 114, 0));
     top: 0;
     content: '';
     height: 410px;
