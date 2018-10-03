@@ -11,6 +11,12 @@ html {
   text-decoration: none;
 }
 
+nav{
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
 html {
   width: 100%;
   height: 100%;

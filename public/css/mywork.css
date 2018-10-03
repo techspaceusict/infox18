@@ -7,7 +7,7 @@
 }
 
 .heading{
-    margin:0 0 0 33px;
+    margin:0 0 0 0;
     flex-wrap: wrap;
     display:flex;
     font-size: 48px;
@@ -36,7 +36,7 @@
 
 @media only screen and (max-width:479px){
     .projects-list {
-        padding: 50% 0;
+        padding: 0 0;
     }
     .heading{
         font-size: 24px !important;
