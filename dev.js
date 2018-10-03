@@ -129,6 +129,10 @@ app.get("/schedule", function(req, res) {
     res.render("pages/t_schedule");
 });
 
+app.get("/events-jk", function(req, res) {
+    res.render("pages/events-jk");
+});
+
 app.get("/sponsors", function(req, res) {
     res.render("pages/t_sponsors");
 });

@@ -171,10 +171,12 @@ console.clear();
 })();
 
 $('#send-icon').click(function(){
-    $(".contact-sub-wrapper").addClass('animated-contact-sub-wrapper').promise().done(function(){
-        $(".contact-sub-wrapper").css({display:'none'});
-    });
-    $('.res-saved').addClass('res-animated')
+    $('.contact-sub-wrapper').css({display:'none'});
+    $('.res-saved-wrapper').css({display:'flex'});
+    // $(".contact-sub-wrapper").addClass('animated-contact-sub-wrapper').promise().done(function(){
+    //     $(".contact-sub-wrapper").css({display:'none'});
+    // });
+    // $('.res-saved').addClass('res-animated')
     // setTimeout(function(){
     //     $(".contact-sub-wrapper").css({display:'none'});
     //     $(".res-saved").css({dispaly:'flex'});
