@@ -456,9 +456,23 @@ body {
 
 @media only screen and (max-width: 767px) {
   /* phones */
+  .cont{
+    display: none;
+    /* margin-top: -60px !important;  */
+  }
+  .about-flex{
+    margin-bottom: 50px;
+  }
   
 }
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */
+  .cont{
+    display: none;
+    /* margin-top: -60px !important;  */
+  }
+  .about-flex{
+    margin-bottom: 50px;
+  }
 }
