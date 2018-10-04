@@ -4,7 +4,7 @@
   }
 
   .sponsor-heading{
-    font-size:20px;
+    font-size:20px !important;
   }
 
   .sponsor-container{
@@ -12,7 +12,14 @@
   }
 
   .sponsor-container div{
-  
+    width:100px !important;
+    height: 100px !important;
+    margin:5px 5px !important;
+    border:5px solid #B3000C !important;
+  }
+
+  .sponsor-container{
+    width:80% !important;
   }
 
   .media-block{
@@ -24,15 +31,21 @@
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+.our-sponsors div{
+  margin: 5vh 0 ;
 }
 
 .sponsor-heading{
-  /* padding: 10px 30px;
-  margin:50px auto;
-  position: relative;
-  display: inline-block;
-  border : 5px solid #B3000C;
-  border-radius: 50px; */
+  font-size: 36px;
+  /* border:2px solid red; */
+  background-color: red;
+  padding:10px 20px;
+  border-radius: 50px;
+  background-image: linear-gradient(rgb(210, 0, 0), rgb(180, 0, 0),rgb(210, 0, 0));
+  box-shadow: 0 0 30px #101;
 }
 
 .sponsor-container{

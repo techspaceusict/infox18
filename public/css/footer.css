@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa');
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa|Julius+Sans+One');
 
 .footer{
     /* overflow: hidden; */
-     font-size: 1.2em;
+     font-size: 1em;
     padding:10px;
     display:flex;
     background-color: rgb(0, 0, 0);
@@ -21,18 +21,18 @@
 
 .sub-footer div{
     margin:2px;
-    font-family: 'Roboto', sans-serif !important;
-    /*font-family: 'Salsa', cursive !important;*/
+    /* font-family: 'Roboto', sans-serif !important; */
+    font-family: "Julius Sans One", sans-serif !important;font-weight: 700;
     transition:all 0.5s;
 }
 
 .sub-footer div:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .sub-footer:nth-child(2) div:nth-child(2){
     color:red;
-    font-size: 24px;
+    font-size: 1em;
 }
 
 .sub-footer:nth-child(1), .sub-footer:nth-child(3){
@@ -44,13 +44,13 @@
 }
 
 .sub-footer:nth-child(2) div:nth-child(3), .sub-footer:nth-child(2) div:nth-child(4){
-    font-size:16px;
+    font-size:1em;
     /* color:rgb(184, 184, 184) */
 }
 
 .custom-btn{
     font-family: 'Roboto', sans-serif !important;
-    /*font-family: 'Salsa', cursive !important;*/
+    font-family: "Julius Sans One", sans-serif !important;font-weight: 700;
     text-decoration: none;
     display:inline-block;
     padding:10px 25px;
