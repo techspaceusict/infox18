@@ -1,61 +1,50 @@
 @media only screen and (max-width: 479px){
-  .our-sponsers{
-    font-size: 20px !important;
-    width:200px !important;
-    padding:5px !important;
-    top:-100px;
+  .our-sponsors{
+    
   }
 
-  .sponser-heading{
-    padding:3px 9px !important;
-    top:-80px !important;
-    margin: 25px auto !important;
-    font-size:16px;
-    border : 2px solid #B3000C !important;
+  .sponsor-heading{
+    font-size:20px;
   }
 
-  .sponser-container{
-    top:-80px;
-    margin-bottom: 50px !important;
-    justify-content: center !important;
+  .sponsor-container{
+    
   }
 
-  .sponser-container div{
-    width:120px !important;
-    height: 120px !important;
-    margin:15px !important;
-    border:4px solid #B3000C !important;
+  .sponsor-container div{
+  
+  }
+
+  .media-block{
+   
   }
 }
 
-.our-sponsers{
-  position: relative;
-  width: 400px;
-  padding:10px;
-  margin: 200px auto -150px auto !important;
-  background-color:#B3000C;
-  border-radius: 100px;
+.our-sponsors{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.sponser-heading{
-  padding: 10px 30px;
+.sponsor-heading{
+  /* padding: 10px 30px;
   margin:50px auto;
   position: relative;
   display: inline-block;
   border : 5px solid #B3000C;
-  border-radius: 50px;
+  border-radius: 50px; */
 }
 
-.sponser-container{
+.sponsor-container{
   position: relative;
   justify-content:center;
   display:flex;  
   flex-wrap:wrap;
   justify-content:space-around;
-  margin:0 0 100px 0;
+  /* margin:0 0 100px 0; */
 }
 
-.sponser-container div{
+.sponsor-container div{
   text-transform: uppercase;
   height: 240px;
   width: 240px;
@@ -84,23 +73,15 @@
 }
 
 .media-block {
-  margin-top:8vh;
-  margin-bottom: -35vh;
+  /* margin-top:8vh; */
+  /* margin-bottom: -35vh; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
   z-index: 10;
-}
-.media-block h1 {
-  font-size: 45px;
-  font-weight: 400;
-  line-height: 54px;
-  margin-bottom: 66px;
-  margin-top: 228px;
-  text-align: center;
-  text-transform: uppercase;
+  position:relative;
 }
 
 
