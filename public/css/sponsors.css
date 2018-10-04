@@ -1,14 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Julius+Sans+One|Lato");
+
 @media only screen and (max-width: 479px){
-  .our-sponsors{
-    
-  }
 
   .sponsor-heading{
     font-size:20px !important;
-  }
-
-  .sponsor-container{
-    
   }
 
   .sponsor-container div{
@@ -22,9 +17,6 @@
     width:80% !important;
   }
 
-  .media-block{
-   
-  }
 }
 
 .our-sponsors{
@@ -42,6 +34,7 @@
   font-size: 36px;
   /* border:2px solid red; */
   background-color: red;
+  font-family: "Julius Sans One", sans-serif !important;font-weight: 700;
   padding:10px 20px;
   border-radius: 50px;
   background-image: linear-gradient(rgb(210, 0, 0), rgb(180, 0, 0),rgb(210, 0, 0));

@@ -169,3 +169,149 @@
         height: 85% !important;
     }
 }
+
+/*  CSS for about page */
+
+.about-section{
+    height: 65vh;
+    margin:4vh 0;
+    width:100%;
+    background: #333;
+}
+
+.about-content{
+    /* position: absolute; */
+    height: 100%;
+    width:100%;
+    background: #000;
+}
+
+.halchal{
+    /* position: absolute; */
+    margin-top:-65vh;
+    width:100%;
+    /* background: rgb(206, 0, 0); */
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.slabs{
+    /* background: rgb(206, 0, 0); */
+    height: 100%;
+    width: 100%;
+    /* border:1px solid brown; */
+    display:flex;
+}
+
+.sub-slab{
+    height: 100%;
+    width:100%;
+    background: rgb(206, 0, 0);
+    /* background: blue; */
+    border:1px solid rgb(163, 0, 0);
+}
+
+.s1{
+    flex-basis: 50%;
+}
+
+.s1,.s2{
+    animation-delay: 0.5s !important;
+}
+
+.s3{
+    flex-basis: 250%;
+}
+
+.s3,.s4{
+    animation-delay: 0.4s !important;
+}
+
+.s5{
+    flex-basis: 70%;
+}
+
+.s5,.s6{
+    animation-delay: 0.2s !important;
+}
+
+.s7{
+    flex-basis: 150%;
+}
+
+.s7,.s8{
+    animation-delay: 0s !important;
+}
+
+.s9{
+    flex-basis: 90%;
+}
+
+.s9,.s10{
+    animation-delay: 0.2s !important;
+}
+
+.s11{
+    flex-basis: 250%;
+}
+
+.s11,.s12{
+    animation-delay: 0.4s !important;
+}
+
+.s13{
+    flex-basis: 40%;
+}
+
+.s13,.s14{
+    animation-delay: 0.1s !important;
+}
+
+.s15{
+    flex-basis: 300%;
+}
+
+.s15,.s16{
+    animation-delay: 0.3s !important;
+}
+
+.s17{
+    flex-basis: 100%;
+}
+
+.s17,.s18{
+    animation-delay: 0.1s !important;
+}
+
+.s19{
+    flex-basis: 160%;
+}
+
+.s19,.s20{
+    animation-delay: 0.4s !important;
+}
+
+.odd{
+    animation: slabSlideLeft 2s ease-in-out 1 forwards;
+}
+
+.even{
+    animation: slabSlideRight 2s ease-in-out  1 forwards;
+}
+
+.slabs{
+    transform:skewX(-20deg);
+}
+
+@keyframes slabSlideLeft{
+    to{
+        transform:translate(-120%,0%);
+    }
+}
+
+@keyframes slabSlideRight{
+    to{
+        transform:translate(120%,0%);
+    }
+}

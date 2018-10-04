@@ -1,313 +1,200 @@
-<% include ../partials/header-links2 %>
-<!--Contains all header meta tags and links-->
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- is css ko hatane ji koshish mat krna -->
-
-<style>
-    .anim-circle{
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        overflow:hidden;
-        width:60px;
-        height: 60px;
-        background-color: #B3000C;
-        border-radius:30px;
-        z-index: 1;
-    }
-    .about-heading{
-        font-size: 26px;
-    }
-
-    .about-flex{
-        position:relative;
-        width:60px;
-        top:-60px;
-        padding:10px 20px  40px 20px;
-        overflow:hidden;
-        height: 60px;
-        border-radius: 30px;
-        background-color: #000000;
-        text-align: justify;
-        display:flex;
-        flex-wrap:wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .btn{
-        border-radius: 100px;
-        padding:16px 0px !important;
-        width:180px !important;
-    }
-
-    @media only screen and (max-width:479px){
-        .anim-circle{
-            width:35px;
-            height: 35px;
-        }
-
-        .about-heading{
-            font-size: 14px;
-        }
-
-        .about-flex{
-            border-radius: 15px;
-            width:35px;
-            top:-35px;
-            padding:0 10px 10px 10px;
-            height: 35px;
-        }
-
-        .about-flex img {
-            height: 120px !important;
-            width:120px !important;
-        }
-
-        .about-flex div{
-            font-size: 12px !important;
-            justify-content: center !important;
-        }
-
-        .btn{
-            border-radius: 18px;
-            padding:8px 4px !important;
-            width:130px !important;
-        }
-
-        .container{
-            margin-top:-30px !important;
-        }
-    }
-</style>
+<!-- Mirrored from protocol.ai/blog/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Aug 2018 19:11:37 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="icon" href="fav.png" sizes="16x16">
+
+    <link rel="manifest" href="../manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <!-- <link href="../css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../css/mobile-menu.css" type="text/css">
+    <link rel="stylesheet" href="../css/mywork.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../css/t_contact.css">
+    <!-- <link rel="stylesheet" href="../css/about.css"> -->
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <!-- <link rel="stylesheet" href="../css/sponsors.css"> -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="../css/simple-ripple.css"> -->
+    <link rel="stylesheet" href="../css/template.css">
+    <!-- <link rel="stylesheet" href="../css/events.css"> -->
     <link rel="stylesheet" href="css/slideshow.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="fav.png">
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <!--Jquery ka new version he file mein-->
+    <script type="text/javascript" src="../js/mobile-menu.js"></script>
+    <title>Infox</title>
 </head>
 
 <body>
 
-<% include ../partials/svg-and-style %>
-<div id="test">
-    <!--class="nav-wrapper"-->
-    <header class="is-large">
-        <% include ../partials/navbar %>
-        <!-- Common navbar he ismein -->
-    </header>
-</div>
-<!-- TITLE -->
-<div class="title_section">
-    <h1 class="overlay_title">About Us</h1>
-    <div class="small_title">
-        <h1>Our little story.</h1>
-    </div>
-</div>
-<section class="join-main-block" style="position:relative;top:10vh !important;">
-    <div class="container">
-        <!-- <div class="anim-circle">
-            <div class="about-heading"></div>
-        </div> -->
-        <div class="about-flex">
-            <img src="img/iplogo.png" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150"
-                 data-aos-easing="ease-in-out" alt="ipu logo" href="http://ipu.ac.in/" style="height: 200px ; width: 175px;">
-            <h5 style="margin-top: -3vh;">USICT, GGSIPU</h5>
-            <br>
-            <div style="display: flex" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="150"
-                 data-aos-easing="ease-in-out">
-                InfoXpression is the annual technical fest of Guru Gobind Singh Indraprastha University organized
-                by
-                University School of Information and Communication Technology. It is the biggest technical
-                extravaganza held at Guru Gobind Singh Indraprastha University, and involves an active
-                participation of
-                students from over 250 colleges of north India. An exhilarating voyage of technical know-how,
-                InfoXpression focuses on the promotion of technology and innovation. It gives you a chance to stop,
-                culminate new ideas and showcase your technical expertise. The fest is a three day grandeur which
-                is
-                result of a month long affair of prelims and stage levels. It involves a series of competitions,
-                workshops
-                and guest lectures by some eminent personalities. InfoXpression is an amalgamation of creativity
-                and
-                imagination. It will be a perfect blend of entertainment and technology with the aim of
-                transformation
-                and empowerment of the society.
+    <% include ../partials/new-nav-bar %>
+
+    <div class="contact-parent-wrapper" style="align-items: center; margin-top:7vh">
+        <div class="title-section">
+            <h1 class="overlay-section">About Us</h1>
+            <h1 class="subtitle-section" style="margin-top:5vh">Our Little Story</h1>
+        </div>
+        <div class="about-section">
+            
+            <div class="about-content">
+
             </div>
-            <!-- <a class="btn" href="#team-link" onclick="scrollToElement(this.hash, 800);">See our Team</a> -->
+
+            <div class="halchal">
+                <div class="slabs">
+                    <div class="sub-slab odd s1"></div>
+                    <div class="sub-slab even s2"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s3"></div>
+                    <div class="sub-slab even s4"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s5"></div>
+                    <div class="sub-slab even s6"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s7"></div>
+                    <div class="sub-slab even s8"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s9"></div>
+                    <div class="sub-slab even s10"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s11"></div>
+                    <div class="sub-slab even s12"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s13"></div>
+                    <div class="sub-slab even s14"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s15"></div>
+                    <div class="sub-slab even s16"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s17"></div>
+                    <div class="sub-slab even s18"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s19"></div>
+                    <div class="sub-slab even s20"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s1"></div>
+                    <div class="sub-slab even s2"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s3"></div>
+                    <div class="sub-slab even s4"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s5"></div>
+                    <div class="sub-slab even s6"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s7"></div>
+                    <div class="sub-slab even s8"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s9"></div>
+                    <div class="sub-slab even s10"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s11"></div>
+                    <div class="sub-slab even s12"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s13"></div>
+                    <div class="sub-slab even s14"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s15"></div>
+                    <div class="sub-slab even s16"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s17"></div>
+                    <div class="sub-slab even s18"></div>
+                </div>
+                <div class="slabs">
+                    <div class="sub-slab odd s19"></div>
+                    <div class="sub-slab even s20"></div>
+                </div>
+            </div>
+
         </div>
     </div>
-</section>
 
-<!-- showcase -->
-<div style="height: 100%;" class="cont s--inactive">
-    <!-- cont inner start -->
-    <div class="cont__inner">
-        <!-- el start -->
-        <div class="el">
-            <div class="el__overflow">
-                <div class="el__inner">
-                    <div class="el__bg"></div>
-                    <div class="el__preview-cont">
-                        <!-- <h2 class="el__heading">InfoX 1</h2> -->
-                    </div>
-                    <div class="el__content">
-                        <div class="el__text">Infox17 At A Glance</div>
-                        <div class="el__close-btn"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="el__index">
-                <!-- <div class="el__index-back">1</div> -->
-                <div class="el__index-front">
-                    <!-- <div class="el__index-overlay" data-index="1">1</div> -->
-                </div>
-            </div>
-        </div>
-        <!-- el end -->
-        <!-- el start -->
-        <div class="el">
-            <div class="el__overflow">
-                <div class="el__inner">
-                    <div class="el__bg"></div>
-                    <div class="el__preview-cont">
-                        <!-- <h2 class="el__heading">InfoX 2</h2> -->
-                    </div>
-                    <div class="el__content">
-                        <div class="el__text">Infox17 At A Glance</div>
-                        <div class="el__close-btn"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="el__index">
-                <!-- <div class="el__index-back">2</div> -->
-                <div class="el__index-front">
-                    <!-- <div class="el__index-overlay" data-index="2">2</div> -->
-                </div>
-            </div>
-        </div>
-        <!-- el end -->
-        <!-- el start -->
-        <div class="el">
-            <div class="el__overflow">
-                <div class="el__inner">
-                    <div class="el__bg"></div>
-                    <div class="el__preview-cont">
-                        <!-- <h2 class="el__heading">InfoX 3</h2> -->
-                    </div>
-                    <div class="el__content">
-                        <div class="el__text">Infox17 At A Glance</div>
-                        <div class="el__close-btn"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="el__index">
-                <!-- <div class="el__index-back">3</div> -->
-                <div class="el__index-front">
-                    <!-- <div class="el__index-overlay" data-index="3">3</div> -->
-                </div>
-            </div>
-        </div>
-        <!-- el end -->
-        <!-- el start -->
-        <div class="el">
-            <div class="el__overflow">
-                <div class="el__inner">
-                    <div class="el__bg"></div>
-                    <div class="el__preview-cont">
-                        <!-- <h2 class="el__heading">InfoX 4</h2> -->
-                    </div>
-                    <div class="el__content">
-                        <div class="el__text">Infox17 At A Glance</div>
-                        <div class="el__close-btn"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="el__index">
-                <!-- <div class="el__index-back">4</div> -->
-                <div class="el__index-front">
-                    <!-- <div class="el__index-overlay" data-index="4">4</div> -->
-                </div>
-            </div>
-        </div>
-        <!-- el end -->
-        <!-- el start -->
-        <div class="el">
-            <div class="el__overflow">
-                <div class="el__inner">
-                    <div class="el__bg"></div>
-                    <div class="el__preview-cont">
-                        <!-- <h2 class="el__heading">InfoX 5</h2> -->
-                    </div>
-                    <div class="el__content">
-                        <div class="el__text">Infox17 At A Glance</div>
-                        <div class="el__close-btn"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="el__index">
-                <!-- <div class="el__index-back">5</div> -->
-                <div class="el__index-front">
-                    <!-- <div class="el__index-overlay" data-index="5">5</div> -->
-                </div>
-            </div>
-        </div>
-        <!-- el end -->
-    </div>
-    <!-- cont inner end -->
-</div>
+    <% include ../partials/slideshow %>
+
+    <% include ../partials/footer %>
 
 
-<% include ../partials/footer %>
+    <!-- Nav below is for hamburger -->
+
+    <% include ../partials/hamburger %>
 
 
-<!-- Nav below is for hamburger -->
-
-<% include ../partials/hamburger %>
-
-
-<script src="../js/common.js"></script>
-<script src="../js/team.js"></script>
-<script type="text/javascript">
-    if ($(window).width() <= 479) {
-        setTimeout(function () {
-            $(document).ready(function () {
-                $(".anim-circle").animate({ width: "100px" }, 500, 'easeOutExpo', function () {
-                    $(".about-heading").fadeOut(100, function () {
-                        $(this).html("ABOUT US").fadeIn(function () {
-                            // alert('hello');
+    <script src="../js/common.js"></script>
+    <script src="../js/team.js"></script>
+    <script type="text/javascript">
+        if ($(window).width() <= 479) {
+            setTimeout(function () {
+                $(document).ready(function () {
+                    $(".anim-circle").animate({ width: "100px" }, 500, 'easeOutExpo', function () {
+                        $(".about-heading").fadeOut(100, function () {
+                            $(this).html("ABOUT US").fadeIn(function () {
+                                // alert('hello');
+                            });
+                        });
+                    });
+                    $(".about-flex").animate({ width: "100px" }, 500, 'easeOutExpo', function () {
+                        $(".about-flex").animate({ top: "15px" }, 400, 'easeOutExpo', function () {
+                            $(this).animate({ width: "100%" }, 400, 'easeOutExpo', function () {
+                                $(this).animate({ height: "100%" }, 800, 'easeOutExpo');
+                            })
                         });
                     });
                 });
-                $(".about-flex").animate({ width: "100px" }, 500, 'easeOutExpo', function () {
-                    $(".about-flex").animate({ top: "15px" }, 400, 'easeOutExpo', function () {
-                        $(this).animate({ width: "100%" }, 400, 'easeOutExpo', function () {
-                            $(this).animate({ height: "100%" }, 800, 'easeOutExpo');
-                        })
+            }, 1000);
+        } else {
+            setTimeout(function () {
+                $(document).ready(function () {
+                    $(".anim-circle").animate({ width: "200px" }, 500, 'easeOutExpo', function () {
+                        $(".about-heading").fadeOut(100, function () {
+                            $(this).html("ABOUT US").fadeIn(function () {
+                                // alert('hello');
+                            });
+                        });
                     });
-                });
-            });
-        }, 1000);
-    } else {
-        setTimeout(function () {
-            $(document).ready(function () {
-                $(".anim-circle").animate({ width: "200px" }, 500, 'easeOutExpo', function () {
-                    $(".about-heading").fadeOut(100, function () {
-                        $(this).html("ABOUT US").fadeIn(function () {
-                            // alert('hello');
+                    $(".about-flex").animate({ width: "200px" }, 500, 'easeOutExpo', function () {
+                        $(".about-flex").animate({ top: "30px" }, 400, 'easeOutExpo', function () {
+                            $(this).animate({ width: "100%" }, 400, 'easeOutExpo', function () {
+                                $(this).animate({ height: "100%" }, 800, 'easeOutExpo');
+                            })
                         });
                     });
                 });
-                $(".about-flex").animate({ width: "200px" }, 500, 'easeOutExpo', function () {
-                    $(".about-flex").animate({ top: "30px" }, 400, 'easeOutExpo', function () {
-                        $(this).animate({ width: "100%" }, 400, 'easeOutExpo', function () {
-                            $(this).animate({ height: "100%" }, 800, 'easeOutExpo');
-                        })
-                    });
-                });
-            });
-        }, 1000);
-    }
-</script>
-<script src="js/slideshow.js"></script>
+            }, 1000);
+        }
+    </script>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>
