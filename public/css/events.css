@@ -17,15 +17,15 @@
 	perspective: 1500px;
 	-moz-perspective: 1500px;
 	position:relative;
-	height:35rem;
+	height:30rem;
 }
 
 .card__side{
 	position:absolute;
 	top:0;
 	left:0;
-	height:35rem;
-	width:20rem;
+	height:30rem;
+	width:100%;
 	transition: all 0.8s ease;
 	backface-visibility: hidden;
 	border-radius: 3px;
@@ -59,7 +59,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width:80%;
+	width:100%;
 	text-align: center;
 }
 
@@ -71,7 +71,7 @@
 
 .card__heading--min{
 	font-size: 1.5rem;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 .card__heading--max{
