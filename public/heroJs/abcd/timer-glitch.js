@@ -10,7 +10,7 @@ $(document).ready(function () {
       $('.screen').toggleClass('glitch');
     });
   
-    var countDownDate = new Date("Oct 12, 2018 00:00:00").getTime();
+    var countDownDate = new Date("Oct 26, 2018 00:00:00").getTime();
     
     // var newDate = new Date();
     // newDate.setDate(newDate.getDate());

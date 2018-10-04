@@ -34,7 +34,7 @@
       trailWidth: 3
   });
 
-  shortcode_date = '2018-10-12T00:00:00'
+  shortcode_date = '2018-10-26T00:00:00'
   
   setInterval(function() {
       now = new Date(); 
