@@ -57,3 +57,115 @@
 /* schedule page carousel */
 
 /* ----------------------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Julius+Sans+One|Lato");
+
+
+.carousel{
+    width:95%;
+    height: 60vh;
+    background-color: brown;
+    display:flex;
+    justify-content: space-evenly;
+    margin: 4vh 0;
+}
+
+.carousel div{
+    width:100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-overlay{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 72px;
+    font-family: 'Lato';
+    font-weight: 900;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cl{
+    background-color: #b30018;
+}
+
+.cm{
+    background-color: #d4001c;
+}
+
+.cr{
+    background-color: #b30018;
+}
+
+.day-no-2{
+    font-size:32px;
+    transform:rotateZ(-90deg);
+}
+
+.c-schedule{
+    display:flex;
+    width:900% !important;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    margin: 10px;
+}
+
+.c-schedule img{
+    width: 100%;
+    height: 100%;
+}
+
+#c1-img{
+    display:none;
+}
+
+#c2-img{
+    display:none;
+}
+
+#c3-img{
+    display:none;
+}
+
+@media only screen and (max-width:767px){
+    .carousel, .cl, .cm, .cr{
+        flex-direction: column;
+    }
+    .day-no-2{
+        font-size: 20px !important;
+        transform:rotatez(0);
+    }
+
+    .day-no{
+        font-size: 36px;
+    }
+
+    .c-schedule{
+        width: 100% !important;
+        height: 85% !important;
+    }
+}
+
+@media only screen and (max-width:479px){
+
+    .day-no-2{
+        font-size: 16px !important;
+        transform:rotatez(0);
+    }
+
+    .day-no{
+        font-size: 24px;
+    }
+
+    .c-schedule{
+        width: 100% !important;
+        height: 85% !important;
+    }
+}

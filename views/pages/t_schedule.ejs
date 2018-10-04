@@ -48,16 +48,43 @@
 
 <% include ../partials/new-nav-bar %>
 
-<div class="contact-parent-wrapper">
+<div class="contact-parent-wrapper" style="align-items: center; height: 95vh;">
     <div class="title-section">
-        <h1 class="overlay-section">SPONSORS</h1>
-        <h1 class="subtitle-section">Our supporting partners</h1>
+        <h1 class="overlay-section">SCHEDULE</h1>
+        <h1 class="subtitle-section">Checkout event timings</h1>
     </div>
 
     <div class="carousel">
-        <div class="cl"></div>
-        <div class="cm"></div>
-        <div class="cr"></div>
+        <div class="cl">
+            <div class="c-overlay" id="c1">
+                <div class="day-no">
+                        DAY<span style="color: transparent;">.</span>1
+                </div>
+            </div>
+            <div class="c-schedule" id="c1-img">
+                <img src="img/13oct.jpg" alt="day-1-schedule">
+            </div>
+        </div>
+        <div class="cm">
+            <div class="c-overlay" id="c2">
+                <div class="day-no">
+                        DAY<span style="color: transparent;">.</span>2
+                </div>
+            </div>
+            <div class="c-schedule" id="c2-img">
+                <img src="img/14oct.jpg" alt="day-1-schedule">
+            </div>
+        </div>
+        <div class="cr">
+            <div class="c-overlay" id="c3">
+                <div class="day-no">
+                        DAY<span style="color: transparent;">.</span>3
+                </div>
+            </div>
+            <div class="c-schedule" id="c3-img">
+                <img src="img/15oct.jpg" alt="day-1-schedule">
+            </div>
+        </div>
     </div>
     
     
@@ -70,14 +97,78 @@
     <img src="img/15oct.jpg" alt="day-3-schedule" class="img-sc"> -->
 </div>
 
+<% include ../partials/footer %>
 
 <!-- Nav below is for hamburger -->
 
 <% include ../partials/hamburger %>
 
+<script>
+    $('.c-overlay').click(function(){
+        $('.day-no').addClass('day-no-2');
+    });
 
-<script src="../js/common.js"></script>
-<script src="../js/media.js"></script>
+    $(window).resize(function(){
+        location.reload(true)
+    });
+    if($( window ).width()>767){
+        $('#c1').click(function(){
+            $('#c1-img').css({display:'block'});
+            $('#c2-img').css({display:'none'});
+            $('#c3-img').css({display:'none'});
+            $('.cl').animate({width:'80%'});
+            $('.cm').animate({width:'10%'});
+            $('.cr').animate({width:'10%'});
+        });
+
+        $('#c2').click(function(){
+            $('#c1-img').css({display:'none'});
+            $('#c2-img').css({display:'block'});
+            $('#c3-img').css({display:'none'});
+            $('.cl').animate({width:'10%'});
+            $('.cm').animate({width:'80%'});
+            $('.cr').animate({width:'10%'});
+        });
+
+        $('#c3').click(function(){
+            $('#c1-img').css({display:'none'});
+            $('#c2-img').css({display:'none'});
+            $('#c3-img').css({display:'block'});
+            $('.cl').animate({width:'10%'});
+            $('.cm').animate({width:'10%'});
+            $('.cr').animate({width:'80%'});
+        });
+    }
+    else{
+        $('#c1').click(function(){
+            $('#c1-img').css({display:'block'});
+            $('#c2-img').css({display:'none'});
+            $('#c3-img').css({display:'none'});
+            $('.cl').animate({height:'80%'});
+            $('.cm').animate({height:'10%'});
+            $('.cr').animate({height:'10%'});
+        });
+
+        $('#c2').click(function(){
+            $('#c1-img').css({display:'none'});
+            $('#c2-img').css({display:'block'});
+            $('#c3-img').css({display:'none'});
+            $('.cl').animate({height:'10%'});
+            $('.cm').animate({height:'80%'});
+            $('.cr').animate({height:'10%'});
+        });
+
+        $('#c3').click(function(){
+            $('#c1-img').css({display:'none'});
+            $('#c2-img').css({display:'none'});
+            $('#c3-img').css({display:'block'});
+            $('.cl').animate({height:'10%'});
+            $('.cm').animate({height:'10%'});
+            $('.cr').animate({height:'80%'});
+        });       
+    }
+
+</script>
 
 </body>
 
