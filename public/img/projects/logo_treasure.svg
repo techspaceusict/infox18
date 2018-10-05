@@ -2,24 +2,24 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW X7 -->
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="21.6152mm" height="24.959mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 324 374"
+viewBox="0 0 158 183"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .fil0 {fill:#004CFE}
+    .fil0 {fill:#FF4444}
     .fil1 {fill:white}
    ]]>
   </style>
  </defs>
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_1299001647824">
-   <polygon class="fil0" points="162,0 243,47 324,93 324,187 324,280 243,327 162,374 81,327 0,280 0,187 0,93 81,47 "/>
+  <g id="_2543891661600">
+   <polygon class="fil0" points="79,0 119,23 158,46 158,91 158,137 119,160 79,183 40,160 0,137 0,91 0,46 40,23 "/>
    <g>
-    <path class="fil1" d="M51 276c0,9 4,7 16,7l198 0c6,0 8,-1 8,-7l0 -104c-31,0 -61,0 -92,0 0,16 5,43 -19,44 -24,1 -20,-29 -19,-44l-92 0 0 104zm10 -2l22 0c1,-7 -3,-12 -6,-16 -4,-4 -9,-6 -16,-8l0 24zm179 0l23 0 0 -24c-7,2 -12,4 -15,8 -3,3 -8,9 -8,16z"/>
-    <path class="fil1" d="M51 157l0 6c37,0 74,0 110,0l-18 0c7,-20 33,-19 37,0l93 0c0,-27 -7,-41 -22,-60 -7,-10 -8,-12 -15,-12l-148 0c-7,0 -8,2 -15,11 -4,6 -7,8 -11,15 -6,11 -11,26 -11,40z"/>
-    <path class="fil1" d="M167 187l-10 0c0,5 -2,14 4,14 7,1 6,-9 6,-14z"/>
+    <path class="fil1" d="M25 135c0,4 2,3 8,3l97 0c2,0 3,0 3,-3l0 -51c-15,0 -30,0 -44,0 0,8 2,21 -10,22 -12,0 -9,-15 -9,-22l-45 0 0 51zm5 -1l11 0c0,-3 -2,-6 -4,-8 -2,-2 -4,-3 -7,-4l0 12zm87 0l11 0 0 -12c-3,1 -5,2 -7,4 -1,1 -4,5 -4,8z"/>
+    <path class="fil1" d="M25 77l0 3c18,0 36,0 54,0l-9 0c3,-10 16,-10 18,0l45 0c0,-13 -3,-21 -10,-30 -4,-4 -4,-6 -8,-6l-72 0c-3,0 -4,2 -7,6 -2,3 -4,4 -6,7 -3,5 -5,13 -5,20z"/>
+    <path class="fil1" d="M81 91l-4 0c0,3 -1,7 2,7 3,1 2,-4 2,-7z"/>
    </g>
   </g>
  </g>
