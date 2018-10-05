@@ -33,15 +33,31 @@
   }
 }
 
-@media screen and (min-width:786px){
+.flex-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin:5%;
+}
+.flex-item{
+  margin:2%;
+}
+
+@media screen and (max-width:767px){
   .flex-container{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+    /* margin: 100px; */
   }
   .flex-item{
-    flex: 1;
+    /* flex: 1; */
+  }
+}
+
+@media screen and (max-width:479px){
+  .flex-container{
+    /* margin: 100px; */
+  }
+  .flex-item{
+    /* flex: 1; */
   }
 }
 
