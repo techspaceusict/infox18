@@ -296,7 +296,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 50%;
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -487,11 +487,30 @@ body{
 
 #contact-form {
     max-width: 90%;
+    /* background:red; */
     /* position: absolute; */
     /* top:50%;
     left:50%; */
     /* transform:translate(8%,-70%); */
     margin: 0 auto;
+}
+
+
+.contact-form-sub-section{
+    box-shadow: none;
+    /* background-color: red; */
+    display:flex;
+    justify-content: space-evenly;
+    /* margin-bottom: 2vh; */
+}
+
+.contact-form-sub-section div{
+    box-shadow: none;
+    color: #ccc;
+}
+
+.contact-sub-wrapper div{
+    box-shadow: none;
 }
 
 label {
@@ -632,7 +651,7 @@ button {
     background: none;
     border: none;
     outline: none;
-    margin: 2vmax;
+    margin: 1vmax;
 }
 
 button:hover small {
