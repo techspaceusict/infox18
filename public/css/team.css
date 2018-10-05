@@ -188,3 +188,6 @@
   transition-delay: 0.1s;
 }
 
+.img-circle {
+  border-radius: 50%;
+}
