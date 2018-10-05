@@ -359,6 +359,7 @@
 
 .subtitle-section{
     /* transform:translate(0,200%); */
+    backface-visibility: hidden;
     color: red;
     font-size: 26px;
     opacity: 0;
