@@ -207,3 +207,6 @@
 .img-circle {
   border-radius: 50%;
 }
+.p-margin-t-10{
+  margin-top: 10px !important;
+}
