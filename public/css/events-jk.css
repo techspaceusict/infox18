@@ -45,7 +45,7 @@
 }
 
 .events-section {
-    height: 94vh;
+    min-height: 94vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -70,11 +70,13 @@
 
 .events {
     width: 100%;
-    height: 80%;
+    min-height: 75vh;
     background-color: #1a1a1a;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding:5vh 2vh;
 }
 
 #scroll_to_top {
@@ -96,9 +98,16 @@
     transform: scale(1.2);
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
     .events-navigation {
         transform: scale(0.7);
+    }
+    .events-section {
+        /* height: 100vh !important; */
+    }
+    .events-navigation {
+        margin: 8vh 0 18vh 0 !important;
+        width: 100% !important;
     }
 }
 
@@ -109,14 +118,15 @@
     }
 
     .events-section {
-        height: 100vh !important;
+        /* height: 100vh !important; */
     }
 
     .events {
         flex-direction: column;
         justify-content: space-evenly;
-        min-height: 86% !important;
-        height: 0 !important;
+        min-height: 86vh !important;
+        /* height: 0 !important; */
+        flex-wrap: wrap;
     }
 
     #scroll_to_top:hover {
@@ -156,6 +166,7 @@ body[data-aos-easing="new-easing"] [data-aos],
 /* events card css */
 
 .card {
+    margin:2vh;
     overflow: hidden;
     /* position: relative; */
     width: 220px;
@@ -230,7 +241,7 @@ body[data-aos-easing="new-easing"] [data-aos],
     font-family: "Julius Sans One", sans-serif !important;
     font-weight: 400;
     line-height: 1.4em;
-    font-size: 12px;
+    font-size: 11px;
     color: white;
     /*   background-color:#777; */
     /*   display:flex; */
