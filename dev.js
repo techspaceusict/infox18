@@ -121,6 +121,10 @@ app.get("/about", function(req, res) {
     res.render("pages/t_about");
 });
 
+app.get("/profile", function(req, res) {
+    res.render("pages/t_profile");
+});
+
 app.get("/contact", function(req, res) {
     res.render("pages/t_contact");
 });
