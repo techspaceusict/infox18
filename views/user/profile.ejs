@@ -1,16 +1,78 @@
-<%include ../partials/header-links2.ejs%>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from protocol.ai/blog/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Aug 2018 19:11:37 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="icon" href="fav.png" sizes="16x16">
+
+    <link rel="manifest" href="../manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
+    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
+    <!-- <link href="../css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../css/mobile-menu.css" type="text/css">
+    <link rel="stylesheet" href="../css/mywork.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="../css/contact.css"> -->
+    <link rel="stylesheet" href="../css/t_contact.css">
+    <!-- <link rel="stylesheet" href="../css/about.css"> -->
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/sponsors.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/simple-ripple.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="../css/events.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="fav.png">
+    <link rel="stylesheet" href="../css/profile.css">
+    <!-- <script type="text/javascript" src="../js/simple-ripple.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script> -->
+
+    <script>
+        window.ga = window.ga || function () {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-96910779-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <!--Jquery ka new version he file mein-->
+    <script type="text/javascript" src="../js/mobile-menu.js"></script>
+
+
+    <script async src='../../www.google-analytics.com/analytics.js'></script>
+    <title>Infox</title>
+</head>
+
+<!-- <link rel="stylesheet" href="css/about.css"> -->
+<link rel="stylesheet" href="css/team.css">
 <body>
     <% include ../partials/svg-and-style %>
 
         <div id="test">
             <!--class="nav-wrapper"-->
             <header class="is-large">
-                <% include ../partials/navbar %>
+                <% include ../partials/new-nav-bar %>
                 <!-- Common navbar he ismein -->
             </header>
         </div>
 
-        <div id="app">
+        <!-- <div id="app">
             <div @click="tune">
                 <div class="title_section">
                     <h1 class="overlay_title">PROFILE</h1>
@@ -28,7 +90,157 @@
                     <h3>Stay tuned for more!</h3>
                 </section>
             </div>
+        </div> -->
+        <div class="title-section" style="margin-top: 30px;">
+            <h1 class="overlay-section">Profile</h1>
+            <h1 class="subtitle-section">Keep your info updated</h1>
         </div>
+
+        <div class="wrapper">
+            <div class="profile">
+              <div class="content">
+                <h1 style="color: black ; font-weight: 400;">Edit Profile</h1>
+                <form action="">
+                  <!-- Photo -->
+                  <fieldset>
+                    <div class="grid-35">
+                      <label for="avatar">Your Photo</label>
+                    </div>
+                    <style>
+                        span.photo{
+                            background-repeat: no-repeat !important;
+                            background-size: 100% !important;
+                            background: url("<%=user.image%>");
+                        }
+                    </style>
+                    <div class="grid-65">
+                      <span class="photo" title="Upload your Avatar!"></span>
+                      <input type="file" class="btn" />
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                    <div class="grid-35">
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="grid-65">
+                      <input type="text" id="fname" value="<%=user.name%>" tabindex="1" />
+                    </div>
+                  </fieldset>
+                  <!-- <fieldset>
+                    <div class="grid-35">
+                      <label for="lname">Last Name</label>
+                    </div>
+                    <div class="grid-65">
+                      <input type="text" id="lname" tabindex="2" />
+                    </div>
+                  </fieldset> -->
+                  <!-- Description about User -->
+                  <!-- <fieldset>
+                    <div class="grid-35">
+                      <label for="description">About you</label>
+                    </div>
+                    <div class="grid-65">
+                      <textarea name="" id="" cols="30" rows="auto" tabindex="3"></textarea>
+                    </div>
+                  </fieldset> -->
+                  <!-- Location -->
+                  <fieldset>
+                    <div class="grid-35">
+                      <label for="location">Phone number</label>
+                    </div>
+                    <div class="grid-65">
+                      <input type="text" id="phonenumber" tabindex="4" />
+                    </div>
+                  </fieldset>
+                  <!-- Country -->
+                  <!-- <fieldset>
+                    <div class="grid-35">
+                      <label for="country">Country</label>
+                    </div>
+                    <div class="grid-65">
+                      <input type="text" id="country" tabindex="5" />
+                    </div>
+                  </fieldset> -->
+                  <!-- Email -->
+                  <fieldset>
+                    <div class="grid-35">
+                      <label for="email">Email Address</label>
+                    </div>
+                    <div class="grid-65">
+                      <input type="email" id="email" value="<%=user.email%>" tabindex="6" />
+                    </div>
+                  </fieldset>
+                  <!-- Looking for Work -->
+                  <fieldset>
+                    <div class="grid-35">
+                      <label for="forHire">College</label>
+                    </div>
+                    <div class="grid-65">
+                      <select name="work" id="College" tabindex="7">
+                        <option selected="selected" value="--------------" disabled>--------------</option>
+                        <option value="yes">usict</option>
+                        <option value="no">dtu</option>
+                        <option value="no">nsit</option>
+                        <option value="no">bvp</option>
+                        <option value="no">iit delhi</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                  <!-- Highest Qualification -->
+                  <fieldset>
+                    <div class="grid-35">
+                      <label for="qualification">Branch</label>
+                    </div>
+                    <div class="grid-65">
+                      <select name="qualification" id="branch" tabindex="8">
+                        <option selected="selected" value="--------------" disabled>--------------</option>
+                        <option value="primary_school">branch 1</option>
+                        <option value="primary_school">branch 2</option>
+                        <option value="primary_school">branch 3</option>
+                        <option value="primary_school">branch 4</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                  <!-- year -->
+                  <fieldset>
+                    <div class="grid-35">
+                      <label for="qualification">year</label>
+                    </div>
+                    <div class="grid-65">
+                      <select name="qualification" id="year" tabindex="8">
+                        <option selected="selected" value="--------------" disabled>--------------</option>
+                        <option value="primary_school">1</option>
+                        <option value="primary_school">2</option>
+                        <option value="primary_school">3</option>
+                        <option value="primary_school">4</option>
+                      </select>
+                    </div>
+                  </fieldset>
+                  <!-- degree -->
+                  <fieldset>
+                    <div class="grid-35">
+                      <label for="qualification">Degree</label>
+                    </div>
+                    <div class="grid-65">
+                      <select name="qualification" id="year" tabindex="8">
+                        <option selected="selected" value="--------------" disabled>--------------</option>
+                        <option value="primary_school">1</option>
+                        <option value="primary_school">2</option>
+                        <option value="primary_school">3</option>
+                        <option value="primary_school">4</option>
+                      </select>
+                    </div>
+                  </fieldset>                                     
+                  <fieldset>
+                    <input type="button" class="Btn cancel" value="Cancel" />
+                    <input type="submit" class="Btn" value="Save Changes" />
+                  </fieldset>
+          
+                </form>
+              </div>
+            </div>
+          </div>
+
     <% include ../partials/footer %>
 
     <% include ../partials/hamburger %>
