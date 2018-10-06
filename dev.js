@@ -114,7 +114,7 @@ app.get("/logout", function(req, res) {
 });
 
 app.get("/events", function(req, res) {
-    res.render("pages/t_events");
+    res.render("pages/events-jk");
 });
 
 app.get("/about", function(req, res) {

@@ -23,7 +23,8 @@
     <link rel="stylesheet" href="../css/sponsors.css">
     <link rel="stylesheet" href="../css/scrollbar.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="../css/template.css">
     <link rel="stylesheet" href="../heroJs/3p/jquery.easing.min.js">
 
@@ -37,6 +38,7 @@
     <script async src='../../www.google-analytics.com/analytics.js'></script>
     <title>Infox</title>
 </head>
+
 <body>
     <% include ../partials/new-nav-bar %>
 
@@ -47,33 +49,69 @@
         </div>
         <div class="events-navigation">
             <div class="e-layer-1">
-                <img id="electronic-icon" class="events-nav-item" alt="Robotic" src="../img/projects/logo_robot.svg">
-                <img id="coding-icon" class="events-nav-item" alt="Robotic" src="../img/projects/logo_coder.svg">
-                <img id="workshop-icon" class="events-nav-item" alt="Workshop" src="../img/projects/logo_workshop.svg">    
+                <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="electronic-icon" class="events-nav-item"
+                    alt="Robotic" src="../img/projects/logo_robot.svg">
+                <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="coding-icon" class="events-nav-item"
+                    alt="Robotic" src="../img/projects/logo_coder.svg">
+                <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="workshop-icon" class="events-nav-item"
+                    alt="Workshop" src="../img/projects/logo_workshop.svg">
             </div>
             <div class="e-layer-2">
-                <img id="adventure-icon" class="events-nav-item" alt="Treasure" src="../img/projects/logo_treasure.svg">
-                <img id="quiz-icon" class="events-nav-item" alt="Ecell" src="../img/projects/logo_ecell.svg">
-            </div>    
+                <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="adventure-icon" class="events-nav-item"
+                    alt="Treasure" src="../img/projects/logo_treasure.svg">
+                <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="quiz-icon" class="events-nav-item"
+                    alt="Ecell" src="../img/projects/logo_ecell.svg">
+            </div>
         </div>
+
+
         <div id="electronic" class="events-section">
-            <div class="events-heading">Electronic</div>
+            <div class="events-heading">Electronics</div>
             <div class="events"></div>
         </div>
+
+
         <div id="coding" class="events-section">
             <div class="events-heading">Coding</div>
-            <div class="events"></div>
+            <div class="events">
+                <div class="card">
+                    <div class="card-inner-wrapper">
+                            <div class="pic-wrapper">
+                                    <div class="pic">
+                                        <img src="http://206.189.141.176:3000/uploads/posters/uhack.jpg" alt="">
+                                    </div>
+                                    <div class="pic-info">
+                                        <div class="event-info">
+                                            <div class="event-heading">U Hack</div>
+                                            <div class="event-desc">
+                                                Hackathon is a flagship event of InfoXpression. It will be a 24hr overnight
+                                                software hackathon, fuelled by grit, passion and coffee. Shoutout to all computer
+                                                nerds and gizmo geeks.This is the student’s chance to push for a Digital India.
+                                            </div>
+                                        </div>
+                                        <div class="reg-btn">Register</div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
         <div id="workshop" class="events-section">
             <div class="events-heading">Workshops</div>
             <div class="events"></div>
         </div>
+
+
         <div id="adventure" class="events-section">
             <div class="events-heading">Adventure</div>
             <div class="events"></div>
         </div>
+
+
         <div id="quiz" class="events-section">
-            <div class="events-heading">Quizes</div>
+            <div class="events-heading">Entrepreurial</div>
             <div class="events"></div>
         </div>
     </div>
@@ -83,33 +121,50 @@
     <% include ../partials/move_to_top %>
 
     <script>
-        $("#electronic-icon").click(function() {
+        var eventOffset = 50;
+
+        $(document).ready(function () {
+            $(window).resize(function () {
+                if ($(window).width() < 480) {
+                    eventOffset = 0;
+                } else {
+                    eventOffset = 50;
+                }
+            });
+        });
+
+        if ($(window).width() < 480) {
+            eventOffset = 0;
+        }
+
+
+        $("#electronic-icon").click(function () {
             $([document.documentElement, document.body]).animate({
-                scrollTop: $("#electronic").offset().top - 50
+                scrollTop: $("#electronic").offset().top - eventOffset
             }, 800, 'easeOutExpo');
         });
 
-        $("#coding-icon").click(function() {
+        $("#coding-icon").click(function () {
             $([document.documentElement, document.body]).animate({
-                scrollTop: $("#coding").offset().top - 50
+                scrollTop: $("#coding").offset().top - eventOffset
             }, 800, 'easeOutExpo');
         });
 
-        $("#workshop-icon").click(function() {
+        $("#workshop-icon").click(function () {
             $([document.documentElement, document.body]).animate({
-                scrollTop: $("#workshop").offset().top - 50
+                scrollTop: $("#workshop").offset().top - eventOffset
             }, 800, 'easeOutExpo');
         });
 
-        $("#adventure-icon").click(function() {
+        $("#adventure-icon").click(function () {
             $([document.documentElement, document.body]).animate({
-                scrollTop: $("#adventure").offset().top - 50
+                scrollTop: $("#adventure").offset().top - eventOffset
             }, 800, 'easeOutExpo');
         });
 
-        $("#quiz-icon").click(function() {
+        $("#quiz-icon").click(function () {
             $([document.documentElement, document.body]).animate({
-                scrollTop: $("#quiz").offset().top - 50
+                scrollTop: $("#quiz").offset().top - eventOffset
             }, 800, 'easeOutExpo');
         });
     </script>

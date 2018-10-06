@@ -39,6 +39,7 @@
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script> -->
 
     <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../heroJs/jquery.easing.min.js"></script>
     <!--Jquery ka new version he file mein-->
     <script type="text/javascript" src="../js/mobile-menu.js"></script>
     <title>Infox</title>
@@ -116,27 +117,27 @@
             $('#c1-img').css({display:'block'});
             $('#c2-img').css({display:'none'});
             $('#c3-img').css({display:'none'});
-            $('.cl').animate({width:'80%'});
-            $('.cm').animate({width:'10%'});
-            $('.cr').animate({width:'10%'});
+            $('.cl').animate({width:'80%'},400,'easeOutQuint');
+            $('.cm').animate({width:'10%'},400,'easeOutQuint');
+            $('.cr').animate({width:'10%'},400,'easeOutQuint');
         });
 
         $('#c2').click(function(){
             $('#c1-img').css({display:'none'});
             $('#c2-img').css({display:'block'});
             $('#c3-img').css({display:'none'});
-            $('.cl').animate({width:'10%'});
-            $('.cm').animate({width:'80%'});
-            $('.cr').animate({width:'10%'});
+            $('.cl').animate({width:'10%'},400,'easeOutQuint');
+            $('.cm').animate({width:'80%'},400,'easeOutQuint');
+            $('.cr').animate({width:'10%'},400,'easeOutQuint');
         });
 
         $('#c3').click(function(){
             $('#c1-img').css({display:'none'});
             $('#c2-img').css({display:'none'});
             $('#c3-img').css({display:'block'});
-            $('.cl').animate({width:'10%'});
-            $('.cm').animate({width:'10%'});
-            $('.cr').animate({width:'80%'});
+            $('.cl').animate({width:'10%'},400,'easeOutQuint');
+            $('.cm').animate({width:'10%'},400,'easeOutQuint');
+            $('.cr').animate({width:'80%'},400,'easeOutQuint');
         });
     }
     else{
@@ -144,27 +145,27 @@
             $('#c1-img').css({display:'block'});
             $('#c2-img').css({display:'none'});
             $('#c3-img').css({display:'none'});
-            $('.cl').animate({height:'80%'});
-            $('.cm').animate({height:'10%'});
-            $('.cr').animate({height:'10%'});
+            $('.cl').animate({height:'80%'},400,'easeOutQuint');
+            $('.cm').animate({height:'10%'},400,'easeOutQuint');
+            $('.cr').animate({height:'10%'},400,'easeOutQuint');
         });
 
         $('#c2').click(function(){
             $('#c1-img').css({display:'none'});
             $('#c2-img').css({display:'block'});
             $('#c3-img').css({display:'none'});
-            $('.cl').animate({height:'10%'});
-            $('.cm').animate({height:'80%'});
-            $('.cr').animate({height:'10%'});
+            $('.cl').animate({height:'10%'},400,'easeOutQuint');
+            $('.cm').animate({height:'80%'},400,'easeOutQuint');
+            $('.cr').animate({height:'10%'},400,'easeOutQuint');
         });
 
         $('#c3').click(function(){
             $('#c1-img').css({display:'none'});
             $('#c2-img').css({display:'none'});
             $('#c3-img').css({display:'block'});
-            $('.cl').animate({height:'10%'});
-            $('.cm').animate({height:'10%'});
-            $('.cr').animate({height:'80%'});
+            $('.cl').animate({height:'10%'},400,'easeOutQuint');
+            $('.cm').animate({height:'10%'},400,'easeOutQuint');
+            $('.cr').animate({height:'80%'},400,'easeOutQuint');
         });       
     }
 
