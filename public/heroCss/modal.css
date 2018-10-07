@@ -180,9 +180,9 @@ a{
 .button span{
     /* display: none; */
     opacity:0;
-    -webkit-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+    -webkit-transition: all .1s ease-in .1s ;
+    -o-transition: all .1s ease-in .1s;
+    transition: all .1s ease-in .1s;
 }
 
 .button:hover{

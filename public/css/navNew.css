@@ -28,7 +28,9 @@ body {
 
 span.one,
 span.two {
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 span.one {
@@ -105,14 +107,34 @@ a {
   font-family: "Julius Sans One", sans-serif !important;
 }
 .menu {
-  animation: visibleTHREE 2s ease-in forwards;
-  animation-delay: 3s;
+  -webkit-animation: visibleTHREE 2s ease-in forwards;
+          animation: visibleTHREE 2s ease-in forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
   opacity: 0;
 }
 .toggle-btn {
-  animation: visibleTHREE 1s ease-in forwards;
-  animation-delay: 1s;
-  opacity: 0 !important;
+  -webkit-animation: visibleTHREE 1s ease-in forwards;
+          animation: visibleTHREE 1s ease-in forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  opacity: 0;
+}
+
+@-webkit-keyframes visibleTHREE {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  5% {
+    display: block;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes visibleTHREE {
