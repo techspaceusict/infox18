@@ -35,10 +35,11 @@
 <script>
     $(function(){
         $("#login").click(function(){
-            $(".show-modal").fadeIn()
+            $(".show-modal").css({display:'block'});
         });
-        $(".login-modal-wrapper").click(function(){
-            $(".show-modal").fadeOut();
+        $(".login-modal-bg, .login-modal-cross").click(function(){
+            $(".show-modal").css({display:'none'});
+            // $(".show-modal").fadeOut();
         });
     });
 </script>
