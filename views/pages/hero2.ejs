@@ -12,12 +12,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Humans -->
-	<link rel="author" href="humans.txt" />
+	<!--<link rel="author" href="humans.txt" />-->
 	<!-- favicon -->
-	<link rel="icon" type="image/png" href="fav.png">
+	<link rel="icon" type="image/png" href="/fav.png">
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="heroCss/styles.css">
-	<link rel="stylesheet" href="heroCss/timer.css">
+	<!--<link rel="stylesheet" href="heroCss/timer.css">-->
 	<link rel="stylesheet" href="heroCss/glitch-timer.css">
 	<link rel="stylesheet" href="heroCss/modal.css">
 	<link rel="stylesheet" href="heroCss/10_pieces.css">
@@ -33,9 +33,6 @@
 	<!-- <link rel="stylesheet" href="heroCss/logo.css"> -->
 
 	<!-- Scripts -->
-	<script src="heroJs/3p/3.min.js"></script>
-	<!-- <script src="heroJs/3p/three-particle-fire.js"></script> --> <!--Temp :)-->
-	<script src="heroJs/3p/particlesaga.min.js"></script>
 	<!-- <script src="heroJs/OrbitControls.js"></script>
 	<script src="heroJs/TrackballControls.js"></script> -->
 	<!-- <script src="heroJs/3p/CSS3DRenderer.js"></script> --> <!--Temp :)-->
@@ -82,7 +79,7 @@
 			<ul class="u_l">
 				<li class="l_">Info<span style="color:red;">X</span><span class="res_inv">pression</span>'18</li>
 				<br><br><br>
-				<li class="l_"><a href="/comingsoon">Events</a></li>
+				<li class="l_"><a href="/events">Events</a></li>
 				<li class="l_"><a href="/comingsoon">Sponsors</a></li>
 				<li class="l_"><a href="/about">About</a></li>
 				<li class="l_"><a href="/comingsoon">Schedule</a></li>
@@ -148,7 +145,7 @@
 			</div>
 			<div class="ggsipu-container sub-containers">
 				<!-- <div class="slider"></div> -->
-				<div class="ggsipu">TECHSPACE USICT | GGSIPU</div>
+				<div class="ggsipu" style="color: darkorange">TECHSPACE USICT | GGSIPU</div>
 			</div>
 			<div class="tagline-container sub-containers">
 				<!-- <div class="slider"></div> -->
@@ -229,8 +226,13 @@
 					<a href="/events">
 						<div class="button">
 							<span>
+<<<<<<< HEAD
 								<pre>>></pre></span>
 							<div class="btn-text">View Events</div>
+=======
+								<pre>>> </pre></span>
+							<div class="btn-text"><a href="/events">View Events</a></div>
+>>>>>>> 02a545a15bf3c5a33767a9eab2e98dbd71bd01c3
 						</div>
 					</a>
 				</div>
@@ -264,55 +266,16 @@
 		</div>
 	</div>
 
-	<!-- hamburger-->
-
-	<!-- <div id="test2">
-		<nav class="nav-bar">
-			<div  class="open"  id="navbar">
-				<span class="cls"></span>
-				<span>
-				<ul class="sub-menu">
-					<li>
-					<a href="/">Home</a>
-					</li>
-					<li>
-					<a href="/about">About Us</a>
-					</li>
-					<li>
-					<a href="/events">Events</a>
-					</li>
-					<li>
-					<a href="/schedule">Schedule</a>
-					</li>
-					<li>
-					<a href="/sponsers">Sponsors</a>
-					</li>
-					<li>
-					<a href="/contact">Contact Us</a>
-					</li>
-					<li>
-						<a href="/signIn">Login</a>
-					</li>
-				</ul>
-				</span>
-				<span class="cls"></span>
-				<div class="nav-bar-2"></div>
-			</div>
-		</nav>
-	</div> -->
-
-	<!---->
-
-
-	<!---->
-
 	<!-- Scripts -->
 
+	<script src="heroJs/3p/3.min.js"></script>
+	<!-- <script src="heroJs/3p/three-particle-fire.js"></script> --> <!--Temp :)-->
+	<script src="heroJs/3p/particlesaga.min.js"></script>
 	<!-- <script src="heroJs/custom-element-polyfill.min.js"></script> -->
 	<!-- <script src="heroJs/3p/three-gltf-loader.min.js"></script> --> <!--Temp :)-->
 	<!-- <script src="heroJs/three-obj-loader.min.js"></script> -->
 	<!-- <script src="heroJs/3p/model-element.js"></script> -->  <!--Temp :)-->
-	<script src="heroJs/3p/jquery-3.3.1.min.js"></script>
+	<!--<script src="heroJs/3p/jquery-3.3.1.min.js"></script>-->
 	<!-- <script src="heroJs/3p/anim.min.js"></script> --> <!--Temp :)-->
 	<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script> -->
 	<script src="heroJs/3p/jquery.easing.min.js"></script>
@@ -321,32 +284,30 @@
 	<!-- <script src="deploy/jquery.parallax.js"></script> -->
 	<script src="heroJs/abcd/index.js"></script>
 	<script src="heroJs/abcd/index2.js"></script>
-	<script src="heroJs/abcd/mobile-menu.js"></script>
+	<!--<script src="heroJs/abcd/mobile-menu.js"></script>-->
 
 	<!-- minified script for background -->
 	<script type="text/javascript">
 		console.log('true');
 		var t1 = new TimelineMax({ paused: true });
 
-		t1.to(".one", 0.03, {
-			y: 6,
-			rotation: 45,
-			ease: Expo.easeInOut
-		});
-		t1.to(".two", 0.05, {
-			y: -6,
-			rotation: -45,
-			ease: Expo.easeInOut,
-			delay: -0.3
-		});
-
-		t1.to(".menu", 2, {
-			top: "0%",
-			ease: Expo.easeInOut,
-			delay: -1
-		});
-
-		t1.staggerFrom(".menu ul li", 1, { x: -200, opacity: 0, ease: Expo.easeOut }, 0.1);
+        t1.to(".one", 0.03, {
+            y: 6,
+            rotation: 45,
+            ease: Expo.easeInOut
+        });
+        t1.to(".two", 0.05, {
+            y: -6,
+            rotation: -45,
+            ease: Expo.easeInOut,
+            delay: -0.3
+        });
+        t1.to(".menu", 1, {
+            top: "0%",
+            ease: Expo.easeInOut,
+            delay: -1
+        });
+        t1.staggerFrom(".menu ul li", 0.5, { x: -200, opacity: 0, ease: Expo.easeOut }, 0.03);
 
 		t1.reverse();
 		$(document).on("click", ".toggle-btn", function () {
@@ -369,8 +330,8 @@
 		for (var v = 0, w; v < V; v++) { w = {}; u(w); q.push(w) }
 		setInterval('k.fillStyle="#000";k.fillRect(0,0,d,e);for(a=i-d/2+d/2,f=j-e/2+e/2,h=0;h<V;h++){b=q[h],x=b.x/b.a,y=b.y/b.a,z=1/b.a*5+1,A=n(Q*h+r)*64+W,B=n(Q*h+2+r)*64+W,C=n(Q*h+4+r)*64+W;if(b.b!=0){k.strokeStyle="rgb("+o(A)+","+o(B)+","+o(C)+")";k.lineWidth=z;k.beginPath();k.moveTo(x+a,y+f);k.lineTo(b.b+a,b.c+f);k.stroke()}b.b=x;b.c=y;b.a-=s;if(b.a<s||b.b>d||b.c>e)u(b)}r+=0.1;', 25)
 	</script> -->
-	<script src="heroJs/3p/progressbar.js"></script>
-	<script src="heroJs/abcd/timer.js"></script>
+	<!--<script src="heroJs/3p/progressbar.js"></script>-->
+	<!--<script src="heroJs/abcd/timer.js"></script>-->
 	<script src="heroJs/abcd/timer-glitch.js"></script>
 </body>
 
