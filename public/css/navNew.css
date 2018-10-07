@@ -26,8 +26,9 @@ body {
   cursor: pointer;
 }
 
-span.one, span.two{
-  transform:translate(-50%,-50%);
+span.one,
+span.two {
+  transform: translate(-50%, -50%);
 }
 
 span.one {

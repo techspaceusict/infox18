@@ -1,341 +1,257 @@
-<!DOCTYPE html>
-<html lang="en">
+<% include ../partials/header-links.ejs %>
+<% include ../partials/new-nav-bar %>
 
-<!-- Mirrored from protocol.ai/blog/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Aug 2018 19:11:37 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="HandheldFriendly" content="true">
-
-    <link rel="icon" href="fav.png" sizes="16x16">
-
-    <link rel="manifest" href="../manifest.json">
-
-    <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
-    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
-    <link href="../css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/mobile-menu.css" type="text/css">
-    <link rel="stylesheet" href="../css/mywork.css" type="text/css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="../css/t_contact.css">
-    <!-- <link rel="stylesheet" href="../css/about.css"> -->
-    <link rel="stylesheet" href="../css/scrollbar.css">
-    <link rel="stylesheet" href="../css/sponsors.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/simple-ripple.css">
-    <link rel="stylesheet" href="../css/template.css">
-    <link rel="stylesheet" href="../css/events.css">
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="fav.png">
-    <!-- <script type="text/javascript" src="../js/simple-ripple.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script> -->
-
-    <script>
-        window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
-        ga('create', 'UA-96910779-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
-    <!--Jquery ka new version he file mein-->
-    <script type="text/javascript" src="../js/mobile-menu.js"></script>
-
-
-    <script async src='../../www.google-analytics.com/analytics.js'></script>
-    <title>Infox</title>
-</head>
-<body>
-
-    <% include ../partials/svg-and-style %>
-    <% include ../partials/new-nav-bar %>
-
-    <div class="background Libp2p-background"></div>
-    <div class="background ipld-background"></div>
-    <div class="background ipfs-background"></div>
-    <div class="background filecoin-background"></div>
-    <div class="background multiformats-background"></div>
-    
-    <div class="lists-hidden">
-    <section class="projects-list">
-        <div class="container">
-            <h2 class="events-category">Categories</h2>
-            <div class="items">
-                <a class="imghvr-zoom-out" href="#Filecoin" onclick="scrollToElement(this.hash, 800);trackClick('Projects_Filecoin');">
-                    <img alt="Robotic" src="../img/projects/logo_robot.svg">
-                    <figcaption class="fig-text">
-                        Robotics
-                    </figcaption>
-                </a>
-                <a class="imghvr-zoom-out" href="#IPFS" onclick="scrollToElement(this.hash, 800);trackClick('Projects_IPFS');">
-                    <img alt="Coder" src="../img/projects/logo_coder.svg">
-                    <figcaption class="fig-text">
-                        Coding
-                    </figcaption>
-                </a>
-                <a class="imghvr-zoom-out" href="#Libp2p" onclick="scrollToElement(this.hash, 800);trackClick('Projects_libp2p');">
-                    <img alt="Workshop" src="../img/projects/logo_workshop.svg">
-                    <figcaption class="fig-text">
-                        Workshops
-                    </figcaption>
-                </a>
-                <a class="imghvr-zoom-out" href="#IPLD" onclick="scrollToElement(this.hash, 800);trackClick('Projects_IPLD');">
-                    <img alt="Treasure" src="../img/projects/logo_treasure.svg">
-                    <figcaption class="fig-text">
-                        Adventure   
-                    </figcaption>
-                </a>
-                <a class="imghvr-zoom-out" href="#Multiformats" onclick="scrollToElement(this.hash, 800);trackClick('Projects_Multiformats');">
-                    <img alt="Ecell" src="../img/projects/logo_ecell.svg">
-                    <figcaption class="fig-text">
-                        Qiuzes
-                    </figcaption>
-                </a>
-            </div>
-        </div>
-    </section>
+<div class="events-container">
+    <div class="title-section">
+        <h1 class="overlay-section">EVENTS</h1>
+        <h1 class="subtitle-section">Time to show up skills</h1>
     </div>
-    
-    <section class="projects-section" id="IPFS" data-bg-selector=".ipfs-background">
-        <div class="event-wrapper">
-            <div class="heading">CODING</div>
-            <div class="events" data-sequence='500'>
-                <div class="card">
-                    <div class="card__side card__side--front card__side--front-1">
-                        <div class="card__picture card__picture-1">
-                          &nbsp;
-                        </div>
-                        <h4 class="card__heading">
-                          <span class="card__heading-span card__heading-span--1">vad vivad</span>
-                        </h4>
-                        <div class="card__details">
-                          <ul>
-                            <li>28th MARCH</li>
-                            <li>10:30 AM</li>
-                            <li>E BLOCK AUDI</li>
-                            <li>2 MEMBERS TEAM</li>
-                          </ul>
-                        </div>
-                    </div>
-                    <div class="card__side card__side--back card__side--back-1">
-                      <div class="card__cta">
-                        <div class="card__header">
-                          <p class="card__heading--min">ecell</p>
-                          <p class="card__heading--max">zenith</p>
-                        </div>
-                      <a href="#" class="btn btn--white">Book Now!</a>
-                      </div>
-                    </div>
-                  </div>
+    <div class="events-navigation">
+        <div class="e-layer-1">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="coding-icon" class="events-nav-item"
+                 alt="Robotic" src="../img/projects/logo_coder.svg">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="electronic-icon" class="events-nav-item"
+                 alt="Robotic" src="../img/projects/logo_robot.svg">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="adventure-icon" class="events-nav-item"
+                 alt="Treasure" src="../img/projects/logo_treasure.svg">
+        </div>
+        <div class="e-layer-2">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="quiz-icon" class="events-nav-item"
+                 alt="Ecell" src="../img/projects/logo_ecell.svg">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="workshop-icon" class="events-nav-item"
+                 alt="Workshop" src="../img/projects/logo_workshop.svg">
+        </div>
+    </div>
 
-                <!-- <div class="card">
-                  <div class="card-wrapper">
-                      <div class="card-wrapper card__side card__side--front card__side--front-1">
-                          <div class="card__picture card__picture-1">
-                            &nbsp;
-                          </div>
-                          <h4 class="card__heading">
-                            <span class="card__heading-span card__heading-span--1">vad vivad</span>
-                          </h4>
-                          <div class="card__details">
-                            <ul>
-                              <li>28th MARCH</li>
-                              <li>10:30 AM</li>
-                              <li>E BLOCK AUDI</li>
-                              <li>2 MEMBERS TEAM</li>
-                            </ul>
-                          </div>
-                      </div>
-                      <div class="card__side card__side--back card__side--back-1">
-                        <div class="card__cta">
-                          <div class="card__header">
-                            <p class="card__heading--min">ecell</p>
-                            <p class="card__heading--max">zenith</p>
-                          </div>
-                        <a href="#" class="btn btn--white">Book Now!</a>
+    <div id="coding" class="events-section">
+        <%
+
+        var programming = [], electronics = [], nonTech = [], entrepreneurial = [], workshop = [];
+
+        for(i=0;i<events.length;++i){
+            if(events[i].type === 'Programming')
+                programming.push(events[i]);
+            else if(events[i].type === 'Electronics')
+                electronics.push(events[i]);
+            else if(events[i].type === 'Non-Tech')
+                nonTech.push(events[i]);
+            else if(events[i].type === 'Entrepreneurial')
+                entrepreneurial.push(events[i]);
+            else
+                workshop.push(events[i]);
+        }
+
+        console.log("PROGRAMMING:" + programming);
+
+        %>
+        <div class="events-heading">Programming</div>
+        <div class="events">
+
+            <%
+            console.log("programming.length:" + programming.length)
+            for(i=0;i<programming.length;++i){%>
+            <div class="card">
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=programming[i].image.substr(8)%>">
                         </div>
-                      </div>
-                  </div>
-                    
-                  </div> -->
-                <div ></div>
-                <div ></div>
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=programming[i].name%></div>
+                                <div class="event-desc">
+                                    <%=programming[i].short%>
+                                </div>
+                            </div>
+                            <div class="reg-btn">Register</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <%}%>
         </div>
-    </section>
-    <section class="projects-section" id="Filecoin" data-bg-selector=".filecoin-background">
-        <div class="event-wrapper">
-            <div class="heading">ROBOTICS</div>
-            <div class="events" data-sequence='500'>
-                <div class="card">
-                    <div class="card__side card__side--front card__side--front-1">
-                        <div class="card__picture card__picture-1">
-                          &nbsp;
+    </div>
+    <div id="electronic" class="events-section">
+        <div class="events-heading">Electronics</div>
+        <div class="events">
+
+            <%
+            console.log("electronics.length:" + electronics.length)
+            for(i=0;i<electronics.length;++i){%>
+            <div class="card">
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=electronics[i].image.substr(8)%>">
                         </div>
-                        <h4 class="card__heading">
-                          <span class="card__heading-span card__heading-span--1">vad vivad</span>
-                        </h4>
-                        <div class="card__details">
-                          <ul>
-                            <li>28th MARCH</li>
-                            <li>10:30 AM</li>
-                            <li>E BLOCK AUDI</li>
-                            <li>2 MEMBERS TEAM</li>
-                          </ul>
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=electronics[i].name%></div>
+                                <div class="event-desc">
+                                    <%=electronics[i].short%>
+                                </div>
+                            </div>
+                            <div class="reg-btn">Register</div>
                         </div>
                     </div>
-                    <div class="card__side card__side--back card__side--back-1">
-                      <div class="card__cta">
-                        <div class="card__header">
-                          <p class="card__heading--min">ecell</p>
-                          <p class="card__heading--max">zenith</p>
-                        </div>
-                      <a href="#" class="btn btn--white">Book Now!</a>
-                      </div>
-                    </div>
-                  </div>
-                <div ></div>
-                <div ></div>
-                <div ></div>
-                <div ></div>
+                </div>
             </div>
+
+            <%}%>
+
         </div>
-    </section>
-    <section class="projects-section" id="Libp2p" data-bg-selector=".Libp2p-background">
-        <div class="event-wrapper">
-            <div class="heading" >WORKSHOPS</div>
-            <div class="events" data-sequence='500'>
-                <div class="card">
-                    <div class="card__side card__side--front card__side--front-1">
-                        <div class="card__picture card__picture-1">
-                          &nbsp;
+    </div>
+
+
+    <div id="adventure" class="events-section">
+        <div class="events-heading">Non-Technical</div>
+        <div class="events">
+
+            <%
+            console.log("nonTech.length:" + nonTech.length)
+            for(i=0;i<nonTech.length;++i){%>
+            <div class="card">
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=nonTech[i].image.substr(8)%>">
                         </div>
-                        <h4 class="card__heading">
-                          <span class="card__heading-span card__heading-span--1">vad vivad</span>
-                        </h4>
-                        <div class="card__details">
-                          <ul>
-                            <li>28th MARCH</li>
-                            <li>10:30 AM</li>
-                            <li>E BLOCK AUDI</li>
-                            <li>2 MEMBERS TEAM</li>
-                          </ul>
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=nonTech[i].name%></div>
+                                <div class="event-desc">
+                                    <%=nonTech[i].short%>
+                                </div>
+                            </div>
+                            <div class="reg-btn">Register</div>
                         </div>
                     </div>
-                    <div class="card__side card__side--back card__side--back-1">
-                      <div class="card__cta">
-                        <div class="card__header">
-                          <p class="card__heading--min">ecell</p>
-                          <p class="card__heading--max">zenith</p>
-                        </div>
-                      <a href="#" class="btn btn--white">Book Now!</a>
-                      </div>
-                    </div>
-                  </div>
-                <div ></div>
-                <div ></div>
-                <div ></div>
-                <div ></div>
+                </div>
             </div>
+
+            <%}%>
+
         </div>
-    </section>
-    <section class="projects-section" id="IPLD" data-bg-selector=".ipld-background">
-        <div class="event-wrapper">
-            <div class="heading" >ADVENTURE</div>
-            <div class="events" data-sequence='500'>
-                <div class="card">
-                    <div class="card__side card__side--front card__side--front-1">
-                        <div class="card__picture card__picture-1">
-                          &nbsp;
+    </div>
+
+
+    <div id="quiz" class="events-section">
+        <div class="events-heading">Entrepreneurial</div>
+        <div class="events">
+
+            <%
+            console.log("entrepreneurial.length:" + entrepreneurial.length)
+            for(i=0;i<entrepreneurial.length;++i){%>
+            <div class="card">
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=entrepreneurial[i].image.substr(8)%>">
                         </div>
-                        <h4 class="card__heading">
-                          <span class="card__heading-span card__heading-span--1">vad vivad</span>
-                        </h4>
-                        <div class="card__details">
-                          <ul>
-                            <li>28th MARCH</li>
-                            <li>10:30 AM</li>
-                            <li>E BLOCK AUDI</li>
-                            <li>2 MEMBERS TEAM</li>
-                          </ul>
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=entrepreneurial[i].name%></div>
+                                <div class="event-desc">
+                                    <%=entrepreneurial[i].short%>
+                                </div>
+                            </div>
+                            <div class="reg-btn">Register</div>
                         </div>
                     </div>
-                    <div class="card__side card__side--back card__side--back-1">
-                      <div class="card__cta">
-                        <div class="card__header">
-                          <p class="card__heading--min">ecell</p>
-                          <p class="card__heading--max">zenith</p>
-                        </div>
-                      <a href="#" class="btn btn--white">Book Now!</a>
-                      </div>
-                    </div>
-                  </div>
-                <div ></div>
-                <div ></div>
-                <div ></div>
-                <div ></div>
+                </div>
             </div>
+
+            <%}%>
+
+
         </div>
-    </section>
-    <section class="projects-section" id="Multiformats" data-bg-selector=".multiformats-background">
-        <div class="event-wrapper">
-            <div class="heading" >QUIZES</div>
-            <div class="events" data-sequence='500'>
-                <div class="card">
-                    <div class="card__side card__side--front card__side--front-1">
-                        <div class="card__picture card__picture-1">
-                          &nbsp;
+    </div>
+    <div id="workshop" class="events-section">
+        <div class="events-heading">Workshops/Seminars</div>
+        <div class="events">
+
+            <%
+            console.log("workshop.length:" + workshop.length)
+            for(i=0;i<workshop.length;++i){%>
+            <div class="card">
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=workshop[i].image.substr(8)%>">
                         </div>
-                        <h4 class="card__heading">
-                          <span class="card__heading-span card__heading-span--1">vad vivad</span>
-                        </h4>
-                        <div class="card__details">
-                          <ul>
-                            <li>28th MARCH</li>
-                            <li>10:30 AM</li>
-                            <li>E BLOCK AUDI</li>
-                            <li>2 MEMBERS TEAM</li>
-                          </ul>
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=workshop[i].name%></div>
+                                <div class="event-desc">
+                                    <%=workshop[i].short%>
+                                </div>
+                            </div>
+                            <div class="reg-btn">Register</div>
                         </div>
                     </div>
-                    <div class="card__side card__side--back card__side--back-1">
-                      <div class="card__cta">
-                        <div class="card__header">
-                          <p class="card__heading--min">ecell</p>
-                          <p class="card__heading--max">zenith</p>
-                        </div>
-                      <a href="#" class="btn btn--white">Book Now!</a>
-                      </div>
-                    </div>
-                  </div>
-                <div ></div>
-                <div ></div>
-                <div ></div>
-                <div ></div>
+                </div>
             </div>
+
+            <%}%>
+
         </div>
-    </section>
+    </div>
+
+
+</div>
 
 <% include ../partials/footer %>
-
-<!-- Nav below is for hamburger -->
-        
 <% include ../partials/hamburger %>
-        
-<!-- Scroll to top -->
-
 <% include ../partials/move_to_top %>
 
-<script src="../js/common.js"></script>
-<script src="../js/projects.js"></script>
+<script>
+    var eventOffset = 50;
+
+    $(document).ready(function () {
+        $(window).resize(function () {
+            if ($(window).width() < 480) {
+                eventOffset = 0;
+            } else {
+                eventOffset = 50;
+            }
+        });
+    });
+
+    if ($(window).width() < 768) {
+        eventOffset = 0;
+    }
+
+
+    $("#electronic-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#electronic").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+
+    $("#coding-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#coding").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+
+    $("#workshop-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#workshop").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+
+    $("#adventure-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#adventure").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+
+    $("#quiz-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#quiz").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+</script>
 
 </body>
-
-</html>

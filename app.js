@@ -13,6 +13,7 @@ const express = require("express"),
     mail = require("./mailer/mail");
 
 require("dotenv").load();
+const Events = require("./models/events");
 
 mongoose
   .connect(
@@ -114,27 +115,34 @@ app.get("/logout", function(req, res) {
 });
 
 app.get("/events", function(req, res) {
-  res.render("pages/events");
+    Events.find({}, function (err, output) {
+        if(err){
+            console.log("Error: " + JSON.stringify(err));
+        }else {
+            // console.log(output);
+            res.render("pages/t_events", {events: output});
+        }
+    });
 });
 
 app.get("/about", function(req, res) {
-  res.render("pages/about");
+  res.render("pages/t_about");
 });
 
 app.get("/contact", function(req, res) {
-  res.render("pages/contact");
+  res.render("pages/t_contact");
 });
 
 app.get("/schedule", function(req, res) {
-  res.render("pages/schedule");
+  res.render("pages/t_schedule");
 });
 
 app.get("/sponsors", function(req, res) {
-  res.render("pages/sponsors");
+  res.render("pages/t_sponsors");
 });
 
 app.get("/team", function(req, res) {
-  res.render("pages/team");
+  res.render("pages/t_team");
 });
 
 app.get("/comingsoon", function(req, res) {
