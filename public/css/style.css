@@ -4,10 +4,28 @@ html {
   text-align: center;
   background: #000;
   color: #fff;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 canvas {
-  width: 90vw !important;
+  width: 100vw;
+  /* height: 100vh !important; */
+}
+
+@media only screen and (max-width: 1000px) {
+  canvas {
+    /* position: absolute; */
+    /* width: 160vw; */
+    /* top: -50%; */
+    /* left: -50%; */
+    /* overflow: hidden; */
+  }
+  p.fonts {
+    font-size: 35px !important;
+  }
+  p.footer {
+    font-size: 27px !important;
+    font-weight: 700;
+  }
 }
 
 body {
@@ -18,7 +36,8 @@ body {
 }
 p.fonts {
   font-family: "Julius Sans One", sans-serif !important;
-  font-size: 1.3em !important;
+  font-weight: 700;
+  font-size: 1.3em;
   position: relative !important;
   top: 85vh;
   animation: slide-in 2.5s cubic-bezier(0, 0.65, 0.29, 1) 0s both,
@@ -49,8 +68,7 @@ a:active {
 
 p.footer {
   font-family: "Julius Sans One", sans-serif !important;
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
+  margin: 0;
 }
 
 /* Pre-loader */
