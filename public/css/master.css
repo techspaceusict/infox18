@@ -17,9 +17,9 @@ body {
   position: absolute;
   margin: 1.4em;
   padding: 1em;
-  width: 40px;
-  height: 12px;
-  right: 0;
+  width: 50px;
+  height: 16px;
+  right: 30px;
   top: 20px;
   z-index: 1000001;
 }
@@ -29,6 +29,9 @@ span.one {
   width: 40px;
   height: 2px;
   background: #fff;
+  animation: visibleTHREE 2s ease-in forwards;
+  animation-delay: 3s;
+  opacity: 0;
 }
 
 span.two {
@@ -37,6 +40,26 @@ span.two {
   height: 2px;
   background: #fff;
   margin-top: 12px;
+  animation: visibleTHREE 2s ease-in forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  span.one {
+    width: 80px;
+    height: 5px;
+    background: white;
+    right: 15px;
+  }
+
+  span.two {
+    top: 20px;
+    width: 80px;
+    height: 5px;
+    background: #fff;
+    right: 15px;
+  }
 }
 
 .menu {
@@ -82,11 +105,11 @@ a {
   animation-delay: 3s;
   opacity: 0;
 }
-.toggle-btn {
+/* .toggle-btn {
   animation: visibleTHREE 2s ease-in forwards;
   animation-delay: 3s;
-  opacity: 0 !important;
-}
+  opacity: 1 !important;
+} */
 
 @keyframes visibleTHREE {
   0% {
