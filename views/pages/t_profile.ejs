@@ -35,12 +35,13 @@
     <link rel="stylesheet" href="../css/events.css">
     <!-- favicon -->
     <link rel="icon" type="image/png" href="fav.png">
-    <link rel="stylesheet" href="../css/profile.css">
+    <!-- <link rel="stylesheet" href="../css/profile.css"> -->
+    <link rel="stylesheet" href="../css/profile2.css">
     <!-- <script type="text/javascript" src="../js/simple-ripple.js"></script> -->
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script> -->
     <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script> -->
-
+    <script src="../js/profile.js"></script>
     <script>
         window.ga = window.ga || function () {
             (ga.q = ga.q || []).push(arguments)
@@ -56,6 +57,76 @@
 
 
     <script async src='../../www.google-analytics.com/analytics.js'></script>
+    <script>
+    $(function() {
+	function maskImgs() {
+		//$('.img-wrapper img').imagesLoaded({}, function() {
+		$.each($('.img-wrapper img'), function(index, img) {
+			var src = $(img).attr('src');
+			var parent = $(img).parent();
+			parent
+				.css('background', 'url(' + src + ') no-repeat center center')
+				.css('background-size', 'cover');
+			$(img).remove();
+		});
+		//});
+	}
+
+	var preview = {
+		init: function() {
+			preview.setPreviewImg();
+			preview.listenInput();
+		},
+		setPreviewImg: function(fileInput) {
+			var path = $(fileInput).val();
+			var uploadText = $(fileInput).siblings('.file-upload-text');
+
+			if (!path) {
+				$(uploadText).val('');
+			} else {
+				path = path.replace(/^C:\\fakepath\\/, "");
+				$(uploadText).val(path);
+
+				preview.showPreview(fileInput, path, uploadText);
+			}
+		},
+		showPreview: function(fileInput, path, uploadText) {
+			var file = $(fileInput)[0].files;
+
+			if (file && file[0]) {
+				var reader = new FileReader();
+
+				reader.onload = function(e) {
+					var previewImg = $(fileInput).parents('.file-upload-wrapper').siblings('.preview');
+					var img = $(previewImg).find('img');
+
+					if (img.length == 0) {
+						$(previewImg).html('<img src="' + e.target.result + '" alt=""/>');
+					} else {
+						img.attr('src', e.target.result);
+					}
+
+					uploadText.val(path);
+					maskImgs();
+				}
+
+				reader.onloadstart = function() {
+					$(uploadText).val('uploading..');
+				}
+
+				reader.readAsDataURL(file[0]);
+			}
+		},
+		listenInput: function() {
+			$('.file-upload-native').on('change', function() {
+				preview.setPreviewImg(this);
+			});
+		}
+	};
+	preview.init();
+});</script>
+
+
     <title>Infox</title>
 </head>
 
@@ -97,12 +168,10 @@
 </section> -->
 
 
-<div class="wrapper">
+<!-- <div class="wrapper">
     <div class="profile">
       <div class="content">
-        <h1 style="color: black ; font-weight: 400;">Edit Profile</h1>
         <form action="">
-          <!-- Photo -->
           <fieldset>
             <div class="grid-35">
               <label for="avatar">Your Photo</label>
@@ -116,28 +185,12 @@
             <div class="grid-35">
               <label for="fname">Name</label>
             </div>
-            <div class="grid-65">
-              <input type="text" id="fname" tabindex="1" />
+            <div class="grid-65 question">
+              <input type="text" class="input" id="fname" tabindex="1" />
             </div>
           </fieldset>
-          <!-- <fieldset>
-            <div class="grid-35">
-              <label for="lname">Last Name</label>
-            </div>
-            <div class="grid-65">
-              <input type="text" id="lname" tabindex="2" />
-            </div>
-          </fieldset> -->
-          <!-- Description about User -->
-          <!-- <fieldset>
-            <div class="grid-35">
-              <label for="description">About you</label>
-            </div>
-            <div class="grid-65">
-              <textarea name="" id="" cols="30" rows="auto" tabindex="3"></textarea>
-            </div>
-          </fieldset> -->
-          <!-- Location -->
+         
+         
           <fieldset>
             <div class="grid-35">
               <label for="location">Phone number</label>
@@ -146,16 +199,8 @@
               <input type="text" id="phonenumber" tabindex="4" />
             </div>
           </fieldset>
-          <!-- Country -->
-          <!-- <fieldset>
-            <div class="grid-35">
-              <label for="country">Country</label>
-            </div>
-            <div class="grid-65">
-              <input type="text" id="country" tabindex="5" />
-            </div>
-          </fieldset> -->
-          <!-- Email -->
+         
+          
           <fieldset>
             <div class="grid-35">
               <label for="email">Email Address</label>
@@ -164,7 +209,7 @@
               <input type="email" id="email" tabindex="6" />
             </div>
           </fieldset>
-          <!-- Looking for Work -->
+          
           <fieldset>
             <div class="grid-35">
               <label for="forHire">College</label>
@@ -180,7 +225,7 @@
               </select>
             </div>
           </fieldset>
-          <!-- Highest Qualification -->
+          
           <fieldset>
             <div class="grid-35">
               <label for="qualification">Branch</label>
@@ -195,7 +240,7 @@
               </select>
             </div>
           </fieldset>
-          <!-- year -->
+          
           <fieldset>
             <div class="grid-35">
               <label for="qualification">year</label>
@@ -210,7 +255,7 @@
               </select>
             </div>
           </fieldset>
-          <!-- degree -->
+         
           <fieldset>
             <div class="grid-35">
               <label for="qualification">Degree</label>
@@ -233,8 +278,76 @@
         </form>
       </div>
     </div>
-  </div>
+  </div> -->
+
   
+
+  <form>
+    
+      <style>
+      .preview{
+        background: url("img/events/eventsImage-1537347251371.jpeg");
+        background-size: 100%;
+      }
+      </style>
+      <div class="preview img-wrapper"></div>
+      <div class="file-upload-wrapper">
+          <input type="file" name="file" class="file-upload-native" accept="image/*" />
+          <input type="text" disabled placeholder="upload image" class="file-upload-text" />
+      </div>
+       
+
+
+    <!-- <h1>Fancy Text Inputs</h1> -->
+    <div class="question">
+      <input type="text" value="name" required/>
+      <label>Name</label>
+    </div>
+    <div class="question">
+      <input type="text" required/>
+      <label>Phone Number</label>
+    </div>
+    <div class="question">
+      <input type="text" required value="name"/>
+      <label>Email Address</label>
+    </div>
+    <label for="College" style="color: #ff4a56;">College:</label>
+    <div class="styled-select yellow rounded" style="margin-top: 5px; margin-bottom: 10px;">
+        <select>
+          <option>Here is the first option</option>
+          <option>The second option</option>
+          <option>The third option</option>
+        </select>
+      </div>
+      <label for="College" style="color: #ff4a56;">Year:</label>
+    <div class="styled-select yellow rounded" style="margin-top: 5px; margin-bottom: 10px;">
+        <select>
+          <option>Here is the first option</option>
+          <option>The second option</option>
+          <option>The third option</option>
+        </select>
+      </div>
+      <label for="College" style="color: #ff4a56;">Branch:</label>
+    <div class="styled-select yellow rounded" style="margin-top: 5px; margin-bottom: 10px;">
+        <select>
+          <option>Here is the first option</option>
+          <option>The second option</option>
+          <option>The third option</option>
+        </select>
+      </div>
+      <label for="College" style="color: #ff4a56;">Degree:</label>
+    <div class="styled-select yellow rounded" style="margin-top: 5px;">
+        <select>
+          <option>Here is the first option</option>
+          <option>The second option</option>
+          <option>The third option</option>
+        </select>
+      </div>
+    
+    <button>Edit</button>
+  </form>
+  
+
   
   <!-- http://www.smashingmagazine.com/2013/08/08/release-livestyle-css-live-reload/ -->
 
