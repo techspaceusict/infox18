@@ -24,12 +24,12 @@
 @media screen and (max-width:786px) {
 	.snip1543 {
 		margin: 25px 7px 25px 10px ;
-		height: 150px;
-		width: 200px;
+		height: 100%;
+		width: 100%;
   }
   .sizer{
-    height: 150px;
-		width: 200px;
+    height: 100%;
+		width: 100%;
   }
 }
 
@@ -155,11 +155,11 @@
 }
 
 .snip1543 a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
   z-index: 1;
 }
 
