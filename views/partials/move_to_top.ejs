@@ -1,4 +1,4 @@
-<a href="#top" id="scroll_to_top">^</a>
+<a href="#top" id="scroll_to_top"> <span style="font-size:200%; transform:translate(0,10%)"> ^ </span></a>
 <script>
     jQuery(document).ready(function($){
         $(window).scroll(function(){
@@ -9,7 +9,7 @@
             }
         });
         $('#scroll_to_top').click(function(){
-            $("html, body").animate({ scrollTop: 0 }, 800);
+            $("html, body").animate({ scrollTop: 0 },800,'easeOutExpo');
             return false;
         });
     });
