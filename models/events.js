@@ -9,9 +9,11 @@ const eventsSchema = mongoose.Schema({
     image: String,
     fbUrl: String,
     description: String,
+    short: String,
     organisersName: [{type: String}],
     organisersMobile: [{type: String}],
     organisersEmail: [{type: String}],
+    users: [{type: String}],
 });
 
 module.exports = mongoose.model("event", eventsSchema);

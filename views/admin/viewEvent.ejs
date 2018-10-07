@@ -1,6 +1,6 @@
 <% include adminPartials/header.ejs %>
 <div class="container">
-    <div class="card large" style="height: 1000px;">
+    <div class="card large" style="height: 85em;">
         <div class="card-image" style="height: 100%;">
             <div class="row" style="background-color: black; height: 100%;">
                 <div class="col m4">
@@ -12,41 +12,48 @@
             </div>
             <span class="card-title" style="background-color: rgba(0,0,0,0.5);"><%=event[0].name%></span>
         </div>
-        <div class="card-content" style=" height: 100%;">
-            <p>Time: <%=event[0].time%></p>
-            <p>Date: <%=event[0].date%></p>
-            <p>Venue:<%=event[0].venue%></p>
-            <p>Facebook URL: <a href=""><%=event[0].fbUrl%></a></p>
+        <div class="card-content" style=" height: 100%; overflow-y: scroll">
+            <p><b><%=event[0].short%></b></p>
+            <p><b>Type</b>: <%=event[0].type%></p>
+            <p><b>Time</b>: <%=event[0].time%></p>
+            <p><b>Date</b>: <%=event[0].date%></p>
+            <p><b>Venue</b>: <%=event[0].venue%></p>
+            <p><b>Facebook URL</b>: <a href=""><%=event[0].fbUrl%></a></p>
             <br>
             <div class="row">
                 <div class="col s4">
-                    <p style="font-weight: 700;">Organiser 1</p>
-                    <p>Name: <%=event[0].organisersName[0]%></p>
-                    <p>Email: <%=event[0].organisersEmail[0]%></p>
-                    <p>Mobile: <%=event[0].organisersMobile[0]%></>
+                    <p style="font-weight: 700;">Organiser1</p>
+                    <p><%=event[0].organisersName[0]%></p>
+                    <p><%=event[0].organisersEmail[0]%></p>
+                    <p><%=event[0].organisersMobile[0]%></>
                 </div>
                 <div class="col s4">
-                    <p style="font-weight: 700;">Organiser 2</p>
-                    <p>Name: <%=event[0].organisersName[1]%></p>
-                    <p>Email: <%=event[0].organisersEmail[1]%></p>
-                    <p>Mobile: <%=event[0].organisersMobile[1]%></p>
+                    <p style="font-weight: 700;">Organiser2</p>
+                    <p><%=event[0].organisersName[1]%></p>
+                    <p><%=event[0].organisersEmail[1]%></p>
+                    <p><%=event[0].organisersMobile[1]%></p>
                 </div>
                 <div class="col s4">
-                    <p style="font-weight: 700;">Organiser 1</p>
-                    <p>Name: <%=event[0].organisersName[2]%></p>
-                    <p>Email: <%=event[0].organisersEmail[2]%></p>
-                    <p>Mobile: <%=event[0].organisersMobile[2]%></>
+                    <p style="font-weight: 700;">Organiser3</p>
+                    <p><%=event[0].organisersName[2]%></p>
+                    <p><%=event[0].organisersEmail[2]%></p>
+                    <p><%=event[0].organisersMobile[2]%></>
                 </div>
             </div>
         </div>
         <div class="card-action">
             <div class="row">
-                <div class="col s6">
+                <div class="col m4 s6">
                     <a href="/admin/events/<%=event[0].id%>/edit">
                         <button class="btn #2196f3 blue">EDIT EVENT</button>
                     </a>
                 </div>
-                <div class="col s6">
+                <div class="col m4 s6">
+                    <a href="/admin/events/<%=event[0].id%>/participants">
+                        <button class="btn #2196f3 green">PARTICIPANTS</button>
+                    </a>
+                </div>
+                <div class="col m4 s6">
                     <form action="/admin/events/<%=event[0].id%>?_method=DELETE" method="POST">
                         <a><button class="btn red accent-4">DELETE EVENT</button></a>
                     </form>

@@ -10,41 +10,49 @@
             <% if(typeof (msg) != "undefined"){ %><p class="red accent-4" style="padding: 10px; color: white; font-weight: 700;"><%=msg%></p> <%}%>
             <form style="border: 2px solid grey; padding:50px;" action="/admin/events" method="POST" enctype="multipart/form-data">
                 <div class="input-field">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div class="input-field">
-                    <textarea id="description" class="materialize-textarea" name="description"></textarea>
-                    <label for="description">Description(HTML code)</label>
+                    <textarea id="short" class="materialize-textarea" name="short" required></textarea>
+                    <label for="short">Short Description*</label>
                 </div>
                 <div class="input-field">
-                    <label class="pull-left" for="venue">Venue</label>
-                    <input type="text" class="form-control" id="venue" name="venue">
+                    <textarea id="description" class="materialize-textarea" name="description" required></textarea>
+                    <label for="description">Description(HTML code)*</label>
                 </div>
                 <div class="input-field">
-                    <label class="pull-left" for="time">Time Duration</label>
-                    <input type="text" class="form-control" id="time" name="time">
+                    <label class="pull-left" for="venue">Venue*</label>
+                    <input type="text" class="form-control" id="venue" name="venue" required>
                 </div>
                 <div class="input-field">
-                    <label class="pull-left" for="fbUrl">Facebook URL</label>
-                    <input type="text" class="form-control" id="fbUrl" name="fbURl">
+                    <label class="pull-left" for="date">Date*</label>
+                    <input type="text" class="form-control" id="date" name="date" required>
                 </div>
-                <label>Type Of Event</label>
                 <div class="input-field">
-                    <select name="type">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Coding</option>
-                        <option value="2">Enterprenurial</option>
-                        <option value="3">Non-Tech</option>
-                        <option value="4">Electrotech</option>
-                        <option value="5">Quizes</option>
+                    <label class="pull-left" for="time">Time Duration*</label>
+                    <input type="text" class="form-control" id="time" name="time" required>
+                </div>
+                <div class="input-field">
+                    <label class="pull-left" for="fbUrl">Facebook URL*</label>
+                    <input type="text" class="form-control" id="fbUrl" name="fbUrl" required>
+                </div>
+                <label>Type Of Event*</label>
+                <div class="input-field">
+                    <select name="type" required>
+                        <option value="" disabled>Choose your option</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Non-Tech">Non-Tech</option>
+                        <option value="Entrepreneurial">Entrepreneurial</option>
+                        <option value="Workshops/Seminars">Workshops/Seminars</option>
                     </select>
                 </div>
-                <label>Image Upload</label>
+                <label>Image Upload*</label>
                 <div class = "file-field input-field">
                     <div class = "btn">
                         <span>Browse</span>
-                        <input name="eventsImage" type = "file" />
+                        <input name="eventsImage" type = "file"  required/>
                     </div>
 
                     <div class = "file-path-wrapper">
@@ -52,24 +60,24 @@
                                placeholder = "Upload file" />
                     </div>
                 </div>
-                <label for="">Organiser 1</label>
+                <label for="">Organiser 1*</label>
                 <div class="row">
                     <div class="col m4">
                         <div class="input-field">
-                            <label class="pull-left" for="name1">Name</label>
-                            <input type="text" class="form-control" id="name1" name="name1">
+                            <label class="pull-left" for="name1">Name*</label>
+                            <input type="text" class="form-control" id="name1" name="name1" required>
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
-                            <label class="pull-left" for="email1">Email</label>
-                            <input type="text" class="form-control" id="email1" name="email1">
+                            <label class="pull-left" for="email1">Email*</label>
+                            <input type="text" class="form-control" id="email1" name="email1" required>
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
-                            <label class="pull-left" for="mobile1">Mobile</label>
-                            <input type="text" class="form-control" id="mobile1" name="mobile1">
+                            <label class="pull-left" for="mobile1">Mobile*</label>
+                            <input type="text" class="form-control" id="mobile1" name="mobile1" required>
                         </div>
                     </div>
                 </div>

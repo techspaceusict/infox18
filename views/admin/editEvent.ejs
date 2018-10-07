@@ -16,33 +16,42 @@ console.log("edit page:" + JSON.stringify(event));
                   action="/admin/events/<%=event.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
                 <div class="input-field">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" value="<%=event.name%>">
+                    <input type="text" id="name" name="name" value="<%=event.name%>" required>
                 </div>
                 <div class="input-field">
-                    <textarea id="description" class="materialize-textarea" name="description"><%=event.description%></textarea>
+                    <textarea id="short" class="materialize-textarea" name="short" required><%=event.short%></textarea>
+                    <label for="short">Short Description</label>
+                </div>
+                <div class="input-field">
+                    <textarea id="description" class="materialize-textarea" name="description" required><%=event.description%></textarea>
                     <label for="description">Description(HTML code)</label>
                 </div>
                 <div class="input-field">
                     <label class="pull-left" for="venue">Venue</label>
-                    <input type="text" class="form-control" id="venue" name="venue" value="<%=event.venue%>">
+                    <input type="text" class="form-control" id="venue" name="venue" value="<%=event.venue%>" required>
+                </div>
+                <div class="input-field">
+                    <label class="pull-left" for="date">Date</label>
+                    <input type="text" class="form-control" id="date" name="date" value="<%=event.date%>" required>
                 </div>
                 <div class="input-field">
                     <label class="pull-left" for="time">Time Duration</label>
-                    <input type="text" class="form-control" id="time" name="time" value="<%=event.time%>">
+                    <input type="text" class="form-control" id="time" name="time" value="<%=event.time%>" required>
                 </div>
                 <div class="input-field">
                     <label class="pull-left" for="fbUrl">Facebook URL</label>
-                    <input type="text" class="form-control" id="fbUrl" name="fbURl" value="<%=event.fbUrl%>">
+                    <input type="text" class="form-control" id="fbUrl" name="fbUrl" value="<%=event.fbUrl%>" required>
                 </div>
                 <label>Type Of Event</label>
+
                 <div class="input-field">
-                    <select name="type"  value="<%=event.type%>">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Coding</option>
-                        <option value="2">Enterprenurial</option>
-                        <option value="3">Non-Tech</option>
-                        <option value="4">Electrotech</option>
-                        <option value="5">Quizes</option>
+                    <select name="type" required>
+                        <option value="<%=event.type%>" disabled selected><%=event.type%></option>
+                        <option value="Programming">Programming</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Non-Tech">Non-Tech</option>
+                        <option value="Entrepreneurial">Entrepreneurial</option>
+                        <option value="Workshops/Seminars">Workshops/Seminars</option>
                     </select>
                 </div>
                 <label>Image Upload</label>
@@ -54,7 +63,7 @@ console.log("edit page:" + JSON.stringify(event));
 
                     <div class = "file-path-wrapper">
                         <input class = "file-path validate" type = "text"
-                               placeholder = "Upload file" value="<%=event.image%>"/>
+                               placeholder = "Upload file" value="<%=event.image%>" required/>
                     </div>
                 </div>
                 <label for="">Organiser 1</label>
@@ -62,19 +71,19 @@ console.log("edit page:" + JSON.stringify(event));
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="name1">Name</label>
-                            <input type="text" class="form-control" id="name1" name="name1" value="<%=event.organisersName[0]%>">
+                            <input type="text" class="form-control" id="name1" name="name1" value="<%=event.organisersName[0]%>" required>
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="email1">Email</label>
-                            <input type="text" class="form-control" id="email1" name="email1" value="<%=event.organisersEmail[0]%>">
+                            <input type="text" class="form-control" id="email1" name="email1" value="<%=event.organisersEmail[0]%>" required>
                         </div>
                     </div>
                     <div class="col m4">
                         <div class="input-field">
                             <label class="pull-left" for="mobile1">Mobile</label>
-                            <input type="text" class="form-control" id="mobile1" name="mobile1" value="<%=event.organisersMobile[0]%>">
+                            <input type="text" class="form-control" id="mobile1" name="mobile1" value="<%=event.organisersMobile[0]%>" required>
                         </div>
                     </div>
                 </div>
@@ -128,4 +137,4 @@ console.log("edit page:" + JSON.stringify(event));
     </div>
 </div>
 
-<%include adminPartials/footer.ejs%>
+<% include adminPartials/footer.ejs %>
