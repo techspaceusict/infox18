@@ -71,12 +71,14 @@
 .events {
     width: 100%;
     min-height: 75vh;
+    /* background:red; */
     background-color: #1a1a1a;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     padding:5vh 2vh;
+    margin: 0 !important;
 }
 
 #scroll_to_top {
@@ -166,6 +168,7 @@ body[data-aos-easing="new-easing"] [data-aos],
 /* events card css */
 
 .card {
+    /* display:none; */
     margin:2vh;
     overflow: hidden;
     /* position: relative; */

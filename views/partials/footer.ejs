@@ -31,6 +31,18 @@
 <script>
     AOS.init();
 </script>
+
+<script>
+    $(function(){
+        $("#login").click(function(){
+            $(".show-modal").css({display:'block'});
+        });
+        $(".login-modal-bg, .login-modal-cross").click(function(){
+            $(".show-modal").css({display:'none'});
+            // $(".show-modal").fadeOut();
+        });
+    });
+</script>
 <!--<script src="js/materialize.min.js"></script>-->
 <script src='https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js'></script>
 <script src='https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js'></script>

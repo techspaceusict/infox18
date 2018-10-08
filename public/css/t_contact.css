@@ -653,7 +653,7 @@ button {
     background: none;
     border: none;
     outline: none;
-    margin: 1vmax;
+    margin: 0vmax;
 }
 
 button:hover small {
