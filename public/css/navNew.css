@@ -29,8 +29,8 @@ body {
 span.one,
 span.two {
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 span.one {
@@ -108,23 +108,17 @@ a {
 }
 .menu {
   -webkit-animation: visibleTHREE 2s ease-in forwards;
-          animation: visibleTHREE 2s ease-in forwards;
+  animation: visibleTHREE 2s ease-in forwards;
   -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation-delay: 3s;
   opacity: 0;
 }
 .toggle-btn {
-<<<<<<< HEAD
-  -webkit-animation: visibleTHREE 1s ease-in forwards;
-          animation: visibleTHREE 1s ease-in forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  opacity: 0;
-=======
   animation: visibleTHREE 1s ease-in forwards;
   animation-delay: 1s;
   opacity: 1 !important;
->>>>>>> 02a545a15bf3c5a33767a9eab2e98dbd71bd01c3
+  width: 80px !important;
+  height: 26px !important;
 }
 
 @-webkit-keyframes visibleTHREE {
