@@ -294,8 +294,8 @@
 
 @keyframes scaleOut{
     to{
-        width:200vw;
-        height: 200vw;
+        width:250vw;
+        height: 250vw;
     }
 }
 
@@ -318,6 +318,32 @@
     animation: zoomInModal 0.2s cubic-bezier(.59,1.59,.85,1.32) 0.2s forwards;  
 }
 
+@media (max-width:479px){
+    .login-modal{
+        width:175px;
+        height:233.33px;
+        border-radius: 5px;
+    }
+    .login-modal-cross{
+        width:25px !important;
+        height: 25px !important;
+        font-size: 14px !important;
+    }
+    .login-modal-content{
+        font-size:16px !important;
+        font-weight: 700 !important;
+    }
+    .login-modal-logo{
+       transform:scale(0.6) !important;
+    }
+    .login-options{
+        height: 25% !important;
+    }
+    .fab{
+        font-size:24px !important;
+    }
+}
+
 @keyframes zoomInModal{
     to{
         opacity:1;
@@ -326,14 +352,28 @@
 }
 
 .login-modal-cross{
-    color:red;
+    color:#fff;
+    margin:7px;
+    width:40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(192, 0, 0);
+    border-radius:50%;
     position: absolute;
     font-weight: 900;
     top:0;
     right:0;
     font-size: 24px;
-    padding:20px;
+    /* padding:20px; */
     cursor: pointer;
+    transition:all 0.2s;
+}
+
+.login-modal-cross:hover{
+    background-color: red;
+    transform: scale(1.2) rotate(180deg);
 }
 
 .login-modal-content{

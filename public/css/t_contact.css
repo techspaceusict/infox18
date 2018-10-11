@@ -406,7 +406,7 @@
     box-shadow: 0 0 20px #000;
 }
 
-.nav-bar-item{
+.nav-bar-item{    
     font-family: "Julius Sans One", sans-serif !important;
     font-weight: 900 !important;
     font-size: 18px;
@@ -430,6 +430,12 @@
 }
 
 .nav-title{
+    /* background-color:#444; */
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     -webkit-transition:all 0.2s ease-in-out;
     -o-transition:all 0.2s ease-in-out;
