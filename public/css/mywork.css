@@ -326,14 +326,28 @@
 }
 
 .login-modal-cross{
-    color:red;
+    color:#fff;
+    margin:7px;
+    width:40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(192, 0, 0);
+    border-radius:50%;
     position: absolute;
     font-weight: 900;
     top:0;
     right:0;
     font-size: 24px;
-    padding:20px;
+    /* padding:20px; */
     cursor: pointer;
+    transition:all 0.2s;
+}
+
+.login-modal-cross:hover{
+    background-color: red;
+    transform: scale(1.2) rotate(180deg);
 }
 
 .login-modal-content{
