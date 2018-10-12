@@ -12,15 +12,9 @@ canvas {
 }
 
 @media only screen and (max-width: 1000px) {
-  canvas {
-    /* position: absolute; */
-    /* width: 160vw; */
-    /* top: -50%; */
-    /* left: -50%; */
-    /* overflow: hidden; */
-  }
   p.fonts {
-    font-size: 35px !important;
+    font-size: 30px !important;
+    top: 82vh !important;
   }
   p.footer {
     font-size: 27px !important;
