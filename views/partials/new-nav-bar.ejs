@@ -6,6 +6,10 @@
         <a class="nav-bar-item" href="/"><div class="nav-title" ><img src="/obj/logo1.svg" alt=""></div><div class="line2"></div></a>
         <a class="nav-bar-item" href="/comingsoon"><div class="nav-title" >Sponsors</div><div class="line2"></div></a>
         <a class="nav-bar-item" href="/contact"><div class="nav-title">Contact</div><div class="line2"></div></a>
-        <a id= "login" class="nav-bar-item"><div class="nav-title">LogIn</div><div class="line2"></div></a>
+        <%if(loggedIn){%>
+            <a class="nav-bar-item" href="/user/dashboard"><div class="nav-title" style="color: #FD7D01">My Infox</div><div class="line2"></div></a>
+        <%}else{%>
+            <a id= "login" class="nav-bar-item"><div class="nav-title">LogIn</div><div class="line2"></div></a>
+        <%}%>
     </div>
 </div>

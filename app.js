@@ -120,29 +120,29 @@ app.get("/events", function(req, res) {
             console.log("Error: " + JSON.stringify(err));
         }else {
             // console.log(output);
-            res.render("pages/t_events", {events: output});
+            res.render("pages/events", {events: output});
         }
     });
 });
 
 app.get("/about", function(req, res) {
-  res.render("pages/t_about");
+  res.render("pages/about");
 });
 
 app.get("/contact", function(req, res) {
-  res.render("pages/t_contact");
+  res.render("pages/contact");
 });
 
 app.get("/schedule", function(req, res) {
-  res.render("pages/t_schedule");
+  res.render("pages/schedule");
 });
 
 app.get("/sponsors", function(req, res) {
-  res.render("pages/t_sponsors");
+  res.render("pages/sponsors");
 });
 
 app.get("/team", function(req, res) {
-  res.render("pages/t_team");
+  res.render("pages/team");
 });
 
 app.get("/comingsoon", function(req, res) {

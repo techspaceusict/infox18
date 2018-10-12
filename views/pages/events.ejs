@@ -1,941 +1,258 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="HandheldFriendly" content="true">
-
-    <link rel="icon" href="/fav.png" sizes="16x16">
-
-    <!--<link rel="manifest" href="../manifest.json">-->
-    <link rel="stylesheet" href="/css/materialize.css">
-    <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
-    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
-    <link href="../css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/mobile-menu.css" type="text/css">
-    <link rel="stylesheet" href="/css/mywork.css" type="text/css">
-    <!--<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
-    <link rel="stylesheet" href="/css/t_contact.css">
-    <!-- <link rel="stylesheet" href="../css/about.css"> -->
-    <link rel="stylesheet" href="/css/scrollbar.css">
-    <link rel="stylesheet" href="/css/sponsors.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/simple-ripple.css">
-    <link rel="stylesheet" href="/css/template.css">
-    <link rel="stylesheet" href="/css/events.css">
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="fav.png">
-    <!-- <script type="text/javascript" src="../js/simple-ripple.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script> -->
-
-    <!--<script>-->
-        <!--window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;-->
-        <!--ga('create', 'UA-96910779-1', 'auto');-->
-        <!--ga('send', 'pageview');-->
-    <!--</script>-->
-
-    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
-    <!--Jquery ka new version he file mein-->
-    <script type="text/javascript" src="../js/mobile-menu.js"></script>
-
-
-    <!--<script async src='../../www.google-analytics.com/analytics.js'></script>-->
-    <title>Infox</title>
-    <style>
-        section:not(.about-main) .container {
-            padding: 0px 0;
-        }
-    </style>
-</head>
-<body>
+<% include ../partials/header-links.ejs %>
 <% include ../partials/new-nav-bar %>
 
-<!--<div class="background Libp2p-background"></div>-->
-<!--<div class="background ipld-background"></div>-->
-<!--<div class="background ipfs-background"></div>-->
-<!--<div class="background filecoin-background"></div>-->
-<!--<div class="background multiformats-background"></div>-->
+<% include ../partials/login-modal %>
 
-<div class="lists-hidden">
-    <br><br>
+<div class="events-container">
     <div class="title-section">
-        <h3 class="overlay-section" style="font-weight: 700;">EVENTS</h3>
-        <h1 class="subtitle-section" style="font-weight: 500;">Choose your type</h1>
+        <h1 class="overlay-section">EVENTS</h1>
+        <h1 class="subtitle-section">Time to show up skills</h1>
     </div>
-    <!--<section class="projects-list">-->
-        <!--<div class="container">-->
-            <!--<h2 class="events-category">Categories</h2>-->
-            <!--<div class="items">-->
-                <!--<a class="imghvr-zoom-out" href="#Programming" onclick="scrollToElement(this.hash, 800);trackClick('Projects_IPFS');">-->
-                    <!--<img alt="Programming" src="../img/projects/logo_coder.svg">-->
-                    <!--<figcaption class="fig-text">-->
-                        <!--Programming-->
-                    <!--</figcaption>-->
-                <!--</a>-->
-                <!--<a class="imghvr-zoom-out" href="#Electronics" onclick="scrollToElement(this.hash, 800);trackClick('Projects_Filecoin');">-->
-                    <!--<img alt="Electronics" src="../img/projects/logo_robot.svg">-->
-                    <!--<figcaption class="fig-text">-->
-                        <!--Electronics-->
-                    <!--</figcaption>-->
-                <!--</a>-->
-                <!--<a class="imghvr-zoom-out" href="#Non" onclick="scrollToElement(this.hash, 800);trackClick('Projects_IPLD');">-->
-                    <!--<img alt="Non-Tech" src="../img/projects/logo_treasure.svg">-->
-                    <!--<figcaption class="fig-text">-->
-                        <!--Non-Technical-->
-                    <!--</figcaption>-->
-                <!--</a>-->
-                <!--<a class="imghvr-zoom-out" href="#Ecell" onclick="scrollToElement(this.hash, 800);trackClick('Projects_Multiformats');">-->
-                    <!--<img alt="Ecell" src="../img/projects/logo_ecell.svg">-->
-                    <!--<figcaption class="fig-text">-->
-                        <!--Enterpreneurial-->
-                    <!--</figcaption>-->
-                <!--</a>-->
-                <!--<a class="imghvr-zoom-out" href="#Workshop" onclick="scrollToElement(this.hash, 800);trackClick('Projects_libp2p');">-->
-                    <!--<img alt="Workshop" src="../img/projects/logo_workshop.svg">-->
-                    <!--<figcaption class="fig-text">-->
-                        <!--Workshops-->
-                    <!--</figcaption>-->
-                <!--</a>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section>-->
-</div>
-<br><br><br>
-<div class="container" style="width: 90%;">
-<div id="Programming">
-    <div class="row">
-        <div class="col s12">
-            <div class="heading">Programming</div>
+    <div class="events-navigation">
+        <div class="e-layer-1">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="coding-icon" class="events-nav-item"
+                 alt="Robotic" src="../img/projects/logo_coder.svg">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="electronic-icon" class="events-nav-item"
+                 alt="Robotic" src="../img/projects/logo_robot.svg">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="adventure-icon" class="events-nav-item"
+                 alt="Treasure" src="../img/projects/logo_treasure.svg">
+        </div>
+        <div class="e-layer-2">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="quiz-icon" class="events-nav-item"
+                 alt="Ecell" src="../img/projects/logo_ecell.svg">
+            <img data-aos="zoom-in" data-aos-duration="300" data-aos-easing="new-easing" id="workshop-icon" class="events-nav-item"
+                 alt="Workshop" src="../img/projects/logo_workshop.svg">
         </div>
     </div>
-    <!--<div class="event-wrapper">-->
-    <div class="row" style="width: 100%">
-        <div class="col m3 s12">
+
+    <div id="coding" class="events-section">
+        <%
+
+        var programming = [], electronics = [], nonTech = [], entrepreneurial = [], workshop = [];
+
+        for(i=0;i<events.length;++i){
+            if(events[i].type === 'Programming')
+                programming.push(events[i]);
+            else if(events[i].type === 'Electronics')
+                electronics.push(events[i]);
+            else if(events[i].type === 'Non-Tech')
+                nonTech.push(events[i]);
+            else if(events[i].type === 'Entrepreneurial')
+                entrepreneurial.push(events[i]);
+            else
+                workshop.push(events[i]);
+        }
+
+        console.log("PROGRAMMING:" + programming);
+
+        %>
+        <div class="events-heading">Programming</div>
+        <div class="events">
+
+            <%
+            console.log("programming.length:" + programming.length)
+            for(i=0;i<programming.length;++i){%>
             <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">U HACK</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">Hackathon is a flagship event of InfoXpression. It will be a 24hr overnight software hackathon, fuelled by grit, passion and coffee.
-                                Shoutout to all computer nerds and gizmo geeks.This is the student’s chance to push for a Digital India.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=programming[i].image.substr(8)%>">
                         </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=programming[i].name%></div>
+                                <div class="event-desc">
+                                    <%=programming[i].short%>
+                                </div>
+                            </div>
+                            <a href=""><div class="reg-btn">View More</div></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Codester</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                One code to rule them all, one code to bind them. Truly, we know the rush of encountering a challenge, tackling a problem head on and the camaraderie that comes with working alongside fellow programmers who are just as passionate about writing brilliant code.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Rooters</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                A 4 hour long capture the flag ethical hacking competition conducted online with teams participating to solve questions on Web Exploits, Cryptography, Binary Exploits, Steganography and many more fields of computer security.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Genesis</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                The aim of this event is to support the idea of implementing and getting a pragmatic knowledge of machine learning. The competition will consists of 3 eclectic rounds like MCQ based on common techniques and basic knowledge followed by Data Analysis.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Mind The Language</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Mind The Language involves problem solving by coding in 'not so popular languages'. The event is quite fascinating as it allows the participants to learn new languages and also, adapt to their environment. The details of the languages are revealed on the spot.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Reverse Engineering</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                You think Coding is all about problem statement and their solution code.Think again,Can you decipher the given input and output test case to produce the quintessential code.The duration of competition is about 1hr and will held offline .This event is design for freshman and sophomore.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">CodeWars</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                CodeWars is a finale event.Only top 16 teams will be allowed to take part in this event and these teams will be selected on the basis of their scores in Darwin games, Codester ans segfault.There will be 4( log2(16) ) rounds.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Infox Women Special</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                This year infox is organizing an event targeting mainly the female coders.This event is designed to support the growth and development of women in the field of competitive programming.Show off your skills of programming and grab amazing prizes.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Complete The App</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Complete the app will test your android development .If you have a keen eye for user interface and a knack for the quirks in a language, then this event is for you .You will be provided a problem and it’s incomplete solution
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">CodeXpress</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Infox has come up with a new type of contest this time CodeXpress and all you have got is 60 minutes to win.This contest mainly targets 1st year and 2nd year students.Anyone can take part in this event but only 1st and 2nd year will be eligible for prizes.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">WebMasters</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                This year infox is bringing its own UI/UX designing competition. So, it is a call to all the budding front-end developers to showcase their skills in building the websites having the potential to change the people’s view of web.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
+            <%}%>
         </div>
     </div>
-    <!--</div>-->
-</div>
-<br><br><br>
-<div id="Electronics">
-    <div class="row">
-        <div class="col s12">
-            <div class="heading">Electronics</div>
+    <div id="electronic" class="events-section">
+        <div class="events-heading">Electronics</div>
+        <div class="events">
+
+            <%
+            console.log("electronics.length:" + electronics.length)
+            for(i=0;i<electronics.length;++i){%>
+            <div class="card">
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=electronics[i].image.substr(8)%>">
+                        </div>
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=electronics[i].name%></div>
+                                <div class="event-desc">
+                                    <%=electronics[i].short%>
+                                </div>
+                            </div>
+                            <div class="reg-btn">View More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%}%>
+
         </div>
     </div>
-    <!--<div class="event-wrapper">-->
-    <div class="row" style="width: 100%">
-        <div class="col m3 s12">
+
+
+    <div id="adventure" class="events-section">
+        <div class="events-heading">Non-Technical</div>
+        <div class="events">
+
+            <%
+            console.log("nonTech.length:" + nonTech.length)
+            for(i=0;i<nonTech.length;++i){%>
             <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Lord of the Lines</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                This event is based on the line following robot. Robot must be able to follow a particular path or trajectory and decides its own course of action which interacts with obstacles. Track consists of a starting point, irregular path with some obstacles and a finish point.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=nonTech[i].image.substr(8)%>">
                         </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=nonTech[i].name%></div>
+                                <div class="event-desc">
+                                    <%=nonTech[i].short%>
+                                </div>
+                            </div>
+                            <div class="reg-btn">View More</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Get...Set...Go!!</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Racing of robots is a fascinating experience. This event is based on Robo-racing. Every team have to bring their own designed racing bot with them. In this event, each team have to control their robot wirelessly in such a way that it finishes the track less time.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">The Maze Runner</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                This event is based on solving maze problems using IR sensors. This event will be split in two parts. In first part, robot has to scan the entire maze in a single run. In second part, robot has to process and find the shortest possible path using some smart calculations
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Gizmo Clench</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Gizmo Clench is the competition which includes the designing and analysis of the circuits. It is an event which will test a participant's knowledge on the basics of electronics. It includes the building and implementation of design from basic logical circuits to hardcore electronic circuits.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Robo Liga</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                It’s football time and no-one plays soccer better than the engineers, in their own sophisticated way. The knack of fusing technology with sports seems to be an inherent quality among us, and to celebrate this very spirit, we hail this event known as Robo Liga .
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Robot of War</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Robot of War is a combat competition of robots. the sport of robot combat, involves teams of amateur and professional roboteers operating their own constructed robots to fight against each other, whilst also avoiding arena hazards
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
+
+            <%}%>
+
         </div>
     </div>
-    <!--</div>-->
-</div>
-<br><br><br>
-<div id="Non">
-    <div class="row">
-        <div class="col s12">
-            <div class="heading">Non-Technical</div>
+
+
+    <div id="quiz" class="events-section">
+        <div class="events-heading">Entrepreneurial</div>
+        <div class="events">
+
+            <%
+            console.log("entrepreneurial.length:" + entrepreneurial.length)
+            for(i=0;i<entrepreneurial.length;++i){%>
+            <div class="card">
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=entrepreneurial[i].image.substr(8)%>">
+                        </div>
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=entrepreneurial[i].name%></div>
+                                <div class="event-desc">
+                                    <%=entrepreneurial[i].short%>
+                                </div>
+                            </div>
+                            <div class="reg-btn">View More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <%}%>
+
+
         </div>
     </div>
-    <!--<div class="event-wrapper">-->
-    <div class="row" style="width: 100%">
-        <div class="col m3 s12">
+    <div id="workshop" class="events-section">
+        <div class="events-heading">Workshops/Seminars</div>
+        <div class="events">
+
+            <%
+            console.log("workshop.length:" + workshop.length)
+            for(i=0;i<workshop.length;++i){%>
             <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Geek Wars</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Arguments are naturally constructive. They lead to a mind open to new ideas. In a field as dynamic as technology, we need to argue to keep ourselves on our toes and constantly updated. Thus, all our welcome to the technical debate.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
+                <div class="card-inner-wrapper">
+                    <div class="pic-wrapper">
+                        <div class="pic">
+                            <img src="<%=workshop[i].image.substr(8)%>">
                         </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
+                        <div class="pic-info">
+                            <div class="event-info">
+                                <div class="event-heading"><%=workshop[i].name%></div>
+                                <div class="event-desc">
+                                    <%=workshop[i].short%>
+                                </div>
+                            </div>
+                            <div class="reg-btn">View More</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Crusade - Treasure Hunt</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                The box of miracles and secrets is waiting for you. Come and explore a whole new world within. Experience fun, like you have never before. Apply your brain in every technical aspect and hunt for the treasure.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Clash On Lan</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Get ready for an adrenaline rush and a test of your senses. Compete against participants of different colleges to triumph as the best LAN gaming team. We have for you, first person shooters, races and what not. So get ready to enter a world of virtual reality, and prove yourself the best.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Magic Cubing</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Magic cubing is a Rubik's cube solving event where cubing competitors compete and use there tactics by their moves to be in the top. The event consist of multiple round, in the first those who solve cube in minimum time go for the next round and rest will be eliminated.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">It's triviOsa, not triviosAA!!</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Accio readers! We're here to tell you about a quiz that revolves around Harry Potter, the Boy Who Lived. We defended the sorcerer’s stone, we uncovered the secret chamber, we rescued the prisoner, we were chosen by the goblet
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
+
+            <%}%>
+
         </div>
     </div>
-    <!--</div>-->
+
+
 </div>
 
-<br><br><br>
-<div id="Ecell">
-    <div class="row">
-        <div class="col s12">
-            <div class="heading">Entrepreneurial</div>
-        </div>
-    </div>
-    <!--<div class="event-wrapper">-->
-    <div class="row" style="width: 100%">
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Clash of Companies</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                Clash of Companies is the signature event of E-Cell which models the free market economy. Participants are allotted a team in a particular faction and they have compete with teams in their faction while negotiating and interacting with teams of the other faction.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Case Study</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                A case study is a competition of multiple rounds where participants are provided an actual case of a company facing a certain problem and they are required to present their ideas as to how the company can effectively tackle it in actual world.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--</div>-->
-</div>
-
-<br><br><br>
-<div id="Workshop">
-    <div class="row">
-        <div class="col s12">
-            <div class="heading">Workshop/Seminars</div>
-        </div>
-    </div>
-    <!--<div class="event-wrapper">-->
-    <div class="row" style="width: 100%">
-        <div class="col m3 s12">
-            <div class="card">
-                <div class="card__side card__side--front card__side--front-1">
-                    <div class="card__picture card__picture-1">
-                        &nbsp;
-                    </div>
-                    <h4 class="card__heading">
-                        <span class="card__heading-span card__heading-span--1">Meetup</span>
-                    </h4>
-                    <div class="card__details">
-                        <ul>
-                            <li>26th - 28th OCTOBER</li>
-                            <li>USICT Campus</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card__side card__side--back card__side--back-1">
-                    <div class="card__cta">
-                        <div class="card__header">
-                            <br><br>
-                            <p class="card__heading--min">
-                                GSOC is a prestigious international annual program which encourages college students to collaborate and code. The program is open to university students aged 18 or over. The meetup will be a 2 hour community bonding session, or a lecture series or presentation from speakers.
-                            </p>
-                            <!--<p class="card__heading&#45;&#45;max">zenith</p>-->
-                        </div>
-                        <!--<a href="#" class="btn btn&#45;&#45;white">Book Now!</a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--</div>-->
-</div>
-</div>
-<div>
 <% include ../partials/footer %>
-</div>
-<!-- Nav below is for hamburger -->
-
 <% include ../partials/hamburger %>
-
-<!-- Scroll to top -->
-
 <% include ../partials/move_to_top %>
 
-<script src="../js/common.js"></script>
-<script src="../js/projects.js"></script>
+<script>
+    var eventOffset = 50;
+
+    $(document).ready(function () {
+        $(window).resize(function () {
+            if ($(window).width() < 480) {
+                eventOffset = 0;
+            } else {
+                eventOffset = 50;
+            }
+        });
+    });
+
+    if ($(window).width() < 768) {
+        eventOffset = 0;
+    }
+
+
+    $("#electronic-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#electronic").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+
+    $("#coding-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#coding").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+
+    $("#workshop-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#workshop").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+
+    $("#adventure-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#adventure").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+
+    $("#quiz-icon").click(function () {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#quiz").offset().top - eventOffset
+        }, 800, 'easeOutExpo');
+    });
+</script>
 
 </body>
-
-</html>

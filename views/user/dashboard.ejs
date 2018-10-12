@@ -1,37 +1,53 @@
-<%include ../partials/header-links2.ejs%>
-<body>
-<% include ../partials/svg-and-style %>
+<% include ../partials/header-links.ejs %>
+<link rel="stylesheet" href="css/team.css">
 
-<div id="test">
-    <!--class="nav-wrapper"-->
-    <header class="is-large">
-        <% include ../partials/navbar %>
-        <!-- Common navbar he ismein -->
-    </header>
+
+<% include ../partials/new-nav-bar %>
+<% include ../partials/login-modal %>
+<div class="title-section" style="margin-top: 30px;">
+    <h1 class="overlay-section">Dashboard</h1>
+    <h1 class="subtitle-section">Your Events. Your Infox</h1>
 </div>
 
-<div id="app">
-    <div @click="tune">
-        <div class="title_section">
-            <h1 class="overlay_title">DASHBOARD</h1>
-            <div class="small_title">
-                <h1>Your Events. Your Infox</h1>
+<div class="events-heading">Your Events</div>
+<div class="events">
+
+    <%
+    console.log("programming.length:" + programming.length)
+    for(i=0;i<programming.length;++i){%>
+    <div class="card">
+        <div class="card-inner-wrapper">
+            <div class="pic-wrapper">
+                <div class="pic">
+                    <img src="/img/UHACK1.png">
+                </div>
+                <div class="pic-info">
+                    <div class="event-info">
+                        <div class="event-heading"><%=programming[i].name%></div>
+                        <div class="event-desc">
+                            <%=programming[i].short%>
+                        </div>
+                    </div>
+                    <div class="reg-btn">Register</div>
+                </div>
             </div>
         </div>
-        <section class="media-block simple-ripple" style="position:relative;top:0vh !important;">
-
-            <h1>User Dashboard</h1>
-
-            <p><%=loggedIn%></p>
-        </section>
     </div>
+
+    <%}%>
 </div>
+
+
 <% include ../partials/footer %>
+
+
+<!-- Nav below is for hamburger -->
 
 <% include ../partials/hamburger %>
 
-<script src="../js/common.js"></script>
-<script src="../js/media.js"></script>
 
+<script src="../js/common.js"></script>
+<script src="../js/team.js"></script>
 </body>
+
 </html>

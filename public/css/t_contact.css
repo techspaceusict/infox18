@@ -36,6 +36,7 @@
 
 .contact-wrapper {
     overflow: hidden;
+    overflow-y: scroll;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;

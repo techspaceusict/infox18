@@ -255,7 +255,7 @@ body[data-aos-easing="new-easing"] [data-aos],
     z-index: 1;
     background-color: red;
     color: white;
-    /* width:30%; */
+     width:55%;
     margin-left: 50%;
     transform: translate(-50%, 0);
     margin-bottom: 7%;

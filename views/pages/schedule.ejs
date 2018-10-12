@@ -1,71 +1,129 @@
-<% include ../partials/header-links2 %>
-<!--Contains all header meta tags and links-->
+<%include ../partials/header-links.ejs%>
 
-<body>
+<% include ../partials/new-nav-bar %>
+<% include ../partials/login-modal %>
 
-<% include ../partials/svg-and-style %>
+<div class="contact-parent-wrapper" style="align-items: center; height: 92vh;">
+    <div class="title-section">
+        <h1 class="overlay-section">SCHEDULE</h1>
+        <h1 class="subtitle-section">Checkout event timings</h1>
+    </div>
 
-<div id="test">
-    <!--class="nav-wrapper"-->
-    <header class="is-large">
-        <% include ../partials/navbar %>
-        <!-- Common navbar he ismein -->
-    </header>
-</div>
-
-
-<div class="background legal-background">
-    <div class="container"></div>
-</div>
-<style>
-    @media only screen and (max-width: 800px) {
-        .img-sc {
-            margin-left: 30px;
-            margin-right: 30px;
-        }
-    }
-
-    .img-sc {
-        margin-bottom: 100px;
-    }
-</style>
-
-
-<div id="app">
-    <div @click="tune">
-        <!-- TITLE -->
-        <div class="title_section">
-            <h1 class="overlay_title">Schedule</h1>
-            <div class="small_title">
-                <h1>Check your timeline.</h1>
+    <div class="carousel">
+        <div class="cl">
+            <div class="c-overlay" id="c1">
+                <div class="day-no">
+                    DAY<span style="color: transparent;">.</span>1
+                </div>
+            </div>
+            <div class="c-schedule" id="c1-img">
+                <img src="img/13oct.jpg" alt="day-1-schedule">
             </div>
         </div>
-
-        <section class="media-block simple-ripple">
-            <h1> </h1>
-
-            <img src="img/13oct.jpg" alt="day-1-schedule" class="img-sc">
-
-
-            <img src="img/14oct.jpg" alt="day-2-schedule" class="img-sc">
-
-
-            <img src="img/15oct.jpg" alt="day-3-schedule" class="img-sc">
-
-        </section>
-        <% include ../partials/footer %>
+        <div class="cm">
+            <div class="c-overlay" id="c2">
+                <div class="day-no">
+                    DAY<span style="color: transparent;">.</span>2
+                </div>
+            </div>
+            <div class="c-schedule" id="c2-img">
+                <img src="img/14oct.jpg" alt="day-1-schedule">
+            </div>
+        </div>
+        <div class="cr">
+            <div class="c-overlay" id="c3">
+                <div class="day-no">
+                    DAY<span style="color: transparent;">.</span>3
+                </div>
+            </div>
+            <div class="c-schedule" id="c3-img">
+                <img src="img/15oct.jpg" alt="day-1-schedule">
+            </div>
+        </div>
     </div>
+
+
+    <!-- <img src="img/13oct.jpg" alt="day-1-schedule" class="img-sc">
+
+
+    <img src="img/14oct.jpg" alt="day-2-schedule" class="img-sc">
+
+
+    <img src="img/15oct.jpg" alt="day-3-schedule" class="img-sc"> -->
 </div>
 
-
+<% include ../partials/footer %>
 
 <!-- Nav below is for hamburger -->
 
 <% include ../partials/hamburger %>
 
+<script>
+    $('.c-overlay').click(function(){
+        $('.day-no').addClass('day-no-2');
+    });
 
-<script src="../js/common.js"></script>
-<script src="../js/media.js"></script>
+    $(window).resize(function(){
+        location.reload(true)
+    });
+    if($( window ).width()>767){
+        $('#c1').click(function(){
+            $('#c1-img').css({display:'block'});
+            $('#c2-img').css({display:'none'});
+            $('#c3-img').css({display:'none'});
+            $('.cl').animate({width:'80%'},400,'easeOutQuint');
+            $('.cm').animate({width:'10%'},400,'easeOutQuint');
+            $('.cr').animate({width:'10%'},400,'easeOutQuint');
+        });
+
+        $('#c2').click(function(){
+            $('#c1-img').css({display:'none'});
+            $('#c2-img').css({display:'block'});
+            $('#c3-img').css({display:'none'});
+            $('.cl').animate({width:'10%'},400,'easeOutQuint');
+            $('.cm').animate({width:'80%'},400,'easeOutQuint');
+            $('.cr').animate({width:'10%'},400,'easeOutQuint');
+        });
+
+        $('#c3').click(function(){
+            $('#c1-img').css({display:'none'});
+            $('#c2-img').css({display:'none'});
+            $('#c3-img').css({display:'block'});
+            $('.cl').animate({width:'10%'},400,'easeOutQuint');
+            $('.cm').animate({width:'10%'},400,'easeOutQuint');
+            $('.cr').animate({width:'80%'},400,'easeOutQuint');
+        });
+    }
+    else{
+        $('#c1').click(function(){
+            $('#c1-img').css({display:'block'});
+            $('#c2-img').css({display:'none'});
+            $('#c3-img').css({display:'none'});
+            $('.cl').animate({height:'80%'},400,'easeOutQuint');
+            $('.cm').animate({height:'10%'},400,'easeOutQuint');
+            $('.cr').animate({height:'10%'},400,'easeOutQuint');
+        });
+
+        $('#c2').click(function(){
+            $('#c1-img').css({display:'none'});
+            $('#c2-img').css({display:'block'});
+            $('#c3-img').css({display:'none'});
+            $('.cl').animate({height:'10%'},400,'easeOutQuint');
+            $('.cm').animate({height:'80%'},400,'easeOutQuint');
+            $('.cr').animate({height:'10%'},400,'easeOutQuint');
+        });
+
+        $('#c3').click(function(){
+            $('#c1-img').css({display:'none'});
+            $('#c2-img').css({display:'none'});
+            $('#c3-img').css({display:'block'});
+            $('.cl').animate({height:'10%'},400,'easeOutQuint');
+            $('.cm').animate({height:'10%'},400,'easeOutQuint');
+            $('.cr').animate({height:'80%'},400,'easeOutQuint');
+        });
+    }
+
+</script>
 
 </body>
 
