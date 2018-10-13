@@ -22,9 +22,15 @@
                 <li>
                 <a href="/contact">Contact Us</a>
                 </li>
+                <%if(loggedIn){%>
                 <li>
-                    <div id= "login2">Login</a>
+                <a href="/user/dashboard">My Infox</a>
                 </li>
+                <%}else{%>
+                <li>
+                    <a id= "login2">Login</a>
+                </li>
+                <%}%>
             </ul>
             </span>
             <span class="cls"></span>

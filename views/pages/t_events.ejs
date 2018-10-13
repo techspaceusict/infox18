@@ -65,40 +65,58 @@
                                     <%=programming[i].short%>
                                 </div>
                             </div>
-                            <div class="reg-btn prog">View More</div>
+                            <div class="reg-btn prog" id="<%=programming[i].id%>">View More</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <%}%>
-            <div class="events-more">
-                <div class="close-events-more">&gt;&gt;</div>
+            <div class="events-more <%=programming[i].id%>">
+                <div class="close-events-more">X</div>
                 <div class="event-photo">
-                    <img src="/img/events/eventsImage-1539350458933.png"></img>
+                    <img src="<%=programming[i].image.substr(8)%>">
                 </div>
                 <div class="event-text">
-                    <div class="event-text-heading">UHack</div>
+                    <div class="event-text-heading"><%=programming[i].name%></div>
+                    <br>
                     <div class="event-text-text">
                         <div class="event-text-desc">
-                            Hacking is building things that you always wanted to have but no one has built it yet. It's to come up with an amazing idea and work tirelessly on it. It is to fail, fail again and fail better. Try out new things and learn while doing that. It's to work together, collaborate and build things that are innovative. It is to be a better programmer. With that spirit, The University School of Information Communication & Technology in association with Ultrahack and Codestreet, is conducting a hackathon - UHack and invites all developers and hackathon enthusiasts to participate in an interesting and engaging hackathon.
-                        </div>                    
-                       <div class="events-details">
-                           <div class="Venue">E-Block, USICT GGSIPU</div>
-                           <div class="Date">26/10/17 to 27/10/17</div>
-                           <div class="Time">1:00 PM to 12:00PM on 27 Oct</div>
-                       </div>
-                       <div class="event-contact">
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                       </div>
+                            <%-programming[i].description%>
+                        </div>
+                        <br>
+                        <div class="events-details">
+                            <div class="details-div">
+                                <div class="Venue" style="text-align: left"><span>Venue</span><pre><%=programming[i].venue%></pre></div>
+                                <div class="Date" style="text-align: left"><span>Date</span><pre><%=programming[i].date%></pre></div>
+                            </div>
+                            <div class="details-div">
+                                <div class="Time" style="text-align: left"><span>Time</span><pre><%=programming[i].time%></pre></div>
+                                <div class="fb" style="text-align: left">
+                                    <span>Facebook Page</span>
+                                    <pre><a target="_blank" href="<%=programming[i].fbUrl%>"><i class="fab fa-facebook-f fa-lg"></i> acebook</a></pre>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        <br>
+
+                        <div class="event-contact">
+                            <div class="contact"><span>CONTACT</span> </div>
+                            <div class="contact-div">
+                                <%for(j=0;j<programming[i].organisersName.length;++j){%>
+                                <pre><div><%=programming[i].organisersName[j]%></div><div><%=programming[i].organisersMobile[j]%></div></pre>
+                                <%}%>
+                            </div>
+                        </div>
+                        <br>
+                        <%if(loggedIn){%>
+                            <div class="event-text-register">Register</div>
+                        <%}else{%>
+                            <div class="event-text-register">Sign In To Register</div>
+                        <%}%>
                     </div>
-                    <div class="event-text-register">Sign to reg.</div>
                 </div>
             </div>
+            <%}%>
         </div>
     </div>
     <div id="electronic" class="events-section">
@@ -112,7 +130,7 @@
                 <div class="card-inner-wrapper">
                     <div class="pic-wrapper">
                         <div class="pic">
-                            <img src="<%=programming[i].image.substr(8)%>">
+                            <img src="<%=electronics[i].image.substr(8)%>">
                         </div>
                         <div class="pic-info">
                             <div class="event-info">
@@ -121,41 +139,59 @@
                                     <%=electronics[i].short%>
                                 </div>
                             </div>
-                            <div class="reg-btn elec">View More</div>
+                            <div class="reg-btn elec" id="<%=electronics[i].id%>">View More</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <%}%>
-            <div class="events-more">
-                <div class="close-events-more">&gt;&gt;</div>
+            <div class="events-more <%=electronics[i].id%>">
+                <div class="close-events-more">X</div>
                 <div class="event-photo">
-                    <img src="/img/events/eventsImage-1539350458933.png"></img>
+                    <img src="<%=electronics[i].image.substr(8)%>">
                 </div>
                 <div class="event-text">
-                    <div class="event-text-heading">UHack</div>
+                    <div class="event-text-heading"><%=electronics[i].name%></div>
+                    <br>
                     <div class="event-text-text">
                         <div class="event-text-desc">
-                            Hacking is building things that you always wanted to have but no one has built it yet. It's to come up with an amazing idea and work tirelessly on it. It is to fail, fail again and fail better. Try out new things and learn while doing that. It's to work together, collaborate and build things that are innovative. It is to be a better programmer. With that spirit, The University School of Information Communication & Technology in association with Ultrahack and Codestreet, is conducting a hackathon - UHack and invites all developers and hackathon enthusiasts to participate in an interesting and engaging hackathon.
-                        </div>                    
-                       <div class="events-details">
-                           <div class="Venue">E-Block, USICT GGSIPU</div>
-                           <div class="Date">26/10/17 to 27/10/17</div>
-                           <div class="Time">1:00 PM to 12:00PM on 27 Oct</div>
-                       </div>
-                       <div class="event-contact">
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                       </div>
+                            <%-electronics[i].description%>
+                        </div>
+                        <br>
+                        <div class="events-details">
+                            <div class="details-div">
+                                <div class="Venue" style="text-align: left"><span>Venue</span><pre><%=electronics[i].venue%></pre></div>
+                                <div class="Date" style="text-align: left"><span>Date</span><pre><%=electronics[i].date%></pre></div>
+                            </div>
+                            <div class="details-div">
+                                <div class="Time" style="text-align: left"><span>Time</span><pre><%=electronics[i].time%></pre></div>
+                                <div class="fb" style="text-align: left">
+                                    <span>Facebook Page</span>
+                                    <pre><a target="_blank" href="<%=electronics[i].fbUrl%>"><i class="fab fa-facebook-f fa-lg"></i> acebook</a></pre>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+                        <br>
+                        <div class="event-contact">
+                            <div class="contact"><span>CONTACT</span> </div>
+                            <div class="contact-div">
+                                <%for(j=0;j<electronics[i].organisersName.length;++j){%>
+                                <pre><div><%=electronics[i].organisersName[j]%></div><div><%=electronics[i].organisersMobile[j]%></div></pre>
+                                <%}%>
+                            </div>
+                        </div>
+                        <br>
+                        <%if(loggedIn){%>
+                            <div class="event-text-register">Register</div>
+                        <%}else{%>
+                            <div class="event-text-register">Sign In To Register</div>
+                        <%}%>
                     </div>
-                    <div class="event-text-register">Sign to reg.</div>
                 </div>
             </div>
+            <%}%>
 
         </div>
     </div>
@@ -172,7 +208,7 @@
                 <div class="card-inner-wrapper">
                     <div class="pic-wrapper">
                         <div class="pic">
-                            <img src="<%=programming[i].image.substr(8)%>">
+                            <img src="<%=nonTech[i].image.substr(8)%>">
                         </div>
                         <div class="pic-info">
                             <div class="event-info">
@@ -181,42 +217,60 @@
                                     <%=nonTech[i].short%>
                                 </div>
                             </div>
-                            <div class="reg-btn nont">View More</div>
+                            <div class="reg-btn nont" id="<%=nonTech[i].id%>">View More</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <%}%>
-
-            <div class="events-more">
-                <div class="close-events-more">&gt;&gt;</div>
+            <div class="events-more <%=nonTech[i].id%>">
+                <div class="close-events-more">X</div>
                 <div class="event-photo">
-                    <img src="/img/events/eventsImage-1539350458933.png"></img>
+                    <img src="<%=nonTech[i].image.substr(8)%>">
                 </div>
                 <div class="event-text">
-                    <div class="event-text-heading">UHack</div>
+                    <div class="event-text-heading"><%=nonTech[i].name%></div>
+                    <br>
                     <div class="event-text-text">
                         <div class="event-text-desc">
-                            Hacking is building things that you always wanted to have but no one has built it yet. It's to come up with an amazing idea and work tirelessly on it. It is to fail, fail again and fail better. Try out new things and learn while doing that. It's to work together, collaborate and build things that are innovative. It is to be a better programmer. With that spirit, The University School of Information Communication & Technology in association with Ultrahack and Codestreet, is conducting a hackathon - UHack and invites all developers and hackathon enthusiasts to participate in an interesting and engaging hackathon.
-                        </div>                    
-                       <div class="events-details">
-                           <div class="Venue">E-Block, USICT GGSIPU</div>
-                           <div class="Date">26/10/17 to 27/10/17</div>
-                           <div class="Time">1:00 PM to 12:00PM on 27 Oct</div>
-                       </div>
-                       <div class="event-contact">
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                       </div>
+                            <%-nonTech[i].description%>
+                        </div>
+                        <br>
+                        <div class="events-details">
+                            <div class="details-div">
+                                <div class="Venue" style="text-align: left"><span>Venue</span><pre><%=nonTech[i].venue%></pre></div>
+                                <div class="Date" style="text-align: left"><span>Date</span><pre><%=nonTech[i].date%></pre></div>
+                            </div>
+                            <div class="details-div">
+                                <div class="Time" style="text-align: left"><span>Time</span><pre><%=nonTech[i].time%></pre></div>
+                                <div class="fb" style="text-align: left">
+                                    <span>Facebook Page</span>
+                                    <pre><a target="_blank" href="<%=nonTech[i].fbUrl%>"><i class="fab fa-facebook-f fa-lg"></i> acebook</a></pre>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+                        <br>
+                        <div class="event-contact">
+                            <div class="contact"><span>CONTACT</span> </div>
+                            <div class="contact-div">
+                                <%for(j=0;j<nonTech[i].organisersName.length;++j){%>
+                                <pre><div><%=nonTech[i].organisersName[j]%></div><div><%=nonTech[i].organisersMobile[j]%></div></pre>
+                                <%}%>
+                            </div>
+                        </div>
+                        <br>
+                        <%if(loggedIn){%>
+                            <div class="event-text-register">Register</div>
+                        <%}else{%>
+                            <div class="event-text-register">Sign In To Register</div>
+                        <%}%>
                     </div>
-                    <div class="event-text-register">Sign to reg.</div>
                 </div>
             </div>
+            <%}%>
+
 
         </div>
     </div>
@@ -233,7 +287,7 @@
                 <div class="card-inner-wrapper">
                     <div class="pic-wrapper">
                         <div class="pic">
-                            <img src="<%=programming[i].image.substr(8)%>">
+                            <img src="<%=entrepreneurial[i].image.substr(8)%>">
                         </div>
                         <div class="pic-info">
                             <div class="event-info">
@@ -242,44 +296,59 @@
                                     <%=entrepreneurial[i].short%>
                                 </div>
                             </div>
-                            <div class="reg-btn ecel">View More</div>
+                            <div class="reg-btn ecel" id="<%=entrepreneurial[i].id%>">View More</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <%}%>
-
-            <div class="events-more">
-                <div class="close-events-more">&gt;&gt;</div>
+            <div class="events-more <%=entrepreneurial[i].id%>">
+                <div class="close-events-more">X</div>
                 <div class="event-photo">
-                    <img src="/img/events/eventsImage-1539350458933.png"></img>
+                    <img src="<%=entrepreneurial[i].image.substr(8)%>">
                 </div>
                 <div class="event-text">
-                    <div class="event-text-heading">UHack</div>
+                    <div class="event-text-heading"><%=entrepreneurial[i].name%></div>
+                    <br>
                     <div class="event-text-text">
                         <div class="event-text-desc">
-                            Hacking is building things that you always wanted to have but no one has built it yet. It's to come up with an amazing idea and work tirelessly on it. It is to fail, fail again and fail better. Try out new things and learn while doing that. It's to work together, collaborate and build things that are innovative. It is to be a better programmer. With that spirit, The University School of Information Communication & Technology in association with Ultrahack and Codestreet, is conducting a hackathon - UHack and invites all developers and hackathon enthusiasts to participate in an interesting and engaging hackathon.
-                        </div>                    
-                       <div class="events-details">
-                           <div class="Venue">E-Block, USICT GGSIPU</div>
-                           <div class="Date">26/10/17 to 27/10/17</div>
-                           <div class="Time">1:00 PM to 12:00PM on 27 Oct</div>
-                       </div>
-                       <div class="event-contact">
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                       </div>
+                            <%-entrepreneurial[i].description%>
+                        </div>
+                        <br>
+                        <div class="events-details">
+                            <div class="details-div">
+                                <div class="Venue" style="text-align: left"><span>Venue</span><pre><%=entrepreneurial[i].venue%></pre></div>
+                                <div class="Date" style="text-align: left"><span>Date</span><pre><%=entrepreneurial[i].date%></pre></div>
+                            </div>
+                            <div class="details-div">
+                                <div class="Time" style="text-align: left"><span>Time</span><pre><%=entrepreneurial[i].time%></pre></div>
+                                <div class="fb" style="text-align: left">
+                                    <span>Facebook Page</span>
+                                    <pre><a target="_blank" href="<%=entrepreneurial[i].fbUrl%>"><i class="fab fa-facebook-f fa-lg"></i> acebook</a></pre>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+                        <br>
+                        <div class="event-contact">
+                            <div class="contact"><span>CONTACT</span> </div>
+                            <div class="contact-div">
+                                <%for(j=0;j<entrepreneurial[i].organisersName.length;++j){%>
+                                <pre><div><%=entrepreneurial[i].organisersName[j]%></div><div><%=entrepreneurial[i].organisersMobile[j]%></div></pre>
+                                <%}%>
+                            </div>
+                        </div>
+                        <br>
+                        <%if(loggedIn){%>
+                            <div class="event-text-register">Register</div>
+                        <%}else{%>
+                            <div class="event-text-register">Sign In To Register</div>
+                        <%}%>
                     </div>
-                    <div class="event-text-register">Sign to reg.</div>
                 </div>
             </div>
-
-
+            <%}%>
         </div>
     </div>
     <div id="workshop" class="events-section">
@@ -293,7 +362,7 @@
                 <div class="card-inner-wrapper">
                     <div class="pic-wrapper">
                         <div class="pic">
-                            <img src="<%=programming[i].image.substr(8)%>">
+                            <img src="<%=workshop[i].image.substr(8)%>">
                         </div>
                         <div class="pic-info">
                             <div class="event-info">
@@ -302,42 +371,59 @@
                                     <%=workshop[i].short%>
                                 </div>
                             </div>
-                            <div class="reg-btn work">View More</div>
+                            <div class="reg-btn work" id="<%=workshop[i].id%>">View More</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <%}%>
-
-            <div class="events-more">
-                <div class="close-events-more">&gt;&gt;</div>
+            <div class="events-more <%=workshop[i].id%>">
+                <div class="close-events-more">X</div>
                 <div class="event-photo">
-                    <img src="/img/events/eventsImage-1539350458933.png"></img>
+                    <img src="<%=workshop[i].image.substr(8)%>">
                 </div>
                 <div class="event-text">
-                    <div class="event-text-heading">UHack</div>
+                    <div class="event-text-heading"><%=workshop[i].name%></div>
+                    <br>
                     <div class="event-text-text">
                         <div class="event-text-desc">
-                            Hacking is building things that you always wanted to have but no one has built it yet. It's to come up with an amazing idea and work tirelessly on it. It is to fail, fail again and fail better. Try out new things and learn while doing that. It's to work together, collaborate and build things that are innovative. It is to be a better programmer. With that spirit, The University School of Information Communication & Technology in association with Ultrahack and Codestreet, is conducting a hackathon - UHack and invites all developers and hackathon enthusiasts to participate in an interesting and engaging hackathon.
-                        </div>                    
-                       <div class="events-details">
-                           <div class="Venue">E-Block, USICT GGSIPU</div>
-                           <div class="Date">26/10/17 to 27/10/17</div>
-                           <div class="Time">1:00 PM to 12:00PM on 27 Oct</div>
-                       </div>
-                       <div class="event-contact">
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                           <div class="event-contact-l1">
-                                <div>ABC</div><div>9876543210</div>
-                           </div>
-                       </div>
+                            <%-workshop[i].description%>
+                        </div>
+                        <br>
+                        <div class="events-details">
+                            <div class="details-div">
+                                <div class="Venue" style="text-align: left"><span>Venue</span><pre><%=workshop[i].venue%></pre></div>
+                                <div class="Date" style="text-align: left"><span>Date</span><pre><%=workshop[i].date%></pre></div>
+                            </div>
+                            <div class="details-div">
+                                <div class="Time" style="text-align: left"><span>Time</span><pre><%=workshop[i].time%></pre></div>
+                                <div class="fb" style="text-align: left">
+                                    <span>Facebook Page</span>
+                                    <pre><a target="_blank" href="<%=workshop[i].fbUrl%>"><i class="fab fa-facebook-f fa-lg"></i> acebook</a></pre>
+                                </div>
+                            </div>
+                            <br>
+
+                        </div>
+                        <br>
+                        <div class="event-contact">
+                            <div class="contact"><span>CONTACT</span> </div>
+                            <div class="contact-div">
+                                <%for(j=0;j<workshop[i].organisersName.length;++j){%>
+                                <pre><div><%=workshop[i].organisersName[j]%></div><div><%=workshop[i].organisersMobile[j]%></div></pre>
+                                <%}%>
+                            </div>
+                        </div>
+                        <br>
+                        <%if(loggedIn){%>
+                            <div class="event-text-register">Register</div>
+                        <%}else{%>
+                            <div class="event-text-register">Sign In To Register</div>
+                        <%}%>
                     </div>
-                    <div class="event-text-register">Sign to reg.</div>
                 </div>
             </div>
+            <%}%>
 
         </div>
     </div>
@@ -350,7 +436,7 @@
 <% include ../partials/move_to_top %>
 
 <script>
-    var eventOffset = 50;
+    var eventOffset = 0;
 
     $(document).ready(function () {
         $(window).resize(function () {
@@ -404,10 +490,12 @@
     // $('#coding .events .card').css({display:'none'})
 
     $(".prog").click(function(e){
+        console.log("ID CLCIKED:" + this.id);
+        var id = this.id;
         eventPos = $(e.target).offset().top - $('#coding .events .card').height() - $(e.target).height();
         console.log(eventPos);
         $('#coding .events .card').css({display:'none'}).promise().done(function(){
-            $('#coding .events .events-more').css({display:'flex'});
+            $('#coding .events .' + id).css({display:'flex'});
         });
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#coding").offset().top - eventOffset
@@ -423,13 +511,15 @@
         }, 800, 'easeOutExpo');
     });
 
-    // 
+    //
 
     $(".elec").click(function(e){
+        console.log("ID CLCIKED:" + this.id);
+        var id = this.id;
         eventPos = $(e.target).offset().top - $('#electronic .events .card').height() - $(e.target).height();
         console.log(eventPos);
         $('#electronic .events .card').css({display:'none'}).promise().done(function(){
-            $('#electronic .events .events-more').css({display:'flex'});
+            $('#electronic .events .' + id).css({display:'flex'});
         });
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#electronic").offset().top - eventOffset
@@ -445,13 +535,15 @@
         }, 800, 'easeOutExpo');
     });
 
-    // 
+    //
 
     $(".nont").click(function(e){
+        console.log("ID CLCIKED:" + this.id);
+        var id = this.id;
         eventPos = $(e.target).offset().top - $('#adventure .events .card').height() - $(e.target).height();
         console.log(eventPos);
         $('#adventure .events .card').css({display:'none'}).promise().done(function(){
-            $('#adventure .events .events-more').css({display:'flex'});
+            $('#adventure .events .' + id).css({display:'flex'});
         });
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#adventure").offset().top - eventOffset
@@ -467,13 +559,15 @@
         }, 800, 'easeOutExpo');
     });
 
-    // 
+    //
 
     $(".ecel").click(function(e){
+        console.log("ID CLCIKED:" + this.id);
+        var id = this.id;
         eventPos = $(e.target).offset().top - $('#quiz .events .card').height() - $(e.target).height();
         console.log(eventPos);
         $('#quiz .events .card').css({display:'none'}).promise().done(function(){
-            $('#quiz .events .events-more').css({display:'flex'});
+            $('#quiz .events .' + id).css({display:'flex'});
         });
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#quiz").offset().top - eventOffset
@@ -489,13 +583,15 @@
         }, 800, 'easeOutExpo');
     });
 
-    // 
+    //
 
     $(".work").click(function(e){
+        console.log("ID CLCIKED:" + this.id);
+        var id = this.id;
         eventPos = $(e.target).offset().top - $('#workshop .events .card').height() - $(e.target).height();
         console.log(eventPos);
         $('#workshop .events .card').css({display:'none'}).promise().done(function(){
-            $('#workshop .events .events-more').css({display:'flex'});
+            $('#workshop .events .' + id).css({display:'flex'});
         });
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#workshop").offset().top - eventOffset
