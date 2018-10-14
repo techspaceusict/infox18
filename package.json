@@ -18,6 +18,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
+    "lodash": "^4.17.11",
     "materialize-css": "^1.0.0-rc.2",
     "method-override": "^3.0.0",
     "mongoose": "^5.2.9",

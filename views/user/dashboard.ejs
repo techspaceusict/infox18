@@ -1,19 +1,119 @@
-<% include ../partials/header-links.ejs %>
-<link rel="stylesheet" href="css/team.css">
+<!DOCTYPE html>
+<html lang="en">
 
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="icon" href="/fav.png" sizes="16x16">
+
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa|Lato:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="/css/mobile-menu.css" type="text/css">
+    <link rel="stylesheet" href="/css/mywork.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/css/t_contact.css">
+    <link rel="stylesheet" href="/css/events-jk.css">
+    <link rel="stylesheet" href="/css/sponsors.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/template.css">
+    <link rel="stylesheet" href="/heroJs/3p/jquery.easing.min.js">
+
+    <link rel="icon" type="image/png" href="fav.png">
+
+    <script type="text/javascript" src="/js/jquery.1.8.3.min.js"></script>
+    <!--Jquery ka new version he file mein-->
+    <script type="text/javascript" src="/js/mobile-menu.js"></script>
+
+    <title>Infox 2k18 | USICT | GGSIPU</title>
+    <style>
+        input{
+            max-width: 100%;
+        }
+
+        .caret{
+            display: none;
+        }
+
+        .btn{
+            border-radius: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+<link rel="stylesheet" href="/css/profile3.css">
 
 <% include ../partials/new-nav-bar %>
 <% include ../partials/login-modal %>
+
+
 <div class="title-section" style="margin-top: 30px;">
-    <h1 class="overlay-section">Dashboard</h1>
-    <h1 class="subtitle-section">Your Events. Your Infox</h1>
+    <h4 class="overlay-section" style="font-weight: bold; font-size: 2em;">Dashboard</h4>
+    <h3 class="subtitle-section" style="font-size: 1.5em;">Your Infox. Your Events</h3>
 </div>
 
-<!--<div class="events-heading">Your Events</div>-->
-<div class="events">
+<div class="container" style="width: 90%;">
+    <div class="row">
+        <!--<div class="col m8"></div>-->
+        <div class="col m10 s6" style="text-align: right">
+            <a href="/user/profile"><button class="btn #2196f3 blue">PROFILE</button></a>
+        </div>
+        <div class="col m2 s6">
+            <a href="/logout"><button class="btn #d32f2f red darken-2" href="/logout">LOGOUT</button></a>
+        </div>
+    </div>
+    <div class="events">
+
+        <%
+        console.log("events.length:" + events.length)
+        for(i=0;i<events.length;++i){%>
+        <div class="card">
+            <div class="card-inner-wrapper">
+                <div class="pic-wrapper">
+                    <div class="pic">
+                        <img src="<%=events[i].image.substr(8)%>">
+                    </div>
+                    <div class="pic-info">
+                        <div class="event-info">
+                            <div class="event-heading"><%=events[i].name%></div>
+                            <div class="event-desc">
+                                <%=events[i].short%>
+                            </div>
+                        </div>
+                        <a href="/events"><div class="reg-btn prog" id="<%=events[i].id%>">View More</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%}
+        if(events.length === 0){
+        %>
+        <h1>No Registered Events Yet</h1>
+        <%}%>
+    </div>
 </div>
 
 
+<script type="text/javascript" src="/js/materialize.js"></script>
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
+
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+
+</script>
 <% include ../partials/footer %>
 
 
@@ -22,8 +122,8 @@
 <% include ../partials/hamburger %>
 
 
-<script src="../js/common.js"></script>
-<script src="../js/team.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/team.js"></script>
 </body>
 
 </html>

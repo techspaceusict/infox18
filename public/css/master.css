@@ -22,6 +22,7 @@ body {
   right: 30px;
   top: 20px;
   z-index: 1000001;
+  cursor: pointer;
 }
 
 span.one {

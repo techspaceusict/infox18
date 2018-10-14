@@ -125,6 +125,31 @@ app.get("/events", function(req, res) {
     });
 });
 
+app.post("/register/:eventId", function (req, res) {
+    console.log(req.user);
+    Events.findByIdAndUpdate(req.params.eventId, {
+        $push: { users: req.user.id }
+    }, function (err, output) {
+        if(err)
+            console.log(err);
+        else{
+            console.log("user registered in event!");
+            console.log(output);
+            Users.findByIdAndUpdate(req.user.id, {
+                $push: { events: req.params.eventId }
+            }, function (err, output) {
+                if(err)
+                    console.log(err);
+                else{
+                    console.log("user registered in event!");
+                    console.log(output);
+                    res.redirect("/events");
+                }
+            });
+        }
+    });
+});
+
 app.get("/about", function(req, res) {
   res.render("pages/about");
 });

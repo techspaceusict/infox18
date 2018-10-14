@@ -1,317 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from protocol.ai/blog/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Aug 2018 19:11:37 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="HandheldFriendly" content="true">
 
-    <link rel="icon" href="fav.png" sizes="16x16">
+    <link rel="icon" href="/fav.png" sizes="16x16">
 
-    <link rel="manifest" href="../manifest.json">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa|Lato:100,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
-    <!-- <link rel="stylesheet" href="../css/reset.css"> -->
-    <!-- <link href="../css/main.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="../css/mobile-menu.css" type="text/css">
-    <link rel="stylesheet" href="../css/mywork.css" type="text/css">
+    <link rel="stylesheet" href="/css/mobile-menu.css" type="text/css">
+    <link rel="stylesheet" href="/css/mywork.css" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- <link rel="stylesheet" href="../css/contact.css"> -->
-    <link rel="stylesheet" href="../css/t_contact.css">
-    <!-- <link rel="stylesheet" href="../css/about.css"> -->
-    <link rel="stylesheet" href="../css/scrollbar.css">
-    <link rel="stylesheet" href="../css/sponsors.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="/css/t_contact.css">
+    <link rel="stylesheet" href="/css/events-jk.css">
+    <link rel="stylesheet" href="/css/sponsors.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/simple-ripple.css">
-    <link rel="stylesheet" href="../css/template.css">
-    <link rel="stylesheet" href="../css/events.css">
-    <!-- favicon -->
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/template.css">
+    <link rel="stylesheet" href="/heroJs/3p/jquery.easing.min.js">
+
     <link rel="icon" type="image/png" href="fav.png">
-    <link rel="stylesheet" href="../css/profile3.css">
-    <!-- <script type="text/javascript" src="../js/simple-ripple.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script> -->
 
-    <script>
-        window.ga = window.ga || function () {
-            (ga.q = ga.q || []).push(arguments)
-        };
-        ga.l = +new Date;
-        ga('create', 'UA-96910779-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-    <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.1.8.3.min.js"></script>
     <!--Jquery ka new version he file mein-->
-    <script type="text/javascript" src="../js/mobile-menu.js"></script>
+    <script type="text/javascript" src="/js/mobile-menu.js"></script>
 
-
-    <script async src='../../www.google-analytics.com/analytics.js'></script>
-
-    <script>
-        $(function() {
-      function maskImgs() {
-        //$('.img-wrapper img').imagesLoaded({}, function() {
-        $.each($('.img-wrapper img'), function(index, img) {
-          var src = $(img).attr('src');
-          var parent = $(img).parent();
-          parent
-            .css('background', 'url(' + src + ') no-repeat center center')
-            .css('background-size', 'cover');
-          $(img).remove();
-        });
-        //});
-      }
-    
-      var preview = {
-        init: function() {
-          preview.setPreviewImg();
-          preview.listenInput();
-        },
-        setPreviewImg: function(fileInput) {
-          var path = $(fileInput).val();
-          var uploadText = $(fileInput).siblings('.file-upload-text');
-    
-          if (!path) {
-            $(uploadText).val('');
-          } else {
-            path = path.replace(/^C:\\fakepath\\/, "");
-            $(uploadText).val(path);
-    
-            preview.showPreview(fileInput, path, uploadText);
-          }
-        },
-        showPreview: function(fileInput, path, uploadText) {
-          var file = $(fileInput)[0].files;
-    
-          if (file && file[0]) {
-            var reader = new FileReader();
-    
-            reader.onload = function(e) {
-              var previewImg = $(fileInput).parents('.file-upload-wrapper').siblings('.preview');
-              var img = $(previewImg).find('img');
-    
-              if (img.length == 0) {
-                $(previewImg).html('<img src="' + e.target.result + '" alt=""/>');
-              } else {
-                img.attr('src', e.target.result);
-              }
-    
-              uploadText.val(path);
-              maskImgs();
-            }
-    
-            reader.onloadstart = function() {
-              $(uploadText).val('uploading..');
-            }
-    
-            reader.readAsDataURL(file[0]);
-          }
-        },
-        listenInput: function() {
-          $('.file-upload-native').on('change', function() {
-            preview.setPreviewImg(this);
-          });
+    <title>Infox 2k18 | USICT | GGSIPU</title>
+    <style>
+        input{
+            max-width: 100%;
         }
-      };
-      preview.init();
-    });</script>
 
-    <title>Infox</title>
+        .caret{
+            display: none;
+        }
+
+    </style>
 </head>
 
-<!-- <link rel="stylesheet" href="css/about.css"> -->
-<link rel="stylesheet" href="css/team.css">
 <body>
-    <% include ../partials/svg-and-style %>
+    <link rel="stylesheet" href="/css/profile3.css">
+    <script>
+        $(function() {
+            function maskImgs() {
+                //$('.img-wrapper img').imagesLoaded({}, function() {
+                $.each($('.img-wrapper img'), function(index, img) {
+                    var src = $(img).attr('src');
+                    var parent = $(img).parent();
+                    parent
+                        .css('background', 'url(' + src + ') no-repeat center center')
+                        .css('background-size', 'cover');
+                    $(img).remove();
+                });
+                //});
+            }
 
-        <div id="test">
-            <!--class="nav-wrapper"-->
-            <header class="is-large">
-                <% include ../partials/new-nav-bar %>
-                <!-- Common navbar he ismein -->
-            </header>
-        </div>
+            var preview = {
+                init: function() {
+                    preview.setPreviewImg();
+                    preview.listenInput();
+                },
+                setPreviewImg: function(fileInput) {
+                    var path = $(fileInput).val();
+                    var uploadText = $(fileInput).siblings('.file-upload-text');
 
-        <!-- <div id="app">
-            <div @click="tune">
-                <div class="title_section">
-                    <h1 class="overlay_title">PROFILE</h1>
-                    <div class="small_title">
-                        <h1>Keep your info updated</h1>
-                    </div>
-                </div>
-                <section class="media-block simple-ripple" style="position:relative;top:0vh !important;">
+                    if (!path) {
+                        $(uploadText).val('');
+                    } else {
+                        path = path.replace(/^C:\\fakepath\\/, "");
+                        $(uploadText).val(path);
 
-                    <h1>Welcome user, <%=user.name%></h1>
-                    <h3><%=user%></h3>
+                        preview.showPreview(fileInput, path, uploadText);
+                    }
+                },
+                showPreview: function(fileInput, path, uploadText) {
+                    var file = $(fileInput)[0].files;
 
-                    <img style="height: 200px;" src="<%=user.image%>" alt="">
+                    if (file && file[0]) {
+                        var reader = new FileReader();
 
-                    <h3>Stay tuned for more!</h3>
-                </section>
-            </div>
-        </div> -->
-        <div class="title-section" style="margin-top: 30px;">
-            <h1 class="overlay-section">Profile</h1>
-            <h1 class="subtitle-section">Keep your info updated</h1>
-        </div>
+                        reader.onload = function(e) {
+                            var previewImg = $(fileInput).parents('.file-upload-wrapper').siblings('.preview');
+                            var img = $(previewImg).find('img');
 
-        <div class="container" style="margin-top: 30px;">
-          <!-- <h1 class="page-header">Edit Profile</h1> -->
-          <div class="row">
-            <!-- left column -->
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="text-center">
+                            if (img.length == 0) {
+                                $(previewImg).html('<img src="' + e.target.result + '" alt=""/>');
+                            } else {
+                                img.attr('src', e.target.result);
+                            }
+
+                            uploadText.val(path);
+                            maskImgs();
+                        }
+
+                        reader.onloadstart = function() {
+                            $(uploadText).val('uploading..');
+                        }
+
+                        reader.readAsDataURL(file[0]);
+                    }
+                },
+                listenInput: function() {
+                    $('.file-upload-native').on('change', function() {
+                        preview.setPreviewImg(this);
+                    });
+                }
+            };
+            preview.init();
+        });</script>
+
+
+<!-- <link rel="stylesheet" href="css/about.css"> -->
+<!--<link rel="stylesheet" href="/css/team.css">-->
+
+
+<% include ../partials/new-nav-bar %>
+<% include ../partials/login-modal %>
+
+<%console.log("user: " + JSON.stringify(user));
+
+var image;
+
+if(user.image.substr(0,8) === "./public"){
+    image = user.image.substr(8);
+}else{
+    image = user.image;
+}
+
+%>
+
+<div class="title-section" style="margin-top: 30px;">
+    <h4 class="overlay-section" style="font-weight: bold; font-size: 2em;">Profile</h4>
+    <h3 class="subtitle-section" style="font-size: 1.5em;">Keep your info updated</h3>
+</div>
+<div class="container" style="margin-top: 30px; width: 90%">
+    <form action="/user/profile/<%=user.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+    <div class="row">
+        <div class="col m4 s12">
+            <div class="text-center">
                 <style>
-                  .preview{
-                    background: url("<%=user.image%>");
-                    background-size: 100%;
-                  }
-                  </style>
-                  <div class="preview img-wrapper"></div>
-                  <div class="file-upload-wrapper">
-                      <input type="file" name="file" class="file-upload-native" accept="image/*" />
-                      <input type="text" disabled placeholder="upload image" class="file-upload-text" />
-                  </div>
-              </div>
+                    .preview{
+                        background: url("<%=image%>");
+                        background-size: 100%;
+                    }
+                </style>
+                <div class="preview img-wrapper"></div>
+                <div class="file-upload-wrapper" style="padding: 20px;">
+                    <input type="file" name="profilePic" class="file-upload-native" />
+                    <input type="text" disabled placeholder="upload image" class="file-upload-text" style="color: white;"/>
+                </div>
+                <% if(typeof (msg) == "undefined"){ %><p class="red accent-4" style="padding: 10px; color: white; font-weight: 700;"><%=msg%></p> <%}%>
             </div>
-            <!-- edit form column -->
-            <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-              <!-- <div class="alert alert-info alert-dismissable">
-                <a class="panel-close close" data-dismiss="alert">×</a> 
-                <i class="fa fa-coffee"></i>
-                This is an <strong>.alert</strong>. Use this to show important messages to the user.
-              </div> -->
-              <!-- <h3>Personal info</h3> -->
-              <form class="form-horizontal" role="form">
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Name:</label>
-                  <div class="col-lg-8">
-                    <input class="form-control" value="<%=user.name%>" type="text">
-                  </div>
-                </div>
-                <!-- <div class="form-group">
-                  <label class="col-lg-3 control-label">Last name:</label>
-                  <div class="col-lg-8">
-                    <input class="form-control" value="Bishop" type="text">
-                  </div>
-                </div> -->
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Phone Number:</label>
-                  <div class="col-lg-8">
-                    <input class="form-control" value="" type="text">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Email:</label>
-                  <div class="col-lg-8">
-                    <input class="form-control" value="<%=user.email%>" type="text">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">College:</label>
-                  <div class="col-lg-8">
-                    <div class="ui-select">
-                      <select id="user_time_zone" class="form-control">
-                        <option value="usict">USICT</option>
-                        <option value="usict">USICT</option>
-                        <option value="usict">USICT</option>
-                        <option value="usict">USICT</option>
-                        <option value="usict">USICT</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Degree:</label>
-                  <div class="col-lg-8">
-                    <div class="ui-select">
-                      <select id="user_time_zone" class="form-control">
-                        <option value="usict">Btech</option>
-                        <option value="usict">MCA</option>
-                        <option value="usict">Mtech</option>
-                        <option value="usict">MBA</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Branch:</label>
-                  <div class="col-lg-8">
-                    <div class="ui-select">
-                      <select id="user_time_zone" class="form-control">
-                        <option value="cse">CSE</option>
-                        <option value="it">IT</option>
-                        <option value="ece">ECE</option>
-                        <option value="usict">others</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-3 control-label">Year:</label>
-                  <div class="col-lg-8">
-                    <div class="ui-select">
-                      <select id="user_time_zone" class="form-control">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- <div class="form-group">
-                  <label class="col-md-3 control-label">Username:</label>
-                  <div class="col-md-8">
-                    <input class="form-control" value="janeuser" type="text">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-md-3 control-label">Password:</label>
-                  <div class="col-md-8">
-                    <input class="form-control" value="11111122333" type="password">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-md-3 control-label">Confirm password:</label>
-                  <div class="col-md-8">
-                    <input class="form-control" value="11111122333" type="password">
-                  </div>
-                </div> -->
-                <div class="form-group">
-                  <label class="col-md-3 control-label"></label>
-                  <div class="col-md-8">
-                    <!-- <input class="btn btn-primary" value="Save Changes" type="button"> -->
-                    <a class="custom-btn">Save Changes</a>
-                    <span></span>
-                    <!-- <input class="btn btn-default" value="Cancel" type="reset"> -->
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
-        
+        <div class="col m8 s12" >
+                <div class="input-field">
+                    <label for="name">Name*</label>
+                    <input type="text" id="name" name="name" value="<%=user.name%>" required>
+                </div>
+                <br>
+                <div class="input-field">
+                    <label class="pull-left" for="phone">Contact Number*</label>
+                    <input type="text" class="form-control" id="phone" value="<%=user.phone%>" name="phone" required>
+                </div>
+                <br>
+                <div class="input-field">
+                    <label class="pull-left" for="email">Email*</label>
+                    <input type="text" class="form-control" id="email" value="<%=user.email%>" name="email" required>
+                </div>
+                <label>College*</label>
+                <div class="input-field">
+                    <select name="college" required>
+                        <%if(user.college){%>
+                        <option value="<%=user.college%>" selected><%=user.college%></option>
+                        <%}else{%>
+                            <option disabled selected>Choose your option</option>
+                        <%}%>
+                        <option value="Amity School of Engineering and Technology">Amity School of Engineering and Technology</option >
+                        <option value="AIACTR">Ambedkar Institute of Advanced Communication Technologies and Research</option >
+                        <option value="Atma Ram Sanatan Dharam College">Atma Ram Sanatan Dharam College</option >
+                        <option value="Bharati Vidyapeeth's College of Engineering">Bharati Vidyapeeth's College of Engineering</option >
+                        <option value="Bhaskaracharya College of Applied Sciences">Bhaskaracharya College of Applied Sciences</option >
+                        <option value="Bhagwaan mahavir institute of science and technology">Bhagwaan mahavir institute of science and technology</option >
+                        <option value="BPIT">Bhagwan Parshuram Institute of Technology</option >
+                        <option value="BIT, Noida">BIT, Noida</option >
+                        <option value="Deenbandhu Chhotu Ram University of Science and Technology">Deenbandhu Chhotu Ram University of Science and Technology</option >
+                        <option value="Deen Dayal Upadhyaya College">Deen Dayal Upadhyaya College</option >
+                        <option value="Deshbandhu College">Deshbandhu College</option >
+                        <option value="Dronacharya College of Engineering">Dronacharya College of Engineering</option >
+                        <option value="DTU">Delhi Technological University</option >
+                        <option value="GURU TEGH BAHADUR INSTITUTE OF TECHNOLOGY">GURU TEGH BAHADUR INSTITUTE OF TECHNOLOGY</option >
+                        <option value="GBPANT">GB Pant Government Engineering College</option >
+                        <option value="GGSIPU USS">Guru Gobind Singh Indraprastha University [USS]</option >
+                        <option value="Galgotias College of Engineering and Technology">Galgotias College of Engineering and Technology</option >
+                        <option value="Greater Noida Institute of Technology">Greater Noida Institute of Technology</option >
+                        <option value="HMR Institute of Technology & Management">HMR Institute of Technology & Management</option >
+                        <option value="Hans Raj College">Hans Raj College</option >
+                        <option value="Hindu College">Hindu College</option >
+                        <option value="Indian Institute of Technology Delhi">Indian Institute of Technology Delhi</option >
+                        <option value="IITD">IIITD</option >
+                        <option value="Indian Institute of Technology Guwhati">Indian Institute of Technology Guwhati</option >
+                        <option value="IGDTUW">Indira Gandhi Delhi Technical University for Women</option >
+                        <option value="Jawaharlal Nehru Technological University College of Engineering">Jawaharlal Nehru Technological University College of Engineering</option >
+                        <option value="Jamia Millia Islamia">Jamia Millia Islamia</option >
+                        <option value="JIMS">JIMS Engineering Management Technical Campus</option >
+                        <option value="Jaypee University of Engineering and Technology">Jaypee University of Engineering and Technology</option >
+                        <option value="Kirori Mal College">Kirori Mal College</option >
+                        <option value="Manav Rachna College of Engineering">Manav Rachna College of Engineering</option >
+                        <option value="Maharaja Agrasen Institute of Technology">Maharaja Agrasen Institute of Technology </option >
+                        <option value="Maharaja Surajmal Institute of Technology">Maharaja Surajmal Institute of Technology</option >
+                        <option value="National Institute of Technology">National Institute of Technology</option >
+                        <option value="Noida Institute of Engineering and Technology">Noida Institute of Engineering and Technology</option >
+                        <option value="Northern india Engineering college ">Northern india Engineering college </option >
+                        <option value="NSIT">Netaji Subhas Institute of Technology</option >
+                        <option value="PEC UNIVERSITY OF TECHNOLOGY">PEC UNIVERSITY OF TECHNOLOGY </option >
+                        <option value="Rajdhani College">Rajdhani College</option >
+                        <option value="Ramanujan College">Ramanujan College</option >
+                        <option value="Ramjas College">Ramjas College</option >
+                        <option value="Shivaji College">Shivaji College</option >
+                        <option value="Sri Guru Nanak Dev Khalsa College">Sri Guru Nanak Dev Khalsa College</option >
+                        <option value="Sri Guru Teg Bahadur Khalsa College">Sri Guru Teg Bahadur Khalsa College</option >
+                        <option value="Sri Venkateswara College">Sri Venkateswara College</option >
+                        <option value="Stephen's College">St Stephen's College</option >
+                        <option value="The Northcap University">The Northcap University</option >
+                        <option value="University Institute of Engineering and Technology, Kurukshetra University">University Institute of Engineering and Technology, Kurukshetra University</option >
+                        <option value="University Institute of Engineering and Technology, Maharshi Dayanand University">University Institute of Engineering and Technology, Maharshi Dayanand University</option >
+                        <option value="University School of Information and Communication Technology">University School of Information and Communication Technology</option >
+                        <option value="YMCA University of Science and Technology, Faridabad">YMCA University of Science and Technology, Faridabad</option >
+                        <option value="Other">OTHER</option>
+                    </select>
+                </div>
+                <label>Degree*</label>
+                <div class="input-field">
+                    <select name="degree" required>
+                        <%if(user.degree){%>
+                        <option value="<%=user.degree%>" selected><%=user.degree%></option>
+                        <%}else{%>
+                            <option disabled selected>Choose your option</option>
+                        <%}%>
+                        <%if(user.degree != "Bachelor of Technology / Bachelor of Engineering"){%>
+                        <option value="Bachelor of Technology / Bachelor of Engineering">Bachelor of Technology / Bachelor of Engineering</option>
+                        <%}%>
+                        <%if(user.degree != "Bachelor of Arts"){%>
+                        <option value="Bachelor of Arts">Bachelor of Arts</option>
+                        <%}%>
+                        <%if(user.degree != "M.S/M.Sc/M.Tech/M.E /MCA"){%>
+                        <option value="Bachelor of Commerce">Bachelor of Commerce</option>
+                        <%}%>
+                        <%if(user.degree != "M.S/M.Sc/M.Tech/M.E /MCA"){%>
+                        <option value="M.S/M.Sc/M.Tech/M.E /MCA">M.S/M.Sc/M.Tech/M.E /MCA</option>
+                        <%}%>
+                        <%if(user.degree != "Others"){%>
+                        <option value="Others">Other</option>
+                        <%}%>
+                    </select>
+                </div>
+                <label>Branch*</label>
+                <div class="input-field">
+                    <select name="branch" required>
+                        <%if(user.branch){%>
+                        <option value="<%=user.branch%>" selected><%=user.branch%></option>
+                        <%}else{%>
+                            <option disabled selected>Choose your option</option>
+                        <%}%>
+                        <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+                        <option value="Aerospace Engineering">Aerospace Engineering</option>
+                        <option value="Applied Chemistry">  Applied Chemistry</option>
+                        <option value="Animation & VFX">  Animation & VFX</option>
+                        <option value="Business Information Syst">Business Information Syst</option>
+                        <option value="B.com">B.com</option>
+                        <option value="BALLB">BALLB</option>
+                        <option value="BBALLB">BBALLB</option>
+                        <option value="Computer Science Engineering">Computer Science Engineering</option>
+                        <option value="Chemical Engineering">Chemical Engineering</option>
+                        <option value="Electronics & Communication Engineering">Electronics & Communication Engineering</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="Information Technology">  Information Technology</option>
+                        <option value="Material Science">    Material Science</option>
+                        <option value="Mechanical & Industrial Engineer">  Mechanical & Industrial Engineer</option>
+                        <option value="Mechanical Engineering">  Mechanical Engineering</option>
+                        <option value="Management and Information">Management and Information</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Multimedia">Multimedia</option>
+                        <option value="MCA">MCA</option>
+                        <option value="M.tech CSE">M.tech CSE</option>
+                        <option value="Physics">Physics</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <label>Year*</label>
+                <div class="input-field">
+                    <select name="year" required>
+                        <%if(user.year){%>
+                        <option value="<%=user.year%>" selected><%=user.year%></option>
+                        <%}else{%>
+                        <option disabled selected>Choose your option</option>
+                        <%}%>
+                        <%if(user.year != "1st"){%>
+                        <option value="1st">1st</option>
+                        <%}%>
+                        <%if(user.year != "2nd"){%>
+                        <option value="2nd">2nd</option>
+                        <%}%>
+                        <%if(user.year != "3rd"){%>
+                        <option value="3rd">3rd</option>
+                        <%}%>
+                        <%if(user.year != "4th"){%>
+                        <option value="4th">4th</option>
+                        <%}%>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <button class="btn red" type="submit">Save Changes</button>
+                </div>
+        </div>
+    </div>
+    </form>
+</div>
 
-    <% include ../partials/footer %>
 
-    <% include ../partials/hamburger %>
+<script type="text/javascript" src="/js/materialize.js"></script>
+<script>
+    $(document).ready(function(){
+        $('select').formSelect();
+    });
 
-    <script src="../js/common.js"></script>
-    <script src="../js/media.js"></script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
 
+</script>
+<% include ../partials/footer %>
+
+
+<!-- Nav below is for hamburger -->
+
+<% include ../partials/hamburger %>
+
+
+<script src="/js/common.js"></script>
+<script src="/js/team.js"></script>
 </body>
+
 </html>

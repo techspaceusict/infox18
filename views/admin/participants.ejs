@@ -1,6 +1,6 @@
 <% include adminPartials/header.ejs %>
 
-<table>
+<table class="responsive-table">
     <thead>
     <tr>
         <th>Name</th>
@@ -8,17 +8,22 @@
         <th>Mobile</th>
         <th>College</th>
         <th>Degree</th>
+        <th>Branch</th>
+        <th>Year</th>
     </tr>
     </thead>
-
     <tbody>
+    <%for(i=0;i<participants.length;++i){%>
     <tr>
-        <td>Alvin</td>
-        <td>Alvin@gmail.com</td>
-        <td>123123213</td>
-        <td>Eclair</td>
-        <td>dsfsdfsdfsdf</td>
+        <td><%=participants[i].name%></td>
+        <td><%=participants[i].email%></td>
+        <td><%=participants[i].phone%></td>
+        <td><%=participants[i].college%></td>
+        <td><%=participants[i].degree%></td>
+        <td><%=participants[i].branch%></td>
+        <td><%=participants[i].year%></td>
     </tr>
+    <%}%>
     </tbody>
 </table>
 

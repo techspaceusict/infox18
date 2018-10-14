@@ -42,8 +42,7 @@
             else
                 workshop.push(events[i]);
         }
-
-        console.log("PROGRAMMING:" + programming);
+        // console.log("PROGRAMMING:" + programming);
 
         %>
         <div class="events-heading">Programming</div>
@@ -108,10 +107,18 @@
                             </div>
                         </div>
                         <br>
-                        <%if(loggedIn){%>
-                            <div class="event-text-register">Register</div>
-                        <%}else{%>
-                            <div class="event-text-register">Sign In To Register</div>
+                        <%if(loggedIn){
+                            if(loggedIn.events.includes(programming[i].id)){
+                            %>
+                            <div class="event-text-register">Already Registered</div>
+                            <%}else if(loggedIn.name && loggedIn.phone && loggedIn.email && loggedIn.college && loggedIn.degree && loggedIn.year && loggedIn.branch){%>
+                            <form action="/register/<%=programming[i].id%>" method="POST"><button class="event-text-register">Register</button></form>
+                            <%}else{%>
+                            <a href="/user/profile"><div class="event-text-register">Complete profile to register</div></a>
+                            <%}
+                        }
+                        else{%>
+                            <div id="login" class="event-text-register">Sign In To Register</div>
                         <%}%>
                     </div>
                 </div>
@@ -183,10 +190,18 @@
                             </div>
                         </div>
                         <br>
-                        <%if(loggedIn){%>
-                            <div class="event-text-register">Register</div>
+                        <%if(loggedIn){
+                        if(loggedIn.events.includes(electronics[i].id)){
+                        %>
+                            <div class="event-text-register">Already Registered</div>
+                        <%}else if(loggedIn.name && loggedIn.phone && loggedIn.email && loggedIn.college && loggedIn.degree && loggedIn.year && loggedIn.branch){%>
+                        <form action="/register/<%=electronics[i].id%>" method="POST"><button class="event-text-register">Register</button></form>
                         <%}else{%>
-                            <div class="event-text-register">Sign In To Register</div>
+                            <a href="/user/profile"><div class="event-text-register">Complete profile to register</div></a>
+                        <%}
+                        }
+                        else{%>
+                            <div id="login" class="event-text-register">Sign In To Register</div>
                         <%}%>
                     </div>
                 </div>
@@ -261,10 +276,18 @@
                             </div>
                         </div>
                         <br>
-                        <%if(loggedIn){%>
-                            <div class="event-text-register">Register</div>
+                        <%if(loggedIn){
+                        if(loggedIn.events.includes(nonTech[i].id)){
+                        %>
+                            <div class="event-text-register">Already Registered</div>
+                        <%}else if(loggedIn.name && loggedIn.phone && loggedIn.email && loggedIn.college && loggedIn.degree && loggedIn.year && loggedIn.branch){%>
+                        <form action="/register/<%=nonTech[i].id%>" method="POST"><button class="event-text-register">Register</button></form>
                         <%}else{%>
-                            <div class="event-text-register">Sign In To Register</div>
+                            <a href="/user/profile"><div class="event-text-register">Complete profile to register</div></a>
+                        <%}
+                        }
+                        else{%>
+                            <div id="login" class="event-text-register">Sign In To Register</div>
                         <%}%>
                     </div>
                 </div>
@@ -340,10 +363,18 @@
                             </div>
                         </div>
                         <br>
-                        <%if(loggedIn){%>
-                            <div class="event-text-register">Register</div>
+                        <%if(loggedIn){
+                        if(loggedIn.events.includes(entrepreneurial[i].id)){
+                        %>
+                            <div class="event-text-register">Already Registered</div>
+                        <%}else if(loggedIn.name && loggedIn.phone && loggedIn.email && loggedIn.college && loggedIn.degree && loggedIn.year && loggedIn.branch){%>
+                        <form action="/register/<%=entrepreneurial[i].id%>" method="POST"><button class="event-text-register">Register</button></form>
                         <%}else{%>
-                            <div class="event-text-register">Sign In To Register</div>
+                            <a href="/user/profile"><div class="event-text-register">Complete profile to register</div></a>
+                        <%}
+                        }
+                        else{%>
+                            <div id="login" class="event-text-register">Sign In To Register</div>
                         <%}%>
                     </div>
                 </div>
@@ -415,10 +446,18 @@
                             </div>
                         </div>
                         <br>
-                        <%if(loggedIn){%>
-                            <div class="event-text-register">Register</div>
+                        <%if(loggedIn){
+                        if(loggedIn.events.includes(workshop[i].id)){
+                        %>
+                            <div class="event-text-register">Already Registered</div>
+                        <%}else if(loggedIn.name && loggedIn.phone && loggedIn.email && loggedIn.college && loggedIn.degree && loggedIn.year && loggedIn.branch){%>
+                        <form action="/register/<%=workshop[i].id%>" method="POST"><button class="event-text-register">Register</button></form>
                         <%}else{%>
-                            <div class="event-text-register">Sign In To Register</div>
+                            <a href="/user/profile"><div class="event-text-register">Complete profile to register</div></a>
+                        <%}
+                        }
+                        else{%>
+                            <div id="login" class="event-text-register">Sign In To Register</div>
                         <%}%>
                     </div>
                 </div>

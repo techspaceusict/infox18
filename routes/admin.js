@@ -1,6 +1,9 @@
-const Events = require("../models/events");
-const multer = require("multer");
-const path = require("path");
+const Events = require("../models/events"),
+    Users = require("../models/user"),
+    multer = require("multer"),
+    path = require("path"),
+    _ =  require("lodash"),
+    mongoose = require("mongoose");
 //setting storage engine
 const storage = multer.diskStorage({
     destination: './public/img/events/',
@@ -18,7 +21,7 @@ const upload = multer({
 }).single('eventsImage');
 
 function checkFileType(file, cb){
-    const filetypes = /jpeg|jpg|png|gif/;
+    const filetypes = /jpeg|jpg|png|gif|webp/;
     const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
 
     const mimetype = filetypes.test(file.mimetype);
@@ -123,6 +126,30 @@ module.exports = function (router, passport) {
         });
     });
 
+    router.get('/events/:id/participants', function (req, res) {
+        Events.findById(req.params.id, function (err, event) {
+            if(err)
+                console.log(err);
+            else{
+                var users = _.map(event.users, function (id) {
+                    return mongoose.Types.ObjectId(id)
+                });
+                Users.find({
+                    '_id': {
+                        $in: users
+                    }
+                }, function (err, output) {
+                    if(err)
+                        console.log(err);
+                    else{
+                        console.log("PARTICIPANTS FETCHED!");
+                        res.render("admin/participants", {participants: output});
+                    }
+                });
+            }
+        });
+    });
+
     router.get('/events/:id/edit', function (req, res) {
         Events.findById(req.params.id, function (err, output) {
             if(err)
@@ -136,7 +163,7 @@ module.exports = function (router, passport) {
     router.put('/events/:id', function (req, res) {
         upload(req, res, (err) => {
             if (err) {
-                res.redirect('/admin/events/' + req.params.id + "/edit");
+                res.redirect('/admin/events/' + req.params.id + "/edit", {msg: err});
             } else {
                 if (req.file == undefined) {
                     Events.findByIdAndUpdate(req.params.id, {
