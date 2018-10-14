@@ -13,7 +13,8 @@
     <link rel="icon" href="fav.png" sizes="16x16">
 
     <link rel="manifest" href="../manifest.json">
-
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Rambla|Salsa" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
@@ -35,7 +36,7 @@
     <link rel="stylesheet" href="../css/events.css">
     <!-- favicon -->
     <link rel="icon" type="image/png" href="fav.png">
-    <link rel="stylesheet" href="../css/profile2.css">
+    <link rel="stylesheet" href="../css/profile3.css">
     <!-- <script type="text/javascript" src="../js/simple-ripple.js"></script> -->
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/mojs/0.265.6/mo.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script> -->
@@ -166,70 +167,143 @@
             <h1 class="subtitle-section">Keep your info updated</h1>
         </div>
 
-        <form>
-    
-            <style>
-            .preview{
-              background: url("<%=user.image%>");
-              background-size: 100%;
-            }
-            </style>
-            <div class="preview img-wrapper"></div>
-            <div class="file-upload-wrapper">
-                <input type="file" name="file" class="file-upload-native" accept="image/*" />
-                <input type="text" disabled placeholder="upload image" class="file-upload-text" />
+        <div class="container" style="margin-top: 30px;">
+          <!-- <h1 class="page-header">Edit Profile</h1> -->
+          <div class="row">
+            <!-- left column -->
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="text-center">
+                <style>
+                  .preview{
+                    background: url("<%=user.image%>");
+                    background-size: 100%;
+                  }
+                  </style>
+                  <div class="preview img-wrapper"></div>
+                  <div class="file-upload-wrapper">
+                      <input type="file" name="file" class="file-upload-native" accept="image/*" />
+                      <input type="text" disabled placeholder="upload image" class="file-upload-text" />
+                  </div>
+              </div>
             </div>
-             
-      
-      
-          <!-- <h1>Fancy Text Inputs</h1> -->
-          <div class="question">
-            <input type="text" value="<%=user.name%>" required/>
-            <label>Name</label>
+            <!-- edit form column -->
+            <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+              <!-- <div class="alert alert-info alert-dismissable">
+                <a class="panel-close close" data-dismiss="alert">×</a> 
+                <i class="fa fa-coffee"></i>
+                This is an <strong>.alert</strong>. Use this to show important messages to the user.
+              </div> -->
+              <!-- <h3>Personal info</h3> -->
+              <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">Name:</label>
+                  <div class="col-lg-8">
+                    <input class="form-control" value="<%=user.name%>" type="text">
+                  </div>
+                </div>
+                <!-- <div class="form-group">
+                  <label class="col-lg-3 control-label">Last name:</label>
+                  <div class="col-lg-8">
+                    <input class="form-control" value="Bishop" type="text">
+                  </div>
+                </div> -->
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">Phone Number:</label>
+                  <div class="col-lg-8">
+                    <input class="form-control" value="" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">Email:</label>
+                  <div class="col-lg-8">
+                    <input class="form-control" value="<%=user.email%>" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">College:</label>
+                  <div class="col-lg-8">
+                    <div class="ui-select">
+                      <select id="user_time_zone" class="form-control">
+                        <option value="usict">USICT</option>
+                        <option value="usict">USICT</option>
+                        <option value="usict">USICT</option>
+                        <option value="usict">USICT</option>
+                        <option value="usict">USICT</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">Degree:</label>
+                  <div class="col-lg-8">
+                    <div class="ui-select">
+                      <select id="user_time_zone" class="form-control">
+                        <option value="usict">Btech</option>
+                        <option value="usict">MCA</option>
+                        <option value="usict">Mtech</option>
+                        <option value="usict">MBA</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">Branch:</label>
+                  <div class="col-lg-8">
+                    <div class="ui-select">
+                      <select id="user_time_zone" class="form-control">
+                        <option value="cse">CSE</option>
+                        <option value="it">IT</option>
+                        <option value="ece">ECE</option>
+                        <option value="usict">others</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-lg-3 control-label">Year:</label>
+                  <div class="col-lg-8">
+                    <div class="ui-select">
+                      <select id="user_time_zone" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- <div class="form-group">
+                  <label class="col-md-3 control-label">Username:</label>
+                  <div class="col-md-8">
+                    <input class="form-control" value="janeuser" type="text">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-3 control-label">Password:</label>
+                  <div class="col-md-8">
+                    <input class="form-control" value="11111122333" type="password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-3 control-label">Confirm password:</label>
+                  <div class="col-md-8">
+                    <input class="form-control" value="11111122333" type="password">
+                  </div>
+                </div> -->
+                <div class="form-group">
+                  <label class="col-md-3 control-label"></label>
+                  <div class="col-md-8">
+                    <!-- <input class="btn btn-primary" value="Save Changes" type="button"> -->
+                    <a class="custom-btn">Save Changes</a>
+                    <span></span>
+                    <!-- <input class="btn btn-default" value="Cancel" type="reset"> -->
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="question">
-            <input type="text" required/>
-            <label>Phone Number</label>
-          </div>
-          <div class="question">
-            <input type="text" required value="<%=user.email%>"/>
-            <label>Email Address</label>
-          </div>
-          <label for="College" style="color: #ff4a56;">College:</label>
-          <div class="styled-select yellow rounded" style="margin-top: 5px; margin-bottom: 10px;">
-              <select>
-                <option>Here is the first option</option>
-                <option>The second option</option>
-                <option>The third option</option>
-              </select>
-            </div>
-            <label for="College" style="color: #ff4a56;">Year:</label>
-          <div class="styled-select yellow rounded" style="margin-top: 5px; margin-bottom: 10px;">
-              <select>
-                <option>Here is the first option</option>
-                <option>The second option</option>
-                <option>The third option</option>
-              </select>
-            </div>
-            <label for="College" style="color: #ff4a56;">Branch:</label>
-          <div class="styled-select yellow rounded" style="margin-top: 5px; margin-bottom: 10px;">
-              <select>
-                <option>Here is the first option</option>
-                <option>The second option</option>
-                <option>The third option</option>
-              </select>
-            </div>
-            <label for="College" style="color: #ff4a56;">Degree:</label>
-          <div class="styled-select yellow rounded" style="margin-top: 5px;">
-              <select>
-                <option>Here is the first option</option>
-                <option>The second option</option>
-                <option>The third option</option>
-              </select>
-            </div>
-          
-          <button>Edit</button>
-        </form>
+        </div>
         
 
     <% include ../partials/footer %>

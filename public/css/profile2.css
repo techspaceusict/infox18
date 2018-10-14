@@ -18,7 +18,7 @@
     min-width: 500px;
     box-sizing: border-box;
     padding: 30px 25px;
-    background-color: white;
+    background-color: #1a1a1a;
     border-radius: 40px;
     margin: 40px 0;
     left: 50%;
@@ -28,7 +28,7 @@
     transform: translate(-50%, 0);
   }
   form h1 {
-    color: #ff4a56;
+    color: #B3000C;
     font-weight: 100;
     letter-spacing: 0.01em;
     margin-left: 15px;
@@ -37,15 +37,15 @@
   }
   form button {
     margin-top: 35px;
-    background-color: white;
-    border: 1px solid #ff4a56;
+    background-color: #1A1A1A;
+    border: 1px solid #B3000C;
     line-height: 0;
     font-size: 17px;
     display: inline-block;
     box-sizing: border-box;
     padding: 20px 15px;
     border-radius: 60px;
-    color: #ff4a56;
+    color: #B3000C;
     font-weight: 100;
     letter-spacing: 0.01em;
     position: relative;
@@ -53,7 +53,7 @@
   }
   form button:hover, form button:focus {
     color: white;
-    background-color: #ff4a56;
+    background-color: #B3000C;
   }
   form .question {
     position: relative;
@@ -67,7 +67,7 @@
   }
   form .question label {
     transform-origin: left center;
-    color: #ff4a56;
+    color: #B3000C;
     font-weight: 100;
     letter-spacing: 0.01em;
     font-size: 17px;
@@ -82,7 +82,7 @@
   form .question input[type="text"] {
     appearance: none;
     background-color: none;
-    border: 1px solid #ff4a56;
+    border: 1px solid #B3000C;
     line-height: 0;
     font-size: 17px;
     width: 100%;
@@ -90,7 +90,7 @@
     box-sizing: border-box;
     padding: 10px 15px;
     border-radius: 60px;
-    color: #ff4a56;
+    color: #B3000C;
     font-weight: 100;
     letter-spacing: 0.01em;
     position: relative;
@@ -98,7 +98,7 @@
   }
   form .question input[type="text"]:focus {
     outline: none;
-    background: #ff4a56;
+    background: #B3000C;
     color: white;
     margin-top: 30px;
   }
@@ -174,7 +174,7 @@
     background-color: #3b8ec2;
   }
   .yellow {
-    background-color: #ff4a56;
+    background-color: #B3000C;
   }
   .black {
     background-color: #000;
@@ -262,22 +262,22 @@
   
   ::-webkit-input-placeholder {
       opacity: 0.8;
-      color: #ff4a56;
+      color: #B3000C;
   }
   
   ::-moz-placeholder {
       opacity: 0.8;
-      color: #ff4a56;
+      color: #B3000C;
   }
   
   :-moz-placeholder {
       opacity: 0.8;
-      color: #ff4a56;
+      color: #B3000C;
   }
   
   :-ms-input-placeholder {
       opacity: 0.8;
-      color: #ff4a56;
+      color: #B3000C;
   }
   
   
@@ -286,7 +286,7 @@
           width: 200px;
           height: 200px;
           margin: 20px auto;
-          box-shadow: 0px 0px 0px 2px #ff4a56;
+          box-shadow: 0px 0px 0px 2px #B3000C;
           border-radius: 50%;
           overflow: hidden;
   }
@@ -299,7 +299,7 @@
           height: 30px;
           margin: 25px auto;
           border-radius: 0px;
-          border-bottom: 1px dashed #ff4a56;
+          border-bottom: 1px dashed #B3000C;
   }
   
   .file-upload-native,
@@ -311,7 +311,7 @@
           width: 100%;
           height: 100%;
           cursor: pointer;
-          color: #ff4a56
+          color: #B3000C;
   }
   
   input[type="file"]::-webkit-file-upload-button {
@@ -341,3 +341,7 @@
           z-index: 15;
           opacity: 0;
   }
+
+
+
+  /* red #B3000C */
