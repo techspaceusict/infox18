@@ -143,11 +143,15 @@ module.exports = function (router, passport) {
                         console.log(err);
                     else{
                         console.log("PARTICIPANTS FETCHED!");
-                        res.render("admin/participants", {participants: output});
+                        res.render("admin/participants", {participants: output, eventName: event.name, referrers: event.referrer});
                     }
                 });
             }
         });
+    });
+
+    router.get('/participants', function (req, res) {
+        res.render("admin/allParticipants");
     });
 
     router.get('/events/:id/edit', function (req, res) {

@@ -14,6 +14,7 @@ const eventsSchema = mongoose.Schema({
     organisersMobile: [{type: String}],
     organisersEmail: [{type: String}],
     users: [{type: String}],
+    referrer: [{type: String}]
 });
 
 module.exports = mongoose.model("event", eventsSchema);

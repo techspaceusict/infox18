@@ -127,8 +127,11 @@ app.get("/events", function(req, res) {
 
 app.post("/register/:eventId", function (req, res) {
     console.log(req.user);
+    console.log("referrer:" + JSON.stringify(req.body.referrer));
+    if(!req.body.referrer)
+        req.body.referrer = "None";
     Events.findByIdAndUpdate(req.params.eventId, {
-        $push: { users: req.user.id }
+        $push: { users: req.user.id, referrer: req.body.referrer}
     }, function (err, output) {
         if(err)
             console.log(err);

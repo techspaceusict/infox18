@@ -1,5 +1,7 @@
 <% include adminPartials/header.ejs %>
 
+<h3><%=eventName%></h3>
+
 <table class="responsive-table">
     <thead>
     <tr>
@@ -10,6 +12,7 @@
         <th>Degree</th>
         <th>Branch</th>
         <th>Year</th>
+        <th>Referrer</th>
     </tr>
     </thead>
     <tbody>
@@ -22,6 +25,7 @@
         <td><%=participants[i].degree%></td>
         <td><%=participants[i].branch%></td>
         <td><%=participants[i].year%></td>
+        <td><%=referrers[i]%></td>
     </tr>
     <%}%>
     </tbody>
