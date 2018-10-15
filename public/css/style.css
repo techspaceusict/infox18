@@ -13,7 +13,7 @@ canvas {
 
 @media only screen and (max-width: 1000px) {
   p.fonts {
-    font-size: 30px !important;
+    font-size: 29px !important;
     top: 82vh !important;
   }
   p.footer {
