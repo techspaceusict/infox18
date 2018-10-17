@@ -1,11 +1,12 @@
 <% include adminPartials/header.ejs %>
 
 <h3>All Participants</h3>
-<h5>Under Construction</h5>
+<!--<h5>List of all participants</h5>-->
 
 <table class="responsive-table">
     <thead>
     <tr>
+        <th>S. No.</th>
         <th>Event</th>
         <th>Name</th>
         <th>Email</th>
@@ -14,18 +15,30 @@
         <th>Degree</th>
         <th>Branch</th>
         <th>Year</th>
+        <th>Referrer</th>
     </tr>
     </thead>
     <tbody>
+    <%
+    // console.log(participants);
+    %>
+    <%for(i=0;i<users.length;++i){
+
+        index = participants.findIndex(x => x.id == users[i]);
+    %>
     <tr>
-        <td>name%></td>
-        <td>email%></td>
-        <td>phone%></td>
-        <td>college%></td>
-        <td>degree%></td>
-        <td>branch%></td>
-        <td>year%></td>
+        <td><%=i+1%>. </td>
+        <td><%=eventName[i]%></td>
+        <td><%=participants[index].name%></td>
+        <td><%=participants[index].email%></td>
+        <td><%=participants[index].phone%></td>
+        <td><%=participants[index].college%></td>
+        <td><%=participants[index].degree%></td>
+        <td><%=participants[index].branch%></td>
+        <td><%=participants[index].year%></td>
+        <td><%=referrers[i]%></td>
     </tr>
+    <%}%>
     </tbody>
 </table>
 
