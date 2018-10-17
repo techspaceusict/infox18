@@ -603,6 +603,9 @@
     // $('#coding .events .card').css({display:'none'})
 
     $(".prog").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
+        // window.location.replace(window.location.href.split('?')[0] + "?id=" + this.id);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#coding .events .card').height() - $(e.target).height();
@@ -627,6 +630,8 @@
     //
 
     $(".elec").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#electronic .events .card').height() - $(e.target).height();
@@ -651,6 +656,8 @@
     //
 
     $(".nont").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#adventure .events .card').height() - $(e.target).height();
@@ -675,6 +682,8 @@
     //
 
     $(".ecel").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#quiz .events .card').height() - $(e.target).height();
@@ -699,6 +708,8 @@
     //
 
     $(".work").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#workshop .events .card').height() - $(e.target).height();
@@ -720,7 +731,29 @@
         }, 800, 'easeOutExpo');
     });
 </script>
+<script>
+    window.onload = function () {
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
 
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+        var modal = getUrlParameter('id');
+        var url = window.location.href;
+        if (url.indexOf('?id=') != -1) {
+            $('#' + modal).trigger('click');
+        }
+    }
+</script>
 <script>
     function myFunction() {
         // Get the snackbar DIV
