@@ -56,6 +56,7 @@ app.use(function(req, res, next) {
     res.locals.loggedIn = "";
     console.log("not logged in! ");
   }
+  res.locals.registered = "null";
   next();
 });
 
@@ -120,6 +121,10 @@ app.get("/events", function(req, res) {
             console.log("Error: " + JSON.stringify(err));
         }else {
             // console.log(output);
+            if(req.query.status === "successful")
+                res.locals.registered = "success";
+            else
+                res.locals.registered = "null";
             res.render("pages/events", {events: output});
         }
     });
@@ -133,9 +138,9 @@ app.post("/register/:eventId", function (req, res) {
     Events.findByIdAndUpdate(req.params.eventId, {
         $push: { users: req.user.id, referrer: req.body.referrer}
     }, function (err, output) {
-        if(err)
+        if(err) {
             console.log(err);
-        else{
+        }else{
             console.log("user registered in event!");
             console.log(output);
             Users.findByIdAndUpdate(req.user.id, {
@@ -146,7 +151,7 @@ app.post("/register/:eventId", function (req, res) {
                 else{
                     console.log("user registered in event!");
                     console.log(output);
-                    res.redirect("/events");
+                    res.redirect("/events/?status=successful");
                 }
             });
         }

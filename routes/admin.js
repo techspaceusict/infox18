@@ -143,7 +143,7 @@ module.exports = function (router, passport) {
                         console.log(err);
                     else{
                         console.log("PARTICIPANTS FETCHED!");
-                        res.render("admin/participants", {participants: output, eventName: event.name, referrers: event.referrer});
+                        res.render("admin/participants", {participants: output, users: users, eventName: event.name, referrers: event.referrer});
                     }
                 });
             }
@@ -151,7 +151,37 @@ module.exports = function (router, passport) {
     });
 
     router.get('/participants', function (req, res) {
-        res.render("admin/allParticipants");
+        Events.find({}, function (err, events) {
+            if(err)
+                console.log(err);
+            else{
+                var users = [];
+                var referrers = [];
+                var eventName = [];
+                for(i=0;i<events.length;++i) {
+                    var arr = _.fill(Array(events[i].users.length), events[i].name);
+                    users = _.concat(users, _.map(events[i].users, function (id) {
+                        return mongoose.Types.ObjectId(id)
+                    }));
+                    referrers = _.concat(referrers, events[i].referrer);
+                    eventName = _.concat(eventName, arr);
+                }
+                Users.find({
+                    '_id': {
+                        $in: users
+                    }
+                }, function (err, output) {
+                    if(err)
+                        console.log(err);
+                    else{
+                        console.log("PARTICIPANTS FETCHED!");
+                        console.log(output);
+                        res.render("admin/allParticipants", {participants: output, users: users, eventName: eventName, referrers: referrers});
+                    }
+                });
+            }
+        });
+        // res.render("admin/allParticipants");
     });
 
     router.get('/events/:id/edit', function (req, res) {

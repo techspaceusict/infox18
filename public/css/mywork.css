@@ -63,7 +63,7 @@
  
 .carousel{
     width:95%;
-    height: 55vh;
+    height: 70vh;
     background-color: brown;
     display:flex;
     justify-content: space-evenly;
@@ -83,7 +83,7 @@
     height: 100%;
     cursor: pointer;
     font-size: 72px;
-    font-family: 'Lato';
+    font-family: "Julius Sans One", sans-serif !important;
     font-weight: 900;
     display:flex;
     align-items: center;
