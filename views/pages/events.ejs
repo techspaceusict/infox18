@@ -166,7 +166,9 @@
                             </div>
                         </div>
                         <br>
-                        <%if(loggedIn){
+                        <%if(programming[i].id === "5bb8c1e50e5324202d02bd92"){%>
+                            <a href="https://usicthack.com/"><div id="login" class="event-text-register">Register</div></a>
+                        <%}else if(loggedIn){
                             if(loggedIn.events.includes(programming[i].id)){
                             %>
                             <div class="event-text-register">Already Registered</div>
