@@ -10,7 +10,7 @@
     width:100px !important;
     height: 100px !important;
     margin:5px 5px !important;
-    border:5px solid #B3000C !important;
+    /* border:5px solid #B3000C !important; */
   }
 
   .sponsor-container{
@@ -61,7 +61,7 @@
   border-radius: 100%;
   background-color: white;
   overflow: hidden;
-  border:10px solid #B3000C;
+  /* border:10px solid #B3000C; */
 }
 
 .img-class{
@@ -91,3 +91,9 @@
 }
 
 
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .sponsor-container div{
+    margin-bottom: 60px !important;
+  }
+}

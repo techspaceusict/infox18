@@ -67,7 +67,7 @@ module.exports = function (router) {
                             console.log(err);
                         else{
                             console.log("info updated w/o pic");
-                            res.redirect("/user/profile");
+                            res.redirect("/user/dashboard");
                         }
                     });
                 }else{
@@ -87,7 +87,7 @@ module.exports = function (router) {
                             console.log(err);
                         else{
                             console.log("info updated");
-                            res.redirect("/user/profile");
+                            res.redirect("/user/dashboard");
                         }
                     });
                 }

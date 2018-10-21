@@ -5,6 +5,7 @@
 <table class="responsive-table">
     <thead>
     <tr>
+        <th>S. No.</th>
         <th>Name</th>
         <th>Email</th>
         <th>Mobile</th>
@@ -16,15 +17,20 @@
     </tr>
     </thead>
     <tbody>
-    <%for(i=0;i<participants.length;++i){%>
+    <%for(i=0;i<users.length;++i){
+
+        index = participants.findIndex(x => x.id == users[i]);
+
+    %>
     <tr>
-        <td><%=participants[i].name%></td>
-        <td><%=participants[i].email%></td>
-        <td><%=participants[i].phone%></td>
-        <td><%=participants[i].college%></td>
-        <td><%=participants[i].degree%></td>
-        <td><%=participants[i].branch%></td>
-        <td><%=participants[i].year%></td>
+        <td><%=i+1%>. </td>
+        <td><%=participants[index].name%></td>
+        <td><%=participants[index].email%></td>
+        <td><%=participants[index].phone%></td>
+        <td><%=participants[index].college%></td>
+        <td><%=participants[index].degree%></td>
+        <td><%=participants[index].branch%></td>
+        <td><%=participants[index].year%></td>
         <td><%=referrers[i]%></td>
     </tr>
     <%}%>

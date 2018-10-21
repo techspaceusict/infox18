@@ -3,6 +3,65 @@
 
 <% include ../partials/login-modal %>
 
+<style>
+    .success{
+        width: 100%;
+        padding: 10px;
+        color: white;
+        border: 2px solid green;
+        background-color: rgba(0,128,0,0.8);
+        margin: 0;
+        font-weight: 700 !important;
+        font-family: "Julius Sans One", sans-serif;
+    }
+    /* The snackbar - position it at the bottom and in the middle of the screen */
+    #snackbar {
+        visibility: hidden; /* Hidden by default. Visible on click */
+        min-width: 250px; /* Set a default minimum width */
+        margin-left: -125px; /* Divide value of min-width by 2 */
+        background-color: #333; /* Black background color */
+        color: #fff; /* White text color */
+        text-align: center; /* Centered text */
+        border-radius: 2px; /* Rounded borders */
+        padding: 16px; /* Padding */
+        position: fixed; /* Sit on top of the screen */
+        z-index: 1; /* Add a z-index if needed */
+        left: 50%; /* Center the snackbar */
+        bottom: 30px; /* 30px from the bottom */
+    }
+
+    /* Show the snackbar when clicking on a button (class added with JavaScript) */
+    #snackbar.show {
+        visibility: visible; /* Show the snackbar */
+        /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+       However, delay the fade out process for 2.5 seconds */
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    /* Animations to fade the snackbar in and out */
+    @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+
+    @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+</style>
+<div id="status" style="display: none;"><%=registered%></div>
+<div class="success" id="snackbar">Successfully registered</div>
 <div class="events-container">
     <div class="title-section">
         <h1 class="overlay-section">EVENTS</h1>
@@ -107,7 +166,9 @@
                             </div>
                         </div>
                         <br>
-                        <%if(loggedIn){
+                        <%if(programming[i].id === "5bb8c1e50e5324202d02bd92"){%>
+                            <a href="https://usicthack.com/"><div id="login" class="event-text-register">Register</div></a>
+                        <%}else if(loggedIn){
                             if(loggedIn.events.includes(programming[i].id)){
                             %>
                             <div class="event-text-register">Already Registered</div>
@@ -544,6 +605,9 @@
     // $('#coding .events .card').css({display:'none'})
 
     $(".prog").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
+        // window.location.replace(window.location.href.split('?')[0] + "?id=" + this.id);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#coding .events .card').height() - $(e.target).height();
@@ -568,6 +632,8 @@
     //
 
     $(".elec").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#electronic .events .card').height() - $(e.target).height();
@@ -592,6 +658,8 @@
     //
 
     $(".nont").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#adventure .events .card').height() - $(e.target).height();
@@ -616,6 +684,8 @@
     //
 
     $(".ecel").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#quiz .events .card').height() - $(e.target).height();
@@ -640,6 +710,8 @@
     //
 
     $(".work").click(function(e){
+        var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + "?id=" + this.id;
+        window.history.pushState({path:newurl},'',newurl);
         console.log("ID CLCIKED:" + this.id);
         var id = this.id;
         eventPos = $(e.target).offset().top - $('#workshop .events .card').height() - $(e.target).height();
@@ -661,5 +733,42 @@
         }, 800, 'easeOutExpo');
     });
 </script>
+<script>
+    window.onload = function () {
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
 
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : sParameterName[1];
+                }
+            }
+        };
+        var modal = getUrlParameter('id');
+        var url = window.location.href;
+        if (url.indexOf('?id=') != -1) {
+            $('#' + modal).trigger('click');
+        }
+    }
+</script>
+<script>
+    function myFunction() {
+        // Get the snackbar DIV
+        var x = document.getElementById("snackbar");
+
+        // Add the "show" class to DIV
+        x.className = "show";
+
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    console.log($('#status').text());
+    if($('#status').text() === 'success')
+        myFunction();
+</script>
 </body>
