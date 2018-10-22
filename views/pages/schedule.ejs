@@ -1,130 +1,118 @@
-<%include ../partials/header-links.ejs%>
-
+<% include ../partials/header-links.ejs %>
+<!-- <link rel="stylesheet" href="css/slideshow.css"> -->
 <% include ../partials/new-nav-bar %>
 <% include ../partials/login-modal %>
+<link rel="stylesheet" href="css/schedule.css">
 
-<div class="contact-parent-wrapper" style="align-items: center; height: 92vh;">
+<div class="contact-parent-wrapper" style="align-items: center; margin-top:7vh">
     <div class="title-section">
-        <h1 class="overlay-section">SCHEDULE</h1>
-        <h1 class="subtitle-section">Checkout event timings</h1>
+        <h1 class="overlay-section">Schedule</h1>
+        <h1 class="subtitle-section" style="margin-top:5vh">Find your events..</h1>
     </div>
+    <div class="">
 
-    <div class="carousel">
-        <div class="cl">
-            <div class="c-overlay" id="c1">
-                <div class="day-no">
-                    DAY<span style="color: transparent;">.</span>1
+        <div class="about-content">
+            <!-- data-aos="fade-right" data-aos-duration="500" data-aos-easing="ease-in-out" -->
+            <!-- <img class="about-img" src="img/iplogo.png" />
+            <div class="about-text">
+                <div>
+                    <h1>This Part of Website is under construction!</h1>
                 </div>
-            </div>
-            <div class="c-schedule" id="c1-img">
-                <img src="img/13oct.jpg" alt="day-1-schedule">
-            </div>
+            </div> -->
+            <h1 style="font-weight: 800; font-size:3rem; margin-top:5vh">Day 1</h1>
+
         </div>
-        <div class="cm">
-            <div class="c-overlay" id="c2">
-                <div class="day-no">
-                    DAY<span style="color: transparent;">.</span>2
-                </div>
-            </div>
-            <div class="c-schedule" id="c2-img">
-                <img src="img/14oct.jpg" alt="day-1-schedule">
-            </div>
+        <div class="grid_container">
+            <div class="item1_1">Info<span style="color:red;">X</span></div>
+            <div class="item2_1">10-11</div>
+            <div class="item3_1">11-12</div>
+            <div class="item4_1">12-1</div>
+            <div class="item5_1">1-2</div>
+            <div class="item6_1">2-3</div>
+            <div class="item7_1">3-4</div>
+            <div class="item8_1">4-5</div>
+            <div class="item9_1">Till Next Day</div>
+            <div class="place1_1">E-313</div>
+            <div class="empty"></div>
+            <div class="empty2"></div>
+            <div class="place2_1">E-318</div>
+            <div class="place3_1">D-317</div>
+            <div class="place4_1">E-213</div>
+            <div class="place5_1">E-504</div>
+            <div class="place6_1">E-410</div>
+            <div class="place7_1">E-501</div>
+            <div class="place8_1">D-217</div>
+            <div class="place9_1">E-217</div>
+            <div class="place10_1">D-505</div>
+            <div class="place11_1">E-Audi</div>
+            <div class="place12_1">D-Audi</div>
+            <div class="place13_1">C-Audi</div>
+            <div class="place14_1">E-315</div>
+            <div class="place15_1">E-111</div>
+            <div class="place16_1">E-109</div>
+            <div class="code_express">Code Express</div>
         </div>
-        <div class="cr">
-            <div class="c-overlay" id="c3">
-                <div class="day-no">
-                    DAY<span style="color: transparent;">.</span>3
-                </div>
-            </div>
-            <div class="c-schedule" id="c3-img">
-                <img src="img/15oct.jpg" alt="day-1-schedule">
-            </div>
-        </div>
+
+        <!-- <div class="halchal">
+
+        </div> -->
+
     </div>
-
-
-    <!-- <img src="img/13oct.jpg" alt="day-1-schedule" class="img-sc">
-
-
-    <img src="img/14oct.jpg" alt="day-2-schedule" class="img-sc">
-
-
-    <img src="img/15oct.jpg" alt="day-3-schedule" class="img-sc"> -->
 </div>
 
+
 <% include ../partials/footer %>
+
 
 <!-- Nav below is for hamburger -->
 
 <% include ../partials/hamburger %>
 
-<script>
-    $('.c-overlay').click(function(){
-        $('.day-no').addClass('day-no-2');
-    });
 
-    $(window).resize(function(){
-        location.reload(true)
-    });
-    if($( window ).width()>767){
-        $('#c1').click(function(){
-            $('#c1-img').css({display:'block'});
-            $('#c2-img').css({display:'none'});
-            $('#c3-img').css({display:'none'});
-            $('.cl').animate({width:'80%'},400,'easeOutQuint');
-            $('.cm').animate({width:'10%'},400,'easeOutQuint');
-            $('.cr').animate({width:'10%'},400,'easeOutQuint');
-        });
-
-        $('#c2').click(function(){
-            $('#c1-img').css({display:'none'});
-            $('#c2-img').css({display:'block'});
-            $('#c3-img').css({display:'none'});
-            $('.cl').animate({width:'10%'},400,'easeOutQuint');
-            $('.cm').animate({width:'80%'},400,'easeOutQuint');
-            $('.cr').animate({width:'10%'},400,'easeOutQuint');
-        });
-
-        $('#c3').click(function(){
-            $('#c1-img').css({display:'none'});
-            $('#c2-img').css({display:'none'});
-            $('#c3-img').css({display:'block'});
-            $('.cl').animate({width:'10%'},400,'easeOutQuint');
-            $('.cm').animate({width:'10%'},400,'easeOutQuint');
-            $('.cr').animate({width:'80%'},400,'easeOutQuint');
-        });
+<script src="../js/common.js"></script>
+<script src="../js/team.js"></script>
+<script type="text/javascript">
+    if ($(window).width() <= 479) {
+        setTimeout(function () {
+            $(document).ready(function () {
+                $(".anim-circle").animate({ width: "100px" }, 500, 'easeOutExpo', function () {
+                    $(".about-heading").fadeOut(100, function () {
+                        $(this).html("ABOUT US").fadeIn(function () {
+                            // alert('hello');
+                        });
+                    });
+                });
+                $(".about-flex").animate({ width: "100px" }, 500, 'easeOutExpo', function () {
+                    $(".about-flex").animate({ top: "15px" }, 400, 'easeOutExpo', function () {
+                        $(this).animate({ width: "100%" }, 400, 'easeOutExpo', function () {
+                            $(this).animate({ height: "100%" }, 800, 'easeOutExpo');
+                        })
+                    });
+                });
+            });
+        }, 1000);
+    } else {
+        setTimeout(function () {
+            $(document).ready(function () {
+                $(".anim-circle").animate({ width: "200px" }, 500, 'easeOutExpo', function () {
+                    $(".about-heading").fadeOut(100, function () {
+                        $(this).html("ABOUT US").fadeIn(function () {
+                            // alert('hello');
+                        });
+                    });
+                });
+                $(".about-flex").animate({ width: "200px" }, 500, 'easeOutExpo', function () {
+                    $(".about-flex").animate({ top: "30px" }, 400, 'easeOutExpo', function () {
+                        $(this).animate({ width: "100%" }, 400, 'easeOutExpo', function () {
+                            $(this).animate({ height: "100%" }, 800, 'easeOutExpo');
+                        })
+                    });
+                });
+            });
+        }, 1000);
     }
-    else{
-        $('#c1').click(function(){
-            $('#c1-img').css({display:'block'});
-            $('#c2-img').css({display:'none'});
-            $('#c3-img').css({display:'none'});
-            $('.cl').animate({height:'80%'},400,'easeOutQuint');
-            $('.cm').animate({height:'10%'},400,'easeOutQuint');
-            $('.cr').animate({height:'10%'},400,'easeOutQuint');
-        });
-
-        $('#c2').click(function(){
-            $('#c1-img').css({display:'none'});
-            $('#c2-img').css({display:'block'});
-            $('#c3-img').css({display:'none'});
-            $('.cl').animate({height:'10%'},400,'easeOutQuint');
-            $('.cm').animate({height:'80%'},400,'easeOutQuint');
-            $('.cr').animate({height:'10%'},400,'easeOutQuint');
-        });
-
-        $('#c3').click(function(){
-            $('#c1-img').css({display:'none'});
-            $('#c2-img').css({display:'none'});
-            $('#c3-img').css({display:'block'});
-            $('.cl').animate({height:'10%'},400,'easeOutQuint');
-            $('.cm').animate({height:'10%'},400,'easeOutQuint');
-            $('.cr').animate({height:'80%'},400,'easeOutQuint');
-        });
-    }
-
 </script>
-
+<script src="js/slideshow.js"></script>
 </body>
 
 </html>
