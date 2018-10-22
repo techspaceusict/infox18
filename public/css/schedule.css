@@ -249,13 +249,19 @@
   margin-bottom: 5vh;
   margin-right: auto;
   margin-left: auto;
-  position: relative;
-  left: 5%;
+  /* position: relative; */
+  /* left: 5%; */
 }
 
-.grid_container_1 > div {
+.grid_container_1 div {
+  /* display: table-cell; */
   background-color: #141414 !important;
   text-align: center;
+  /* padding: 10%; */
+  /* vertical-align: middle; */
+}
+.grid_container_1 p {
+  padding: 10% 0;
 }
 
 /* DAY 2 */
@@ -491,6 +497,10 @@
   text-align: center;
 }
 
+.grid_container_2 p {
+  padding: 10% 0;
+}
+
 /* ================================== */
 /* ================================== */
 /* ================================== */
@@ -713,6 +723,10 @@
 .grid_container_3 > div {
   background-color: #141414 !important;
   text-align: center;
+}
+
+.grid_container_3 p {
+  padding: 10% 0;
 }
 
 .about-content {
