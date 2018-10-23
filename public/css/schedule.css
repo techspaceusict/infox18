@@ -1038,16 +1038,19 @@
   .grid_container_1 {
     position: relative;
     top: 6vh;
+    grid-gap: 2px;
     /* margin-top: 1%; */
   }
   .grid_container_2 {
     position: relative;
     top: 6vh;
+    grid-gap: 2px;
     /* margin-top: 3vh; */
   }
   .grid_container_3 {
     position: relative;
     top: 6vh;
+    grid-gap: 2px;
     /* margin-top: 3vh; */
   }
 }
