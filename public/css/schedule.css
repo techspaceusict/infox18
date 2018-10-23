@@ -146,67 +146,152 @@
 
 .bug_1 {
   grid-area: bug_1;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(12, 104, 224, 0.85),
+    rgba(6, 58, 117, 0.85)
+  );
 }
 
 .jig_1 {
   grid-area: jig_1;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(12, 164, 224, 0.85),
+    rgba(6, 100, 117, 0.85)
+  );
 }
 
 .reveng_1 {
   grid-area: rvg_1;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 36, 12, 0.85),
+    rgba(117, 14, 6, 0.85)
+  );
 }
 
 .uhck_1 {
   grid-area: uhck_1;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 185, 0, 0.85),
+    rgba(255, 119, 48, 0.85)
+  );
 }
 
 .giz1_1 {
   grid-area: giz_1;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 12, 0.85),
+    rgba(117, 6, 6, 0.85)
+  );
 }
 
 .lrdline_1 {
   grid-area: lrdline_1;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 220, 12, 0.85),
+    rgba(117, 106, 6, 0.85)
+  );
 }
 
 .pubg_1 {
   grid-area: pubg_1;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 220, 12, 0.918),
+    rgba(47, 117, 6, 0.85)
+  );
 }
 
 .gameve_1 {
   grid-area: gam_1;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(217, 12, 224, 0.85),
+    rgba(104, 6, 117, 0.85)
+  );
 }
 
 .inaug_1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(126, 213, 111, 0.85),
+    rgba(40, 180, 133, 0.85)
+  );
   grid-area: inaug_1;
 }
 
-.droid_1 {
+/* .droid_1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(19, 224, 12, 0.85),
+    rgba(6, 117, 15, 0.85)
+  );
   grid-area: droid_1;
-}
+} */
 
 .potter_1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 192, 12, 0.85),
+    rgba(117, 91, 6, 0.85)
+  );
   grid-area: potter_1;
 }
 .meet1_1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(19, 224, 12, 0.85),
+    rgba(6, 117, 15, 0.85)
+  );
   grid-area: meet1_1;
 }
 .meet2_1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(76, 12, 224, 0.85),
+    rgba(49, 6, 117, 0.85)
+  );
   grid-area: meet2_1;
 }
 
 .ucntrl_1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 139, 12, 0.85),
+    rgba(117, 106, 6, 0.85)
+  );
   grid-area: ucntrl_1;
 }
 
 .giz2_1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 12, 0.85),
+    rgba(117, 6, 6, 0.85)
+  );
   grid-area: giz2_1;
 }
 
 .uh_inaug_1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 143, 0.85),
+    rgba(117, 6, 108, 0.85)
+  );
   grid-area: uh_inaug_1;
 }
 
 .cube_1 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(12, 139, 224, 0.85),
+    rgba(6, 100, 117, 0.85)
+  );
   grid-area: cube_1;
 }
 .normal {
@@ -352,6 +437,11 @@
   grid-area: e_2;
 }
 .code_express {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 12, 0.85),
+    rgba(117, 6, 6, 0.85)
+  );
   grid-area: ce_2;
 }
 .empty1_2 {
@@ -401,54 +491,139 @@
 }
 
 .infox_women_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(217, 12, 224, 0.85),
+    rgba(108, 6, 117, 0.85)
+  );
   grid-area: iw_2;
 }
 .codester_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(93, 12, 224, 0.85),
+    rgba(63, 6, 117, 0.85)
+  );
   grid-area: cs_2;
 }
 .uh_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 150, 12, 0.85),
+    rgba(117, 69, 6, 0.85)
+  );
   grid-area: uh_2;
 }
 .completeApp_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(30, 224, 12, 0.85),
+    rgba(6, 117, 15, 0.85)
+  );
   grid-area: ca_2;
 }
 .genesis_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(58, 12, 224, 0.85),
+    rgba(49, 6, 117, 0.85)
+  );
   grid-area: g_2;
 }
 .maze_runner_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(12, 192, 224, 0.85),
+    rgba(6, 110, 117, 0.85)
+  );
   grid-area: mr_2;
 }
 .game1_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 12, 0.85),
+    rgba(117, 6, 6, 0.85)
+  );
   grid-area: g1_2;
 }
 .game2_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 12, 0.85),
+    rgba(117, 6, 6, 0.85)
+  );
   grid-area: g2_2;
 }
 .pubg_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(192, 224, 12, 0.85),
+    rgba(100, 117, 6, 0.85)
+  );
   grid-area: pg_2;
 }
 .josh_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(164, 12, 224, 0.85),
+    rgba(108, 6, 117, 0.85)
+  );
   grid-area: j_2;
 }
 .uhv_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 139, 12, 0.85),
+    rgba(117, 87, 6, 0.85)
+  );
   grid-area: uhv_2;
 }
 .meetup_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 12, 0.85),
+    rgba(117, 6, 6, 0.85)
+  );
   grid-area: meet_2;
 }
 .samadhan_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(26, 12, 224, 0.85),
+    rgba(8, 6, 117, 0.85)
+  );
   grid-area: sm_2;
 }
 .uhpc_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(220, 224, 12, 0.85),
+    rgba(117, 100, 6, 0.85)
+  );
   grid-area: uhpc_2;
 }
 .magicCube_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(19, 17, 17, 0.85),
+    rgba(75, 69, 69, 0.85)
+  );
   grid-area: mc_2;
 }
 .robo_liga_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(19, 224, 12, 0.85),
+    rgba(17, 6, 117, 0.85)
+  );
   grid-area: rl_2;
 }
 .treasure_2 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(12, 224, 118, 0.85),
+    rgba(6, 117, 71, 0.85)
+  );
   grid-area: th_2;
 }
 
@@ -639,50 +814,110 @@
 }
 
 .mindthelang_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 12, 0.85),
+    rgba(117, 6, 6, 0.85)
+  );
   grid-area: mtl_3;
 }
 
 .codewar_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(12, 97, 224, 0.85),
+    rgba(6, 67, 117, 0.85)
+  );
   grid-area: cw_3;
 }
 
 .webmstr_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(19, 224, 12, 0.85),
+    rgba(6, 117, 21, 0.85)
+  );
   grid-area: wm_3;
 }
 
 .gen_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(12, 26, 224, 0.85),
+    rgba(26, 6, 117, 0.85)
+  );
   grid-area: gen_3;
 }
 
 .pubg_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(125, 224, 12, 0.85),
+    rgba(78, 117, 6, 0.85)
+  );
   grid-area: pg_3;
 }
 
 .gam_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 12, 0.85),
+    rgba(117, 6, 6, 0.85)
+  );
   grid-area: gam_3;
 }
 
 .coc_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(12, 146, 224, 0.85),
+    rgba(6, 13, 117, 0.85)
+  );
   grid-area: coc_3;
 }
 
 .meetup_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(224, 12, 12, 0.85),
+    rgba(117, 6, 6, 0.85)
+  );
   grid-area: m_3;
 }
 
 .gsg_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(209, 16, 151, 0.85),
+    rgba(117, 6, 99, 0.85)
+  );
   grid-area: gsg_3;
 }
 
 .robwar_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(164, 12, 224, 0.85),
+    rgba(95, 6, 117, 0.85)
+  );
   grid-area: rwr_3;
 }
 
 .mcube_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(34, 23, 23, 0.85),
+    rgba(112, 98, 98, 0.85)
+  );
   grid-area: mc_3;
 }
 
 .hunt_3 {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(79, 224, 12, 0.85),
+    rgba(6, 117, 49, 0.85)
+  );
   grid-area: hunt_3;
 }
 
