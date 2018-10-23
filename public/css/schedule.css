@@ -1008,6 +1008,8 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  font-family: "Julius Sans One", sans-serif !important;
-  font-weight: 500;
+  color: #a30404;
+  /* animation: title-overlay 1s ease-in-out; */
+  /* font-family: "Julius Sans One", sans-serif !important; */
+  font-weight: 900;
 }
