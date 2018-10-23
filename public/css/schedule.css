@@ -640,8 +640,8 @@
 .magicCube_2 {
   background-image: linear-gradient(
     to right bottom,
-    rgba(19, 17, 17, 0.85),
-    rgba(75, 69, 69, 0.85)
+    rgba(12, 139, 224, 0.85),
+    rgba(6, 100, 117, 0.85)
   );
   grid-area: mc_2;
 }
@@ -941,8 +941,8 @@
 .mcube_3 {
   background-image: linear-gradient(
     to right bottom,
-    rgba(34, 23, 23, 0.85),
-    rgba(112, 98, 98, 0.85)
+    rgba(12, 139, 224, 0.85),
+    rgba(6, 100, 117, 0.85)
   );
   grid-area: mc_3;
 }
