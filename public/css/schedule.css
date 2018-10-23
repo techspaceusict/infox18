@@ -1,3 +1,38 @@
+.grid_container_1 {
+  font-family: "Julius Sans One", sans-serif !important;
+  font-weight: 600;
+}
+.grid_container_2 {
+  font-family: "Julius Sans One", sans-serif !important;
+  font-weight: 600;
+}
+.grid_container_3 {
+  font-family: "Julius Sans One", sans-serif !important;
+  font-weight: 600;
+}
+
+.place_cell {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(36, 35, 33, 0.85),
+    rgba(68, 57, 51, 0.85)
+  );
+}
+.time_cell {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(36, 35, 33, 0.85),
+    rgba(68, 57, 51, 0.85)
+  );
+}
+.infox_cell {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(90, 2, 2, 0.85),
+    rgba(151, 53, 0, 0.85)
+  );
+}
+
 .item1_1 {
   grid-area: infox_one;
 }
